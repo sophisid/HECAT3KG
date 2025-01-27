@@ -1,0 +1,274 @@
+@prefix : <https://hecate.ia.forth.gr#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix parsec: <https://hecate.ia.forth.gr#> .
+@base <https://hecate.ia.forth.gr#> .
+
+<https://hecate.ia.forth.gr#> rdf:type owl:Ontology .
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  https://hecate.ia.forth.gr#Approval
+parsec:Approval rdf:type rdfs:Datatype ;
+                owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                      owl:oneOf [ rdf:type rdf:List ;
+                                                  rdf:first "Algorithmic" ;
+                                                  rdf:rest [ rdf:type rdf:List ;
+                                                             rdf:first "CCC" ;
+                                                             rdf:rest [ rdf:type rdf:List ;
+                                                                        rdf:first "Rejected" ;
+                                                                        rdf:rest [ rdf:type rdf:List ;
+                                                                                   rdf:first "Unchecked" ;
+                                                                                   rdf:rest rdf:nil
+                                                                                 ]
+                                                                      ]
+                                                           ]
+                                                ]
+                                    ] .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://hecate.ia.forth.gr#P01_has_measurement
+parsec:P01_has_measurement rdf:type owl:ObjectProperty ;
+                           rdfs:domain parsec:E02_Celestial_Body ;
+                           rdfs:range parsec:E08_Measurement .
+
+
+###  https://hecate.ia.forth.gr#P03_has_unit
+parsec:P03_has_unit rdf:type owl:ObjectProperty ;
+                    rdfs:domain parsec:Column ;
+                    rdfs:range parsec:E09_Measurement_Unit .
+
+
+###  https://hecate.ia.forth.gr#P04_contains_measurements_of
+parsec:P04_contains_measurements_of rdf:type owl:ObjectProperty ;
+                                    rdfs:domain parsec:Column ;
+                                    rdfs:range parsec:E11_Measurement_Classification .
+
+
+###  https://hecate.ia.forth.gr#P11_is_referred_in_data_source
+parsec:P11_is_referred_in_data_source rdf:type owl:ObjectProperty ;
+                                      rdfs:domain parsec:E02_Celestial_Body ;
+                                      rdfs:range parsec:E05_Data_Source .
+
+
+###  https://hecate.ia.forth.gr#P13_contains_data_source
+parsec:P13_contains_data_source rdf:type owl:ObjectProperty ;
+                                rdfs:domain parsec:E05_Data_Source ;
+                                rdfs:range parsec:E05_Data_Source .
+
+
+###  https://hecate.ia.forth.gr#P14_contains_celestial_body
+parsec:P14_contains_celestial_body rdf:type owl:ObjectProperty ;
+                                   rdfs:domain parsec:E02_Celestial_Body ;
+                                   rdfs:range parsec:E02_Celestial_Body .
+
+
+###  https://hecate.ia.forth.gr#P20_has_estimation_method
+parsec:P20_has_estimation_method rdf:type owl:ObjectProperty ;
+                                 rdfs:domain parsec:E08_Measurement ;
+                                 rdfs:range parsec:E12_Estimation_Method .
+
+
+###  https://hecate.ia.forth.gr#P21_is_measurement_from_column
+parsec:P21_is_measurement_from_column rdf:type owl:ObjectProperty ;
+                                      rdfs:domain parsec:E08_Measurement ;
+                                      rdfs:range parsec:Column .
+
+
+###  https://hecate.ia.forth.gr#P32_is_connected_to_measurement
+parsec:P32_is_connected_to_measurement rdf:type owl:ObjectProperty ;
+                                       rdfs:domain parsec:E08_Measurement ;
+                                       rdfs:range parsec:E08_Measurement .
+
+
+###  https://hecate.ia.forth.gr#has_added_column
+parsec:has_added_column rdf:type owl:ObjectProperty ;
+                        rdfs:domain parsec:Data_Table ;
+                        rdfs:range parsec:Column .
+
+
+###  https://hecate.ia.forth.gr#has_column
+parsec:has_column rdf:type owl:ObjectProperty ;
+                  rdfs:domain parsec:Data_Table ;
+                  rdfs:range parsec:Column .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://hecate.ia.forth.gr#P02_has_value
+parsec:P02_has_value rdf:type owl:DatatypeProperty ;
+                     rdfs:domain parsec:E08_Measurement ;
+                     rdfs:range rdfs:Literal .
+
+
+###  https://hecate.ia.forth.gr#P05_has_lower_error_margin_value
+parsec:P05_has_lower_error_margin_value rdf:type owl:DatatypeProperty ;
+                                        rdfs:domain parsec:Column ;
+                                        rdfs:range xsd:double .
+
+
+###  https://hecate.ia.forth.gr#P06_has_upper_error_margin_value
+parsec:P06_has_upper_error_margin_value rdf:type owl:DatatypeProperty ;
+                                        rdfs:domain parsec:Column ;
+                                        rdfs:range xsd:double .
+
+
+###  https://hecate.ia.forth.gr#P12_has_identifier
+parsec:P12_has_identifier rdf:type owl:DatatypeProperty ;
+                          rdfs:domain parsec:E02_Celestial_Body ;
+                          rdfs:range rdfs:Literal .
+
+
+###  https://hecate.ia.forth.gr#P17_data_source_version
+parsec:P17_data_source_version rdf:type owl:DatatypeProperty ;
+                               rdfs:domain parsec:E05_Data_Source ;
+                               rdfs:range rdfs:Literal .
+
+
+###  https://hecate.ia.forth.gr#P23_has_magic_number_value
+parsec:P23_has_magic_number_value rdf:type owl:DatatypeProperty ;
+                                  rdfs:domain parsec:Column ;
+                                  rdfs:range rdfs:Literal .
+
+
+###  https://hecate.ia.forth.gr#P24_has_approval
+parsec:P24_has_approval rdf:type owl:DatatypeProperty ;
+                        rdfs:domain parsec:Column ;
+                        rdfs:range parsec:Approval .
+
+
+###  https://hecate.ia.forth.gr#P26_has_error_confidence_interval_percentage
+parsec:P26_has_error_confidence_interval_percentage rdf:type owl:DatatypeProperty ;
+                                                    rdfs:domain parsec:Column ;
+                                                    rdfs:range xsd:double .
+
+
+###  https://hecate.ia.forth.gr#P27_has_error_confidence_interval_lower_bound
+parsec:P27_has_error_confidence_interval_lower_bound rdf:type owl:DatatypeProperty ;
+                                                     rdfs:domain parsec:Column ;
+                                                     rdfs:range xsd:double .
+
+
+###  https://hecate.ia.forth.gr#P28_has_error_confidence_interval_upper_bound
+parsec:P28_has_error_confidence_interval_upper_bound rdf:type owl:DatatypeProperty ;
+                                                     rdfs:domain parsec:Column ;
+                                                     rdfs:range xsd:double .
+
+
+###  https://hecate.ia.forth.gr#P29_has_reliability_status
+parsec:P29_has_reliability_status rdf:type owl:DatatypeProperty ;
+                                  rdfs:domain parsec:E08_Measurement ;
+                                  rdfs:range rdfs:Literal .
+
+
+###  https://hecate.ia.forth.gr#P33_provides_identifier
+parsec:P33_provides_identifier rdf:type owl:DatatypeProperty ;
+                               rdfs:domain parsec:E05_Data_Source ;
+                               rdfs:range rdfs:Literal .
+
+
+###  https://hecate.ia.forth.gr#P36_has_author
+parsec:P36_has_author rdf:type owl:DatatypeProperty ;
+                      rdfs:domain parsec:E05_Data_Source ;
+                      rdfs:range rdfs:Literal .
+
+
+###  https://hecate.ia.forth.gr#P37_has_abstract
+parsec:P37_has_abstract rdf:type owl:DatatypeProperty ;
+                        rdfs:domain parsec:E05_Data_Source ;
+                        rdfs:range rdfs:Literal .
+
+
+###  https://hecate.ia.forth.gr#P38_has_bibcode
+parsec:P38_has_bibcode rdf:type owl:DatatypeProperty ;
+                       rdfs:domain parsec:E05_Data_Source ;
+                       rdfs:range rdfs:Literal .
+
+
+###  https://hecate.ia.forth.gr#P39_has_webpage
+parsec:P39_has_webpage rdf:type owl:DatatypeProperty ;
+                       rdfs:domain parsec:E05_Data_Source ;
+                       rdfs:range rdfs:Literal .
+
+
+###  https://hecate.ia.forth.gr#P40_has_DOI
+parsec:P40_has_DOI rdf:type owl:DatatypeProperty ;
+                   rdfs:domain parsec:E05_Data_Source ;
+                   rdfs:range rdfs:Literal .
+
+
+###  https://hecate.ia.forth.gr#P41_was_updated_on
+parsec:P41_was_updated_on rdf:type owl:DatatypeProperty ;
+                          rdfs:domain parsec:E05_Data_Source ;
+                          rdfs:range xsd:dateTime .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://hecate.ia.forth.gr#Column
+parsec:Column rdf:type owl:Class .
+
+
+###  https://hecate.ia.forth.gr#Data_Table
+parsec:Data_Table rdf:type owl:Class ;
+                  rdfs:subClassOf parsec:E05_Data_Source .
+
+
+###  https://hecate.ia.forth.gr#E02_Celestial_Body
+parsec:E02_Celestial_Body rdf:type owl:Class .
+
+
+###  https://hecate.ia.forth.gr#E03_Galaxy
+parsec:E03_Galaxy rdf:type owl:Class ;
+                  rdfs:subClassOf parsec:E02_Celestial_Body .
+
+
+###  https://hecate.ia.forth.gr#E04_Supernova_Remnant
+parsec:E04_Supernova_Remnant rdf:type owl:Class ;
+                             rdfs:subClassOf parsec:E02_Celestial_Body .
+
+
+###  https://hecate.ia.forth.gr#E05_Data_Source
+parsec:E05_Data_Source rdf:type owl:Class .
+
+
+###  https://hecate.ia.forth.gr#E06_Catalogue
+parsec:E06_Catalogue rdf:type owl:Class ;
+                     rdfs:subClassOf parsec:E05_Data_Source .
+
+
+###  https://hecate.ia.forth.gr#E07_Paper
+parsec:E07_Paper rdf:type owl:Class ;
+                 rdfs:subClassOf parsec:E05_Data_Source .
+
+
+###  https://hecate.ia.forth.gr#E08_Measurement
+parsec:E08_Measurement rdf:type owl:Class .
+
+
+###  https://hecate.ia.forth.gr#E09_Measurement_Unit
+parsec:E09_Measurement_Unit rdf:type owl:Class .
+
+
+###  https://hecate.ia.forth.gr#E11_Measurement_Classification
+parsec:E11_Measurement_Classification rdf:type owl:Class .
+
+
+###  https://hecate.ia.forth.gr#E12_Estimation_Method
+parsec:E12_Estimation_Method rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

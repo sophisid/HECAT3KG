@@ -1,0 +1,2 @@
+#!/bin/bash
+java -jar ../../x3ml/target/x3ml-engine-2.2.2-SNAPSHOT-exejar.jar --input HECATE_small.xml --x3ml mappings/mappings_celestial_body.x3ml --policy mappings/generator-policies.xml --output HECATE_small.trig --format application/trig --reportProgress

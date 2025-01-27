@@ -1,0 +1,702 @@
+{ 
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/7> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/7>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_7" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/52> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/52>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_52" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/64> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/64>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_64" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/40> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/40>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_40" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/92> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/92>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_92" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/80> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/80>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_80" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/36> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/36>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_36" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/48> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/48>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_48" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/12> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/12>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_12" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/24> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/24>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_24" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/76> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/76>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_76" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/88> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/88>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_88" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/6> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/6>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_6" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/41> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/41>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_41" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/53> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/53>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_53" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/81> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/81>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_81" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/93> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/93>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_93" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/49> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/49>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_49" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/25> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/25>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_25" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/37> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/37>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_37" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/89> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/89>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_89" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/13> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/13>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_13" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/65> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/65>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_65" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/77> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/77>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_77" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/5> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/5>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_5" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/30> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/30>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_30" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/42> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/42>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_42" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/94> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/94>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_94" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/70> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/70>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_70" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/82> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/82>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_82" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/38> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/38>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_38" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/14> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/14>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_14" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/26> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/26>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_26" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/78> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/78>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_78" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/54> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/54>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_54" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/66> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/66>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_66" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/4> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/4>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_4" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/31> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/31>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_31" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/83> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/83>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_83" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/95> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/95>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_95" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/71> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/71>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_71" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/27> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/27>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_27" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/39> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/39>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_39" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/15> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/15>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_15" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/67> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/67>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_67" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/79> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/79>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_79" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/43> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/43>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_43" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/55> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/55>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_55" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/29> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/29>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_29" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/3> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/3>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_3" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/96> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/96>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_96" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/20> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/20>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_20" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/72> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/72>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_72" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/84> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/84>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_84" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/60> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/60>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_60" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/16> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/16>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_16" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/28> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/28>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_28" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/56> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/56>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_56" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/68> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/68>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_68" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/32> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/32>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_32" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/44> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/44>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_44" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/2> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/2>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_2" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/18> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/18>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_18" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/85> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/85>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_85" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/97> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/97>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_97" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/61> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/61>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_61" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/73> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/73>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_73" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/17> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/17>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_17" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/69> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/69>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_69" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/45> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/45>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_45" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/57> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/57>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_57" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/21> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/21>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_21" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/33> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/33>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_33" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/1> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/1>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_1" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/19> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/19>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_19" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/9> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/9>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_9" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/74> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/74>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_74" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/86> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/86>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_86" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/50> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/50>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_50" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/62> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/62>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_62" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/90> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/90>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_90" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/58> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/58>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_58" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/34> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/34>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_34" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/46> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/46>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_46" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/10> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/10>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_10" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/98> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/98>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_98" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/22> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/22>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_22" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/100> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/100>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_100" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/8> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/8>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_8" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/63> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/63>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_63" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/75> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/75>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_75" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/51> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/51>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_51" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/91> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/91>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_91" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/47> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/47>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_47" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/59> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/59>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_59" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/23> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/23>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_23" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/35> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/35>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_35" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/87> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/87>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_87" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/11> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/11>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_11" .
+}
+
+<http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/99> {
+    <https://hecate.ia.forth.gr/E02_Celestial_Body/99>
+            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "galaxy_99" .
+}

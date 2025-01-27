@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<generator_policy>
+    <generator name="Label" type="label">
+        <pattern>{label}</pattern>
+    </generator>
+
+    <generator name="GalaxyLabel" type="label">
+        <pattern>galaxy_{label}</pattern>
+    </generator>
+
+    <generator name="URIwithType" prefix="hecate">
+	    <pattern>{type}/{id}</pattern>
+    </generator>
+
+    <generator name="URIwithTypeHashed" prefix="hecate" shorten="yes">
+        <pattern>{type}/{id}</pattern>
+    </generator>
+
+    <generator name="URIorUUID">
+        <custom generatorClass="gr.forth.URIorUUID">
+            <set-arg name="text"></set-arg>
+        </custom>
+    </generator>
+</generator_policy>
