@@ -77,7 +77,7 @@ java -jar ../x3ml/target/x3ml-engine-2.2.2-SNAPSHOT-exejar.jar \
 HECATE-Mappings/
 ├── mappings/
 │   ├── mappings_celestial_body.x3ml  # X3ML mapping for celestial bodies
-├── generator-policies.xml            # Policy for IRI generation
+│   ├── generator-policies.xml        # Policy for IRI generation
 ├── HECATE_small.xml                  # Sample input data
 ├── HECATE_small.rdf                  # Generated RDF output
 └── README.md                         # Documentation
