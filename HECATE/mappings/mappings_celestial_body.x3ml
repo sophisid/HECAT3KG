@@ -7,7 +7,7 @@
     </namespaces>
     <mappings>
         <!-- Mapping for E02_Celestial_Body entity -->
-        <mapping namedgraph="http://hecate.ia.forth.gr/resource/parsec/celestial_body">
+        <mapping namedgraph="">
             <domain>
                 <source_node>//row</source_node>
                 <target_node>
@@ -178,18 +178,18 @@
                     </target_node>
                 </range>
             </link>
-            <!-- Link for SDSS_SPECID -->
+            <!-- Link for SDSS_PHOTID -->
             <link>
                 <path>
                     <source_relation>
-                        <relation>SDSS_SPECID</relation>
+                        <relation>SDSS_PHOTID</relation>
                     </source_relation>
                     <target_relation>
                         <relationship>parsec:P12_has_identifier</relationship>
                     </target_relation>
                 </path>
                 <range>
-                    <source_node>SDSS_SPECID</source_node>
+                    <source_node>SDSS_PHOTID</source_node>
                     <target_node>
                         <entity>
                             <type>rdfs:Literal</type>
