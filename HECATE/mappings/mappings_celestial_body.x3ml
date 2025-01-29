@@ -23,6 +23,185 @@
                     </entity>
                 </target_node>
             </domain>
+             <!-- Link for PGC -->
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>PGC</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P12_has_identifier</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>PGC</source_node>
+                    <target_node>
+                        <entity>
+                            <type>rdfs:Literal</type>
+                            <instance_generator name="Literal">
+                                <arg name="text">text()</arg>
+                            </instance_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+
+            <!-- Link for OBJNAME -->
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>OBJNAME</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P12_has_identifier</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>OBJNAME</source_node>
+                    <target_node>
+                        <entity>
+                            <type>rdfs:Literal</type>
+                            <instance_generator name="Literal">
+                                <arg name="text">text()</arg>
+                            </instance_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+            <!-- Link for ID_NED -->
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>ID_NED</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P12_has_identifier</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>ID_NED</source_node>
+                    <target_node>
+                        <entity>
+                            <type>rdfs:Literal</type>
+                            <instance_generator name="Literal">
+                                <arg name="text">text()</arg>
+                            </instance_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+            <!-- Link for ID_NEDD -->
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>ID_NEDD</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P12_has_identifier</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>ID_NEDD</source_node>
+                    <target_node>
+                        <entity>
+                            <type>rdfs:Literal</type>
+                            <instance_generator name="Literal">
+                                <arg name="text">text()</arg>
+                            </instance_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+            <!-- Link for ID_IRAS -->
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>ID_IRAS</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P12_has_identifier</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>ID_IRAS</source_node>
+                    <target_node>
+                        <entity>
+                            <type>rdfs:Literal</type>
+                            <instance_generator name="Literal">
+                                <arg name="text">text()</arg>
+                            </instance_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+            <!-- Link for ID_2MASS -->
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>ID_2MASS</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P12_has_identifier</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>ID_2MASS</source_node>
+                    <target_node>
+                        <entity>
+                            <type>rdfs:Literal</type>
+                            <instance_generator name="Literal">
+                                <arg name="text">text()</arg>
+                            </instance_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+            <!-- Link for SDSS_PHOTID -->
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>SDSS_PHOTID</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P12_has_identifier</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>SDSS_PHOTID</source_node>
+                    <target_node>
+                        <entity>
+                            <type>rdfs:Literal</type>
+                            <instance_generator name="Literal">
+                                <arg name="text">text()</arg>
+                            </instance_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+            <!-- Link for SDSS_SPECID -->
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>SDSS_SPECID</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P12_has_identifier</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>SDSS_SPECID</source_node>
+                    <target_node>
+                        <entity>
+                            <type>rdfs:Literal</type>
+                            <instance_generator name="Literal">
+                                <arg name="text">text()</arg>
+                            </instance_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+
+
         </mapping>
     </mappings>
 </x3ml>

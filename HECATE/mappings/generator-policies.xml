@@ -21,4 +21,54 @@
             <set-arg name="text"></set-arg>
         </custom>
     </generator>
+
+    <generator name="ColumnURI" prefix="hecate">
+        <pattern>{prefix}/paper/{DOI}/data_table/{data_table_id}/column/{column_name}</pattern>
+    </generator>
+
+    <generator name="DataTableURI" prefix="hecate">
+        <pattern>{prefix}/paper/{DOI}/data_table/{data_table_id}</pattern>
+    </generator>
+
+    <generator name="CelestialBodyURI" prefix="hecate">
+        <pattern>{prefix}/celestial_body/{id}</pattern>
+    </generator>
+
+    <generator name="GalaxyURI" prefix="hecate">
+        <pattern>{prefix}/galaxy/{id}</pattern>
+    </generator>
+
+    <generator name="SnrURI" prefix="hecate">
+        <pattern>{prefix}/snr/{id}</pattern>
+    </generator>
+
+    <generator name="DataSourceURI" prefix="hecate">
+        <pattern>{prefix}/data_source/{id}</pattern>
+    </generator>
+
+    <generator name="CatalogueURI" prefix="hecate">
+        <pattern>{prefix}/catalogue/{url}</pattern>
+    </generator>
+
+    <generator name="PaperURI" prefix="hecate">
+        <pattern>{prefix}/paper/{DOI}</pattern>
+    </generator>
+
+    <generator name="MeasurementURI" prefix="hecate">
+        <pattern>{prefix}/celestial_body/{celestial_body_id}/paper/{DOI}/data_table/{data_table_id}/column/{column_name}/measurement/{id}</pattern>
+    </generator>
+
+    <generator name="MeasurementUnitURI" prefix="hecate">
+        <pattern>{prefix}/measurement_unit/{unit_label}</pattern>
+    </generator>
+
+    <generator name="MeasurementClassificationURI" prefix="hecate">
+        <pattern>{prefix}/measurement_classification/{classification_label}</pattern>
+    </generator>
+
+    <generator name="EstimationMethodURI" prefix="hecate">
+        <pattern>{prefix}/estimation_method/{estimation_method_label}</pattern>
+    </generator>
+
+
 </generator_policy>

@@ -40,7 +40,7 @@ HECATE-Mappings/
    ```bash
    mvn clean install
    ```
-3. After building, locate the executable JAR file in the `target/` directory (note the <version>):
+3. After building, locate the executable JAR file in the `target/` directory (note the `<version>`):
    ```
    target/x3ml-engine-<version>-exejar.jar
    ```

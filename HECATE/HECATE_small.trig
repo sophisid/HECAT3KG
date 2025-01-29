@@ -5,698 +5,898 @@
     <https://hecate.ia.forth.gr/E02_Celestial_Body/7>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_7" .
+                    "galaxy_7" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "10" , "PGC000010" , "ARK 591" , "00000784-0002264" , "1237657190905217208" , "435776070554249216" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/52> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/52>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_52" .
+                    "galaxy_52" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "79" , "IC5374" , "IC 5374" , "F23585+0413" , "00010444+0430001" , "1237678776867618836" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/64> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/64>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_64" .
+                    "galaxy_64" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "100" , "ESO409-001" , "ESO 409- G 001" , "00011907-2725116" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/40> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/40>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_40" .
+                    "galaxy_40" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "60" , "PGC000060" , "2MASX J00004507+2822181" , "00004507+2822181" , "1237663233915617598" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/92> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/92>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_92" .
+                    "galaxy_92" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "147" , "PGC000147" , "CGCG 456-016" , "00015787+2137162" , "1237680297281323135" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/80> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/80>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_80" .
+                    "galaxy_80" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "123" , "PGC000123" , "MCG -03-01-014" , "00013605-1444548" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/36> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/36>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_36" .
+                    "galaxy_36" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "54" , "UGC12897" , "UGC 12897" , "00003794+2823041" , "1237663233915551956" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/48> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/48>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_48" .
+                    "galaxy_48" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "74" , "PGC000074" , "KUG 2358+330" , "F23583+3303" , "00005819+3320385" , "1237663235524067576" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/12> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/12>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_12" .
+                    "galaxy_12" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "16" , "PGC000016" , "MCG -01-01-017" , "00001131-0509313" , "1237672840671461505" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/24> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/24>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_24" .
+                    "galaxy_24" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "33" , "NGC7807" , "NGC 7807" , "F23578-1907" , "00002656-1850308" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/76> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/76>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_76" .
+                    "galaxy_76" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "119" , "PGC000119" , "KUG 2359+332" , "F23590+3316" , "00013610+3333466" , "1237663235524001971" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/88> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/88>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_88" .
+                    "galaxy_88" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "140" , "ESO409-003" , "ESO 409- G 003" , "F23593-2754" , "00015583-2737382" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/6> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/6>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_6" .
+                    "galaxy_6" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "7" , "PGC000007" , "ARK 590" , "00000442-0004599" , "1237657190905217071" , "1228395055081875456" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/41> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/41>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_41" .
+                    "galaxy_41" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "61" , "PGC000061" , "MCG -01-01-021" , "00004852-0534481" , "1237672793422692435" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/53> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/53>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_53" .
+                    "galaxy_53" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "80" , "IC5375" , "IC 5375" , "00010478+0432261" , "1237678776867618922" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/81> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/81>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_81" .
+                    "galaxy_81" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "124" , "UGC12913" , "UGC 12913" , "00013669+0330201" , "1237678620102361226" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/93> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/93>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_93" .
+                    "galaxy_93" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "148" , "UGC12917" , "UGC 12917" , "00015230+4020109" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/49> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/49>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_49" .
+                    "galaxy_49" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "75" , "ESO241-010" , "ESO 241- G 010" , "00010289-4319496" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/25> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/25>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_25" .
+                    "galaxy_25" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "35" , "UGC12894" , "UGC 12894" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/37> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/37>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_37" .
+                    "galaxy_37" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "55" , "UGC12898" , "UGC 12898" , "1237663235524002225" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/89> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/89>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_89" .
+                    "galaxy_89" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "143" , "PGC000143" , "WLM" , "UGCA444" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/13> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/13>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_13" .
+                    "galaxy_13" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "17" , "PGC000017" , "UM 015" , "1237678777404424294" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/65> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/65>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_65" .
+                    "galaxy_65" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "101" , "NGC7803" , "NGC 7803" , "F23587+1249" , "00011996+1306406" , "1237678860082348107" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/77> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/77>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_77" .
+                    "galaxy_77" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "120" , "UGC12914" , "UGC 12914" , "F23591+2312" , "00013830+2329011" , "1237680299428806739" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/5> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/5>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_5" .
+                    "galaxy_5" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "6" , "PGC000006" , "KUG 2357+156" , "F23574+1535" , "00000214+1552539" , "1237656496724312079" , "844551136588359680" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/30> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/30>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_30" .
+                    "galaxy_30" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "40" , "PGC000040" , "CGCG 382-017" , "00003564-0145472" , "1237678881557577771" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/42> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/42>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_42" .
+                    "galaxy_42" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "62" , "ESO012-013" , "ESO 012- G 013" , "00004688-7734478" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/94> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/94>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_94" .
+                    "galaxy_94" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "149" , "PGC000149" , "CGCG 517-014" , "F23594+3622" , "00015849+3638570" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/70> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/70>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_70" .
+                    "galaxy_70" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "110" , "UGC12910" , "UGC 12910" , "1237678777941426224" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/82> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/82>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_82" .
+                    "galaxy_82" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "127" , "PGC000127" , "CGCG 534-005" , "00014167+4500199" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/38> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/38>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_38" .
+                    "galaxy_38" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "57" , "PGC000057" , "2MASX J00004242+2822081" , "00004242+2822081" , "1237663233915617319" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/14> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/14>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_14" .
+                    "galaxy_14" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "18" , "PGC000018" , "CGCG 548-023" , "00001295+4657543" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/26> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/26>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_26" .
+                    "galaxy_26" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "36" , "IC5373" , "IC 5373" , "F23579+3230" , "00002880+3246563" , "1237663234987458698" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/78> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/78>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_78" .
+                    "galaxy_78" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "121" , "PGC000121" , "CGCG 477-039" , "F23590+2638" , "00013841+2655230" , "1237663306382115081" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/54> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/54>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_54" .
+                    "galaxy_54" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "81" , "NGC7802" , "NGC 7802" , "00010043+0614312" , "1237669516368216096" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/66> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/66>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_66" .
+                    "galaxy_66" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "102" , "IC5376" , "IC 5376" , "00011976+3431326" , "1237666184037400587" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/4> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/4>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_4" .
+                    "galaxy_4" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "5" , "IC5370" , "IC 5370" , "00000914+3244182" , "1237663234987458745" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/31> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/31>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_31" .
+                    "galaxy_31" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "42" , "PGC000042" , "FAIRALL 1062" , "00002691-4232515" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/83> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/83>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_83" .
+                    "galaxy_83" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "128" , "PGC000128" , "KUG 2359+318" , "00014154+3206279" , "1237680310692479300" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/95> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/95>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_95" .
+                    "galaxy_95" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "151" , "ESO349-020" , "ESO 349- G 020" , "F23594-3344" , "00020386-3328023" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/71> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/71>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_71" .
+                    "galaxy_71" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "112" , "NGC7806" , "NGC 7806" , "00013005+3126306" , "1237663234988048481" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/27> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/27>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_27" .
+                    "galaxy_27" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "37" , "PGC000037" , "MCG +04-01-009" , "00003167+2618189" , "1237663305845506120" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/39> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/39>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_39" .
+                    "galaxy_39" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "58" , "PGC000058" , "CGCG 498-061" , "00004401+2824051" , "1237663233915551957" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/15> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/15>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_15" .
+                    "galaxy_15" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "20" , "PGC000020" , "CGCG 382-016" , "F23576+0050" , "00001278+0107123" , "1237657192515829920" , "435848363443775488" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/67> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/67>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_67" .
+                    "galaxy_67" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "106" , "ESO538-018" , "ESO 538- G 018" , "F23588-1733" , "00012328-1716403" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/79> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/79>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_79" .
+                    "galaxy_79" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "122" , "PGC000122" , "MCG -07-01-007" , "00013109-4049101" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/43> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/43>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_43" .
+                    "galaxy_43" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "63" , "UGC12899" , "UGC 12899" , "00004696+2824071" , "1237663233915552026" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/55> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/55>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_55" .
+                    "galaxy_55" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "82" , "ESO149-011A" , "00010597-5359303" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/29> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/29>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_29" .
+                    "galaxy_29" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "39" , "UGC12892" , "UGC 12892" , "00002508+0751138" , "1237669681187913833" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/3> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/3>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_3" .
+                    "galaxy_3" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "4" , "PGC000004" , "KUG 2357+228" , "1237679478544072744" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/96> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/96>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_96" .
+                    "galaxy_96" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "152" , "PGC000152" , "MCG -05-01-025" , "00020544-3037082" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/20> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/20>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_20" .
+                    "galaxy_20" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "28" , "PGC000028" , "KUG 2357+205" , "1237679504855793834" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/72> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/72>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_72" .
+                    "galaxy_72" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "113" , "PGC000113" , "QP 088" , "00013279-3345318" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/84> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/84>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_84" .
+                    "galaxy_84" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "129" , "UGC12915" , "UGC 12915" , "00014193+2329452" , "1237679479081074836" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/60> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/60>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_60" .
+                    "galaxy_60" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "92" , "PGC000092" , "MCG +02-01-010" , "00011497+1306446" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/16> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/16>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_16" .
+                    "galaxy_16" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "23" , "PGC000023" , "VIII Zw 494 NOTES01" , "00002149-0236433" , "1237672795032060075" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/28> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/28>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_28" .
+                    "galaxy_28" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "38" , "UGC12893" , "UGC 12893" , "00002847+1713130" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/56> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/56>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_56" .
+                    "galaxy_56" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "83" , "PGC000083" , "KUG 2358+320A" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/68> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/68>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_68" .
+                    "galaxy_68" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "108" , "PGC000108" , "MRK 0934" , "00012606+1306466" , "1237678860082413581" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/32> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/32>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_32" .
+                    "galaxy_32" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "43" , "ESO293-027" , "ESO 293- G 027" , "00002948-4029040" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/44> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/44>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_44" .
+                    "galaxy_44" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "65" , "ESO193-009" , "ESO 193- G 009" , "00005324-4721246" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/2> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/2>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_2" .
+                    "galaxy_2" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "3" , "PGC000003" , "MCG -03-01-012" , "F23574-1817" , "00000316-1800289" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/18> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/18>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_18" .
+                    "galaxy_18" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "25" , "PGC000025" , "UGC 12891" , "00001932+2259259" , "1237680298891804735" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/85> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/85>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_85" .
+                    "galaxy_85" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "130" , "ESO409-002" , "ESO 409- G 002" , "00014401-3025082" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/97> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/97>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_97" .
+                    "galaxy_97" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "154" , "PGC000154" , "MCG -02-01-009" , "00020630-1013067" , "1237652900211458098" , "731864662215256064" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/61> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/61>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_61" .
+                    "galaxy_61" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "94" , "UGC12905" , "UGC 12905" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/73> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/73>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_73" .
+                    "galaxy_73" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "116" , "UGC12912" , "UGC 12912" , "00013359+0900445" , "1237679317478867047" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/17> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/17>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_17" .
+                    "galaxy_17" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "24" , "IC5371" , "IC 5371" , "00001476+3249552" , "1237663234987393277" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/69> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/69>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_69" .
+                    "galaxy_69" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "109" , "NGC7805" , "NGC 7805" , "00012677+3126016" , "1237663234988048479" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/45> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/45>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_45" .
+                    "galaxy_45" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "68" , "ESO538-017" , "ESO 538- G 017" , "00005537-1857328" , "1237667225542328417" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/57> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/57>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_57" .
+                    "galaxy_57" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "89" , "PGC000089" , "KUG 2358+128A" , "00011339+1308386" , "1237678860082348071" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/21> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/21>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_21" .
+                    "galaxy_21" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "29" , "PGC000029" , "CGCG 517-010" , "00002226+3436573" , "1237663235523543553" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/33> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/33>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_33" .
+                    "galaxy_33" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "47" , "UGC12896" , "UGC 12896" , "F23579+2602" , "00003138+2619318" , "1237663305845506118" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/1> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/1>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_1" .
+                    "galaxy_1" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "2" , "UGC12889" , "UGC 12889" , "00000168+4716282" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/19> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/19>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_19" .
+                    "galaxy_19" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "27" , "PGC000027" , "MCG -01-01-018" , "00002348-0656103" , "1237680243061096453" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/9> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/9>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_9" .
+                    "galaxy_9" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "13" , "PGC000013" , "CGCG 498-057" , "1237663307990106124" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/74> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/74>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_74" .
+                    "galaxy_74" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "117" , "IC1526" , "IC 1526" , "F23589+1104" , "00013148+1120465" , "1237678918057328780" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/86> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/86>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_86" .
+                    "galaxy_86" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "134" , "PGC000134" , "MRK 0935" , "F23592+1249" , "00014524+1306020" , "1237678860082413670" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/50> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/50>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_50" .
+                    "galaxy_50" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "76" , "UGC12901" , "UGC 12901" , "00005891+2854421" , "1237663306918134035" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/62> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/62>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_62" .
+                    "galaxy_62" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "95" , "PGC000095" , "MCG +06-01-006" , "00011570+3658099" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/90> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/90>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_90" .
+                    "galaxy_90" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "145" , "ESO409-004" , "ESO 409- G 004" , "00015721-2759582" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/58> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/58>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_58" .
+                    "galaxy_58" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "90" , "ESO241-011" , "ESO 241- G 011" , "00011378-4400426" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/34> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/34>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_34" .
+                    "galaxy_34" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "49" , "PGC000049" , "KUG 2357+225" , "00003344+2246424" , "1237679478007202028" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/46> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/46>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_46" .
+                    "galaxy_46" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "70" , "UGC12900" , "UGC 12900" , "00005604+2020165" , "1237680246814474422" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/10> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/10>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_10" .
+                    "galaxy_10" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "14" , "UGC12890" , "UGC 12890" , "00000701+0816448" , "1237669681724784668" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/98> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/98>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_98" .
+                    "galaxy_98" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "155" , "PGC000155" , "KUG 2359+122" , "F23594+1214" , "00020393+1231516" , "1237678919668007170" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/22> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/22>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_22" .
+                    "galaxy_22" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "30" , "ESO012-012" , "ESO 012- G 012" , "F23577-8104" , "00002208-8047344" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/100> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/100>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_100" .
+                    "galaxy_100" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "160" , "PGC000160" , "AM 2359-441" , "00021051-4358398" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/8> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/8>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_8" .
+                    "galaxy_8" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "12" , "PGC000012" , "MCG -01-01-016" , "00000865-0622263" , "1237680265074049113" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/63> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/63>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_63" .
+                    "galaxy_63" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "99" , "ESO149-012" , "ESO 149- G 012" , "F23587-5317" , "00011748-5300348" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/75> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/75>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_75" .
+                    "galaxy_75" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "118" , "PGC000118" , "CGCG 433-016" , "1237656495650701475" , "844578349501147136" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/51> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/51>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_51" .
+                    "galaxy_51" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "77" , "PGC000077" , "UGC 12904 NOTES02" , "00010367+3439104" , "1237666184037400940" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/91> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/91>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_91" .
+                    "galaxy_91" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "146" , "UGC12916" , "UGC 12916" , "1237679456535969818" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/47> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/47>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_47" .
+                    "galaxy_47" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "73" , "ESO349-017" , "ESO 349- G 017" , "00005858-3336429" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/59> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/59>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_59" .
+                    "galaxy_59" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "91" , "UGC12904" , "UGC 12904" , "F23586+3424" , "00011417+3440326" , "1237666184037400728" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/23> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/23>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_23" .
+                    "galaxy_23" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "31" , "PGC000031" , "FAIRALL 1061" , "00002363-4701076" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/35> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/35>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_35" .
+                    "galaxy_35" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "53" , "UGC12895" , "UGC 12895" , "1237679503782117461" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/87> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/87>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_87" .
+                    "galaxy_87" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "137" , "PGC000137" , "2MASX J00015254-5028364" , "00015254-5028364" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/11> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/11>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_11" .
+                    "galaxy_11" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "15" , "PGC000015" , "MCG -01-01-015" , "00000504-0512339" , "1237672793422495870" , "-" .
 }
 
 <http://hecate.ia.forth.gr/resource/parsec/celestial_body_hecate.ia.forth.gr/E02_Celestial_Body/99> {
     <https://hecate.ia.forth.gr/E02_Celestial_Body/99>
             a       <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_99" .
+                    "galaxy_99" ;
+            <https://parsec.forth.gr/P12_has_identifier>
+                    "156" , "IC5377" , "IC 5377" , "1237678600231715123" , "-" .
 }
