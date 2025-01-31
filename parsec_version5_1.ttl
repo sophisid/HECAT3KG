@@ -44,13 +44,13 @@ parsec:P01_has_measurement rdf:type owl:ObjectProperty ;
 
 ###  https://hecate.ia.forth.gr#P03_has_unit
 parsec:P03_has_unit rdf:type owl:ObjectProperty ;
-                    rdfs:domain parsec:Column ;
+                    rdfs:domain parsec:E16_Column ;
                     rdfs:range parsec:E09_Measurement_Unit .
 
 
 ###  https://hecate.ia.forth.gr#P04_contains_measurements_of
 parsec:P04_contains_measurements_of rdf:type owl:ObjectProperty ;
-                                    rdfs:domain parsec:Column ;
+                                    rdfs:domain parsec:E16_Column ;
                                     rdfs:range parsec:E11_Measurement_Classification .
 
 
@@ -81,7 +81,7 @@ parsec:P20_has_estimation_method rdf:type owl:ObjectProperty ;
 ###  https://hecate.ia.forth.gr#P21_is_measurement_from_column
 parsec:P21_is_measurement_from_column rdf:type owl:ObjectProperty ;
                                       rdfs:domain parsec:E08_Measurement ;
-                                      rdfs:range parsec:Column .
+                                      rdfs:range parsec:E16_Column .
 
 
 ###  https://hecate.ia.forth.gr#P32_is_connected_to_measurement
@@ -90,16 +90,16 @@ parsec:P32_is_connected_to_measurement rdf:type owl:ObjectProperty ;
                                        rdfs:range parsec:E08_Measurement .
 
 
-###  https://hecate.ia.forth.gr#has_added_column
-parsec:has_added_column rdf:type owl:ObjectProperty ;
-                        rdfs:domain parsec:Data_Table ;
-                        rdfs:range parsec:Column .
+###  https://hecate.ia.forth.gr#P35_has_added_column
+parsec:P35_has_added_column rdf:type owl:ObjectProperty ;
+                        rdfs:domain parsec:E15_Data_Table ;
+                        rdfs:range parsec:E16_Column .
 
 
-###  https://hecate.ia.forth.gr#has_column
-parsec:has_column rdf:type owl:ObjectProperty ;
-                  rdfs:domain parsec:Data_Table ;
-                  rdfs:range parsec:Column .
+###  https://hecate.ia.forth.gr#P34_has_column
+parsec:P34_has_column rdf:type owl:ObjectProperty ;
+                  rdfs:domain parsec:E15_Data_Table ;
+                  rdfs:range parsec:E16_Column .
 
 
 #################################################################
@@ -114,13 +114,13 @@ parsec:P02_has_value rdf:type owl:DatatypeProperty ;
 
 ###  https://hecate.ia.forth.gr#P05_has_lower_error_margin_value
 parsec:P05_has_lower_error_margin_value rdf:type owl:DatatypeProperty ;
-                                        rdfs:domain parsec:Column ;
+                                        rdfs:domain parsec:E16_Column ;
                                         rdfs:range xsd:double .
 
 
 ###  https://hecate.ia.forth.gr#P06_has_upper_error_margin_value
 parsec:P06_has_upper_error_margin_value rdf:type owl:DatatypeProperty ;
-                                        rdfs:domain parsec:Column ;
+                                        rdfs:domain parsec:E16_Column ;
                                         rdfs:range xsd:double .
 
 
@@ -138,31 +138,31 @@ parsec:P17_data_source_version rdf:type owl:DatatypeProperty ;
 
 ###  https://hecate.ia.forth.gr#P23_has_magic_number_value
 parsec:P23_has_magic_number_value rdf:type owl:DatatypeProperty ;
-                                  rdfs:domain parsec:Column ;
+                                  rdfs:domain parsec:E16_Column ;
                                   rdfs:range rdfs:Literal .
 
 
 ###  https://hecate.ia.forth.gr#P24_has_approval
 parsec:P24_has_approval rdf:type owl:DatatypeProperty ;
-                        rdfs:domain parsec:Column ;
+                        rdfs:domain parsec:E16_Column ;
                         rdfs:range parsec:Approval .
 
 
 ###  https://hecate.ia.forth.gr#P26_has_error_confidence_interval_percentage
 parsec:P26_has_error_confidence_interval_percentage rdf:type owl:DatatypeProperty ;
-                                                    rdfs:domain parsec:Column ;
+                                                    rdfs:domain parsec:E16_Column ;
                                                     rdfs:range xsd:double .
 
 
 ###  https://hecate.ia.forth.gr#P27_has_error_confidence_interval_lower_bound
 parsec:P27_has_error_confidence_interval_lower_bound rdf:type owl:DatatypeProperty ;
-                                                     rdfs:domain parsec:Column ;
+                                                     rdfs:domain parsec:E16_Column ;
                                                      rdfs:range xsd:double .
 
 
 ###  https://hecate.ia.forth.gr#P28_has_error_confidence_interval_upper_bound
 parsec:P28_has_error_confidence_interval_upper_bound rdf:type owl:DatatypeProperty ;
-                                                     rdfs:domain parsec:Column ;
+                                                     rdfs:domain parsec:E16_Column ;
                                                      rdfs:range xsd:double .
 
 
@@ -218,11 +218,11 @@ parsec:P41_was_updated_on rdf:type owl:DatatypeProperty ;
 #    Classes
 #################################################################
 
-###  https://hecate.ia.forth.gr#Column
-parsec:Column rdf:type owl:Class .
+###  https://hecate.ia.forth.gr#E16_Column
+parsec:E16_Column rdf:type owl:Class .
 
 
-###  https://hecate.ia.forth.gr#Data_Table
+###  https://hecate.ia.forth.gr#E15_Data_Table
 parsec:Data_Table rdf:type owl:Class ;
                   rdfs:subClassOf parsec:E05_Data_Source .
 

@@ -1,0 +1,2639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<x3ml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" source_type="xpath" version="1.0" xsi:noNamespaceSchemaLocation="x3ml_v1.0.xsd">
+    <namespaces>
+        <namespace prefix="xsd" uri="http://www.w3.org/2001/XMLSchema#"/>
+        <namespace prefix="rdfs" uri="http://www.w3.org/2000/01/rdf-schema#"/>
+        <namespace prefix="parsec" uri="https://parsec.forth.gr/"/>
+        <namespace prefix="hecate" uri="https://hecate.ia.forth.gr/"/>
+    </namespaces>
+    <mappings>
+        <!-- Mapping for all rows and their elements -->
+        <mapping namedgraph="graph">
+            <domain>
+                <source_node>//row[1]</source_node>
+                <target_node>
+                    <entity>
+                        <type>parsec:E5_Data_Source</type>
+                        <type>parsec:E15_Data_Table</type>
+                        <instance_generator name="DataTableURI">
+                            <arg name="data_table_id" type="constant">HECATE</arg>
+                        </instance_generator>
+                        <label_generator name="Label">
+                            <arg name="label" type="constant">HECATE</arg>
+                        </label_generator>
+                        <additional>
+                            <relationship>parsec:P17_data_source_version</relationship>
+                            <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text">"v.1.1"</arg>
+                                </instance_generator>
+                            </entity>
+                        </additional>
+                        <additional>
+                            <relationship>parsec:P39_has_webpage</relationship>
+                            <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text">"https://hecate.ia.forth.gr/"</arg>
+                                </instance_generator>
+                            </entity>
+                        </additional>
+                    </entity>
+                </target_node>
+            </domain>
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>//row[1]/PGC</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P34_has_column</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>//row[1]/PGC</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E16_Column</type>
+                            <instance_generator name="ColumnURI">
+                                <arg name="data_source" type="constant">HECATE</arg>
+                                <arg name="column_name" type="constant">pgc</arg>
+                            </instance_generator>
+                            <label_generator name="Label">
+                                <arg name="label" type="constant">pgc</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>//row[1]/OBJNAME</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P34_has_column</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>//row[1]/OBJNAME</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E16_Column</type>
+                            <instance_generator name="ColumnURI">
+                                <arg name="data_source" type="constant">HECATE</arg>
+                                <arg name="column_name" type="constant">objname</arg>
+                            </instance_generator>
+                            <label_generator name="Label">
+                                <arg name="label" type="constant">objname</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>//row[1]/ID_NED</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P34_has_column</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>//row[1]/ID_NED</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E16_Column</type>
+                            <instance_generator name="ColumnURI">
+                                <arg name="data_source" type="constant">HECATE</arg>
+                                <arg name="column_name" type="constant">id_ned</arg>
+                            </instance_generator>
+                            <label_generator name="Label">
+                                <arg name="label" type="constant">id_ned</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>//row[1]/ID_NEDD</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P34_has_column</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>//row[1]/ID_NEDD</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E16_Column</type>
+                            <instance_generator name="ColumnURI">
+                                <arg name="data_source" type="constant">HECATE</arg>
+                                <arg name="column_name" type="constant">id_nedd</arg>
+                            </instance_generator>
+                            <label_generator name="Label">
+                                <arg name="label" type="constant">id_nedd</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>//row[1]/ID_IRAS</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P34_has_column</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>//row[1]/ID_IRAS</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E16_Column</type>
+                            <instance_generator name="ColumnURI">
+                                <arg name="data_source" type="constant">HECATE</arg>
+                                <arg name="column_name" type="constant">id_iras</arg>
+                            </instance_generator>
+                            <label_generator name="Label">
+                                <arg name="label" type="constant">id_iras</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>//row[1]/ID_2MASS</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P34_has_column</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>//row[1]/ID_2MASS</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E16_Column</type>
+                            <instance_generator name="ColumnURI">
+                                <arg name="data_source" type="constant">HECATE</arg>
+                                <arg name="column_name" type="constant">id_2mass</arg>
+                            </instance_generator>
+                            <label_generator name="Label">
+                                <arg name="label" type="constant">id_2mass</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>//row[1]/SDSS_PHOTID</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P34_has_column</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>//row[1]/SDSS_PHOTID</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E16_Column</type>
+                            <instance_generator name="ColumnURI">
+                                <arg name="data_source" type="constant">HECATE</arg>
+                                <arg name="column_name" type="constant">sdss_photid</arg>
+                            </instance_generator>
+                            <label_generator name="Label">
+                                <arg name="label" type="constant">sdss_photid</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>//row[1]/SDSS_SPECID</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P34_has_column</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>//row[1]/SDSS_SPECID</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E16_Column</type>
+                            <instance_generator name="ColumnURI">
+                                <arg name="data_source" type="constant">HECATE</arg>
+                                <arg name="column_name" type="constant">sdss_specid</arg>
+                            </instance_generator>
+                            <label_generator name="Label">
+                                <arg name="label" type="constant">sdss_specid</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>//row[1]/RA</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P34_has_column</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>//row[1]/RA</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E16_Column</type>
+                            <instance_generator name="ColumnURI">
+                                <arg name="data_source" type="constant">HECATE</arg>
+                                <arg name="column_name" type="constant">ra</arg>
+                            </instance_generator>
+                            <label_generator name="Label">
+                                <arg name="label" type="constant">ra</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>//row[1]/DEC</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P34_has_column</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>//row[1]/DEC</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E16_Column</type>
+                            <instance_generator name="ColumnURI">
+                                <arg name="data_source" type="constant">HECATE</arg>
+                                <arg name="column_name" type="constant">dec</arg>
+                            </instance_generator>
+                            <label_generator name="Label">
+                                <arg name="label" type="constant">dec</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>//row[1]/F_ASTROM</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P34_has_column</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>//row[1]/F_ASTROM</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E16_Column</type>
+                            <instance_generator name="ColumnURI">
+                                <arg name="data_source" type="constant">HECATE</arg>
+                                <arg name="column_name" type="constant">f_astrom</arg>
+                            </instance_generator>
+                            <label_generator name="Label">
+                                <arg name="label" type="constant">f_astrom</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>//row[1]/R1</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P34_has_column</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>//row[1]/R1</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E16_Column</type>
+                            <instance_generator name="ColumnURI">
+                                <arg name="data_source" type="constant">HECATE</arg>
+                                <arg name="column_name" type="constant">r1</arg>
+                            </instance_generator>
+                            <label_generator name="Label">
+                                <arg name="label" type="constant">r1</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>//row[1]/R2</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P34_has_column</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>//row[1]/R2</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E16_Column</type>
+                            <instance_generator name="ColumnURI">
+                                <arg name="data_source" type="constant">HECATE</arg>
+                                <arg name="column_name" type="constant">r2</arg>
+                            </instance_generator>
+                            <label_generator name="Label">
+                                <arg name="label" type="constant">r2</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>//row[1]/PA</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P34_has_column</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>//row[1]/PA</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E16_Column</type>
+                            <instance_generator name="ColumnURI">
+                                <arg name="data_source" type="constant">HECATE</arg>
+                                <arg name="column_name" type="constant">pa</arg>
+                            </instance_generator>
+                            <label_generator name="Label">
+                                <arg name="label" type="constant">pa</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>//row[1]/RSOURCE</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P34_has_column</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>//row[1]/RSOURCE</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E16_Column</type>
+                            <instance_generator name="ColumnURI">
+                                <arg name="data_source" type="constant">HECATE</arg>
+                                <arg name="column_name" type="constant">rsource</arg>
+                            </instance_generator>
+                            <label_generator name="Label">
+                                <arg name="label" type="constant">rsource</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>//row[1]/RFLAG</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P34_has_column</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>//row[1]/RFLAG</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E16_Column</type>
+                            <instance_generator name="ColumnURI">
+                                <arg name="data_source" type="constant">HECATE</arg>
+                                <arg name="column_name" type="constant">rflag</arg>
+                            </instance_generator>
+                            <label_generator name="Label">
+                                <arg name="label" type="constant">rflag</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>//row[1]/T</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P34_has_column</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>//row[1]/T</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E16_Column</type>
+                            <instance_generator name="ColumnURI">
+                                <arg name="data_source" type="constant">HECATE</arg>
+                                <arg name="column_name" type="constant">t</arg>
+                            </instance_generator>
+                            <label_generator name="Label">
+                                <arg name="label" type="constant">t</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>//row[1]/E_T</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P34_has_column</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>//row[1]/E_T</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E16_Column</type>
+                            <instance_generator name="ColumnURI">
+                                <arg name="data_source" type="constant">HECATE</arg>
+                                <arg name="column_name" type="constant">e_t</arg>
+                            </instance_generator>
+                            <label_generator name="Label">
+                                <arg name="label" type="constant">e_t</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>//row[1]/INCL</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P34_has_column</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>//row[1]/INCL</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E16_Column</type>
+                            <instance_generator name="ColumnURI">
+                                <arg name="data_source" type="constant">HECATE</arg>
+                                <arg name="column_name" type="constant">incl</arg>
+                            </instance_generator>
+                            <label_generator name="Label">
+                                <arg name="label" type="constant">incl</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>//row[1]/V</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P34_has_column</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>//row[1]/V</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E16_Column</type>
+                            <instance_generator name="ColumnURI">
+                                <arg name="data_source" type="constant">HECATE</arg>
+                                <arg name="column_name" type="constant">v</arg>
+                            </instance_generator>
+                            <label_generator name="Label">
+                                <arg name="label" type="constant">v</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>//row[1]/E_V</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P34_has_column</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>//row[1]/E_V</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E16_Column</type>
+                            <instance_generator name="ColumnURI">
+                                <arg name="data_source" type="constant">HECATE</arg>
+                                <arg name="column_name" type="constant">e_v</arg>
+                            </instance_generator>
+                            <label_generator name="Label">
+                                <arg name="label" type="constant">e_v</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>//row[1]/V_VIR</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P34_has_column</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>//row[1]/V_VIR</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E16_Column</type>
+                            <instance_generator name="ColumnURI">
+                                <arg name="data_source" type="constant">HECATE</arg>
+                                <arg name="column_name" type="constant">v_vir</arg>
+                            </instance_generator>
+                            <label_generator name="Label">
+                                <arg name="label" type="constant">v_vir</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>//row[1]/E_V_VIR</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P34_has_column</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>//row[1]/E_V_VIR</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E16_Column</type>
+                            <instance_generator name="ColumnURI">
+                                <arg name="data_source" type="constant">HECATE</arg>
+                                <arg name="column_name" type="constant">e_v_vir</arg>
+                            </instance_generator>
+                            <label_generator name="Label">
+                                <arg name="label" type="constant">e_v_vir</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>//row[1]/NDIST</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P34_has_column</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>//row[1]/NDIST</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E16_Column</type>
+                            <instance_generator name="ColumnURI">
+                                <arg name="data_source" type="constant">HECATE</arg>
+                                <arg name="column_name" type="constant">ndist</arg>
+                            </instance_generator>
+                            <label_generator name="Label">
+                                <arg name="label" type="constant">ndist</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>//row[1]/EDIST</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P34_has_column</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>//row[1]/EDIST</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E16_Column</type>
+                            <instance_generator name="ColumnURI">
+                                <arg name="data_source" type="constant">HECATE</arg>
+                                <arg name="column_name" type="constant">edist</arg>
+                            </instance_generator>
+                            <label_generator name="Label">
+                                <arg name="label" type="constant">edist</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>//row[1]/D</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P34_has_column</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>//row[1]/D</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E16_Column</type>
+                            <instance_generator name="ColumnURI">
+                                <arg name="data_source" type="constant">HECATE</arg>
+                                <arg name="column_name" type="constant">d</arg>
+                            </instance_generator>
+                            <label_generator name="Label">
+                                <arg name="label" type="constant">d</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>//row[1]/E_D</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P34_has_column</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>//row[1]/E_D</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E16_Column</type>
+                            <instance_generator name="ColumnURI">
+                                <arg name="data_source" type="constant">HECATE</arg>
+                                <arg name="column_name" type="constant">e_d</arg>
+                            </instance_generator>
+                            <label_generator name="Label">
+                                <arg name="label" type="constant">e_d</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>//row[1]/D_LO68</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P34_has_column</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>//row[1]/D_LO68</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E16_Column</type>
+                            <instance_generator name="ColumnURI">
+                                <arg name="data_source" type="constant">HECATE</arg>
+                                <arg name="column_name" type="constant">d_lo68</arg>
+                            </instance_generator>
+                            <label_generator name="Label">
+                                <arg name="label" type="constant">d_lo68</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>//row[1]/D_HI68</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P34_has_column</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>//row[1]/D_HI68</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E16_Column</type>
+                            <instance_generator name="ColumnURI">
+                                <arg name="data_source" type="constant">HECATE</arg>
+                                <arg name="column_name" type="constant">d_hi68</arg>
+                            </instance_generator>
+                            <label_generator name="Label">
+                                <arg name="label" type="constant">d_hi68</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>//row[1]/D_LO95</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P34_has_column</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>//row[1]/D_LO95</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E16_Column</type>
+                            <instance_generator name="ColumnURI">
+                                <arg name="data_source" type="constant">HECATE</arg>
+                                <arg name="column_name" type="constant">d_lo95</arg>
+                            </instance_generator>
+                            <label_generator name="Label">
+                                <arg name="label" type="constant">d_lo95</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>//row[1]/D_HI95</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P34_has_column</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>//row[1]/D_HI95</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E16_Column</type>
+                            <instance_generator name="ColumnURI">
+                                <arg name="data_source" type="constant">HECATE</arg>
+                                <arg name="column_name" type="constant">d_hi95</arg>
+                            </instance_generator>
+                            <label_generator name="Label">
+                                <arg name="label" type="constant">d_hi95</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>//row[1]/DMETHOD</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P34_has_column</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>//row[1]/DMETHOD</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E16_Column</type>
+                            <instance_generator name="ColumnURI">
+                                <arg name="data_source" type="constant">HECATE</arg>
+                                <arg name="column_name" type="constant">dmethod</arg>
+                            </instance_generator>
+                            <label_generator name="Label">
+                                <arg name="label" type="constant">dmethod</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>//row[1]/UT</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P34_has_column</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>//row[1]/UT</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E16_Column</type>
+                            <instance_generator name="ColumnURI">
+                                <arg name="data_source" type="constant">HECATE</arg>
+                                <arg name="column_name" type="constant">ut</arg>
+                            </instance_generator>
+                            <label_generator name="Label">
+                                <arg name="label" type="constant">ut</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>//row[1]/BT</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P34_has_column</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>//row[1]/BT</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E16_Column</type>
+                            <instance_generator name="ColumnURI">
+                                <arg name="data_source" type="constant">HECATE</arg>
+                                <arg name="column_name" type="constant">bt</arg>
+                            </instance_generator>
+                            <label_generator name="Label">
+                                <arg name="label" type="constant">bt</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>//row[1]/VT</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P34_has_column</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>//row[1]/VT</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E16_Column</type>
+                            <instance_generator name="ColumnURI">
+                                <arg name="data_source" type="constant">HECATE</arg>
+                                <arg name="column_name" type="constant">vt</arg>
+                            </instance_generator>
+                            <label_generator name="Label">
+                                <arg name="label" type="constant">vt</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>//row[1]/IT</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P34_has_column</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>//row[1]/IT</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E16_Column</type>
+                            <instance_generator name="ColumnURI">
+                                <arg name="data_source" type="constant">HECATE</arg>
+                                <arg name="column_name" type="constant">it</arg>
+                            </instance_generator>
+                            <label_generator name="Label">
+                                <arg name="label" type="constant">it</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>//row[1]/E_UT</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P34_has_column</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>//row[1]/E_UT</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E16_Column</type>
+                            <instance_generator name="ColumnURI">
+                                <arg name="data_source" type="constant">HECATE</arg>
+                                <arg name="column_name" type="constant">e_ut</arg>
+                            </instance_generator>
+                            <label_generator name="Label">
+                                <arg name="label" type="constant">e_ut</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>//row[1]/E_BT</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P34_has_column</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>//row[1]/E_BT</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E16_Column</type>
+                            <instance_generator name="ColumnURI">
+                                <arg name="data_source" type="constant">HECATE</arg>
+                                <arg name="column_name" type="constant">e_bt</arg>
+                            </instance_generator>
+                            <label_generator name="Label">
+                                <arg name="label" type="constant">e_bt</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>//row[1]/E_VT</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P34_has_column</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>//row[1]/E_VT</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E16_Column</type>
+                            <instance_generator name="ColumnURI">
+                                <arg name="data_source" type="constant">HECATE</arg>
+                                <arg name="column_name" type="constant">e_vt</arg>
+                            </instance_generator>
+                            <label_generator name="Label">
+                                <arg name="label" type="constant">e_vt</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>//row[1]/E_IT</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P34_has_column</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>//row[1]/E_IT</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E16_Column</type>
+                            <instance_generator name="ColumnURI">
+                                <arg name="data_source" type="constant">HECATE</arg>
+                                <arg name="column_name" type="constant">e_it</arg>
+                            </instance_generator>
+                            <label_generator name="Label">
+                                <arg name="label" type="constant">e_it</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>//row[1]/AG</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P34_has_column</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>//row[1]/AG</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E16_Column</type>
+                            <instance_generator name="ColumnURI">
+                                <arg name="data_source" type="constant">HECATE</arg>
+                                <arg name="column_name" type="constant">ag</arg>
+                            </instance_generator>
+                            <label_generator name="Label">
+                                <arg name="label" type="constant">ag</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>//row[1]/AI</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P34_has_column</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>//row[1]/AI</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E16_Column</type>
+                            <instance_generator name="ColumnURI">
+                                <arg name="data_source" type="constant">HECATE</arg>
+                                <arg name="column_name" type="constant">ai</arg>
+                            </instance_generator>
+                            <label_generator name="Label">
+                                <arg name="label" type="constant">ai</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>//row[1]/S12</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P34_has_column</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>//row[1]/S12</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E16_Column</type>
+                            <instance_generator name="ColumnURI">
+                                <arg name="data_source" type="constant">HECATE</arg>
+                                <arg name="column_name" type="constant">s12</arg>
+                            </instance_generator>
+                            <label_generator name="Label">
+                                <arg name="label" type="constant">s12</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>//row[1]/S25</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P34_has_column</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>//row[1]/S25</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E16_Column</type>
+                            <instance_generator name="ColumnURI">
+                                <arg name="data_source" type="constant">HECATE</arg>
+                                <arg name="column_name" type="constant">s25</arg>
+                            </instance_generator>
+                            <label_generator name="Label">
+                                <arg name="label" type="constant">s25</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>//row[1]/S60</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P34_has_column</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>//row[1]/S60</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E16_Column</type>
+                            <instance_generator name="ColumnURI">
+                                <arg name="data_source" type="constant">HECATE</arg>
+                                <arg name="column_name" type="constant">s60</arg>
+                            </instance_generator>
+                            <label_generator name="Label">
+                                <arg name="label" type="constant">s60</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>//row[1]/S100</relation>
+                    </source_relation>
+                    <target_relation>
+                        <relationship>parsec:P34_has_column</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>//row[1]/S100</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E16_Column</type>
+                            <instance_generator name="ColumnURI">
+                                <arg name="data_source" type="constant">HECATE</arg>
+                                <arg name="column_name" type="constant">s100</arg>
+                            </instance_generator>
+                            <label_generator name="Label">
+                                <arg name="label" type="constant">s100</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+        <link>
+            <path>
+                <source_relation>
+                    <relation>//row[1]/Q12</relation>
+                </source_relation>
+                <target_relation>
+                    <relationship>parsec:P34_has_column</relationship>
+                </target_relation>
+            </path>
+            <range>
+                <source_node>//row[1]/Q12</source_node>
+                <target_node>
+                    <entity>
+                        <type>parsec:E16_Column</type>
+                        <instance_generator name="ColumnURI">
+                            <arg name="data_source" type="constant">HECATE</arg>
+                            <arg name="column_name" type="constant">q12</arg>
+                        </instance_generator>
+                        <label_generator name="Label">
+                            <arg name="label" type="constant">q12</arg>
+                        </label_generator>
+                    </entity>
+                </target_node>
+            </range>
+        </link>
+
+        <link>
+            <path>
+                <source_relation>
+                    <relation>//row[1]/Q25</relation>
+                </source_relation>
+                <target_relation>
+                    <relationship>parsec:P34_has_column</relationship>
+                </target_relation>
+            </path>
+            <range>
+                <source_node>//row[1]/Q25</source_node>
+                <target_node>
+                    <entity>
+                        <type>parsec:E16_Column</type>
+                        <instance_generator name="ColumnURI">
+                            <arg name="data_source" type="constant">HECATE</arg>
+                            <arg name="column_name" type="constant">q25</arg>
+                        </instance_generator>
+                        <label_generator name="Label">
+                            <arg name="label" type="constant">q25</arg>
+                        </label_generator>
+                    </entity>
+                </target_node>
+            </range>
+        </link>
+
+        <link>
+            <path>
+                <source_relation>
+                    <relation>//row[1]/Q60</relation>
+                </source_relation>
+                <target_relation>
+                    <relationship>parsec:P34_has_column</relationship>
+                </target_relation>
+            </path>
+            <range>
+                <source_node>//row[1]/Q60</source_node>
+                <target_node>
+                    <entity>
+                        <type>parsec:E16_Column</type>
+                        <instance_generator name="ColumnURI">
+                            <arg name="data_source" type="constant">HECATE</arg>
+                            <arg name="column_name" type="constant">q60</arg>
+                        </instance_generator>
+                        <label_generator name="Label">
+                            <arg name="label" type="constant">q60</arg>
+                        </label_generator>
+                    </entity>
+                </target_node>
+            </range>
+        </link>
+
+        <link>
+            <path>
+                <source_relation>
+                    <relation>//row[1]/Q100</relation>
+                </source_relation>
+                <target_relation>
+                    <relationship>parsec:P34_has_column</relationship>
+                </target_relation>
+            </path>
+            <range>
+                <source_node>//row[1]/Q100</source_node>
+                <target_node>
+                    <entity>
+                        <type>parsec:E16_Column</type>
+                        <instance_generator name="ColumnURI">
+                            <arg name="data_source" type="constant">HECATE</arg>
+                            <arg name="column_name" type="constant">q100</arg>
+                        </instance_generator>
+                        <label_generator name="Label">
+                            <arg name="label" type="constant">q100</arg>
+                        </label_generator>
+                    </entity>
+                </target_node>
+            </range>
+        </link>
+
+        <link>
+            <path>
+                <source_relation>
+                    <relation>//row[1]/WF1</relation>
+                </source_relation>
+                <target_relation>
+                    <relationship>parsec:P34_has_column</relationship>
+                </target_relation>
+            </path>
+            <range>
+                <source_node>//row[1]/WF1</source_node>
+                <target_node>
+                    <entity>
+                        <type>parsec:E16_Column</type>
+                        <instance_generator name="ColumnURI">
+                            <arg name="data_source" type="constant">HECATE</arg>
+                            <arg name="column_name" type="constant">wf1</arg>
+                        </instance_generator>
+                        <label_generator name="Label">
+                            <arg name="label" type="constant">wf1</arg>
+                        </label_generator>
+                    </entity>
+                </target_node>
+            </range>
+        </link>
+
+        <link>
+            <path>
+                <source_relation>
+                    <relation>//row[1]/WF2</relation>
+                </source_relation>
+                <target_relation>
+                    <relationship>parsec:P34_has_column</relationship>
+                </target_relation>
+            </path>
+            <range>
+                <source_node>//row[1]/WF2</source_node>
+                <target_node>
+                    <entity>
+                        <type>parsec:E16_Column</type>
+                        <instance_generator name="ColumnURI">
+                            <arg name="data_source" type="constant">HECATE</arg>
+                            <arg name="column_name" type="constant">wf2</arg>
+                        </instance_generator>
+                        <label_generator name="Label">
+                            <arg name="label" type="constant">wf2</arg>
+                        </label_generator>
+                    </entity>
+                </target_node>
+            </range>
+        </link>
+
+        <link>
+            <path>
+                <source_relation>
+                    <relation>//row[1]/WF3</relation>
+                </source_relation>
+                <target_relation>
+                    <relationship>parsec:P34_has_column</relationship>
+                </target_relation>
+            </path>
+            <range>
+                <source_node>//row[1]/WF3</source_node>
+                <target_node>
+                    <entity>
+                        <type>parsec:E16_Column</type>
+                        <instance_generator name="ColumnURI">
+                            <arg name="data_source" type="constant">HECATE</arg>
+                            <arg name="column_name" type="constant">wf3</arg>
+                        </instance_generator>
+                        <label_generator name="Label">
+                            <arg name="label" type="constant">wf3</arg>
+                        </label_generator>
+                    </entity>
+                </target_node>
+            </range>
+        </link>
+
+        <link>
+            <path>
+                <source_relation>
+                    <relation>//row[1]/WF4</relation>
+                </source_relation>
+                <target_relation>
+                    <relationship>parsec:P34_has_column</relationship>
+                </target_relation>
+            </path>
+            <range>
+                <source_node>//row[1]/WF4</source_node>
+                <target_node>
+                    <entity>
+                        <type>parsec:E16_Column</type>
+                        <instance_generator name="ColumnURI">
+                            <arg name="data_source" type="constant">HECATE</arg>
+                            <arg name="column_name" type="constant">wf4</arg>
+                        </instance_generator>
+                        <label_generator name="Label">
+                            <arg name="label" type="constant">wf4</arg>
+                        </label_generator>
+                    </entity>
+                </target_node>
+            </range>
+        </link>
+
+        <link>
+            <path>
+                <source_relation>
+                    <relation>//row[1]/E_WF1</relation>
+                </source_relation>
+                <target_relation>
+                    <relationship>parsec:P34_has_column</relationship>
+                </target_relation>
+            </path>
+            <range>
+                <source_node>//row[1]/E_WF1</source_node>
+                <target_node>
+                    <entity>
+                        <type>parsec:E16_Column</type>
+                        <instance_generator name="ColumnURI">
+                            <arg name="data_source" type="constant">HECATE</arg>
+                            <arg name="column_name" type="constant">e_wf1</arg>
+                        </instance_generator>
+                        <label_generator name="Label">
+                            <arg name="label" type="constant">e_wf1</arg>
+                        </label_generator>
+                    </entity>
+                </target_node>
+            </range>
+        </link>
+
+        <link>
+            <path>
+                <source_relation>
+                    <relation>//row[1]/E_WF2</relation>
+                </source_relation>
+                <target_relation>
+                    <relationship>parsec:P34_has_column</relationship>
+                </target_relation>
+            </path>
+            <range>
+                <source_node>//row[1]/E_WF2</source_node>
+                <target_node>
+                    <entity>
+                        <type>parsec:E16_Column</type>
+                        <instance_generator name="ColumnURI">
+                            <arg name="data_source" type="constant">HECATE</arg>
+                            <arg name="column_name" type="constant">e_wf2</arg>
+                        </instance_generator>
+                        <label_generator name="Label">
+                            <arg name="label" type="constant">e_wf2</arg>
+                        </label_generator>
+                    </entity>
+                </target_node>
+            </range>
+        </link>
+
+        <link>
+            <path>
+                <source_relation>
+                    <relation>//row[1]/E_WF3</relation>
+                </source_relation>
+                <target_relation>
+                    <relationship>parsec:P34_has_column</relationship>
+                </target_relation>
+            </path>
+            <range>
+                <source_node>//row[1]/E_WF3</source_node>
+                <target_node>
+                    <entity>
+                        <type>parsec:E16_Column</type>
+                        <instance_generator name="ColumnURI">
+                            <arg name="data_source" type="constant">HECATE</arg>
+                            <arg name="column_name" type="constant">e_wf3</arg>
+                        </instance_generator>
+                        <label_generator name="Label">
+                            <arg name="label" type="constant">e_wf3</arg>
+                        </label_generator>
+                    </entity>
+                </target_node>
+            </range>
+        </link>
+        <link>
+            <path>
+                <source_relation>
+                    <relation>//row[1]/E_WF4</relation>
+                </source_relation>
+                <target_relation>
+                    <relationship>parsec:P34_has_column</relationship>
+                </target_relation>
+            </path>
+            <range>
+                <source_node>//row[1]/E_WF4</source_node>
+                <target_node>
+                    <entity>
+                        <type>parsec:E16_Column</type>
+                        <instance_generator name="ColumnURI">
+                            <arg name="data_source" type="constant">HECATE</arg>
+                            <arg name="column_name" type="constant">e_wf4</arg>
+                        </instance_generator>
+                        <label_generator name="Label">
+                            <arg name="label" type="constant">e_wf4</arg>
+                        </label_generator>
+                    </entity>
+                </target_node>
+            </range>
+        </link>
+
+        <link>
+            <path>
+            <source_relation>
+                <relation>//row[1]/WFPOINT</relation>
+            </source_relation>
+            <target_relation>
+                <relationship>parsec:P34_has_column</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>//row[1]/WFPOINT</source_node>
+            <target_node>
+                <entity>
+                <type>parsec:E16_Column</type>
+                <instance_generator name="ColumnURI">
+                    <arg name="data_source" type="constant">HECATE</arg>
+                    <arg name="column_name" type="constant">wfpoint</arg>
+                </instance_generator>
+                <label_generator name="Label">
+                    <arg name="label" type="constant">wfpoint</arg>
+                </label_generator>
+                </entity>
+            </target_node>
+            </range>
+        </link>
+
+        <link>
+            <path>
+            <source_relation>
+                <relation>//row[1]/WFTREAT</relation>
+            </source_relation>
+            <target_relation>
+                <relationship>parsec:P34_has_column</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>//row[1]/WFTREAT</source_node>
+            <target_node>
+                <entity>
+                <type>parsec:E16_Column</type>
+                <instance_generator name="ColumnURI">
+                    <arg name="data_source" type="constant">HECATE</arg>
+                    <arg name="column_name" type="constant">wftreat</arg>
+                </instance_generator>
+                <label_generator name="Label">
+                    <arg name="label" type="constant">wftreat</arg>
+                </label_generator>
+                </entity>
+            </target_node>
+            </range>
+        </link>
+
+        <link>
+            <path>
+            <source_relation>
+                <relation>//row[1]/J</relation>
+            </source_relation>
+            <target_relation>
+                <relationship>parsec:P34_has_column</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>//row[1]/J</source_node>
+            <target_node>
+                <entity>
+                <type>parsec:E16_Column</type>
+                <instance_generator name="ColumnURI">
+                    <arg name="data_source" type="constant">HECATE</arg>
+                    <arg name="column_name" type="constant">j</arg>
+                </instance_generator>
+                <label_generator name="Label">
+                    <arg name="label" type="constant">j</arg>
+                </label_generator>
+                </entity>
+            </target_node>
+            </range>
+        </link>
+
+        <link>
+            <path>
+            <source_relation>
+                <relation>//row[1]/H</relation>
+            </source_relation>
+            <target_relation>
+                <relationship>parsec:P34_has_column</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>//row[1]/H</source_node>
+                <target_node>
+                <entity>
+                <type>parsec:E16_Column</type>
+                <instance_generator name="ColumnURI">
+                    <arg name="data_source" type="constant">HECATE</arg>
+                    <arg name="column_name" type="constant">h</arg>
+                </instance_generator>
+                <label_generator name="Label">
+                    <arg name="label" type="constant">h</arg>
+                </label_generator>
+                </entity>
+                </target_node>
+            </range>
+        </link>
+
+        <link>
+            <path>
+            <source_relation>
+                <relation>//row[1]/K</relation>
+            </source_relation>
+            <target_relation>
+                <relationship>parsec:P34_has_column</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>//row[1]/K</source_node>
+            <target_node>
+                <entity>
+                <type>parsec:E16_Column</type>
+                <instance_generator name="ColumnURI">
+                    <arg name="data_source" type="constant">HECATE</arg>
+                    <arg name="column_name" type="constant">k</arg>
+                </instance_generator>
+                <label_generator name="Label">
+                    <arg name="label" type="constant">k</arg>
+                </label_generator>
+                </entity>
+            </target_node>
+            </range>
+        </link>
+
+        <link>
+            <path>
+            <source_relation>
+                <relation>//row[1]/E_J</relation>
+            </source_relation>
+            <target_relation>
+                <relationship>parsec:P34_has_column</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>//row[1]/E_J</source_node>
+            <target_node>
+                <entity>
+                <type>parsec:E16_Column</type>
+                <instance_generator name="ColumnURI">
+                    <arg name="data_source" type="constant">HECATE</arg>
+                    <arg name="column_name" type="constant">e_j</arg>
+                </instance_generator>
+                <label_generator name="Label">
+                    <arg name="label" type="constant">e_j</arg>
+                </label_generator>
+                </entity>
+            </target_node>
+            </range>
+        </link>
+
+        <link>
+            <path>
+            <source_relation>
+                <relation>//row[1]/E_H</relation>
+            </source_relation>
+            <target_relation>
+                <relationship>parsec:P34_has_column</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>//row[1]/E_H</source_node>
+            <target_node>
+                <entity>
+                <type>parsec:E16_Column</type>
+                <instance_generator name="ColumnURI">
+                    <arg name="data_source" type="constant">HECATE</arg>
+                    <arg name="column_name" type="constant">e_h</arg>
+                </instance_generator>
+                <label_generator name="Label">
+                    <arg name="label" type="constant">e_h</arg>
+                </label_generator>
+                </entity>
+            </target_node>
+            </range>
+        </link>
+
+        <link>
+            <path>
+            <source_relation>
+                <relation>//row[1]/E_K</relation>
+            </source_relation>
+            <target_relation>
+                <relationship>parsec:P34_has_column</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>//row[1]/E_K</source_node>
+            <target_node>
+                <entity>
+                <type>parsec:E16_Column</type>
+                <instance_generator name="ColumnURI">
+                    <arg name="data_source" type="constant">HECATE</arg>
+                    <arg name="column_name" type="constant">e_k</arg>
+                </instance_generator>
+                <label_generator name="Label">
+                    <arg name="label" type="constant">e_k</arg>
+                </label_generator>
+                </entity>
+            </target_node>
+            </range>
+        </link>
+         <link>
+            <path>
+            <source_relation>
+                <relation>//row[1]/FLAG_2MASS</relation>
+            </source_relation>
+            <target_relation>
+                <relationship>parsec:P34_has_column</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>//row[1]/FLAG_2MASS</source_node>
+            <target_node>
+                <entity>
+                <type>parsec:E16_Column</type>
+                <instance_generator name="ColumnURI">
+                    <arg name="data_source" type="constant">HECATE</arg>
+                    <arg name="column_name" type="constant">flag_2mass</arg>
+                </instance_generator>
+                <label_generator name="Label">
+                    <arg name="label" type="constant">flag_2mass</arg>
+                </label_generator>
+                </entity>
+            </target_node>
+            </range>
+        </link>
+
+        <link>
+            <path>
+            <source_relation>
+                <relation>//row[1]/U</relation>
+            </source_relation>
+            <target_relation>
+                <relationship>parsec:P34_has_column</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>//row[1]/U</source_node>
+            <target_node>
+                <entity>
+                <type>parsec:E16_Column</type>
+                <instance_generator name="ColumnURI">
+                    <arg name="data_source" type="constant">HECATE</arg>
+                    <arg name="column_name" type="constant">u</arg>
+                </instance_generator>
+                <label_generator name="Label">
+                    <arg name="label" type="constant">u</arg>
+                </label_generator>
+                </entity>
+            </target_node>
+            </range>
+        </link>
+
+        <link>
+            <path>
+            <source_relation>
+                <relation>//row[1]/G</relation>
+            </source_relation>
+            <target_relation>
+                <relationship>parsec:P34_has_column</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>//row[1]/G</source_node>
+            <target_node>
+                <entity>
+                <type>parsec:E16_Column</type>
+                <instance_generator name="ColumnURI">
+                    <arg name="data_source" type="constant">HECATE</arg>
+                    <arg name="column_name" type="constant">g</arg>
+                </instance_generator>
+                <label_generator name="Label">
+                    <arg name="label" type="constant">g</arg>
+                </label_generator>
+                </entity>
+            </target_node>
+            </range>
+        </link>
+
+        <link>
+            <path>
+            <source_relation>
+                <relation>//row[1]/R</relation>
+            </source_relation>
+            <target_relation>
+                <relationship>parsec:P34_has_column</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>//row[1]/R</source_node>
+            <target_node>
+                <entity>
+                <type>parsec:E16_Column</type>
+                <instance_generator name="ColumnURI">
+                    <arg name="data_source" type="constant">HECATE</arg>
+                    <arg name="column_name" type="constant">r</arg>
+                </instance_generator>
+                <label_generator name="Label">
+                    <arg name="label" type="constant">r</arg>
+                </label_generator>
+                </entity>
+            </target_node>
+            </range>
+        </link>
+
+        <link>
+            <path>
+            <source_relation>
+                <relation>//row[1]/I</relation>
+            </source_relation>
+            <target_relation>
+                <relationship>parsec:P34_has_column</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>//row[1]/I</source_node>
+            <target_node>
+                <entity>
+                <type>parsec:E16_Column</type>
+                <instance_generator name="ColumnURI">
+                    <arg name="data_source" type="constant">HECATE</arg>
+                    <arg name="column_name" type="constant">i</arg>
+                </instance_generator>
+                <label_generator name="Label">
+                    <arg name="label" type="constant">i</arg>
+                </label_generator>
+                </entity>
+            </target_node>
+            </range>
+        </link>
+
+        <link>
+            <path>
+            <source_relation>
+                <relation>//row[1]/Z</relation>
+            </source_relation>
+            <target_relation>
+                <relationship>parsec:P34_has_column</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>//row[1]/Z</source_node>
+            <target_node>
+                <entity>
+                <type>parsec:E16_Column</type>
+                <instance_generator name="ColumnURI">
+                    <arg name="data_source" type="constant">HECATE</arg>
+                    <arg name="column_name" type="constant">z</arg>
+                </instance_generator>
+                <label_generator name="Label">
+                    <arg name="label" type="constant">z</arg>
+                </label_generator>
+                </entity>
+            </target_node>
+            </range>
+        </link>
+
+        <link>
+            <path>
+            <source_relation>
+                <relation>//row[1]/E_U</relation>
+            </source_relation>
+            <target_relation>
+                <relationship>parsec:P34_has_column</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>//row[1]/E_U</source_node>
+            <target_node>
+                <entity>
+                <type>parsec:E16_Column</type>
+                <instance_generator name="ColumnURI">
+                    <arg name="data_source" type="constant">HECATE</arg>
+                    <arg name="column_name" type="constant">e_u</arg>
+                </instance_generator>
+                <label_generator name="Label">
+                    <arg name="label" type="constant">e_u</arg>
+                </label_generator>
+                </entity>
+            </target_node>
+            </range>
+        </link>
+
+        <link>
+            <path>
+            <source_relation>
+                <relation>//row[1]/E_G</relation>
+            </source_relation>
+            <target_relation>
+                <relationship>parsec:P34_has_column</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>//row[1]/E_G</source_node>
+            <target_node>
+                <entity>
+                <type>parsec:E16_Column</type>
+                <instance_generator name="ColumnURI">
+                    <arg name="data_source" type="constant">HECATE</arg>
+                    <arg name="column_name" type="constant">e_g</arg>
+                </instance_generator>
+                <label_generator name="Label">
+                    <arg name="label" type="constant">e_g</arg>
+                </label_generator>
+                </entity>
+            </target_node>
+            </range>
+        </link>
+
+        <link>
+            <path>
+            <source_relation>
+                <relation>//row[1]/E_R</relation>
+            </source_relation>
+            <target_relation>
+                <relationship>parsec:P34_has_column</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>//row[1]/E_R</source_node>
+            <target_node>
+                <entity>
+                <type>parsec:E16_Column</type>
+                <instance_generator name="ColumnURI">
+                    <arg name="data_source" type="constant">HECATE</arg>
+                    <arg name="column_name" type="constant">e_r</arg>
+                </instance_generator>
+                <label_generator name="Label">
+                    <arg name="label" type="constant">e_r</arg>
+                </label_generator>
+                </entity>
+            </target_node>
+            </range>
+        </link>
+
+        <link>
+            <path>
+            <source_relation>
+                <relation>//row[1]/E_I</relation>
+            </source_relation>
+            <target_relation>
+                <relationship>parsec:P34_has_column</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>//row[1]/E_I</source_node>
+            <target_node>
+                <entity>
+                <type>parsec:E16_Column</type>
+                <instance_generator name="ColumnURI">
+                    <arg name="data_source" type="constant">HECATE</arg>
+                    <arg name="column_name" type="constant">e_i</arg>
+                </instance_generator>
+                <label_generator name="Label">
+                    <arg name="label" type="constant">e_i</arg>
+                </label_generator>
+                </entity>
+            </target_node>
+            </range>
+        </link>
+
+        <link>
+            <path>
+            <source_relation>
+                <relation>//row[1]/E_Z</relation>
+            </source_relation>
+            <target_relation>
+                <relationship>parsec:P34_has_column</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>//row[1]/E_Z</source_node>
+            <target_node>
+                <entity>
+                <type>parsec:E16_Column</type>
+                <instance_generator name="ColumnURI">
+                    <arg name="data_source" type="constant">HECATE</arg>
+                    <arg name="column_name" type="constant">e_z</arg>
+                </instance_generator>
+                <label_generator name="Label">
+                    <arg name="label" type="constant">E_z</arg>
+                </label_generator>
+                </entity>
+            </target_node>
+            </range>
+        </link>
+
+        <link>
+            <path>
+            <source_relation>
+                <relation>//row[1]/logL_TIR</relation>
+            </source_relation>
+            <target_relation>
+                <relationship>parsec:P34_has_column</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>//row[1]/logL_TIR</source_node>
+            <target_node>
+                <entity>
+                <type>parsec:E16_Column</type>
+                <instance_generator name="ColumnURI">
+                    <arg name="data_source" type="constant">HECATE</arg>
+                    <arg name="column_name" type="constant">logL_TIR</arg>
+                </instance_generator>
+                <label_generator name="Label">
+                    <arg name="label" type="constant">logL_TIR</arg>
+                </label_generator>
+                </entity>
+            </target_node>
+            </range>
+        </link>
+
+        <link>
+            <path>
+            <source_relation>
+                <relation>//row[1]/logL_FIR</relation>
+            </source_relation>
+            <target_relation>
+                <relationship>parsec:P34_has_column</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>//row[1]/logL_FIR</source_node>
+            <target_node>
+                <entity>
+                <type>parsec:E16_Column</type>
+                <instance_generator name="ColumnURI">
+                    <arg name="data_source" type="constant">HECATE</arg>
+                    <arg name="column_name" type="constant">logL_FIR</arg>
+                </instance_generator>
+                <label_generator name="Label">
+                    <arg name="label" type="constant">logL_FIR</arg>
+                </label_generator>
+                </entity>
+            </target_node>
+            </range>
+        </link>
+
+        <link>
+            <path>
+            <source_relation>
+                <relation>//row[1]/logL_60u</relation>
+            </source_relation>
+            <target_relation>
+                <relationship>parsec:P34_has_column</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>//row[1]/logL_60u</source_node>
+            <target_node>
+                <entity>
+                <type>parsec:E16_Column</type>
+                <instance_generator name="ColumnURI">
+                    <arg name="data_source" type="constant">HECATE</arg>
+                    <arg name="column_name" type="constant">logL_60μ</arg>
+                </instance_generator>
+                <label_generator name="Label">
+                    <arg name="label" type="constant">logL_60μ</arg>
+                </label_generator>
+                </entity>
+            </target_node>
+            </range>
+        </link>
+
+        <link>
+            <path>
+            <source_relation>
+                <relation>//row[1]/logL_12u</relation>
+            </source_relation>
+            <target_relation>
+                <relationship>parsec:P34_has_column</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>//row[1]/logL_12u</source_node>
+            <target_node>
+                <entity>
+                <type>parsec:E16_Column</type>
+                <instance_generator name="ColumnURI">
+                    <arg name="data_source" type="constant">HECATE</arg>
+                    <arg name="column_name" type="constant">logL_12μ</arg>
+                </instance_generator>
+                <label_generator name="Label">
+                    <arg name="label" type="constant">logL_12μ</arg>
+                </label_generator>
+                </entity>
+            </target_node>
+            </range>
+        </link>
+
+        <link>
+            <path>
+            <source_relation>
+                <relation>//row[1]/logL_22u</relation>
+            </source_relation>
+            <target_relation>
+                <relationship>parsec:P34_has_column</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>//row[1]/logL_22u</source_node>
+            <target_node>
+                <entity>
+                <type>parsec:E16_Column</type>
+                <instance_generator name="ColumnURI">
+                    <arg name="data_source" type="constant">HECATE</arg>
+                    <arg name="column_name" type="constant">logL_22μ</arg>
+                </instance_generator>
+                <label_generator name="Label">
+                    <arg name="label" type="constant">logL_22μ</arg>
+                </label_generator>
+                </entity>
+            </target_node>
+            </range>
+        </link>
+
+        <link>
+            <path>
+            <source_relation>
+                <relation>//row[1]/logL_K</relation>
+            </source_relation>
+            <target_relation>
+                <relationship>parsec:P34_has_column</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>//row[1]/logL_K</source_node>
+            <target_node>
+                <entity>
+                <type>parsec:E16_Column</type>
+                <instance_generator name="ColumnURI">
+                    <arg name="data_source" type="constant">HECATE</arg>
+                    <arg name="column_name" type="constant">logL_K</arg>
+                </instance_generator>
+                <label_generator name="Label">
+                    <arg name="label" type="constant">logL_K</arg>
+                </label_generator>
+                </entity>
+            </target_node>
+            </range>
+        </link>
+        <link>
+            <path>
+            <source_relation>
+                <relation>//row[1]/ML_RATIO</relation>
+            </source_relation>
+            <target_relation>
+                <relationship>parsec:P34_has_column</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>//row[1]/ML_RATIO</source_node>
+            <target_node>
+                <entity>
+                <type>parsec:E16_Column</type>
+                <instance_generator name="ColumnURI">
+                    <arg name="data_source" type="constant">HECATE</arg>
+                    <arg name="column_name" type="constant">ML_ratio</arg>
+                </instance_generator>
+                <label_generator name="Label">
+                    <arg name="label" type="constant">ML_ratio</arg>
+                </label_generator>
+                </entity>
+            </target_node>
+            </range>
+        </link>
+
+        <link>
+            <path>
+            <source_relation>
+                <relation>//row[1]/logSFR_TIR</relation>
+            </source_relation>
+            <target_relation>
+                <relationship>parsec:P34_has_column</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>//row[1]/logSFR_TIR</source_node>
+            <target_node>
+                <entity>
+                <type>parsec:E16_Column</type>
+                <instance_generator name="ColumnURI">
+                    <arg name="data_source" type="constant">HECATE</arg>
+                    <arg name="column_name" type="constant">logSFR_TIR</arg>
+                </instance_generator>
+                <label_generator name="Label">
+                    <arg name="label" type="constant">logSFR_TIR</arg>
+                </label_generator>
+                </entity>
+            </target_node>
+            </range>
+        </link>
+
+        <link>
+            <path>
+            <source_relation>
+                <relation>//row[1]/logSFR_FIR</relation>
+            </source_relation>
+            <target_relation>
+                <relationship>parsec:P34_has_column</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>//row[1]/logSFR_FIR</source_node>
+            <target_node>
+                <entity>
+                <type>parsec:E16_Column</type>
+                <instance_generator name="ColumnURI">
+                    <arg name="data_source" type="constant">HECATE</arg>
+                    <arg name="column_name" type="constant">logSFR_FIR</arg>
+                </instance_generator>
+                <label_generator name="Label">
+                    <arg name="label" type="constant">logSFR_FIR</arg>
+                </label_generator>
+                </entity>
+            </target_node>
+            </range>
+        </link>
+
+        <link>
+            <path>
+            <source_relation>
+                <relation>//row[1]/logSFR_60u</relation>
+            </source_relation>
+            <target_relation>
+                <relationship>parsec:P34_has_column</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>//row[1]/logSFR_60u</source_node>
+            <target_node>
+                <entity>
+                <type>parsec:E16_Column</type>
+                <instance_generator name="ColumnURI">
+                    <arg name="data_source" type="constant">HECATE</arg>
+                    <arg name="column_name" type="constant">logSFR_60u</arg>
+                </instance_generator>
+                <label_generator name="Label">
+                    <arg name="label" type="constant">logSFR_60u</arg>
+                </label_generator>
+                </entity>
+            </target_node>
+            </range>
+        </link>
+
+        <link>
+            <path>
+            <source_relation>
+                <relation>//row[1]/logSFR_12u</relation>
+            </source_relation>
+            <target_relation>
+                <relationship>parsec:P34_has_column</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>//row[1]/logSFR_12u</source_node>
+            <target_node>
+                <entity>
+                <type>parsec:E16_Column</type>
+                <instance_generator name="ColumnURI">
+                    <arg name="data_source" type="constant">HECATE</arg>
+                    <arg name="column_name" type="constant">logSFR_12u</arg>
+                </instance_generator>
+                <label_generator name="Label">
+                    <arg name="label" type="constant">logSFR_12u</arg>
+                </label_generator>
+                </entity>
+            </target_node>
+            </range>
+        </link>
+
+        <link>
+            <path>
+            <source_relation>
+                <relation>//row[1]/logSFR_22u</relation>
+            </source_relation>
+            <target_relation>
+                <relationship>parsec:P34_has_column</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>//row[1]/logSFR_22u</source_node>
+            <target_node>
+                <entity>
+                <type>parsec:E16_Column</type>
+                <instance_generator name="ColumnURI">
+                    <arg name="data_source" type="constant">HECATE</arg>
+                    <arg name="column_name" type="constant">logSFR_22u</arg>
+                </instance_generator>
+                <label_generator name="Label">
+                    <arg name="label" type="constant">logSFR_22u</arg>
+                </label_generator>
+                </entity>
+            </target_node>
+            </range>
+        </link>
+
+        <link>
+            <path>
+            <source_relation>
+                <relation>//row[1]/logSFR_HEC</relation>
+            </source_relation>
+            <target_relation>
+                <relationship>parsec:P34_has_column</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>//row[1]/logSFR_HEC</source_node>
+            <target_node>
+                <entity>
+                <type>parsec:E16_Column</type>
+                <instance_generator name="ColumnURI">
+                    <arg name="data_source" type="constant">HECATE</arg>
+                    <arg name="column_name" type="constant">logSFR_HEC</arg>
+                </instance_generator>
+                <label_generator name="Label">
+                    <arg name="label" type="constant">logSFR_HEC</arg>
+                </label_generator>
+                </entity>
+            </target_node>
+            </range>
+        </link>
+
+        <link>
+            <path>
+            <source_relation>
+                <relation>//row[1]/SFR_HEC_flag</relation>
+            </source_relation>
+            <target_relation>
+                <relationship>parsec:P34_has_column</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>//row[1]/SFR_HEC_flag</source_node>
+            <target_node>
+                <entity>
+                <type>parsec:E16_Column</type>
+                <instance_generator name="ColumnURI">
+                    <arg name="data_source" type="constant">HECATE</arg>
+                    <arg name="column_name" type="constant">SFR_HEC_flag</arg>
+                </instance_generator>
+                <label_generator name="Label">
+                    <arg name="label" type="constant">SFR_HEC_flag</arg>
+                </label_generator>
+                </entity>
+            </target_node>
+            </range>
+        </link>
+
+        <link>
+            <path>
+            <source_relation>
+                <relation>//row[1]/logM_HEC</relation>
+            </source_relation>
+            <target_relation>
+                <relationship>parsec:P34_has_column</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>//row[1]/logM_HEC</source_node>
+            <target_node>
+                <entity>
+                <type>parsec:E16_Column</type>
+                <instance_generator name="ColumnURI">
+                    <arg name="data_source" type="constant">HECATE</arg>
+                    <arg name="column_name" type="constant">logM_HEC</arg>
+                </instance_generator>
+                <label_generator name="Label">
+                    <arg name="label" type="constant">logM_HEC</arg>
+                </label_generator>
+                </entity>
+            </target_node>
+            </range>
+        </link>
+
+        <link>
+            <path>
+            <source_relation>
+                <relation>//row[1]/logSFR_GSW</relation>
+            </source_relation>
+            <target_relation>
+                <relationship>parsec:P34_has_column</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>//row[1]/logSFR_GSW</source_node>
+            <target_node>
+                <entity>
+                <type>parsec:E16_Column</type>
+                <instance_generator name="ColumnURI">
+                    <arg name="data_source" type="constant">HECATE</arg>
+                    <arg name="column_name" type="constant">logSFR_GSW</arg>
+                </instance_generator>
+                <label_generator name="Label">
+                    <arg name="label" type="constant">logSFR_GSW</arg>
+                </label_generator>
+                </entity>
+            </target_node>
+            </range>
+        </link>
+
+        <link>
+            <path>
+            <source_relation>
+                <relation>//row[1]/logM_GSW</relation>
+            </source_relation>
+            <target_relation>
+                <relationship>parsec:P34_has_column</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>//row[1]/logM_GSW</source_node>
+            <target_node>
+                <entity>
+                <type>parsec:E16_Column</type>
+                <instance_generator name="ColumnURI">
+                    <arg name="data_source" type="constant">HECATE</arg>
+                    <arg name="column_name" type="constant">logM_GSW</arg>
+                </instance_generator>
+                <label_generator name="Label">
+                    <arg name="label" type="constant">logM_GSW</arg>
+                </label_generator>
+                </entity>
+            </target_node>
+            </range>
+        </link>
+
+        <link>
+            <path>
+            <source_relation>
+                <relation>//row[1]/MIN_SNR</relation>
+            </source_relation>
+            <target_relation>
+                <relationship>parsec:P34_has_column</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>//row[1]/MIN_SNR</source_node>
+            <target_node>
+                <entity>
+                <type>parsec:E16_Column</type>
+                <instance_generator name="ColumnURI">
+                    <arg name="data_source" type="constant">HECATE</arg>
+                    <arg name="column_name" type="constant">min_snr</arg>
+                </instance_generator>
+                <label_generator name="Label">
+                    <arg name="label" type="constant">min_snr</arg>
+                </label_generator>
+                </entity>
+            </target_node>
+            </range>
+        </link>
+
+        <link>
+            <path>
+            <source_relation>
+                <relation>//row[1]/METAL</relation>
+            </source_relation>
+            <target_relation>
+                <relationship>parsec:P34_has_column</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>//row[1]/METAL</source_node>
+            <target_node>
+                <entity>
+                <type>parsec:E16_Column</type>
+                <instance_generator name="ColumnURI">
+                    <arg name="data_source" type="constant">HECATE</arg>
+                    <arg name="column_name" type="constant">metal</arg>
+                </instance_generator>
+                <label_generator name="Label">
+                    <arg name="label" type="constant">metal</arg>
+                </label_generator>
+                </entity>
+            </target_node>
+            </range>
+        </link>
+
+        <link>
+            <path>
+            <source_relation>
+                <relation>//row[1]/FLAG_METAL</relation>
+            </source_relation>
+            <target_relation>
+                <relationship>parsec:P34_has_column</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>//row[1]/FLAG_METAL</source_node>
+            <target_node>
+                <entity>
+                <type>parsec:E16_Column</type>
+                <instance_generator name="ColumnURI">
+                    <arg name="data_source" type="constant">HECATE</arg>
+                    <arg name="column_name" type="constant">flag_metal</arg>
+                </instance_generator>
+                <label_generator name="Label">
+                    <arg name="label" type="constant">flag_metal</arg>
+                </label_generator>
+                </entity>
+            </target_node>
+            </range>
+        </link>
+
+        <link>
+            <path>
+            <source_relation>
+                <relation>//row[1]/CLASS_SP</relation>
+            </source_relation>
+            <target_relation>
+                <relationship>parsec:P34_has_column</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>//row[1]/CLASS_SP</source_node>
+            <target_node>
+                <entity>
+                <type>parsec:E16_Column</type>
+                <instance_generator name="ColumnURI">
+                    <arg name="data_source" type="constant">HECATE</arg>
+                    <arg name="column_name" type="constant">class_sp</arg>
+                </instance_generator>
+                <label_generator name="Label">
+                    <arg name="label" type="constant">class_sp</arg>
+                </label_generator>
+                </entity>
+            </target_node>
+            </range>
+        </link>
+
+        <link>
+            <path>
+            <source_relation>
+                <relation>//row[1]/AGN_S17</relation>
+            </source_relation>
+            <target_relation>
+                <relationship>parsec:P34_has_column</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>//row[1]/AGN_S17</source_node>
+            <target_node>
+                <entity>
+                <type>parsec:E16_Column</type>
+                <instance_generator name="ColumnURI">
+                    <arg name="data_source" type="constant">HECATE</arg>
+                    <arg name="column_name" type="constant">agn_s17</arg>
+                </instance_generator>
+                <label_generator name="Label">
+                    <arg name="label" type="constant">agn_s17</arg>
+                </label_generator>
+                </entity>
+            </target_node>
+            </range>
+        </link>
+
+        <link>
+            <path>
+            <source_relation>
+                <relation>//row[1]/AGN_HEC</relation>
+            </source_relation>
+            <target_relation>
+                <relationship>parsec:P34_has_column</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>//row[1]/AGN_HEC</source_node>
+            <target_node>
+                <entity>
+                <type>parsec:E16_Column</type>
+                <instance_generator name="ColumnURI">
+                    <arg name="data_source" type="constant">HECATE</arg>
+                    <arg name="column_name" type="constant">agn_hec</arg>
+                </instance_generator>
+                <label_generator name="Label">
+                    <arg name="label" type="constant">agn_hec</arg>
+                </label_generator>
+                </entity>
+            </target_node>
+            </range>
+        </link>
+        </mapping>
+    </mappings>
+</x3ml>

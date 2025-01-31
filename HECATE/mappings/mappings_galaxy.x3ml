@@ -20,21 +20,60 @@
                         <label_generator name="GalaxyLabel">
                             <arg name="label" type="xpath">ROW_NUMBER/text()</arg>
                         </label_generator>
+                        <additional>
+                            <relationship>parsec:P12_has_identifier</relationship>
+                            <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="GalaxyLabel">
+                                    <arg name="label">ROW_NUMBER/text()</arg>
+                                </instance_generator>
+                            </entity>
+                        </additional>
+                        <!-- COLUMNS -->
+                        <additional>
+                            <relationship>parsec:P11_is_referred_in_data_source</relationship>
+                            <entity>
+                                <type>parsec:E15_Data_Table</type>
+                                <instance_generator name="DataTableURI">
+                                    <arg name="data_table_id" type="constant">HECATE</arg>
+                                </instance_generator>
+                                <label_generator name="Label">
+                                    <arg name="label" type="constant">HECATE</arg>
+                                </label_generator>
+                                <additional>
+                                    <relationship>parsec:P17_data_source_version</relationship>
+                                    <entity>
+                                        <type>rdfs:Literal</type>
+                                        <instance_generator name="Literal">
+                                            <arg name="text">v.1.1</arg>
+                                        </instance_generator>
+                                    </entity>
+                                </additional>
+                                <additional>
+                                    <relationship>parsec:P39_has_webpage</relationship>
+                                    <entity>
+                                        <type>rdfs:Literal</type>
+                                        <instance_generator name="Literal">
+                                            <arg name="text">"https://hecate.ia.forth.gr/"</arg>
+                                        </instance_generator>
+                                    </entity>
+                                </additional>
+                            </entity>
+                        </additional>
                     </entity>
                 </target_node>
             </domain>
-             <!-- Link for PGC -->
-            <link>
+            <!-- <link>
                 <path>
                     <source_relation>
-                        <relation>PGC</relation>
+                        <relation>PGC[text()!="-"]</relation>
                     </source_relation>
                     <target_relation>
                         <relationship>parsec:P12_has_identifier</relationship>
                     </target_relation>
                 </path>
                 <range>
-                    <source_node>PGC</source_node>
+                    <source_node>PGC[text()!="-"]</source_node>
                     <target_node>
                         <entity>
                             <type>rdfs:Literal</type>
@@ -45,19 +84,17 @@
                     </target_node>
                 </range>
             </link>
-
-            <!-- Link for OBJNAME -->
             <link>
                 <path>
                     <source_relation>
-                        <relation>OBJNAME</relation>
+                        <relation>OBJNAME[text()!="-"]</relation>
                     </source_relation>
                     <target_relation>
                         <relationship>parsec:P12_has_identifier</relationship>
                     </target_relation>
                 </path>
                 <range>
-                    <source_node>OBJNAME</source_node>
+                    <source_node>OBJNAME[text()!="-"]</source_node>
                     <target_node>
                         <entity>
                             <type>rdfs:Literal</type>
@@ -68,18 +105,17 @@
                     </target_node>
                 </range>
             </link>
-            <!-- Link for ID_NED -->
             <link>
                 <path>
                     <source_relation>
-                        <relation>ID_NED</relation>
+                        <relation>ID_NED[text()!="-"]</relation>
                     </source_relation>
                     <target_relation>
                         <relationship>parsec:P12_has_identifier</relationship>
                     </target_relation>
                 </path>
                 <range>
-                    <source_node>ID_NED</source_node>
+                    <source_node>ID_NED[text()!="-"]</source_node>
                     <target_node>
                         <entity>
                             <type>rdfs:Literal</type>
@@ -90,18 +126,17 @@
                     </target_node>
                 </range>
             </link>
-            <!-- Link for ID_NEDD -->
             <link>
                 <path>
                     <source_relation>
-                        <relation>ID_NEDD</relation>
+                        <relation>ID_NEDD[text()!="-"]</relation>
                     </source_relation>
                     <target_relation>
                         <relationship>parsec:P12_has_identifier</relationship>
                     </target_relation>
                 </path>
                 <range>
-                    <source_node>ID_NEDD</source_node>
+                    <source_node>ID_NEDD[text()!="-"]</source_node>
                     <target_node>
                         <entity>
                             <type>rdfs:Literal</type>
@@ -112,18 +147,17 @@
                     </target_node>
                 </range>
             </link>
-            <!-- Link for ID_IRAS -->
             <link>
                 <path>
                     <source_relation>
-                        <relation>ID_IRAS</relation>
+                        <relation>ID_IRAS[text()!="-"]</relation>
                     </source_relation>
                     <target_relation>
                         <relationship>parsec:P12_has_identifier</relationship>
                     </target_relation>
                 </path>
                 <range>
-                    <source_node>ID_IRAS</source_node>
+                    <source_node>ID_IRAS[text()!="-"]</source_node>
                     <target_node>
                         <entity>
                             <type>rdfs:Literal</type>
@@ -134,18 +168,17 @@
                     </target_node>
                 </range>
             </link>
-            <!-- Link for ID_2MASS -->
             <link>
                 <path>
                     <source_relation>
-                        <relation>ID_2MASS</relation>
+                        <relation>ID_2MASS[text()!="-"]</relation>
                     </source_relation>
                     <target_relation>
                         <relationship>parsec:P12_has_identifier</relationship>
                     </target_relation>
                 </path>
                 <range>
-                    <source_node>ID_2MASS</source_node>
+                    <source_node>ID_2MASS[text()!="-"]</source_node>
                     <target_node>
                         <entity>
                             <type>rdfs:Literal</type>
@@ -156,18 +189,17 @@
                     </target_node>
                 </range>
             </link>
-            <!-- Link for SDSS_PHOTID -->
             <link>
                 <path>
                     <source_relation>
-                        <relation>SDSS_PHOTID</relation>
+                        <relation>SDSS_PHOTID[text()!="-"]</relation>
                     </source_relation>
                     <target_relation>
                         <relationship>parsec:P12_has_identifier</relationship>
                     </target_relation>
                 </path>
                 <range>
-                    <source_node>SDSS_PHOTID</source_node>
+                    <source_node>SDSS_PHOTID[text()!="-"]</source_node>
                     <target_node>
                         <entity>
                             <type>rdfs:Literal</type>
@@ -178,18 +210,17 @@
                     </target_node>
                 </range>
             </link>
-            <!-- Link for SDSS_PHOTID -->
             <link>
                 <path>
                     <source_relation>
-                        <relation>SDSS_PHOTID</relation>
+                        <relation>SDSS_SPECID[text()!="-"]</relation>
                     </source_relation>
                     <target_relation>
                         <relationship>parsec:P12_has_identifier</relationship>
                     </target_relation>
                 </path>
                 <range>
-                    <source_node>SDSS_PHOTID</source_node>
+                    <source_node>SDSS_SPECID[text()!="-"]</source_node>
                     <target_node>
                         <entity>
                             <type>rdfs:Literal</type>
@@ -199,7 +230,7 @@
                         </entity>
                     </target_node>
                 </range>
-            </link>
+            </link> -->
 
 
         </mapping>

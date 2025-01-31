@@ -1,902 +1,510 @@
 { 
 }
 
-<https://parsec.forth.gr/E02_Celestial_Body/48> {
-    <https://parsec.forth.gr/E02_Celestial_Body/48>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_48" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "74" , "PGC000074" , "KUG 2358+330" , "F23583+3303" , "00005819+3320385" , "1237663235524067576" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/36> {
-    <https://parsec.forth.gr/E02_Celestial_Body/36>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_36" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "54" , "UGC12897" , "UGC 12897" , "00003794+2823041" , "1237663233915551956" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/88> {
-    <https://parsec.forth.gr/E02_Celestial_Body/88>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_88" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "140" , "ESO409-003" , "ESO 409- G 003" , "F23593-2754" , "00015583-2737382" , "-" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/76> {
-    <https://parsec.forth.gr/E02_Celestial_Body/76>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_76" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "119" , "PGC000119" , "KUG 2359+332" , "F23590+3316" , "00013610+3333466" , "1237663235524001971" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/24> {
-    <https://parsec.forth.gr/E02_Celestial_Body/24>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_24" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "33" , "NGC7807" , "NGC 7807" , "F23578-1907" , "00002656-1850308" , "-" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/12> {
-    <https://parsec.forth.gr/E02_Celestial_Body/12>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_12" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "16" , "PGC000016" , "MCG -01-01-017" , "00001131-0509313" , "1237672840671461505" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/40> {
-    <https://parsec.forth.gr/E02_Celestial_Body/40>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_40" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "60" , "PGC000060" , "2MASX J00004507+2822181" , "00004507+2822181" , "1237663233915617598" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/64> {
-    <https://parsec.forth.gr/E02_Celestial_Body/64>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_64" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "100" , "ESO409-001" , "ESO 409- G 001" , "00011907-2725116" , "-" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/52> {
-    <https://parsec.forth.gr/E02_Celestial_Body/52>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_52" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "79" , "IC5374" , "IC 5374" , "F23585+0413" , "00010444+0430001" , "1237678776867618836" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/80> {
-    <https://parsec.forth.gr/E02_Celestial_Body/80>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_80" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "123" , "PGC000123" , "MCG -03-01-014" , "00013605-1444548" , "-" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/3> {
-    <https://parsec.forth.gr/E02_Celestial_Body/3>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_3" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "4" , "PGC000004" , "KUG 2357+228" , "1237679478544072744" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/92> {
-    <https://parsec.forth.gr/E02_Celestial_Body/92>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_92" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "147" , "PGC000147" , "CGCG 456-016" , "00015787+2137162" , "1237680297281323135" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/19> {
-    <https://parsec.forth.gr/E02_Celestial_Body/19>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_19" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "27" , "PGC000027" , "MCG -01-01-018" , "00002348-0656103" , "1237680243061096453" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/59> {
-    <https://parsec.forth.gr/E02_Celestial_Body/59>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_59" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "91" , "UGC12904" , "UGC 12904" , "F23586+3424" , "00011417+3440326" , "1237666184037400728" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/47> {
-    <https://parsec.forth.gr/E02_Celestial_Body/47>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_47" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "73" , "ESO349-017" , "ESO 349- G 017" , "00005858-3336429" , "-" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/2> {
-    <https://parsec.forth.gr/E02_Celestial_Body/2>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_2" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "3" , "PGC000003" , "MCG -03-01-012" , "F23574-1817" , "00000316-1800289" , "-" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/11> {
-    <https://parsec.forth.gr/E02_Celestial_Body/11>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_11" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "15" , "PGC000015" , "MCG -01-01-015" , "00000504-0512339" , "1237672793422495870" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/99> {
-    <https://parsec.forth.gr/E02_Celestial_Body/99>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_99" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "156" , "IC5377" , "IC 5377" , "1237678600231715123" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/87> {
-    <https://parsec.forth.gr/E02_Celestial_Body/87>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_87" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "137" , "PGC000137" , "2MASX J00015254-5028364" , "00015254-5028364" , "-" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/35> {
-    <https://parsec.forth.gr/E02_Celestial_Body/35>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_35" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "53" , "UGC12895" , "UGC 12895" , "1237679503782117461" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/23> {
-    <https://parsec.forth.gr/E02_Celestial_Body/23>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_23" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "31" , "PGC000031" , "FAIRALL 1061" , "00002363-4701076" , "-" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/51> {
-    <https://parsec.forth.gr/E02_Celestial_Body/51>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_51" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "77" , "PGC000077" , "UGC 12904 NOTES02" , "00010367+3439104" , "1237666184037400940" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/75> {
-    <https://parsec.forth.gr/E02_Celestial_Body/75>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_75" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "118" , "PGC000118" , "CGCG 433-016" , "1237656495650701475" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/63> {
-    <https://parsec.forth.gr/E02_Celestial_Body/63>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_63" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "99" , "ESO149-012" , "ESO 149- G 012" , "F23587-5317" , "00011748-5300348" , "-" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/91> {
-    <https://parsec.forth.gr/E02_Celestial_Body/91>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_91" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "146" , "UGC12916" , "UGC 12916" , "1237679456535969818" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/26> {
-    <https://parsec.forth.gr/E02_Celestial_Body/26>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_26" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "36" , "IC5373" , "IC 5373" , "F23579+3230" , "00002880+3246563" , "1237663234987458698" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/14> {
-    <https://parsec.forth.gr/E02_Celestial_Body/14>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_14" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "18" , "PGC000018" , "CGCG 548-023" , "00001295+4657543" , "-" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/38> {
-    <https://parsec.forth.gr/E02_Celestial_Body/38>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_38" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "57" , "PGC000057" , "2MASX J00004242+2822081" , "00004242+2822081" , "1237663233915617319" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/66> {
-    <https://parsec.forth.gr/E02_Celestial_Body/66>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_66" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "102" , "IC5376" , "IC 5376" , "00011976+3431326" , "1237666184037400587" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/54> {
-    <https://parsec.forth.gr/E02_Celestial_Body/54>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_54" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "81" , "NGC7802" , "NGC 7802" , "00010043+0614312" , "1237669516368216096" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/78> {
-    <https://parsec.forth.gr/E02_Celestial_Body/78>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_78" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "121" , "PGC000121" , "CGCG 477-039" , "F23590+2638" , "00013841+2655230" , "1237663306382115081" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/94> {
-    <https://parsec.forth.gr/E02_Celestial_Body/94>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_94" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "149" , "PGC000149" , "CGCG 517-014" , "F23594+3622" , "00015849+3638570" , "-" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/42> {
-    <https://parsec.forth.gr/E02_Celestial_Body/42>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_42" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "62" , "ESO012-013" , "ESO 012- G 013" , "00004688-7734478" , "-" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/30> {
-    <https://parsec.forth.gr/E02_Celestial_Body/30>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_30" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "40" , "PGC000040" , "CGCG 382-017" , "00003564-0145472" , "1237678881557577771" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/82> {
-    <https://parsec.forth.gr/E02_Celestial_Body/82>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_82" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "127" , "PGC000127" , "CGCG 534-005" , "00014167+4500199" , "-" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/5> {
-    <https://parsec.forth.gr/E02_Celestial_Body/5>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_5" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "6" , "PGC000006" , "KUG 2357+156" , "F23574+1535" , "00000214+1552539" , "1237656496724312079" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/70> {
-    <https://parsec.forth.gr/E02_Celestial_Body/70>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_70" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "110" , "UGC12910" , "UGC 12910" , "1237678777941426224" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/37> {
-    <https://parsec.forth.gr/E02_Celestial_Body/37>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_37" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "55" , "UGC12898" , "UGC 12898" , "1237663235524002225" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/25> {
-    <https://parsec.forth.gr/E02_Celestial_Body/25>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_25" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "35" , "UGC12894" , "UGC 12894" , "-" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/49> {
-    <https://parsec.forth.gr/E02_Celestial_Body/49>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_49" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "75" , "ESO241-010" , "ESO 241- G 010" , "00010289-4319496" , "-" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/77> {
-    <https://parsec.forth.gr/E02_Celestial_Body/77>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_77" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "120" , "UGC12914" , "UGC 12914" , "F23591+2312" , "00013830+2329011" , "1237680299428806739" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/65> {
-    <https://parsec.forth.gr/E02_Celestial_Body/65>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_65" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "101" , "NGC7803" , "NGC 7803" , "F23587+1249" , "00011996+1306406" , "1237678860082348107" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/13> {
-    <https://parsec.forth.gr/E02_Celestial_Body/13>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_13" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "17" , "PGC000017" , "UM 015" , "1237678777404424294" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/89> {
-    <https://parsec.forth.gr/E02_Celestial_Body/89>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_89" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "143" , "PGC000143" , "WLM" , "UGCA444" , "-" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/53> {
-    <https://parsec.forth.gr/E02_Celestial_Body/53>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_53" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "80" , "IC5375" , "IC 5375" , "00010478+0432261" , "1237678776867618922" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/41> {
-    <https://parsec.forth.gr/E02_Celestial_Body/41>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_41" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "61" , "PGC000061" , "MCG -01-01-021" , "00004852-0534481" , "1237672793422692435" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/4> {
-    <https://parsec.forth.gr/E02_Celestial_Body/4>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_4" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "5" , "IC5370" , "IC 5370" , "00000914+3244182" , "1237663234987458745" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/93> {
-    <https://parsec.forth.gr/E02_Celestial_Body/93>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_93" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "148" , "UGC12917" , "UGC 12917" , "00015230+4020109" , "-" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/81> {
-    <https://parsec.forth.gr/E02_Celestial_Body/81>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_81" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "124" , "UGC12913" , "UGC 12913" , "00013669+0330201" , "1237678620102361226" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/28> {
-    <https://parsec.forth.gr/E02_Celestial_Body/28>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_28" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "38" , "UGC12893" , "UGC 12893" , "00002847+1713130" , "-" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/16> {
-    <https://parsec.forth.gr/E02_Celestial_Body/16>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_16" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "23" , "PGC000023" , "VIII Zw 494 NOTES01" , "00002149-0236433" , "1237672795032060075" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/44> {
-    <https://parsec.forth.gr/E02_Celestial_Body/44>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_44" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "65" , "ESO193-009" , "ESO 193- G 009" , "00005324-4721246" , "-" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/32> {
-    <https://parsec.forth.gr/E02_Celestial_Body/32>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_32" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "43" , "ESO293-027" , "ESO 293- G 027" , "00002948-4029040" , "-" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/68> {
-    <https://parsec.forth.gr/E02_Celestial_Body/68>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_68" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "108" , "PGC000108" , "MRK 0934" , "00012606+1306466" , "1237678860082413581" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/56> {
-    <https://parsec.forth.gr/E02_Celestial_Body/56>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_56" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "83" , "PGC000083" , "KUG 2358+320A" , "-" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/84> {
-    <https://parsec.forth.gr/E02_Celestial_Body/84>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_84" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "129" , "UGC12915" , "UGC 12915" , "00014193+2329452" , "1237679479081074836" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/7> {
-    <https://parsec.forth.gr/E02_Celestial_Body/7>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_7" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "10" , "PGC000010" , "ARK 591" , "00000784-0002264" , "1237657190905217208" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/72> {
-    <https://parsec.forth.gr/E02_Celestial_Body/72>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_72" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "113" , "PGC000113" , "QP 088" , "00013279-3345318" , "-" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/20> {
-    <https://parsec.forth.gr/E02_Celestial_Body/20>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_20" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "28" , "PGC000028" , "KUG 2357+205" , "1237679504855793834" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/100> {
-    <https://parsec.forth.gr/E02_Celestial_Body/100>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_100" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "160" , "PGC000160" , "AM 2359-441" , "00021051-4358398" , "-" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/96> {
-    <https://parsec.forth.gr/E02_Celestial_Body/96>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_96" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "152" , "PGC000152" , "MCG -05-01-025" , "00020544-3037082" , "-" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/60> {
-    <https://parsec.forth.gr/E02_Celestial_Body/60>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_60" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "92" , "PGC000092" , "MCG +02-01-010" , "00011497+1306446" , "-" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/15> {
-    <https://parsec.forth.gr/E02_Celestial_Body/15>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_15" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "20" , "PGC000020" , "CGCG 382-016" , "F23576+0050" , "00001278+0107123" , "1237657192515829920" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/39> {
-    <https://parsec.forth.gr/E02_Celestial_Body/39>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_39" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "58" , "PGC000058" , "CGCG 498-061" , "00004401+2824051" , "1237663233915551957" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/27> {
-    <https://parsec.forth.gr/E02_Celestial_Body/27>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_27" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "37" , "PGC000037" , "MCG +04-01-009" , "00003167+2618189" , "1237663305845506120" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/55> {
-    <https://parsec.forth.gr/E02_Celestial_Body/55>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_55" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "82" , "ESO149-011A" , "00010597-5359303" , "-" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/43> {
-    <https://parsec.forth.gr/E02_Celestial_Body/43>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_43" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "63" , "UGC12899" , "UGC 12899" , "00004696+2824071" , "1237663233915552026" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/79> {
-    <https://parsec.forth.gr/E02_Celestial_Body/79>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_79" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "122" , "PGC000122" , "MCG -07-01-007" , "00013109-4049101" , "-" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/67> {
-    <https://parsec.forth.gr/E02_Celestial_Body/67>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_67" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "106" , "ESO538-018" , "ESO 538- G 018" , "F23588-1733" , "00012328-1716403" , "-" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/95> {
-    <https://parsec.forth.gr/E02_Celestial_Body/95>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_95" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "151" , "ESO349-020" , "ESO 349- G 020" , "F23594-3344" , "00020386-3328023" , "-" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/83> {
-    <https://parsec.forth.gr/E02_Celestial_Body/83>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_83" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "128" , "PGC000128" , "KUG 2359+318" , "00014154+3206279" , "1237680310692479300" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/31> {
-    <https://parsec.forth.gr/E02_Celestial_Body/31>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_31" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "42" , "PGC000042" , "FAIRALL 1062" , "00002691-4232515" , "-" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/6> {
-    <https://parsec.forth.gr/E02_Celestial_Body/6>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_6" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "7" , "PGC000007" , "ARK 590" , "00000442-0004599" , "1237657190905217071" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/71> {
-    <https://parsec.forth.gr/E02_Celestial_Body/71>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_71" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "112" , "NGC7806" , "NGC 7806" , "00013005+3126306" , "1237663234988048481" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/18> {
-    <https://parsec.forth.gr/E02_Celestial_Body/18>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_18" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "25" , "PGC000025" , "UGC 12891" , "00001932+2259259" , "1237680298891804735" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/58> {
-    <https://parsec.forth.gr/E02_Celestial_Body/58>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_58" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "90" , "ESO241-011" , "ESO 241- G 011" , "00011378-4400426" , "-" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/1> {
-    <https://parsec.forth.gr/E02_Celestial_Body/1>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_1" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "2" , "UGC12889" , "UGC 12889" , "00000168+4716282" , "-" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/22> {
-    <https://parsec.forth.gr/E02_Celestial_Body/22>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_22" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "30" , "ESO012-012" , "ESO 012- G 012" , "F23577-8104" , "00002208-8047344" , "-" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/10> {
-    <https://parsec.forth.gr/E02_Celestial_Body/10>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_10" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "14" , "UGC12890" , "UGC 12890" , "00000701+0816448" , "1237669681724784668" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/98> {
-    <https://parsec.forth.gr/E02_Celestial_Body/98>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_98" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "155" , "PGC000155" , "KUG 2359+122" , "F23594+1214" , "00020393+1231516" , "1237678919668007170" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/46> {
-    <https://parsec.forth.gr/E02_Celestial_Body/46>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_46" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "70" , "UGC12900" , "UGC 12900" , "00005604+2020165" , "1237680246814474422" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/34> {
-    <https://parsec.forth.gr/E02_Celestial_Body/34>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_34" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "49" , "PGC000049" , "KUG 2357+225" , "00003344+2246424" , "1237679478007202028" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/62> {
-    <https://parsec.forth.gr/E02_Celestial_Body/62>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_62" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "95" , "PGC000095" , "MCG +06-01-006" , "00011570+3658099" , "-" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/50> {
-    <https://parsec.forth.gr/E02_Celestial_Body/50>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_50" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "76" , "UGC12901" , "UGC 12901" , "00005891+2854421" , "1237663306918134035" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/86> {
-    <https://parsec.forth.gr/E02_Celestial_Body/86>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_86" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "134" , "PGC000134" , "MRK 0935" , "F23592+1249" , "00014524+1306020" , "1237678860082413670" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/9> {
-    <https://parsec.forth.gr/E02_Celestial_Body/9>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_9" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "13" , "PGC000013" , "CGCG 498-057" , "1237663307990106124" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/74> {
-    <https://parsec.forth.gr/E02_Celestial_Body/74>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_74" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "117" , "IC1526" , "IC 1526" , "F23589+1104" , "00013148+1120465" , "1237678918057328780" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/90> {
-    <https://parsec.forth.gr/E02_Celestial_Body/90>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_90" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "145" , "ESO409-004" , "ESO 409- G 004" , "00015721-2759582" , "-" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/29> {
-    <https://parsec.forth.gr/E02_Celestial_Body/29>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_29" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "39" , "UGC12892" , "UGC 12892" , "00002508+0751138" , "1237669681187913833" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/69> {
-    <https://parsec.forth.gr/E02_Celestial_Body/69>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_69" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "109" , "NGC7805" , "NGC 7805" , "00012677+3126016" , "1237663234988048479" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/17> {
-    <https://parsec.forth.gr/E02_Celestial_Body/17>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_17" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "24" , "IC5371" , "IC 5371" , "00001476+3249552" , "1237663234987393277" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/33> {
-    <https://parsec.forth.gr/E02_Celestial_Body/33>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_33" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "47" , "UGC12896" , "UGC 12896" , "F23579+2602" , "00003138+2619318" , "1237663305845506118" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/21> {
-    <https://parsec.forth.gr/E02_Celestial_Body/21>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_21" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "29" , "PGC000029" , "CGCG 517-010" , "00002226+3436573" , "1237663235523543553" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/57> {
-    <https://parsec.forth.gr/E02_Celestial_Body/57>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_57" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "89" , "PGC000089" , "KUG 2358+128A" , "00011339+1308386" , "1237678860082348071" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/45> {
-    <https://parsec.forth.gr/E02_Celestial_Body/45>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_45" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "68" , "ESO538-017" , "ESO 538- G 017" , "00005537-1857328" , "1237667225542328417" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/8> {
-    <https://parsec.forth.gr/E02_Celestial_Body/8>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_8" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "12" , "PGC000012" , "MCG -01-01-016" , "00000865-0622263" , "1237680265074049113" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/73> {
-    <https://parsec.forth.gr/E02_Celestial_Body/73>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_73" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "116" , "UGC12912" , "UGC 12912" , "00013359+0900445" , "1237679317478867047" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/61> {
-    <https://parsec.forth.gr/E02_Celestial_Body/61>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_61" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "94" , "UGC12905" , "UGC 12905" , "-" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/97> {
-    <https://parsec.forth.gr/E02_Celestial_Body/97>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_97" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "154" , "PGC000154" , "MCG -02-01-009" , "00020630-1013067" , "1237652900211458098" .
-}
-
-<https://parsec.forth.gr/E02_Celestial_Body/85> {
-    <https://parsec.forth.gr/E02_Celestial_Body/85>
-            a       <https://parsec.forth.gr/E02_Celestial_Body> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "galaxy_85" ;
-            <https://parsec.forth.gr/P12_has_identifier>
-                    "130" , "ESO409-002" , "ESO 409- G 002" , "00014401-3025082" , "-" .
+<http://graph_parsec.forth.gr/data_table/HECATE> {
+    <https://parsec.forth.gr/data_table/HECATE>
+            a       <https://parsec.forth.gr/E5_Data_Source> , <https://parsec.forth.gr/E15_Data_Table> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "HECATE" ;
+            <https://parsec.forth.gr/P17_data_source_version>
+                    "v.1.1" ;
+            <https://parsec.forth.gr/P34_has_column>
+                    <https://parsec.forth.gr/data_source/HECATE/column/pgc> , <https://parsec.forth.gr/data_source/HECATE/column/objname> , <https://parsec.forth.gr/data_source/HECATE/column/id_ned> , <https://parsec.forth.gr/data_source/HECATE/column/id_nedd> , <https://parsec.forth.gr/data_source/HECATE/column/id_iras> , <https://parsec.forth.gr/data_source/HECATE/column/id_2mass> , <https://parsec.forth.gr/data_source/HECATE/column/sdss_photid> , <https://parsec.forth.gr/data_source/HECATE/column/sdss_specid> , <https://parsec.forth.gr/data_source/HECATE/column/ra> , <https://parsec.forth.gr/data_source/HECATE/column/dec> , <https://parsec.forth.gr/data_source/HECATE/column/f_astrom> , <https://parsec.forth.gr/data_source/HECATE/column/r1> , <https://parsec.forth.gr/data_source/HECATE/column/r2> , <https://parsec.forth.gr/data_source/HECATE/column/pa> , <https://parsec.forth.gr/data_source/HECATE/column/rsource> , <https://parsec.forth.gr/data_source/HECATE/column/rflag> , <https://parsec.forth.gr/data_source/HECATE/column/t> , <https://parsec.forth.gr/data_source/HECATE/column/e_t> , <https://parsec.forth.gr/data_source/HECATE/column/incl> , <https://parsec.forth.gr/data_source/HECATE/column/v> , <https://parsec.forth.gr/data_source/HECATE/column/e_v> , <https://parsec.forth.gr/data_source/HECATE/column/v_vir> , <https://parsec.forth.gr/data_source/HECATE/column/e_v_vir> , <https://parsec.forth.gr/data_source/HECATE/column/ndist> , <https://parsec.forth.gr/data_source/HECATE/column/edist> , <https://parsec.forth.gr/data_source/HECATE/column/d> , <https://parsec.forth.gr/data_source/HECATE/column/e_d> , <https://parsec.forth.gr/data_source/HECATE/column/d_lo68> , <https://parsec.forth.gr/data_source/HECATE/column/d_hi68> , <https://parsec.forth.gr/data_source/HECATE/column/d_lo95> , <https://parsec.forth.gr/data_source/HECATE/column/d_hi95> , <https://parsec.forth.gr/data_source/HECATE/column/dmethod> , <https://parsec.forth.gr/data_source/HECATE/column/ut> , <https://parsec.forth.gr/data_source/HECATE/column/bt> , <https://parsec.forth.gr/data_source/HECATE/column/vt> , <https://parsec.forth.gr/data_source/HECATE/column/it> , <https://parsec.forth.gr/data_source/HECATE/column/e_ut> , <https://parsec.forth.gr/data_source/HECATE/column/e_bt> , <https://parsec.forth.gr/data_source/HECATE/column/e_vt> , <https://parsec.forth.gr/data_source/HECATE/column/e_it> , <https://parsec.forth.gr/data_source/HECATE/column/ag> , <https://parsec.forth.gr/data_source/HECATE/column/ai> , <https://parsec.forth.gr/data_source/HECATE/column/s12> , <https://parsec.forth.gr/data_source/HECATE/column/s25> , <https://parsec.forth.gr/data_source/HECATE/column/s60> , <https://parsec.forth.gr/data_source/HECATE/column/s100> , <https://parsec.forth.gr/data_source/HECATE/column/q12> , <https://parsec.forth.gr/data_source/HECATE/column/q25> , <https://parsec.forth.gr/data_source/HECATE/column/q60> , <https://parsec.forth.gr/data_source/HECATE/column/q100> , <https://parsec.forth.gr/data_source/HECATE/column/wf1> , <https://parsec.forth.gr/data_source/HECATE/column/wf2> , <https://parsec.forth.gr/data_source/HECATE/column/wf3> , <https://parsec.forth.gr/data_source/HECATE/column/wf4> , <https://parsec.forth.gr/data_source/HECATE/column/e_wf1> , <https://parsec.forth.gr/data_source/HECATE/column/e_wf2> , <https://parsec.forth.gr/data_source/HECATE/column/e_wf3> , <https://parsec.forth.gr/data_source/HECATE/column/e_wf4> , <https://parsec.forth.gr/data_source/HECATE/column/wfpoint> , <https://parsec.forth.gr/data_source/HECATE/column/wftreat> , <https://parsec.forth.gr/data_source/HECATE/column/j> , <https://parsec.forth.gr/data_source/HECATE/column/h> , <https://parsec.forth.gr/data_source/HECATE/column/k> , <https://parsec.forth.gr/data_source/HECATE/column/e_j> , <https://parsec.forth.gr/data_source/HECATE/column/e_h> , <https://parsec.forth.gr/data_source/HECATE/column/e_k> , <https://parsec.forth.gr/data_source/HECATE/column/flag_2mass> , <https://parsec.forth.gr/data_source/HECATE/column/u> , <https://parsec.forth.gr/data_source/HECATE/column/g> , <https://parsec.forth.gr/data_source/HECATE/column/r> , <https://parsec.forth.gr/data_source/HECATE/column/i> , <https://parsec.forth.gr/data_source/HECATE/column/z> , <https://parsec.forth.gr/data_source/HECATE/column/e_u> , <https://parsec.forth.gr/data_source/HECATE/column/e_g> , <https://parsec.forth.gr/data_source/HECATE/column/e_r> , <https://parsec.forth.gr/data_source/HECATE/column/e_i> , <https://parsec.forth.gr/data_source/HECATE/column/e_z> , <https://parsec.forth.gr/data_source/HECATE/column/logL_TIR> , <https://parsec.forth.gr/data_source/HECATE/column/logL_FIR> , <https://parsec.forth.gr/data_source/HECATE/column/logL_60%CE%BC> , <https://parsec.forth.gr/data_source/HECATE/column/logL_12%CE%BC> , <https://parsec.forth.gr/data_source/HECATE/column/logL_22%CE%BC> , <https://parsec.forth.gr/data_source/HECATE/column/logL_K> , <https://parsec.forth.gr/data_source/HECATE/column/ML_ratio> , <https://parsec.forth.gr/data_source/HECATE/column/logSFR_TIR> , <https://parsec.forth.gr/data_source/HECATE/column/logSFR_FIR> , <https://parsec.forth.gr/data_source/HECATE/column/logSFR_60u> , <https://parsec.forth.gr/data_source/HECATE/column/logSFR_12u> , <https://parsec.forth.gr/data_source/HECATE/column/logSFR_22u> , <https://parsec.forth.gr/data_source/HECATE/column/logSFR_HEC> , <https://parsec.forth.gr/data_source/HECATE/column/logM_HEC> , <https://parsec.forth.gr/data_source/HECATE/column/logSFR_GSW> , <https://parsec.forth.gr/data_source/HECATE/column/logM_GSW> , <https://parsec.forth.gr/data_source/HECATE/column/min_snr> , <https://parsec.forth.gr/data_source/HECATE/column/metal> , <https://parsec.forth.gr/data_source/HECATE/column/flag_metal> , <https://parsec.forth.gr/data_source/HECATE/column/class_sp> , <https://parsec.forth.gr/data_source/HECATE/column/agn_s17> , <https://parsec.forth.gr/data_source/HECATE/column/agn_hec> ;
+            <https://parsec.forth.gr/P39_has_webpage>
+                    "https://hecate.ia.forth.gr/" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/pgc>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "pgc" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/objname>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "objname" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/id_ned>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "id_ned" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/id_nedd>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "id_nedd" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/id_iras>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "id_iras" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/id_2mass>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "id_2mass" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/sdss_photid>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "sdss_photid" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/sdss_specid>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "sdss_specid" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/ra>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "ra" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/dec>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "dec" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/f_astrom>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "f_astrom" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/r1>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "r1" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/r2>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "r2" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/pa>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "pa" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/rsource>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "rsource" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/rflag>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "rflag" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/t>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "t" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/e_t>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "e_t" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/incl>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "incl" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/v>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "v" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/e_v>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "e_v" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/v_vir>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "v_vir" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/e_v_vir>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "e_v_vir" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/ndist>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "ndist" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/edist>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "edist" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/d>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "d" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/e_d>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "e_d" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/d_lo68>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "d_lo68" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/d_hi68>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "d_hi68" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/d_lo95>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "d_lo95" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/d_hi95>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "d_hi95" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/dmethod>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "dmethod" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/ut>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "ut" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/bt>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "bt" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/vt>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "vt" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/it>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "it" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/e_ut>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "e_ut" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/e_bt>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "e_bt" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/e_vt>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "e_vt" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/e_it>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "e_it" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/ag>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "ag" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/ai>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "ai" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/s12>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "s12" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/s25>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "s25" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/s60>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "s60" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/s100>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "s100" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/q12>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "q12" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/q25>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "q25" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/q60>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "q60" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/q100>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "q100" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/wf1>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "wf1" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/wf2>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "wf2" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/wf3>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "wf3" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/wf4>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "wf4" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/e_wf1>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "e_wf1" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/e_wf2>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "e_wf2" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/e_wf3>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "e_wf3" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/e_wf4>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "e_wf4" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/wfpoint>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "wfpoint" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/wftreat>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "wftreat" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/j>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "j" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/h>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "h" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/k>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "k" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/e_j>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "e_j" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/e_h>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "e_h" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/e_k>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "e_k" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/flag_2mass>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "flag_2mass" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/u>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "u" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/g>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "g" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/r>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "r" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/i>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "i" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/z>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "z" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/e_u>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "e_u" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/e_g>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "e_g" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/e_r>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "e_r" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/e_i>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "e_i" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/e_z>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "E_z" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/logL_TIR>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "logL_TIR" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/logL_FIR>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "logL_FIR" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/logL_60%CE%BC>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "logL_60μ" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/logL_12%CE%BC>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "logL_12μ" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/logL_22%CE%BC>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "logL_22μ" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/logL_K>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "logL_K" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/ML_ratio>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "ML_ratio" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/logSFR_TIR>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "logSFR_TIR" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/logSFR_FIR>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "logSFR_FIR" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/logSFR_60u>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "logSFR_60u" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/logSFR_12u>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "logSFR_12u" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/logSFR_22u>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "logSFR_22u" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/logSFR_HEC>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "logSFR_HEC" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/logM_HEC>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "logM_HEC" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/logSFR_GSW>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "logSFR_GSW" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/logM_GSW>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "logM_GSW" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/min_snr>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "min_snr" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/metal>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "metal" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/flag_metal>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "flag_metal" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/class_sp>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "class_sp" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/agn_s17>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "agn_s17" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/agn_hec>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "agn_hec" .
 }
