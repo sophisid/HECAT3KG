@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <generator_policy>
+
+    <generator name="namedgraph" prefix="parsec">
+	    <pattern>{type}/{id}/graph</pattern>
+    </generator>
+
     <generator name="Label" type="label">
         <pattern>{label}</pattern>
     </generator>
@@ -23,51 +28,51 @@
     </generator>
 
     <generator name="ColumnURI" prefix="parsec">
-        <pattern>{prefix}/paper/{DOI}/data_table/{data_table_id}/column/{column_name}</pattern>
+        <pattern>data_source/{data_source}/column/{column_name}</pattern>
     </generator>
 
     <generator name="DataTableURI" prefix="parsec">
-        <pattern>{prefix}/paper/{DOI}/data_table/{data_table_id}</pattern>
+        <pattern>data_table/{data_table_id}</pattern>
     </generator>
 
     <generator name="CelestialBodyURI" prefix="parsec">
-        <pattern>{prefix}/celestial_body/{id}</pattern>
+        <pattern>celestial_body/{id}</pattern>
     </generator>
 
     <generator name="GalaxyURI" prefix="parsec">
-        <pattern>{prefix}/galaxy/{id}</pattern>
+        <pattern>galaxy/{id}</pattern>
     </generator>
 
     <generator name="SnrURI" prefix="parsec">
-        <pattern>{prefix}/snr/{id}</pattern>
+        <pattern>snr/{id}</pattern>
     </generator>
 
     <generator name="DataSourceURI" prefix="parsec">
-        <pattern>{prefix}/data_source/{id}</pattern>
+        <pattern>data_source/{id}</pattern>
     </generator>
 
     <generator name="CatalogueURI" prefix="parsec">
-        <pattern>{prefix}/catalogue/{url}</pattern>
+        <pattern>catalogue/{url}</pattern>
     </generator>
 
     <generator name="PaperURI" prefix="parsec">
-        <pattern>{prefix}/paper/{DOI}</pattern>
+        <pattern>paper/{DOI}</pattern>
     </generator>
 
     <generator name="MeasurementURI" prefix="parsec">
-        <pattern>{prefix}/celestial_body/{celestial_body_id}/paper/{DOI}/data_table/{data_table_id}/column/{column_name}/measurement/{id}</pattern>
+        <pattern>celestial_body/{celestial_body_id}/paper/{DOI}/data_table/{data_table_id}/column/{column_name}/measurement/{id}</pattern>
     </generator>
 
     <generator name="MeasurementUnitURI" prefix="parsec">
-        <pattern>{prefix}/measurement_unit/{unit_label}</pattern>
+        <pattern>measurement_unit/{unit_label}</pattern>
     </generator>
 
     <generator name="MeasurementClassificationURI" prefix="parsec">
-        <pattern>{prefix}/measurement_classification/{classification_label}</pattern>
+        <pattern>measurement_classification/{classification_label}</pattern>
     </generator>
 
     <generator name="EstimationMethodURI" prefix="parsec">
-        <pattern>{prefix}/estimation_method/{estimation_method_label}</pattern>
+        <pattern>estimation_method/{estimation_method_label}</pattern>
     </generator>
 
 
