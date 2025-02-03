@@ -4667,6 +4667,15 @@
                         </label_generator>
                         </entity>
                     </additional>
+                    <additional>
+                        <relationship>parsec:P29_has_reliability_status</relationship>
+                        <entity>
+                            <type>rdfs:Literal</type>
+                            <label_generator name="Literal">
+                                <arg name="text" type="xpath">../FLAG_METAL/text()</arg>
+                            </label_generator>
+                        </entity>
+                    </additional>
                 </entity>
             </target_node>
             </range>
@@ -4815,7 +4824,6 @@
             </target_node>
             </range>
         </link>
-            
         </mapping>
     </mappings>
 </x3ml>
