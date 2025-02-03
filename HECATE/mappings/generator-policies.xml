@@ -16,6 +16,10 @@
     <generator name="URIwithType" prefix="parsec">
 	    <pattern>{type}/{id}</pattern>
     </generator>
+    
+    <generator name="HecateCustomURIwithType" prefix="parsec">
+	    <pattern>{type}/galaxy_{id}</pattern>
+    </generator>
 
     <generator name="URIwithTypeHashed" prefix="parsec" shorten="yes">
         <pattern>{type}/{id}</pattern>
@@ -60,7 +64,11 @@
     </generator>
 
     <generator name="MeasurementURI" prefix="parsec">
-        <pattern>celestial_body/{celestial_body_id}/paper/{DOI}/data_table/{data_table_id}/column/{column_name}/measurement/{id}</pattern>
+        <pattern>celestial_body/{celestial_body_id}/column/{column_name}/measurement/{id}</pattern>
+    </generator>
+
+    <generator name="CustomHecateMeasurementURI" prefix="parsec">
+        <pattern>celestial_body/galaxy_{celestial_body_id}/column/{column_name}/measurement/galaxy_{celestial_body_id}_{column_name}</pattern>
     </generator>
 
     <generator name="MeasurementUnitURI" prefix="parsec">

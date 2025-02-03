@@ -9,16 +9,16 @@
         <!-- Mapping for E02_Celestial_Body entity -->
         <mapping namedgraph="">
             <domain>
-                <source_node>//row</source_node>
+                <source_node>//row[text()!="-"]</source_node>
                 <target_node>
                     <entity>
                         <type>parsec:E02_Celestial_Body</type>
-                        <instance_generator name="URIwithType">
+                        <instance_generator name="HecateCustomURIwithType">
                             <arg name="type" type="constant">E02_Celestial_Body</arg>
                             <arg name="id" type="xpath">ROW_NUMBER/text()</arg>
                         </instance_generator>
                         <label_generator name="GalaxyLabel">
-                            <arg name="label" type="xpath">ROW_NUMBER/text()</arg>
+                            <arg name="label">ROW_NUMBER/text()</arg>
                         </label_generator>
                         <additional>
                             <relationship>parsec:P12_has_identifier</relationship>
@@ -29,57 +29,52 @@
                                 </instance_generator>
                             </entity>
                         </additional>
-                        <!-- COLUMNS -->
-                        <additional>
-                            <relationship>parsec:P11_is_referred_in_data_source</relationship>
-                            <entity>
-                                <type>parsec:E15_Data_Table</type>
-                                <instance_generator name="DataTableURI">
-                                    <arg name="data_table_id" type="constant">HECATE</arg>
-                                </instance_generator>
-                                <label_generator name="Label">
-                                    <arg name="label" type="constant">HECATE</arg>
-                                </label_generator>
-                                <additional>
-                                    <relationship>parsec:P17_data_source_version</relationship>
-                                    <entity>
-                                        <type>rdfs:Literal</type>
-                                        <instance_generator name="Literal">
-                                            <arg name="text">v.1.1</arg>
-                                        </instance_generator>
-                                    </entity>
-                                </additional>
-                                <additional>
-                                    <relationship>parsec:P39_has_webpage</relationship>
-                                    <entity>
-                                        <type>rdfs:Literal</type>
-                                        <instance_generator name="Literal">
-                                            <arg name="text">"https://hecate.ia.forth.gr/"</arg>
-                                        </instance_generator>
-                                    </entity>
-                                </additional>
-                            </entity>
-                        </additional>
                     </entity>
                 </target_node>
             </domain>
-            <!-- <link>
+            <link>
                 <path>
                     <source_relation>
                         <relation>PGC[text()!="-"]</relation>
                     </source_relation>
                     <target_relation>
-                        <relationship>parsec:P12_has_identifier</relationship>
+                        <relationship>parsec:P01_has_measurement</relationship>
                     </target_relation>
                 </path>
                 <range>
                     <source_node>PGC[text()!="-"]</source_node>
                     <target_node>
                         <entity>
-                            <type>rdfs:Literal</type>
-                            <instance_generator name="Literal">
-                                <arg name="text">text()</arg>
+                            <type>parsec:E08_Measurement</type>
+                            <instance_generator name="CustomHecateMeasurementURI">
+                                <arg name="celestial_body_id" type="xpath">../ROW_NUMBER/text()</arg>
+                                <arg name="column_name" type="constant">pgc</arg>
                             </instance_generator>
+                            <label_generator name="Literal">
+                                <arg name="text" type="xpath">../PGC/text()</arg>
+                            </label_generator>
+                            <additional>
+                                <relationship>parsec:P02_has_value</relationship>
+                                <entity>
+                                    <type>rdfs:Literal</type>
+                                    <label_generator name="Literal">
+                                        <arg name="text" type="xpath">../PGC/text()</arg>
+                                    </label_generator>
+                                </entity>
+                            </additional>
+                            <additional>
+                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <entity>
+                                <type>parsec:E16_Column</type>
+                                <instance_generator name="ColumnURI">
+                                    <arg name="data_source" type="constant">HECATE</arg>
+                                    <arg name="column_name" type="constant">pgc</arg>
+                                </instance_generator>
+                                <label_generator name="Literal">
+                                    <arg name="text" type="constant">pgc</arg>
+                                </label_generator>
+                                </entity>
+                            </additional>
                         </entity>
                     </target_node>
                 </range>
@@ -90,149 +85,48 @@
                         <relation>OBJNAME[text()!="-"]</relation>
                     </source_relation>
                     <target_relation>
-                        <relationship>parsec:P12_has_identifier</relationship>
+                        <relationship>parsec:P01_has_measurement</relationship>
                     </target_relation>
                 </path>
                 <range>
                     <source_node>OBJNAME[text()!="-"]</source_node>
                     <target_node>
                         <entity>
-                            <type>rdfs:Literal</type>
-                            <instance_generator name="Literal">
-                                <arg name="text">text()</arg>
+                            <type>parsec:E08_Measurement</type>
+                            <instance_generator name="CustomHecateMeasurementURI">
+                                <arg name="celestial_body_id" type="xpath">../ROW_NUMBER/text()</arg>
+                                <arg name="column_name" type="constant">objname</arg>
                             </instance_generator>
+                            <label_generator name="Literal">
+                                <arg name="text" type="xpath">../OBJNAME/text()</arg>
+                            </label_generator>
+                            <additional>
+                                <relationship>parsec:P02_has_value</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <label_generator name="Literal">
+                                    <arg name="text" type="xpath">../OBJNAME/text()</arg>
+                                </label_generator>
+                                </entity>
+                            </additional>
+                            <additional>
+                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <entity>
+                                <type>parsec:E16_Column</type>
+                                <instance_generator name="ColumnURI">
+                                    <arg name="data_source" type="constant">HECATE</arg>
+                                    <arg name="column_name" type="constant">objname</arg>
+                                </instance_generator>
+                                <label_generator name="Literal">
+                                    <arg name="text" type="constant">objname</arg>
+                                </label_generator>
+                                </entity>
+                            </additional>
                         </entity>
                     </target_node>
                 </range>
             </link>
-            <link>
-                <path>
-                    <source_relation>
-                        <relation>ID_NED[text()!="-"]</relation>
-                    </source_relation>
-                    <target_relation>
-                        <relationship>parsec:P12_has_identifier</relationship>
-                    </target_relation>
-                </path>
-                <range>
-                    <source_node>ID_NED[text()!="-"]</source_node>
-                    <target_node>
-                        <entity>
-                            <type>rdfs:Literal</type>
-                            <instance_generator name="Literal">
-                                <arg name="text">text()</arg>
-                            </instance_generator>
-                        </entity>
-                    </target_node>
-                </range>
-            </link>
-            <link>
-                <path>
-                    <source_relation>
-                        <relation>ID_NEDD[text()!="-"]</relation>
-                    </source_relation>
-                    <target_relation>
-                        <relationship>parsec:P12_has_identifier</relationship>
-                    </target_relation>
-                </path>
-                <range>
-                    <source_node>ID_NEDD[text()!="-"]</source_node>
-                    <target_node>
-                        <entity>
-                            <type>rdfs:Literal</type>
-                            <instance_generator name="Literal">
-                                <arg name="text">text()</arg>
-                            </instance_generator>
-                        </entity>
-                    </target_node>
-                </range>
-            </link>
-            <link>
-                <path>
-                    <source_relation>
-                        <relation>ID_IRAS[text()!="-"]</relation>
-                    </source_relation>
-                    <target_relation>
-                        <relationship>parsec:P12_has_identifier</relationship>
-                    </target_relation>
-                </path>
-                <range>
-                    <source_node>ID_IRAS[text()!="-"]</source_node>
-                    <target_node>
-                        <entity>
-                            <type>rdfs:Literal</type>
-                            <instance_generator name="Literal">
-                                <arg name="text">text()</arg>
-                            </instance_generator>
-                        </entity>
-                    </target_node>
-                </range>
-            </link>
-            <link>
-                <path>
-                    <source_relation>
-                        <relation>ID_2MASS[text()!="-"]</relation>
-                    </source_relation>
-                    <target_relation>
-                        <relationship>parsec:P12_has_identifier</relationship>
-                    </target_relation>
-                </path>
-                <range>
-                    <source_node>ID_2MASS[text()!="-"]</source_node>
-                    <target_node>
-                        <entity>
-                            <type>rdfs:Literal</type>
-                            <instance_generator name="Literal">
-                                <arg name="text">text()</arg>
-                            </instance_generator>
-                        </entity>
-                    </target_node>
-                </range>
-            </link>
-            <link>
-                <path>
-                    <source_relation>
-                        <relation>SDSS_PHOTID[text()!="-"]</relation>
-                    </source_relation>
-                    <target_relation>
-                        <relationship>parsec:P12_has_identifier</relationship>
-                    </target_relation>
-                </path>
-                <range>
-                    <source_node>SDSS_PHOTID[text()!="-"]</source_node>
-                    <target_node>
-                        <entity>
-                            <type>rdfs:Literal</type>
-                            <instance_generator name="Literal">
-                                <arg name="text">text()</arg>
-                            </instance_generator>
-                        </entity>
-                    </target_node>
-                </range>
-            </link>
-            <link>
-                <path>
-                    <source_relation>
-                        <relation>SDSS_SPECID[text()!="-"]</relation>
-                    </source_relation>
-                    <target_relation>
-                        <relationship>parsec:P12_has_identifier</relationship>
-                    </target_relation>
-                </path>
-                <range>
-                    <source_node>SDSS_SPECID[text()!="-"]</source_node>
-                    <target_node>
-                        <entity>
-                            <type>rdfs:Literal</type>
-                            <instance_generator name="Literal">
-                                <arg name="text">text()</arg>
-                            </instance_generator>
-                        </entity>
-                    </target_node>
-                </range>
-            </link> -->
-
-
+            
         </mapping>
     </mappings>
 </x3ml>

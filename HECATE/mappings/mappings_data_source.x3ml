@@ -63,6 +63,30 @@
                             <label_generator name="Label">
                                 <arg name="label" type="constant">pgc</arg>
                             </label_generator>
+                            <additional>
+                                <relationship>parsec:P20_has_estimation_method</relationship>
+                                <entity>
+                                <type>parsec:E12_Estimation_Method</type>
+                                <instance_generator name="EstimationMethodURI">
+                                    <arg name="estimation_method_label" type="constant">Catalog assignment</arg>
+                                </instance_generator>
+                                <label_generator name="Label">
+                                    <arg name="label" type="constant">Catalog assignment</arg>
+                                </label_generator>
+                                </entity>
+                            </additional>
+                            <additional>
+                                <relationship>parsec:P04_contains_measurements_of</relationship>
+                                <entity>
+                                <type>parsec:E11_Measurement_Classification</type>
+                                <instance_generator name="MeasurementClassificationURI">
+                                    <arg name="classification_label" type="constant">Identifier</arg>
+                                </instance_generator>
+                                <label_generator name="Label">
+                                    <arg name="label" type="constant">Identifier</arg>
+                                </label_generator>
+                                </entity>
+                            </additional>
                         </entity>
                     </target_node>
                 </range>
@@ -88,6 +112,30 @@
                             <label_generator name="Label">
                                 <arg name="label" type="constant">objname</arg>
                             </label_generator>
+                            <additional>
+                                <relationship>parsec:P20_has_estimation_method</relationship>
+                                <entity>
+                                <type>parsec:E12_Estimation_Method</type>
+                                <instance_generator name="EstimationMethodURI">
+                                    <arg name="estimation_method_label" type="constant">Catalog assignment</arg>
+                                </instance_generator>
+                                <label_generator name="Label">
+                                    <arg name="label" type="constant">Catalog assignment</arg>
+                                </label_generator>
+                                </entity>
+                            </additional>
+                            <additional>
+                                <relationship>parsec:P04_contains_measurements_of</relationship>
+                                <entity>
+                                <type>parsec:E11_Measurement_Classification</type>
+                                <instance_generator name="MeasurementClassificationURI">
+                                    <arg name="classification_label" type="constant">Identifier</arg>
+                                </instance_generator>
+                                <label_generator name="Label">
+                                    <arg name="label" type="constant">Identifier</arg>
+                                </label_generator>
+                                </entity>
+                            </additional>
                         </entity>
                     </target_node>
                 </range>
@@ -113,6 +161,30 @@
                             <label_generator name="Label">
                                 <arg name="label" type="constant">id_ned</arg>
                             </label_generator>
+                            <additional>
+                                <relationship>parsec:P20_has_estimation_method</relationship>
+                                <entity>
+                                <type>parsec:E12_Estimation_Method</type>
+                                <instance_generator name="EstimationMethodURI">
+                                    <arg name="estimation_method_label" type="constant">Catalog assignment</arg>
+                                </instance_generator>
+                                <label_generator name="Label">
+                                    <arg name="label" type="constant">Catalog assignment</arg>
+                                </label_generator>
+                                </entity>
+                            </additional>
+                            <additional>
+                                <relationship>parsec:P04_contains_measurements_of</relationship>
+                                <entity>
+                                <type>parsec:E11_Measurement_Classification</type>
+                                <instance_generator name="MeasurementClassificationURI">
+                                    <arg name="classification_label" type="constant">Identifier</arg>
+                                </instance_generator>
+                                <label_generator name="Label">
+                                    <arg name="label" type="constant">Identifier</arg>
+                                </label_generator>
+                                </entity>
+                            </additional>
                         </entity>
                     </target_node>
                 </range>
@@ -138,6 +210,30 @@
                             <label_generator name="Label">
                                 <arg name="label" type="constant">id_nedd</arg>
                             </label_generator>
+                            <additional>
+                                <relationship>parsec:P20_has_estimation_method</relationship>
+                                <entity>
+                                <type>parsec:E12_Estimation_Method</type>
+                                <instance_generator name="EstimationMethodURI">
+                                    <arg name="estimation_method_label" type="constant">Catalog assignment</arg>
+                                </instance_generator>
+                                <label_generator name="Label">
+                                    <arg name="label" type="constant">Catalog assignment</arg>
+                                </label_generator>
+                                </entity>
+                            </additional>
+                            <additional>
+                                <relationship>parsec:P04_contains_measurements_of</relationship>
+                                <entity>
+                                <type>parsec:E11_Measurement_Classification</type>
+                                <instance_generator name="MeasurementClassificationURI">
+                                    <arg name="classification_label" type="constant">Identifier</arg>
+                                </instance_generator>
+                                <label_generator name="Label">
+                                    <arg name="label" type="constant">Identifier</arg>
+                                </label_generator>
+                                </entity>
+                            </additional>
                         </entity>
                     </target_node>
                 </range>
@@ -163,6 +259,30 @@
                             <label_generator name="Label">
                                 <arg name="label" type="constant">id_iras</arg>
                             </label_generator>
+                            <additional>
+                                <relationship>parsec:P20_has_estimation_method</relationship>
+                                <entity>
+                                <type>parsec:E12_Estimation_Method</type>
+                                <instance_generator name="EstimationMethodURI">
+                                    <arg name="estimation_method_label" type="constant">Catalog assignment</arg>
+                                </instance_generator>
+                                <label_generator name="Label">
+                                    <arg name="label" type="constant">Catalog assignment</arg>
+                                </label_generator>
+                                </entity>
+                            </additional>
+                            <additional>
+                                <relationship>parsec:P04_contains_measurements_of</relationship>
+                                <entity>
+                                <type>parsec:E11_Measurement_Classification</type>
+                                <instance_generator name="MeasurementClassificationURI">
+                                    <arg name="classification_label" type="constant">Identifier</arg>
+                                </instance_generator>
+                                <label_generator name="Label">
+                                    <arg name="label" type="constant">Identifier</arg>
+                                </label_generator>
+                                </entity>
+                            </additional>
                         </entity>
                     </target_node>
                 </range>
@@ -188,6 +308,30 @@
                             <label_generator name="Label">
                                 <arg name="label" type="constant">id_2mass</arg>
                             </label_generator>
+                            <additional>
+                                <relationship>parsec:P20_has_estimation_method</relationship>
+                                <entity>
+                                <type>parsec:E12_Estimation_Method</type>
+                                <instance_generator name="EstimationMethodURI">
+                                    <arg name="estimation_method_label" type="constant">Catalog assignment</arg>
+                                </instance_generator>
+                                <label_generator name="Label">
+                                    <arg name="label" type="constant">Catalog assignment</arg>
+                                </label_generator>
+                                </entity>
+                            </additional>
+                            <additional>
+                                <relationship>parsec:P04_contains_measurements_of</relationship>
+                                <entity>
+                                <type>parsec:E11_Measurement_Classification</type>
+                                <instance_generator name="MeasurementClassificationURI">
+                                    <arg name="classification_label" type="constant">Identifier</arg>
+                                </instance_generator>
+                                <label_generator name="Label">
+                                    <arg name="label" type="constant">Identifier</arg>
+                                </label_generator>
+                                </entity>
+                            </additional>
                         </entity>
                     </target_node>
                 </range>
@@ -213,6 +357,30 @@
                             <label_generator name="Label">
                                 <arg name="label" type="constant">sdss_photid</arg>
                             </label_generator>
+                            <additional>
+                                <relationship>parsec:P20_has_estimation_method</relationship>
+                                <entity>
+                                <type>parsec:E12_Estimation_Method</type>
+                                <instance_generator name="EstimationMethodURI">
+                                    <arg name="estimation_method_label" type="constant">Catalog assignment</arg>
+                                </instance_generator>
+                                <label_generator name="Label">
+                                    <arg name="label" type="constant">Catalog assignment</arg>
+                                </label_generator>
+                                </entity>
+                            </additional>
+                            <additional>
+                                <relationship>parsec:P04_contains_measurements_of</relationship>
+                                <entity>
+                                <type>parsec:E11_Measurement_Classification</type>
+                                <instance_generator name="MeasurementClassificationURI">
+                                    <arg name="classification_label" type="constant">Identifier</arg>
+                                </instance_generator>
+                                <label_generator name="Label">
+                                    <arg name="label" type="constant">Identifier</arg>
+                                </label_generator>
+                                </entity>
+                            </additional>
                         </entity>
                     </target_node>
                 </range>
@@ -238,6 +406,30 @@
                             <label_generator name="Label">
                                 <arg name="label" type="constant">sdss_specid</arg>
                             </label_generator>
+                            <additional>
+                                <relationship>parsec:P20_has_estimation_method</relationship>
+                                <entity>
+                                <type>parsec:E12_Estimation_Method</type>
+                                <instance_generator name="EstimationMethodURI">
+                                    <arg name="estimation_method_label" type="constant">Catalog assignment</arg>
+                                </instance_generator>
+                                <label_generator name="Label">
+                                    <arg name="label" type="constant">Catalog assignment</arg>
+                                </label_generator>
+                                </entity>
+                            </additional>
+                            <additional>
+                                <relationship>parsec:P04_contains_measurements_of</relationship>
+                                <entity>
+                                <type>parsec:E11_Measurement_Classification</type>
+                                <instance_generator name="MeasurementClassificationURI">
+                                    <arg name="classification_label" type="constant">Identifier</arg>
+                                </instance_generator>
+                                <label_generator name="Label">
+                                    <arg name="label" type="constant">Identifier</arg>
+                                </label_generator>
+                                </entity>
+                            </additional>
                         </entity>
                     </target_node>
                 </range>
@@ -959,7 +1151,7 @@
                                 <entity>
                                 <type>parsec:E09_Measurement_Unit</type>
                                 <instance_generator name="MeasurementUnitURI">
-                                    <arg name="unit_label" type="constant">km/s</arg>
+                                    <arg name="unit_label" type="constant">km%2Fs</arg>
                                 </instance_generator>
                                 <label_generator name="Label">
                                     <arg name="label" type="constant">km/s</arg>
@@ -1021,7 +1213,7 @@
                                 <entity>
                                 <type>parsec:E09_Measurement_Unit</type>
                                 <instance_generator name="MeasurementUnitURI">
-                                    <arg name="unit_label" type="constant">km/s</arg>
+                                    <arg name="unit_label" type="constant">km%2Fs</arg>
                                 </instance_generator>
                                 <label_generator name="Label">
                                     <arg name="label" type="constant">km/s</arg>
@@ -1083,7 +1275,7 @@
                                 <entity>
                                 <type>parsec:E09_Measurement_Unit</type>
                                 <instance_generator name="MeasurementUnitURI">
-                                    <arg name="unit_label" type="constant">km/s</arg>
+                                    <arg name="unit_label" type="constant">km%2Fs</arg>
                                 </instance_generator>
                                 <label_generator name="Label">
                                     <arg name="label" type="constant">km/s</arg>
@@ -1145,7 +1337,7 @@
                                 <entity>
                                 <type>parsec:E09_Measurement_Unit</type>
                                 <instance_generator name="MeasurementUnitURI">
-                                    <arg name="unit_label" type="constant">km/s</arg>
+                                    <arg name="unit_label" type="constant">km%2Fs</arg>
                                 </instance_generator>
                                 <label_generator name="Label">
                                     <arg name="label" type="constant">km/s</arg>
@@ -4984,7 +5176,7 @@
                     <entity>
                     <type>parsec:E09_Measurement_Unit</type>
                     <instance_generator name="MeasurementUnitURI">
-                        <arg name="unit_label" type="constant">log(M_sun/yr)</arg>
+                        <arg name="unit_label" type="constant">log(M_sun%2Fyr)</arg>
                     </instance_generator>
                     <label_generator name="Label">
                         <arg name="label" type="constant">log(M_sun/yr)</arg>
@@ -5046,7 +5238,7 @@
                     <entity>
                     <type>parsec:E09_Measurement_Unit</type>
                     <instance_generator name="MeasurementUnitURI">
-                        <arg name="unit_label" type="constant">log(M_sun/yr)</arg>
+                        <arg name="unit_label" type="constant">log(M_sun%2Fyr)</arg>
                     </instance_generator>
                     <label_generator name="Label">
                         <arg name="label" type="constant">log(M_sun/yr)</arg>
@@ -5108,7 +5300,7 @@
                     <entity>
                     <type>parsec:E09_Measurement_Unit</type>
                     <instance_generator name="MeasurementUnitURI">
-                        <arg name="unit_label" type="constant">log(M_sun/yr)</arg>
+                        <arg name="unit_label" type="constant">log(M_sun%2Fyr)</arg>
                     </instance_generator>
                     <label_generator name="Label">
                         <arg name="label" type="constant">log(M_sun/yr)</arg>
@@ -5170,7 +5362,7 @@
                     <entity>
                     <type>parsec:E09_Measurement_Unit</type>
                     <instance_generator name="MeasurementUnitURI">
-                        <arg name="unit_label" type="constant">log(M_sun/yr)</arg>
+                        <arg name="unit_label" type="constant">log(M_sun%2Fyr)</arg>
                     </instance_generator>
                     <label_generator name="Label">
                         <arg name="label" type="constant">log(M_sun/yr)</arg>
@@ -5232,7 +5424,7 @@
                     <entity>
                     <type>parsec:E09_Measurement_Unit</type>
                     <instance_generator name="MeasurementUnitURI">
-                        <arg name="unit_label" type="constant">log(M_sun/yr)</arg>
+                        <arg name="unit_label" type="constant">log(M_sun%2Fyr)</arg>
                     </instance_generator>
                     <label_generator name="Label">
                         <arg name="label" type="constant">log(M_sun/yr)</arg>
@@ -5294,7 +5486,7 @@
                     <entity>
                     <type>parsec:E09_Measurement_Unit</type>
                     <instance_generator name="MeasurementUnitURI">
-                        <arg name="unit_label" type="constant">log(M_sun/yr)</arg>
+                        <arg name="unit_label" type="constant">log(M_sun%2Fyr)</arg>
                     </instance_generator>
                     <label_generator name="Label">
                         <arg name="label" type="constant">log(M_sun/yr)</arg>
@@ -5321,23 +5513,23 @@
         <link>
             <path>
             <source_relation>
-                <relation>//row[1]/SFR_HEC_flag</relation>
+                <relation>//row[1]/FLAG_SFR_HEC</relation>
             </source_relation>
             <target_relation>
                 <relationship>parsec:P34_has_column</relationship>
             </target_relation>
             </path>
             <range>
-            <source_node>//row[1]/SFR_HEC_flag</source_node>
+            <source_node>//row[1]/FLAG_SFR_HEC</source_node>
             <target_node>
                 <entity>
                 <type>parsec:E16_Column</type>
                 <instance_generator name="ColumnURI">
                     <arg name="data_source" type="constant">HECATE</arg>
-                    <arg name="column_name" type="constant">SFR_HEC_flag</arg>
+                    <arg name="column_name" type="constant">FLAG_SFR_HEC</arg>
                 </instance_generator>
                 <label_generator name="Label">
-                    <arg name="label" type="constant">SFR_HEC_flag</arg>
+                    <arg name="label" type="constant">FLAG_SFR_HEC</arg>
                 </label_generator>
                 <additional>
                     <relationship>parsec:P20_has_estimation_method</relationship>
@@ -5356,7 +5548,7 @@
                     <entity>
                     <type>parsec:E09_Measurement_Unit</type>
                     <instance_generator name="MeasurementUnitURI">
-                        <arg name="unit_label" type="constant">log(M_sun/yr)</arg>
+                        <arg name="unit_label" type="constant">log(M_sun%2Fyr)</arg>
                     </instance_generator>
                     <label_generator name="Label">
                         <arg name="label" type="constant">log(M_sun/yr)</arg>
@@ -5480,7 +5672,7 @@
                     <entity>
                     <type>parsec:E09_Measurement_Unit</type>
                     <instance_generator name="MeasurementUnitURI">
-                        <arg name="unit_label" type="constant">log(M_sun/yr)</arg>
+                        <arg name="unit_label" type="constant">log(M_sun%2Fyr)</arg>
                     </instance_generator>
                     <label_generator name="Label">
                         <arg name="label" type="constant">log(M_sun/yr)</arg>
@@ -5604,7 +5796,7 @@
                     <entity>
                     <type>parsec:E09_Measurement_Unit</type>
                     <instance_generator name="MeasurementUnitURI">
-                        <arg name="unit_label" type="constant">log(M_sun/yr)</arg>
+                        <arg name="unit_label" type="constant">log(M_sun%2Fyr)</arg>
                     </instance_generator>
                     <label_generator name="Label">
                         <arg name="label" type="constant">log(M_sun/yr)</arg>
@@ -5666,7 +5858,7 @@
                     <entity>
                     <type>parsec:E09_Measurement_Unit</type>
                     <instance_generator name="MeasurementUnitURI">
-                        <arg name="unit_label" type="constant">log(M_sun/yr)</arg>
+                        <arg name="unit_label" type="constant">log(M_sun%2Fyr)</arg>
                     </instance_generator>
                     <label_generator name="Label">
                         <arg name="label" type="constant">log(M_sun/yr)</arg>
@@ -5728,7 +5920,7 @@
                     <entity>
                     <type>parsec:E09_Measurement_Unit</type>
                     <instance_generator name="MeasurementUnitURI">
-                        <arg name="unit_label" type="constant">log(M_sun/yr)</arg>
+                        <arg name="unit_label" type="constant">log(M_sun%2Fyr)</arg>
                     </instance_generator>
                     <label_generator name="Label">
                         <arg name="label" type="constant">log(M_sun/yr)</arg>
@@ -5790,7 +5982,7 @@
                     <entity>
                     <type>parsec:E09_Measurement_Unit</type>
                     <instance_generator name="MeasurementUnitURI">
-                        <arg name="unit_label" type="constant">log(M_sun/yr)</arg>
+                        <arg name="unit_label" type="constant">log(M_sun%2Fyr)</arg>
                     </instance_generator>
                     <label_generator name="Label">
                         <arg name="label" type="constant">log(M_sun/yr)</arg>
@@ -5852,7 +6044,7 @@
                     <entity>
                     <type>parsec:E09_Measurement_Unit</type>
                     <instance_generator name="MeasurementUnitURI">
-                        <arg name="unit_label" type="constant">log(M_sun/yr)</arg>
+                        <arg name="unit_label" type="constant">log(M_sun%2Fyr)</arg>
                     </instance_generator>
                     <label_generator name="Label">
                         <arg name="label" type="constant">log(M_sun/yr)</arg>
@@ -5914,7 +6106,7 @@
                     <entity>
                     <type>parsec:E09_Measurement_Unit</type>
                     <instance_generator name="MeasurementUnitURI">
-                        <arg name="unit_label" type="constant">log(M_sun/yr)</arg>
+                        <arg name="unit_label" type="constant">log(M_sun%2Fyr)</arg>
                     </instance_generator>
                     <label_generator name="Label">
                         <arg name="label" type="constant">log(M_sun/yr)</arg>
