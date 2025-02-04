@@ -3,6 +3,7 @@
         <namespace prefix="xsd" uri="http://www.w3.org/2001/XMLSchema#"/>
         <namespace prefix="rdfs" uri="http://www.w3.org/2000/01/rdf-schema#"/>
         <namespace prefix="parsec" uri="https://parsec.forth.gr/"/>
+        <namespace prefix="custom"  uri="https://parsec.forth.gr/custom/"/>
         <namespace prefix="hecate" uri="https://hecate.ia.forth.gr/"/>
     </namespaces>
     <mappings>
@@ -21,12 +22,15 @@
                             <arg name="label">ROW_NUMBER/text()</arg>
                         </label_generator>
                         <additional>
-                            <relationship>parsec:P12_has_identifier</relationship>
+                            <relationship>parsec:P11_is_referred_in_data_source</relationship>
                             <entity>
-                                <type>rdfs:Literal</type>
-                                <instance_generator name="GalaxyLabel">
-                                    <arg name="label">ROW_NUMBER/text()</arg>
+                                <type>parsec:E15_Data_Table</type>
+                                <instance_generator name="DataTableURI">
+                                    <arg name="data_table_id" type="constant">HECATE</arg>
                                 </instance_generator>
+                                <label_generator name="Label">
+                                    <arg name="label" type="constant">HECATE</arg>
+                                </label_generator>
                             </entity>
                         </additional>
                     </entity>
@@ -35,373 +39,32 @@
             <link>
                 <path>
                     <source_relation>
-                        <relation>PGC[text()!="-"]</relation>
+                        <relation>PGC[text()!="-"] | OBJNAME[text()!="-"] | ID_NED[text()!="-"] | ID_NEDD[text()!="-"] | ID_IRAS[text()!="-"] | ID_2MASS[text()!="-"] | SDSS_PHOTID[text()!="-"] | SDSS_SPECID[text()!="-"]  </relation>
                     </source_relation>
                     <target_relation>
-                        <relationship>parsec:P01_has_measurement</relationship>
+                        <relationship>parsec:P12_has_identifier</relationship>
                     </target_relation>
                 </path>
                 <range>
-                    <source_node>PGC[text()!="-"]</source_node>
+                    <source_node>PGC[text()!="-"] | OBJNAME[text()!="-"] | ID_NED[text()!="-"] | ID_NEDD[text()!="-"] | ID_IRAS[text()!="-"] | ID_2MASS[text()!="-"] | SDSS_PHOTID[text()!="-"] | SDSS_SPECID[text()!="-"]  </source_node>
                     <target_node>
                         <entity>
-                            <type>parsec:E08_Measurement</type>
-                            <instance_generator name="CustomHecateMeasurementURI">
-                                <arg name="celestial_body_id" type="xpath">../ROW_NUMBER/text()</arg>
-                                <arg name="column_name" type="constant">pgc</arg>
-                            </instance_generator>
+                            <type>parsec:E17_Identifier</type>
+                            <instance_generator name="URIwithTypeAndProvenanceHashed">
+                                <arg name="provenance" type="xpath">name()</arg>
+                                <arg name="type" type="constant">identifier</arg>
+							    <arg name="id" type="xpath">.</arg>
+						    </instance_generator>
                             <label_generator name="Literal">
-                                <arg name="text" type="xpath">../PGC/text()</arg>
+                                <arg name="text" type="xpath">.</arg>
                             </label_generator>
                             <additional>
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
                                     <type>rdfs:Literal</type>
                                     <label_generator name="Literal">
-                                        <arg name="text" type="xpath">../PGC/text()</arg>
+                                        <arg name="text" type="xpath">.</arg>
                                     </label_generator>
-                                </entity>
-                            </additional>
-                            <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
-                                <entity>
-                                <type>parsec:E16_Column</type>
-                                <instance_generator name="ColumnURI">
-                                    <arg name="data_source" type="constant">HECATE</arg>
-                                    <arg name="column_name" type="constant">pgc</arg>
-                                </instance_generator>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="constant">pgc</arg>
-                                </label_generator>
-                                </entity>
-                            </additional>
-                        </entity>
-                    </target_node>
-                </range>
-            </link>
-            <link>
-                <path>
-                    <source_relation>
-                        <relation>OBJNAME[text()!="-"]</relation>
-                    </source_relation>
-                    <target_relation>
-                        <relationship>parsec:P01_has_measurement</relationship>
-                    </target_relation>
-                </path>
-                <range>
-                    <source_node>OBJNAME[text()!="-"]</source_node>
-                    <target_node>
-                        <entity>
-                            <type>parsec:E08_Measurement</type>
-                            <instance_generator name="CustomHecateMeasurementURI">
-                                <arg name="celestial_body_id" type="xpath">../ROW_NUMBER/text()</arg>
-                                <arg name="column_name" type="constant">objname</arg>
-                            </instance_generator>
-                            <label_generator name="Literal">
-                                <arg name="text" type="xpath">../OBJNAME/text()</arg>
-                            </label_generator>
-                            <additional>
-                                <relationship>parsec:P02_has_value</relationship>
-                                <entity>
-                                <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../OBJNAME/text()</arg>
-                                </label_generator>
-                                </entity>
-                            </additional>
-                            <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
-                                <entity>
-                                <type>parsec:E16_Column</type>
-                                <instance_generator name="ColumnURI">
-                                    <arg name="data_source" type="constant">HECATE</arg>
-                                    <arg name="column_name" type="constant">objname</arg>
-                                </instance_generator>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="constant">objname</arg>
-                                </label_generator>
-                                </entity>
-                            </additional>
-                        </entity>
-                    </target_node>
-                </range>
-            </link>
-            <link>
-                <path>
-                    <source_relation>
-                        <relation>ID_NED[text()!="-"]</relation>
-                    </source_relation>
-                    <target_relation>
-                        <relationship>parsec:P01_has_measurement</relationship>
-                    </target_relation>
-                </path>
-                <range>
-                    <source_node>ID_NED[text()!="-"]</source_node>
-                    <target_node>
-                        <entity>
-                            <type>parsec:E08_Measurement</type>
-                            <instance_generator name="CustomHecateMeasurementURI">
-                                <arg name="celestial_body_id" type="xpath">../ROW_NUMBER/text()</arg>
-                                <arg name="column_name" type="constant">id_ned</arg>
-                            </instance_generator>
-                            <label_generator name="Literal">
-                                <arg name="text" type="xpath">../ID_NED/text()</arg>
-                            </label_generator>
-                            <additional>
-                                <relationship>parsec:P02_has_value</relationship>
-                                <entity>
-                                <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../ID_NED/text()</arg>
-                                </label_generator>
-                                </entity>
-                            </additional>
-                            <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
-                                <entity>
-                                <type>parsec:E16_Column</type>
-                                <instance_generator name="ColumnURI">
-                                    <arg name="data_source" type="constant">HECATE</arg>
-                                    <arg name="column_name" type="constant">id_ned</arg>
-                                </instance_generator>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="constant">id_ned</arg>
-                                </label_generator>
-                                </entity>
-                            </additional>
-                        </entity>
-                    </target_node>
-                </range>
-            </link>
-            <link>
-                <path>
-                    <source_relation>
-                        <relation>ID_NEDD[text()!="-"]</relation>
-                    </source_relation>
-                    <target_relation>
-                        <relationship>parsec:P01_has_measurement</relationship>
-                    </target_relation>
-                </path>
-                <range>
-                    <source_node>ID_NEDD[text()!="-"]</source_node>
-                    <target_node>
-                        <entity>
-                            <type>parsec:E08_Measurement</type>
-                            <instance_generator name="CustomHecateMeasurementURI">
-                                <arg name="celestial_body_id" type="xpath">../ROW_NUMBER/text()</arg>
-                                <arg name="column_name" type="constant">id_nedd</arg>
-                            </instance_generator>
-                            <label_generator name="Literal">
-                                <arg name="text" type="xpath">../ID_NEDD/text()</arg>
-                            </label_generator>
-                            <additional>
-                                <relationship>parsec:P02_has_value</relationship>
-                                <entity>
-                                <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../ID_NEDD/text()</arg>
-                                </label_generator>
-                                </entity>
-                            </additional>
-                            <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
-                                <entity>
-                                <type>parsec:E16_Column</type>
-                                <instance_generator name="ColumnURI">
-                                    <arg name="data_source" type="constant">HECATE</arg>
-                                    <arg name="column_name" type="constant">id_nedd</arg>
-                                </instance_generator>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="constant">id_nedd</arg>
-                                </label_generator>
-                                </entity>
-                            </additional>
-                        </entity>
-                    </target_node>
-                </range>
-            </link>
-            <link>
-                <path>
-                    <source_relation>
-                        <relation>ID_IRAS[text()!="-"]</relation>
-                    </source_relation>
-                    <target_relation>
-                        <relationship>parsec:P01_has_measurement</relationship>
-                    </target_relation>
-                </path>
-                <range>
-                    <source_node>ID_IRAS[text()!="-"]</source_node>
-                    <target_node>
-                        <entity>
-                            <type>parsec:E08_Measurement</type>
-                            <instance_generator name="CustomHecateMeasurementURI">
-                                <arg name="celestial_body_id" type="xpath">../ROW_NUMBER/text()</arg>
-                                <arg name="column_name" type="constant">id_iras</arg>
-                            </instance_generator>
-                            <label_generator name="Literal">
-                                <arg name="text" type="xpath">../ID_IRAS/text()</arg>
-                            </label_generator>
-                            <additional>
-                                <relationship>parsec:P02_has_value</relationship>
-                                <entity>
-                                <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../ID_IRAS/text()</arg>
-                                </label_generator>
-                                </entity>
-                            </additional>
-                            <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
-                                <entity>
-                                <type>parsec:E16_Column</type>
-                                <instance_generator name="ColumnURI">
-                                    <arg name="data_source" type="constant">HECATE</arg>
-                                    <arg name="column_name" type="constant">id_iras</arg>
-                                </instance_generator>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="constant">id_iras</arg>
-                                </label_generator>
-                                </entity>
-                            </additional>
-                        </entity>
-                    </target_node>
-                </range>
-            </link>
-            <link>
-                <path>
-                    <source_relation>
-                        <relation>ID_2MASS[text()!="-"]</relation>
-                    </source_relation>
-                    <target_relation>
-                        <relationship>parsec:P01_has_measurement</relationship>
-                    </target_relation>
-                </path>
-                <range>
-                    <source_node>ID_2MASS[text()!="-"]</source_node>
-                    <target_node>
-                        <entity>
-                            <type>parsec:E08_Measurement</type>
-                            <instance_generator name="CustomHecateMeasurementURI">
-                                <arg name="celestial_body_id" type="xpath">../ROW_NUMBER/text()</arg>
-                                <arg name="column_name" type="constant">id_2mass</arg>
-                            </instance_generator>
-                            <label_generator name="Literal">
-                                <arg name="text" type="xpath">../ID_2MASS/text()</arg>
-                            </label_generator>
-                            <additional>
-                                <relationship>parsec:P02_has_value</relationship>
-                                <entity>
-                                <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../ID_2MASS/text()</arg>
-                                </label_generator>
-                                </entity>
-                            </additional>
-                            <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
-                                <entity>
-                                <type>parsec:E16_Column</type>
-                                <instance_generator name="ColumnURI">
-                                    <arg name="data_source" type="constant">HECATE</arg>
-                                    <arg name="column_name" type="constant">id_2mass</arg>
-                                </instance_generator>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="constant">id_2mass</arg>
-                                </label_generator>
-                                </entity>
-                            </additional>
-                        </entity>
-                    </target_node>
-                </range>
-            </link>
-            <link>
-                <path>
-                    <source_relation>
-                        <relation>SDSS_PHOTID[text()!="-"]</relation>
-                    </source_relation>
-                    <target_relation>
-                        <relationship>parsec:P01_has_measurement</relationship>
-                    </target_relation>
-                </path>
-                <range>
-                    <source_node>SDSS_PHOTID[text()!="-"]</source_node>
-                    <target_node>
-                        <entity>
-                            <type>parsec:E08_Measurement</type>
-                            <instance_generator name="CustomHecateMeasurementURI">
-                                <arg name="celestial_body_id" type="xpath">../ROW_NUMBER/text()</arg>
-                                <arg name="column_name" type="constant">sdss_photid</arg>
-                            </instance_generator>
-                            <label_generator name="Literal">
-                                <arg name="text" type="xpath">../SDSS_PHOTID/text()</arg>
-                            </label_generator>
-                            <additional>
-                                <relationship>parsec:P02_has_value</relationship>
-                                <entity>
-                                <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../SDSS_PHOTID/text()</arg>
-                                </label_generator>
-                                </entity>
-                            </additional>
-                            <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
-                                <entity>
-                                <type>parsec:E16_Column</type>
-                                <instance_generator name="ColumnURI">
-                                    <arg name="data_source" type="constant">HECATE</arg>
-                                    <arg name="column_name" type="constant">sdss_photid</arg>
-                                </instance_generator>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="constant">sdss_photid</arg>
-                                </label_generator>
-                                </entity>
-                            </additional>
-                        </entity>
-                    </target_node>
-                </range>
-            </link>
-            <link>
-                <path>
-                    <source_relation>
-                        <relation>SDSS_SPECID[text()!="-"]</relation>
-                    </source_relation>
-                    <target_relation>
-                        <relationship>parsec:P01_has_measurement</relationship>
-                    </target_relation>
-                </path>
-                <range>
-                    <source_node>SDSS_SPECID[text()!="-"]</source_node>
-                    <target_node>
-                        <entity>
-                            <type>parsec:E08_Measurement</type>
-                            <instance_generator name="CustomHecateMeasurementURI">
-                                <arg name="celestial_body_id" type="xpath">../ROW_NUMBER/text()</arg>
-                                <arg name="column_name" type="constant">sdss_specid</arg>
-                            </instance_generator>
-                            <label_generator name="Literal">
-                                <arg name="text" type="xpath">../SDSS_SPECID/text()</arg>
-                            </label_generator>
-                            <additional>
-                                <relationship>parsec:P02_has_value</relationship>
-                                <entity>
-                                <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../SDSS_SPECID/text()</arg>
-                                </label_generator>
-                                </entity>
-                            </additional>
-                            <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
-                                <entity>
-                                <type>parsec:E16_Column</type>
-                                <instance_generator name="ColumnURI">
-                                    <arg name="data_source" type="constant">HECATE</arg>
-                                    <arg name="column_name" type="constant">sdss_specid</arg>
-                                </instance_generator>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="constant">sdss_specid</arg>
-                                </label_generator>
                                 </entity>
                             </additional>
                         </entity>
@@ -455,7 +118,6 @@
                     </target_node>
                 </range>
             </link>
-
             <link>
                 <path>
                     <source_relation>
@@ -597,7 +259,6 @@
                     </target_node>
                 </range>
             </link>
-
             <link>
                 <path>
                     <source_relation>
@@ -645,7 +306,6 @@
                     </target_node>
                 </range>
             </link>
-
             <link>
                 <path>
                     <source_relation>

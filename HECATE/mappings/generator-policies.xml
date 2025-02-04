@@ -25,6 +25,10 @@
         <pattern>{type}/{id}</pattern>
     </generator>
 
+    <generator name="URIwithTypeAndProvenanceHashed" prefix="parsec" shorten="yes">
+        <pattern>{type}/{provenance}/{id}</pattern>
+    </generator>
+
     <generator name="URIorUUID">
         <custom generatorClass="gr.forth.URIorUUID">
             <set-arg name="text"></set-arg>
