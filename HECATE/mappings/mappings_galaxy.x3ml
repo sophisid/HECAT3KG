@@ -7,15 +7,16 @@
         <namespace prefix="hecate" uri="https://hecate.ia.forth.gr/"/>
     </namespaces>
     <mappings>
-        <!-- Mapping for E02_Celestial_Body entity -->
+        <!-- Mapping for E03_Galaxy entity -->
         <mapping namedgraph="">
             <domain>
                 <source_node>//row[text()!="-"]</source_node>
                 <target_node>
                     <entity>
+                        <type>parsec:E03_Galaxy</type>
                         <type>parsec:E02_Celestial_Body</type>
                         <instance_generator name="HecateCustomURIwithType">
-                            <arg name="type" type="constant">E02_Celestial_Body</arg>
+                            <arg name="type" type="constant">E03_Galaxy</arg>
                             <arg name="id" type="xpath">ROW_NUMBER/text()</arg>
                         </instance_generator>
                         <label_generator name="GalaxyLabel">
@@ -62,9 +63,9 @@
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
                                     <type>rdfs:Literal</type>
-                                    <label_generator name="Literal">
-                                        <arg name="text" type="xpath">.</arg>
-                                    </label_generator>
+                                    <instance_generator name="Literal">
+                                            <arg name="text" type="xpath">.</arg>
+                                    </instance_generator>
                                 </entity>
                             </additional>
                         </entity>
@@ -90,19 +91,19 @@
                                 <arg name="column_name" type="constant">ra</arg>
                             </instance_generator>
                             <label_generator name="Literal">
-                                <arg name="text" type="xpath">../RA/text()</arg>
+                                <arg name="text" type="xpath">.</arg>
                             </label_generator>
                             <additional>
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
-                                <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../RA/text()</arg>
-                                </label_generator>
+                                    <type>rdfs:Literal</type>
+                                    <instance_generator name="Literal">
+                                            <arg name="text" type="xpath">.</arg>
+                                    </instance_generator>
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P21_is_measurement_from_column</relationship>
                                 <entity>
                                 <type>parsec:E16_Column</type>
                                 <instance_generator name="ColumnURI">
@@ -137,19 +138,19 @@
                                 <arg name="column_name" type="constant">dec</arg>
                             </instance_generator>
                             <label_generator name="Literal">
-                                <arg name="text" type="xpath">../DEC/text()</arg>
+                                <arg name="text" type="xpath">.</arg>
                             </label_generator>
                             <additional>
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
                                 <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../DEC/text()</arg>
-                                </label_generator>
+                                <instance_generator name="Literal">
+                                        <arg name="text" type="xpath">.</arg>
+                                </instance_generator>
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P21_is_measurement_from_column</relationship>
                                 <entity>
                                 <type>parsec:E16_Column</type>
                                 <instance_generator name="ColumnURI">
@@ -184,19 +185,19 @@
                                 <arg name="column_name" type="constant">f_astrom</arg>
                             </instance_generator>
                             <label_generator name="Literal">
-                                <arg name="text" type="xpath">../F_ASTROM/text()</arg>
+                                <arg name="text" type="xpath">.</arg>
                             </label_generator>
                             <additional>
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
                                 <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../F_ASTROM/text()</arg>
-                                </label_generator>
+                                <instance_generator name="Literal">
+                                        <arg name="text" type="xpath">.</arg>
+                                </instance_generator>
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P21_is_measurement_from_column</relationship>
                                 <entity>
                                 <type>parsec:E16_Column</type>
                                 <instance_generator name="ColumnURI">
@@ -231,19 +232,19 @@
                                 <arg name="column_name" type="constant">r1</arg>
                             </instance_generator>
                             <label_generator name="Literal">
-                                <arg name="text" type="xpath">../R1/text()</arg>
+                                <arg name="text" type="xpath">.</arg>
                             </label_generator>
                             <additional>
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
-                                <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../R1/text()</arg>
-                                </label_generator>
+                                    <type>rdfs:Literal</type>
+                                    <instance_generator name="Literal">
+                                            <arg name="text" type="xpath">.</arg>
+                                    </instance_generator>
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P21_is_measurement_from_column</relationship>
                                 <entity>
                                 <type>parsec:E16_Column</type>
                                 <instance_generator name="ColumnURI">
@@ -284,13 +285,13 @@
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
                                 <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../R2/text()</arg>
-                                </label_generator>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">.</arg>
+                                </instance_generator>
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P21_is_measurement_from_column</relationship>
                                 <entity>
                                 <type>parsec:E16_Column</type>
                                 <instance_generator name="ColumnURI">
@@ -325,19 +326,19 @@
                                 <arg name="column_name" type="constant">pa</arg>
                             </instance_generator>
                             <label_generator name="Literal">
-                                <arg name="text" type="xpath">../PA/text()</arg>
+                                <arg name="text" type="xpath">.</arg>
                             </label_generator>
                             <additional>
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
                                 <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../PA/text()</arg>
-                                </label_generator>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">.</arg>
+                                </instance_generator>
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P21_is_measurement_from_column</relationship>
                                 <entity>
                                 <type>parsec:E16_Column</type>
                                 <instance_generator name="ColumnURI">
@@ -373,19 +374,19 @@
                                 <arg name="column_name" type="constant">rsource</arg>
                             </instance_generator>
                             <label_generator name="Literal">
-                                <arg name="text" type="xpath">../RSOURCE/text()</arg>
+                                <arg name="text" type="xpath">.</arg>
                             </label_generator>
                             <additional>
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
                                 <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../RSOURCE/text()</arg>
-                                </label_generator>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">.</arg>
+                                </instance_generator>
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P21_is_measurement_from_column</relationship>
                                 <entity>
                                 <type>parsec:E16_Column</type>
                                 <instance_generator name="ColumnURI">
@@ -421,19 +422,19 @@
                                 <arg name="column_name" type="constant">rflag</arg>
                             </instance_generator>
                             <label_generator name="Literal">
-                                <arg name="text" type="xpath">../RFLAG/text()</arg>
+                                <arg name="text" type="xpath">.</arg>
                             </label_generator>
                             <additional>
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
                                 <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../RFLAG/text()</arg>
-                                </label_generator>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">.</arg>
+                                </instance_generator>
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P21_is_measurement_from_column</relationship>
                                 <entity>
                                 <type>parsec:E16_Column</type>
                                 <instance_generator name="ColumnURI">
@@ -469,19 +470,37 @@
                                 <arg name="column_name" type="constant">t</arg>
                             </instance_generator>
                             <label_generator name="Literal">
-                                <arg name="text" type="xpath">../T/text()</arg>
+                                <arg name="text" type="xpath">.</arg>
                             </label_generator>
                             <additional>
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
                                 <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../T/text()</arg>
-                                </label_generator>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">.</arg>
+                                </instance_generator>
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P05_has_lower_error_margin_value</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">../E_T/text()</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                            <additional>
+                                <relationship>parsec:P06_has_upper_error_margin_value</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">../E_T/text()</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                            <additional>
+                                <relationship>parsec:P21_is_measurement_from_column</relationship>
                                 <entity>
                                 <type>parsec:E16_Column</type>
                                 <instance_generator name="ColumnURI">
@@ -497,7 +516,7 @@
                     </target_node>
                 </range>
             </link>
-            <link>
+            <!-- <link>
                 <path>
                     <source_relation>
                         <relation>E_T[text()!="-"]</relation>
@@ -516,19 +535,19 @@
                                 <arg name="column_name" type="constant">e_t</arg>
                             </instance_generator>
                             <label_generator name="Literal">
-                                <arg name="text" type="xpath">../E_T/text()</arg>
+                                <arg name="text" type="xpath">.</arg>
                             </label_generator>
                             <additional>
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
                                 <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../E_T/text()</arg>
-                                </label_generator>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">.</arg>
+                                </instance_generator>
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P21_is_measurement_from_column</relationship>
                                 <entity>
                                 <type>parsec:E16_Column</type>
                                 <instance_generator name="ColumnURI">
@@ -543,7 +562,7 @@
                         </entity>
                     </target_node>
                 </range>
-            </link>
+            </link> -->
 
             <link>
                 <path>
@@ -564,19 +583,19 @@
                                 <arg name="column_name" type="constant">incl</arg>
                             </instance_generator>
                             <label_generator name="Literal">
-                                <arg name="text" type="xpath">../INCL/text()</arg>
+                                <arg name="text" type="xpath">.</arg>
                             </label_generator>
                             <additional>
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
                                 <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../INCL/text()</arg>
-                                </label_generator>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">.</arg>
+                                </instance_generator>
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P21_is_measurement_from_column</relationship>
                                 <entity>
                                 <type>parsec:E16_Column</type>
                                 <instance_generator name="ColumnURI">
@@ -612,19 +631,37 @@
                                 <arg name="column_name" type="constant">v</arg>
                             </instance_generator>
                             <label_generator name="Literal">
-                                <arg name="text" type="xpath">../V/text()</arg>
+                                <arg name="text" type="xpath">.</arg>
                             </label_generator>
                             <additional>
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
                                 <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../V/text()</arg>
-                                </label_generator>
+                               <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">.</arg>
+                                </instance_generator>
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P05_has_lower_error_margin_value</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">../E_V/text()</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                            <additional>
+                                <relationship>parsec:P06_has_upper_error_margin_value</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">../E_V/text()</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                            <additional>
+                                <relationship>parsec:P21_is_measurement_from_column</relationship>
                                 <entity>
                                 <type>parsec:E16_Column</type>
                                 <instance_generator name="ColumnURI">
@@ -641,7 +678,7 @@
                 </range>
             </link>
 
-            <link>
+            <!-- <link>
                 <path>
                     <source_relation>
                         <relation>E_V[text()!="-"]</relation>
@@ -660,19 +697,19 @@
                                 <arg name="column_name" type="constant">e_v</arg>
                             </instance_generator>
                             <label_generator name="Literal">
-                                <arg name="text" type="xpath">../E_V/text()</arg>
+                                <arg name="text" type="xpath">.</arg>
                             </label_generator>
                             <additional>
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
                                 <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../E_V/text()</arg>
-                                </label_generator>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">.</arg>
+                                </instance_generator>
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P21_is_measurement_from_column</relationship>
                                 <entity>
                                 <type>parsec:E16_Column</type>
                                 <instance_generator name="ColumnURI">
@@ -687,7 +724,7 @@
                         </entity>
                     </target_node>
                 </range>
-            </link>
+            </link> -->
 
             <link>
                 <path>
@@ -708,19 +745,37 @@
                                 <arg name="column_name" type="constant">v_vir</arg>
                             </instance_generator>
                             <label_generator name="Literal">
-                                <arg name="text" type="xpath">../V_VIR/text()</arg>
+                                <arg name="text" type="xpath">.</arg>
                             </label_generator>
                             <additional>
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
                                 <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../V_VIR/text()</arg>
-                                </label_generator>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">.</arg>
+                                </instance_generator>
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P05_has_lower_error_margin_value</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">../E_V_VIR/text()</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                            <additional>
+                                <relationship>parsec:P06_has_upper_error_margin_value</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">../E_V_VIR/text()</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                            <additional>
+                                <relationship>parsec:P21_is_measurement_from_column</relationship>
                                 <entity>
                                 <type>parsec:E16_Column</type>
                                 <instance_generator name="ColumnURI">
@@ -737,7 +792,7 @@
                 </range>
             </link>
 
-            <link>
+            <!-- <link>
                 <path>
                     <source_relation>
                         <relation>E_V_VIR[text()!="-"]</relation>
@@ -756,19 +811,19 @@
                                 <arg name="column_name" type="constant">e_v_vir</arg>
                             </instance_generator>
                             <label_generator name="Literal">
-                                <arg name="text" type="xpath">../E_V_VIR/text()</arg>
+                                <arg name="text" type="xpath">.</arg>
                             </label_generator>
                             <additional>
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
                                 <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../E_V_VIR/text()</arg>
-                                </label_generator>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">.</arg>
+                                </instance_generator>
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P21_is_measurement_from_column</relationship>
                                 <entity>
                                 <type>parsec:E16_Column</type>
                                 <instance_generator name="ColumnURI">
@@ -783,7 +838,7 @@
                         </entity>
                     </target_node>
                 </range>
-            </link>
+            </link> -->
 
             <link>
                 <path>
@@ -804,19 +859,37 @@
                                 <arg name="column_name" type="constant">ndist</arg>
                             </instance_generator>
                             <label_generator name="Literal">
-                                <arg name="text" type="xpath">../NDIST/text()</arg>
+                                <arg name="text" type="xpath">.</arg>
                             </label_generator>
                             <additional>
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
                                 <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../NDIST/text()</arg>
-                                </label_generator>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">.</arg>
+                                </instance_generator>
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P05_has_lower_error_margin_value</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">../EDIST/text()</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                            <additional>
+                                <relationship>parsec:P06_has_upper_error_margin_value</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">../EDIST/text()</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                            <additional>
+                                <relationship>parsec:P21_is_measurement_from_column</relationship>
                                 <entity>
                                 <type>parsec:E16_Column</type>
                                 <instance_generator name="ColumnURI">
@@ -833,7 +906,7 @@
                 </range>
             </link>
 
-            <link>
+            <!-- <link>
                 <path>
                     <source_relation>
                         <relation>EDIST[text()!="-"]</relation>
@@ -852,19 +925,19 @@
                                 <arg name="column_name" type="constant">edist</arg>
                             </instance_generator>
                             <label_generator name="Literal">
-                                <arg name="text" type="xpath">../EDIST/text()</arg>
+                                <arg name="text" type="xpath">.</arg>
                             </label_generator>
                             <additional>
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
                                 <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../EDIST/text()</arg>
-                                </label_generator>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">.</arg>
+                                </instance_generator>
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P21_is_measurement_from_column</relationship>
                                 <entity>
                                 <type>parsec:E16_Column</type>
                                 <instance_generator name="ColumnURI">
@@ -879,7 +952,7 @@
                         </entity>
                     </target_node>
                 </range>
-            </link>
+            </link> -->
 
             <link>
                 <path>
@@ -900,19 +973,91 @@
                                 <arg name="column_name" type="constant">d</arg>
                             </instance_generator>
                             <label_generator name="Literal">
-                                <arg name="text" type="xpath">../D/text()</arg>
+                                <arg name="text" type="xpath">.</arg>
                             </label_generator>
                             <additional>
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
                                 <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../D/text()</arg>
-                                </label_generator>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">.</arg>
+                                </instance_generator>
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P05_has_lower_error_margin_value</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">../E_D/text()</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                            <additional>
+                                <relationship>parsec:P06_has_upper_error_margin_value</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">../E_D/text()</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                            <additional>
+                                <relationship>parsec:P27_has_error_confidence_interval_lower_bound</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">../D_LO68/text()</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                            <additional>
+                                <relationship>parsec:P27_has_error_confidence_interval_lower_bound</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">../D_LO95/text()</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                            <additional>
+                                <relationship>parsec:P28_has_error_confidence_interval_upper_bound</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">../D_HI68/text()</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                            <additional>
+                                <relationship>parsec:P28_has_error_confidence_interval_upper_bound</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">../D_HI95/text()</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                            <additional>
+                                <relationship>parsec:26_has_error_confidence_interval_percentage</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="constant">68</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                            <additional>
+                                <relationship>parsec:26_has_error_confidence_interval_percentage</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="constant">95</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                            <additional>
+                                <relationship>parsec:P21_is_measurement_from_column</relationship>
                                 <entity>
                                 <type>parsec:E16_Column</type>
                                 <instance_generator name="ColumnURI">
@@ -929,7 +1074,7 @@
                 </range>
             </link>
 
-            <link>
+            <!-- <link>
                 <path>
                     <source_relation>
                         <relation>E_D[text()!="-"]</relation>
@@ -948,19 +1093,19 @@
                                 <arg name="column_name" type="constant">e_d</arg>
                             </instance_generator>
                             <label_generator name="Literal">
-                                <arg name="text" type="xpath">../E_D/text()</arg>
+                                <arg name="text" type="xpath">.</arg>
                             </label_generator>
                             <additional>
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
                                 <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../E_D/text()</arg>
-                                </label_generator>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">.</arg>
+                                </instance_generator>
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P21_is_measurement_from_column</relationship>
                                 <entity>
                                 <type>parsec:E16_Column</type>
                                 <instance_generator name="ColumnURI">
@@ -975,8 +1120,8 @@
                         </entity>
                     </target_node>
                 </range>
-            </link>
-            <link>
+            </link> -->
+            <!-- <link>
                 <path>
                     <source_relation>
                         <relation>D_LO68[text()!="-"]</relation>
@@ -995,19 +1140,19 @@
                                 <arg name="column_name" type="constant">d_lo68</arg>
                             </instance_generator>
                             <label_generator name="Literal">
-                                <arg name="text" type="xpath">../D_LO68/text()</arg>
+                                <arg name="text" type="xpath">.</arg>
                             </label_generator>
                             <additional>
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
                                 <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../D_LO68/text()</arg>
-                                </label_generator>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">.</arg>
+                                </instance_generator>
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P21_is_measurement_from_column</relationship>
                                 <entity>
                                 <type>parsec:E16_Column</type>
                                 <instance_generator name="ColumnURI">
@@ -1022,9 +1167,9 @@
                         </entity>
                     </target_node>
                 </range>
-            </link>
+            </link> -->
 
-            <link>
+            <!-- <link>
                 <path>
                     <source_relation>
                         <relation>D_HI68[text()!="-"]</relation>
@@ -1043,19 +1188,19 @@
                                 <arg name="column_name" type="constant">d_hi68</arg>
                             </instance_generator>
                             <label_generator name="Literal">
-                                <arg name="text" type="xpath">../D_HI68/text()</arg>
+                                <arg name="text" type="xpath">.</arg>
                             </label_generator>
                             <additional>
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
                                 <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../D_HI68/text()</arg>
-                                </label_generator>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">.</arg>
+                                </instance_generator>
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P21_is_measurement_from_column</relationship>
                                 <entity>
                                 <type>parsec:E16_Column</type>
                                 <instance_generator name="ColumnURI">
@@ -1070,9 +1215,9 @@
                         </entity>
                     </target_node>
                 </range>
-            </link>
+            </link> -->
 
-            <link>
+            <!-- <link>
                 <path>
                     <source_relation>
                         <relation>D_LO95[text()!="-"]</relation>
@@ -1091,19 +1236,19 @@
                                 <arg name="column_name" type="constant">d_lo95</arg>
                             </instance_generator>
                             <label_generator name="Literal">
-                                <arg name="text" type="xpath">../D_LO95/text()</arg>
+                                <arg name="text" type="xpath">.</arg>
                             </label_generator>
                             <additional>
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
                                 <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../D_LO95/text()</arg>
-                                </label_generator>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">.</arg>
+                                </instance_generator>
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P21_is_measurement_from_column</relationship>
                                 <entity>
                                 <type>parsec:E16_Column</type>
                                 <instance_generator name="ColumnURI">
@@ -1118,9 +1263,9 @@
                         </entity>
                     </target_node>
                 </range>
-            </link>
+            </link> -->
 
-            <link>
+            <!-- <link>
                 <path>
                     <source_relation>
                         <relation>D_HI95[text()!="-"]</relation>
@@ -1139,19 +1284,19 @@
                                 <arg name="column_name" type="constant">d_hi95</arg>
                             </instance_generator>
                             <label_generator name="Literal">
-                                <arg name="text" type="xpath">../D_HI95/text()</arg>
+                                <arg name="text" type="xpath">.</arg>
                             </label_generator>
                             <additional>
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
                                 <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../D_HI95/text()</arg>
-                                </label_generator>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">.</arg>
+                                </instance_generator>
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P21_is_measurement_from_column</relationship>
                                 <entity>
                                 <type>parsec:E16_Column</type>
                                 <instance_generator name="ColumnURI">
@@ -1166,7 +1311,7 @@
                         </entity>
                     </target_node>
                 </range>
-            </link>
+            </link> -->
 
             <link>
                 <path>
@@ -1187,19 +1332,19 @@
                                 <arg name="column_name" type="constant">dmethod</arg>
                             </instance_generator>
                             <label_generator name="Literal">
-                                <arg name="text" type="xpath">../DMETHOD/text()</arg>
+                                <arg name="text" type="xpath">.</arg>
                             </label_generator>
                             <additional>
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
                                 <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../DMETHOD/text()</arg>
-                                </label_generator>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">.</arg>
+                                </instance_generator>
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P21_is_measurement_from_column</relationship>
                                 <entity>
                                 <type>parsec:E16_Column</type>
                                 <instance_generator name="ColumnURI">
@@ -1235,19 +1380,37 @@
                                 <arg name="column_name" type="constant">ut</arg>
                             </instance_generator>
                             <label_generator name="Literal">
-                                <arg name="text" type="xpath">../UT/text()</arg>
+                                <arg name="text" type="xpath">.</arg>
                             </label_generator>
                             <additional>
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
                                 <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../UT/text()</arg>
-                                </label_generator>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">.</arg>
+                                </instance_generator>
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P05_has_lower_error_margin_value</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">../E_UT/text()</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                            <additional>
+                                <relationship>parsec:P06_has_upper_error_margin_value</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">../E_UT/text()</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                            <additional>
+                                <relationship>parsec:P21_is_measurement_from_column</relationship>
                                 <entity>
                                 <type>parsec:E16_Column</type>
                                 <instance_generator name="ColumnURI">
@@ -1283,19 +1446,37 @@
                                 <arg name="column_name" type="constant">bt</arg>
                             </instance_generator>
                             <label_generator name="Literal">
-                                <arg name="text" type="xpath">../BT/text()</arg>
+                                <arg name="text" type="xpath">.</arg>
                             </label_generator>
                             <additional>
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
                                 <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../BT/text()</arg>
-                                </label_generator>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">.</arg>
+                                </instance_generator>
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P05_has_lower_error_margin_value</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">../E_BT/text()</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                            <additional>
+                                <relationship>parsec:P06_has_upper_error_margin_value</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">../E_BT/text()</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                            <additional>
+                                <relationship>parsec:P21_is_measurement_from_column</relationship>
                                 <entity>
                                 <type>parsec:E16_Column</type>
                                 <instance_generator name="ColumnURI">
@@ -1331,19 +1512,37 @@
                                 <arg name="column_name" type="constant">vt</arg>
                             </instance_generator>
                             <label_generator name="Literal">
-                                <arg name="text" type="xpath">../VT/text()</arg>
+                                <arg name="text" type="xpath">.</arg>
                             </label_generator>
                             <additional>
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
                                 <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../VT/text()</arg>
-                                </label_generator>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">.</arg>
+                                </instance_generator>
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P05_has_lower_error_margin_value</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">../E_VT/text()</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                            <additional>
+                                <relationship>parsec:P06_has_upper_error_margin_value</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">../E_VT/text()</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                            <additional>
+                                <relationship>parsec:P21_is_measurement_from_column</relationship>
                                 <entity>
                                 <type>parsec:E16_Column</type>
                                 <instance_generator name="ColumnURI">
@@ -1379,19 +1578,37 @@
                                 <arg name="column_name" type="constant">it</arg>
                             </instance_generator>
                             <label_generator name="Literal">
-                                <arg name="text" type="xpath">../IT/text()</arg>
+                                <arg name="text" type="xpath">.</arg>
                             </label_generator>
                             <additional>
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
                                 <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../IT/text()</arg>
-                                </label_generator>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">.</arg>
+                                </instance_generator>
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P05_has_lower_error_margin_value</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">../E_IT/text()</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                            <additional>
+                                <relationship>parsec:P06_has_upper_error_margin_value</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">../E_IT/text()</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                            <additional>
+                                <relationship>parsec:P21_is_measurement_from_column</relationship>
                                 <entity>
                                 <type>parsec:E16_Column</type>
                                 <instance_generator name="ColumnURI">
@@ -1408,7 +1625,7 @@
                 </range>
             </link>
 
-            <link>
+            <!-- <link>
                 <path>
                     <source_relation>
                         <relation>E_UT[text()!="-"]</relation>
@@ -1427,19 +1644,19 @@
                                 <arg name="column_name" type="constant">e_ut</arg>
                             </instance_generator>
                             <label_generator name="Literal">
-                                <arg name="text" type="xpath">../E_UT/text()</arg>
+                                <arg name="text" type="xpath">.</arg>
                             </label_generator>
                             <additional>
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
                                 <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../E_UT/text()</arg>
-                                </label_generator>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">.</arg>
+                                </instance_generator>
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P21_is_measurement_from_column</relationship>
                                 <entity>
                                 <type>parsec:E16_Column</type>
                                 <instance_generator name="ColumnURI">
@@ -1454,9 +1671,9 @@
                         </entity>
                     </target_node>
                 </range>
-            </link>
+            </link> -->
 
-            <link>
+            <!-- <link>
                 <path>
                     <source_relation>
                         <relation>E_BT[text()!="-"]</relation>
@@ -1475,19 +1692,19 @@
                                 <arg name="column_name" type="constant">e_bt</arg>
                             </instance_generator>
                             <label_generator name="Literal">
-                                <arg name="text" type="xpath">../E_BT/text()</arg>
+                                <arg name="text" type="xpath">.</arg>
                             </label_generator>
                             <additional>
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
                                 <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../E_BT/text()</arg>
-                                </label_generator>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">.</arg>
+                                </instance_generator>
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P21_is_measurement_from_column</relationship>
                                 <entity>
                                 <type>parsec:E16_Column</type>
                                 <instance_generator name="ColumnURI">
@@ -1502,9 +1719,9 @@
                         </entity>
                     </target_node>
                 </range>
-            </link>
+            </link> -->
 
-            <link>
+            <!-- <link>
                 <path>
                     <source_relation>
                         <relation>E_VT[text()!="-"]</relation>
@@ -1523,19 +1740,19 @@
                                 <arg name="column_name" type="constant">e_vt</arg>
                             </instance_generator>
                             <label_generator name="Literal">
-                                <arg name="text" type="xpath">../E_VT/text()</arg>
+                                <arg name="text" type="xpath">.</arg>
                             </label_generator>
                             <additional>
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
                                 <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../E_VT/text()</arg>
-                                </label_generator>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">.</arg>
+                                </instance_generator>
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P21_is_measurement_from_column</relationship>
                                 <entity>
                                 <type>parsec:E16_Column</type>
                                 <instance_generator name="ColumnURI">
@@ -1550,9 +1767,9 @@
                         </entity>
                     </target_node>
                 </range>
-            </link>
+            </link> -->
 
-            <link>
+            <!-- <link>
                 <path>
                     <source_relation>
                         <relation>E_IT[text()!="-"]</relation>
@@ -1571,19 +1788,19 @@
                                 <arg name="column_name" type="constant">e_it</arg>
                             </instance_generator>
                             <label_generator name="Literal">
-                                <arg name="text" type="xpath">../E_IT/text()</arg>
+                                <arg name="text" type="xpath">.</arg>
                             </label_generator>
                             <additional>
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
                                 <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../E_IT/text()</arg>
-                                </label_generator>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">.</arg>
+                                </instance_generator>
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P21_is_measurement_from_column</relationship>
                                 <entity>
                                 <type>parsec:E16_Column</type>
                                 <instance_generator name="ColumnURI">
@@ -1598,7 +1815,7 @@
                         </entity>
                     </target_node>
                 </range>
-            </link>
+            </link> -->
 
             <link>
                 <path>
@@ -1619,19 +1836,19 @@
                                 <arg name="column_name" type="constant">ag</arg>
                             </instance_generator>
                             <label_generator name="Literal">
-                                <arg name="text" type="xpath">../AG/text()</arg>
+                                <arg name="text" type="xpath">.</arg>
                             </label_generator>
                             <additional>
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
                                 <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../AG/text()</arg>
-                                </label_generator>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">.</arg>
+                                </instance_generator>
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P21_is_measurement_from_column</relationship>
                                 <entity>
                                 <type>parsec:E16_Column</type>
                                 <instance_generator name="ColumnURI">
@@ -1667,19 +1884,19 @@
                                 <arg name="column_name" type="constant">ai</arg>
                             </instance_generator>
                             <label_generator name="Literal">
-                                <arg name="text" type="xpath">../AI/text()</arg>
+                                <arg name="text" type="xpath">.</arg>
                             </label_generator>
                             <additional>
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
                                 <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../AI/text()</arg>
-                                </label_generator>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">.</arg>
+                                </instance_generator>
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P21_is_measurement_from_column</relationship>
                                 <entity>
                                 <type>parsec:E16_Column</type>
                                 <instance_generator name="ColumnURI">
@@ -1715,19 +1932,19 @@
                                 <arg name="column_name" type="constant">s12</arg>
                             </instance_generator>
                             <label_generator name="Literal">
-                                <arg name="text" type="xpath">../S12/text()</arg>
+                                <arg name="text" type="xpath">.</arg>
                             </label_generator>
                             <additional>
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
                                 <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../S12/text()</arg>
-                                </label_generator>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">.</arg>
+                                </instance_generator>
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P21_is_measurement_from_column</relationship>
                                 <entity>
                                 <type>parsec:E16_Column</type>
                                 <instance_generator name="ColumnURI">
@@ -1763,19 +1980,19 @@
                                 <arg name="column_name" type="constant">s25</arg>
                             </instance_generator>
                             <label_generator name="Literal">
-                                <arg name="text" type="xpath">../S25/text()</arg>
+                                <arg name="text" type="xpath">.</arg>
                             </label_generator>
                             <additional>
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
                                 <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../S25/text()</arg>
-                                </label_generator>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">.</arg>
+                                </instance_generator>
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P21_is_measurement_from_column</relationship>
                                 <entity>
                                 <type>parsec:E16_Column</type>
                                 <instance_generator name="ColumnURI">
@@ -1811,19 +2028,19 @@
                                 <arg name="column_name" type="constant">s60</arg>
                             </instance_generator>
                             <label_generator name="Literal">
-                                <arg name="text" type="xpath">../S60/text()</arg>
+                                <arg name="text" type="xpath">.</arg>
                             </label_generator>
                             <additional>
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
                                 <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../S60/text()</arg>
-                                </label_generator>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">.</arg>
+                                </instance_generator>
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P21_is_measurement_from_column</relationship>
                                 <entity>
                                 <type>parsec:E16_Column</type>
                                 <instance_generator name="ColumnURI">
@@ -1859,19 +2076,19 @@
                                 <arg name="column_name" type="constant">s100</arg>
                             </instance_generator>
                             <label_generator name="Literal">
-                                <arg name="text" type="xpath">../S100/text()</arg>
+                                <arg name="text" type="xpath">.</arg>
                             </label_generator>
                             <additional>
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
                                 <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../S100/text()</arg>
-                                </label_generator>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">.</arg>
+                                </instance_generator>
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P21_is_measurement_from_column</relationship>
                                 <entity>
                                 <type>parsec:E16_Column</type>
                                 <instance_generator name="ColumnURI">
@@ -1906,19 +2123,19 @@
                                 <arg name="column_name" type="constant">q12</arg>
                             </instance_generator>
                             <label_generator name="Literal">
-                                <arg name="text" type="xpath">../Q12/text()</arg>
+                                <arg name="text" type="xpath">.</arg>
                             </label_generator>
                             <additional>
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
                                 <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../Q12/text()</arg>
-                                </label_generator>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">.</arg>
+                                </instance_generator>
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P21_is_measurement_from_column</relationship>
                                 <entity>
                                 <type>parsec:E16_Column</type>
                                 <instance_generator name="ColumnURI">
@@ -1954,19 +2171,19 @@
                                 <arg name="column_name" type="constant">q25</arg>
                             </instance_generator>
                             <label_generator name="Literal">
-                                <arg name="text" type="xpath">../Q25/text()</arg>
+                                <arg name="text" type="xpath">.</arg>
                             </label_generator>
                             <additional>
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
                                 <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../Q25/text()</arg>
-                                </label_generator>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">.</arg>
+                                </instance_generator>
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P21_is_measurement_from_column</relationship>
                                 <entity>
                                 <type>parsec:E16_Column</type>
                                 <instance_generator name="ColumnURI">
@@ -2002,19 +2219,19 @@
                                 <arg name="column_name" type="constant">q60</arg>
                             </instance_generator>
                             <label_generator name="Literal">
-                                <arg name="text" type="xpath">../Q60/text()</arg>
+                                <arg name="text" type="xpath">.</arg>
                             </label_generator>
                             <additional>
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
                                 <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../Q60/text()</arg>
-                                </label_generator>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">.</arg>
+                                </instance_generator>
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P21_is_measurement_from_column</relationship>
                                 <entity>
                                 <type>parsec:E16_Column</type>
                                 <instance_generator name="ColumnURI">
@@ -2050,19 +2267,19 @@
                                 <arg name="column_name" type="constant">q100</arg>
                             </instance_generator>
                             <label_generator name="Literal">
-                                <arg name="text" type="xpath">../Q100/text()</arg>
+                                <arg name="text" type="xpath">.</arg>
                             </label_generator>
                             <additional>
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
                                 <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../Q100/text()</arg>
-                                </label_generator>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">.</arg>
+                                </instance_generator>
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P21_is_measurement_from_column</relationship>
                                 <entity>
                                 <type>parsec:E16_Column</type>
                                 <instance_generator name="ColumnURI">
@@ -2098,19 +2315,37 @@
                                 <arg name="column_name" type="constant">wf1</arg>
                             </instance_generator>
                             <label_generator name="Literal">
-                                <arg name="text" type="xpath">../WF1/text()</arg>
+                                <arg name="text" type="xpath">.</arg>
                             </label_generator>
                             <additional>
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
                                 <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../WF1/text()</arg>
-                                </label_generator>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">.</arg>
+                                </instance_generator>
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P05_has_lower_error_margin_value</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">../E_WF1/text()</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                            <additional>
+                                <relationship>parsec:P06_has_upper_error_margin_value</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">../E_WF1/text()</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                            <additional>
+                                <relationship>parsec:P21_is_measurement_from_column</relationship>
                                 <entity>
                                 <type>parsec:E16_Column</type>
                                 <instance_generator name="ColumnURI">
@@ -2146,19 +2381,37 @@
                                 <arg name="column_name" type="constant">wf2</arg>
                             </instance_generator>
                             <label_generator name="Literal">
-                                <arg name="text" type="xpath">../WF2/text()</arg>
+                                <arg name="text" type="xpath">.</arg>
                             </label_generator>
                             <additional>
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
                                 <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../WF2/text()</arg>
-                                </label_generator>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">.</arg>
+                                </instance_generator>
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P05_has_lower_error_margin_value</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">../E_WF2/text()</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                            <additional>
+                                <relationship>parsec:P06_has_upper_error_margin_value</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">../E_WF2/text()</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                            <additional>
+                                <relationship>parsec:P21_is_measurement_from_column</relationship>
                                 <entity>
                                 <type>parsec:E16_Column</type>
                                 <instance_generator name="ColumnURI">
@@ -2194,19 +2447,37 @@
                                 <arg name="column_name" type="constant">wf3</arg>
                             </instance_generator>
                             <label_generator name="Literal">
-                                <arg name="text" type="xpath">../WF3/text()</arg>
+                                <arg name="text" type="xpath">.</arg>
                             </label_generator>
                             <additional>
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
                                 <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../WF3/text()</arg>
-                                </label_generator>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">.</arg>
+                                </instance_generator>
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P05_has_lower_error_margin_value</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">../E_WF3/text()</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                            <additional>
+                                <relationship>parsec:P06_has_upper_error_margin_value</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">../E_WF3/text()</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                            <additional>
+                                <relationship>parsec:P21_is_measurement_from_column</relationship>
                                 <entity>
                                 <type>parsec:E16_Column</type>
                                 <instance_generator name="ColumnURI">
@@ -2242,19 +2513,37 @@
                                 <arg name="column_name" type="constant">wf4</arg>
                             </instance_generator>
                             <label_generator name="Literal">
-                                <arg name="text" type="xpath">../WF4/text()</arg>
+                                <arg name="text" type="xpath">.</arg>
                             </label_generator>
                             <additional>
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
                                 <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../WF4/text()</arg>
-                                </label_generator>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">.</arg>
+                                </instance_generator>
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P05_has_lower_error_margin_value</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">../E_WF4/text()</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                            <additional>
+                                <relationship>parsec:P06_has_upper_error_margin_value</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">../E_WF4/text()</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                            <additional>
+                                <relationship>parsec:P21_is_measurement_from_column</relationship>
                                 <entity>
                                 <type>parsec:E16_Column</type>
                                 <instance_generator name="ColumnURI">
@@ -2271,7 +2560,7 @@
             </range>
         </link>
 
-        <link>
+        <!-- <link>
             <path>
                 <source_relation>
                     <relation>E_WF1[text()!="-"]</relation>
@@ -2290,19 +2579,19 @@
                                 <arg name="column_name" type="constant">e_wf1</arg>
                             </instance_generator>
                             <label_generator name="Literal">
-                                <arg name="text" type="xpath">../E_WF1/text()</arg>
+                                <arg name="text" type="xpath">.</arg>
                             </label_generator>
                             <additional>
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
                                 <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../E_WF1/text()</arg>
-                                </label_generator>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">.</arg>
+                                </instance_generator>
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P21_is_measurement_from_column</relationship>
                                 <entity>
                                 <type>parsec:E16_Column</type>
                                 <instance_generator name="ColumnURI">
@@ -2317,9 +2606,9 @@
                         </entity>
                 </target_node>
             </range>
-        </link>
+        </link> -->
 
-        <link>
+        <!-- <link>
             <path>
                 <source_relation>
                     <relation>E_WF2[text()!="-"]</relation>
@@ -2338,19 +2627,19 @@
                                 <arg name="column_name" type="constant">e_wf2</arg>
                             </instance_generator>
                             <label_generator name="Literal">
-                                <arg name="text" type="xpath">../E_WF2/text()</arg>
+                                <arg name="text" type="xpath">.</arg>
                             </label_generator>
                             <additional>
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
                                 <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../E_WF2/text()</arg>
-                                </label_generator>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">.</arg>
+                                </instance_generator>
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P21_is_measurement_from_column</relationship>
                                 <entity>
                                 <type>parsec:E16_Column</type>
                                 <instance_generator name="ColumnURI">
@@ -2365,9 +2654,9 @@
                         </entity>
                 </target_node>
             </range>
-        </link>
+        </link> -->
 
-        <link>
+        <!-- <link>
             <path>
                 <source_relation>
                     <relation>E_WF3[text()!="-"]</relation>
@@ -2386,19 +2675,19 @@
                                 <arg name="column_name" type="constant">e_wf3</arg>
                             </instance_generator>
                             <label_generator name="Literal">
-                                <arg name="text" type="xpath">../E_WF3/text()</arg>
+                                <arg name="text" type="xpath">.</arg>
                             </label_generator>
                             <additional>
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
                                 <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../E_WF3/text()</arg>
-                                </label_generator>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">.</arg>
+                                </instance_generator>
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P21_is_measurement_from_column</relationship>
                                 <entity>
                                 <type>parsec:E16_Column</type>
                                 <instance_generator name="ColumnURI">
@@ -2413,8 +2702,8 @@
                         </entity>
                 </target_node>
             </range>
-        </link>
-        <link>
+        </link> -->
+        <!-- <link>
             <path>
                 <source_relation>
                     <relation>E_WF4[text()!="-"]</relation>
@@ -2433,19 +2722,19 @@
                                 <arg name="column_name" type="constant">e_wf4</arg>
                             </instance_generator>
                             <label_generator name="Literal">
-                                <arg name="text" type="xpath">../E_WF4/text()</arg>
+                                <arg name="text" type="xpath">.</arg>
                             </label_generator>
                             <additional>
                                 <relationship>parsec:P02_has_value</relationship>
                                 <entity>
                                 <type>rdfs:Literal</type>
-                                <label_generator name="Literal">
-                                    <arg name="text" type="xpath">../E_WF4/text()</arg>
-                                </label_generator>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">.</arg>
+                                </instance_generator>
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P21_is_measurement_from_column</relationship>
                                 <entity>
                                 <type>parsec:E16_Column</type>
                                 <instance_generator name="ColumnURI">
@@ -2460,7 +2749,7 @@
                         </entity>
                 </target_node>
             </range>
-        </link>
+        </link> -->
 
         <link>
             <path>
@@ -2481,19 +2770,19 @@
                         <arg name="column_name" type="constant">wfpoint</arg>
                     </instance_generator>
                     <label_generator name="Literal">
-                        <arg name="text" type="xpath">../WFPOINT/text()</arg>
+                        <arg name="text" type="xpath">.</arg>
                     </label_generator>
                     <additional>
                         <relationship>parsec:P02_has_value</relationship>
                         <entity>
                         <type>rdfs:Literal</type>
-                        <label_generator name="Literal">
-                            <arg name="text" type="xpath">../WFPOINT/text()</arg>
-                        </label_generator>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">.</arg>
+                        </instance_generator>
                         </entity>
                     </additional>
                     <additional>
-                        <relationship>parsec:P12_is_measurement_from_column</relationship>
+                        <relationship>parsec:P21_is_measurement_from_column</relationship>
                         <entity>
                         <type>parsec:E16_Column</type>
                         <instance_generator name="ColumnURI">
@@ -2529,19 +2818,19 @@
                     <arg name="column_name" type="constant">wftreat</arg>
                 </instance_generator>
                 <label_generator name="Literal">
-                    <arg name="text" type="xpath">../WFTREAT/text()</arg>
+                    <arg name="text" type="xpath">.</arg>
                 </label_generator>
                 <additional>
                     <relationship>parsec:P02_has_value</relationship>
                     <entity>
                     <type>rdfs:Literal</type>
-                    <label_generator name="Literal">
-                        <arg name="text" type="xpath">../WFTREAT/text()</arg>
-                    </label_generator>
+                    <instance_generator name="Literal">
+                        <arg name="text" type="xpath">.</arg>
+                    </instance_generator>
                     </entity>
                 </additional>
                 <additional>
-                    <relationship>parsec:P12_is_measurement_from_column</relationship>
+                    <relationship>parsec:P21_is_measurement_from_column</relationship>
                     <entity>
                     <type>parsec:E16_Column</type>
                     <instance_generator name="ColumnURI">
@@ -2577,19 +2866,37 @@
                         <arg name="column_name" type="constant">j</arg>
                     </instance_generator>
                     <label_generator name="Literal">
-                        <arg name="text" type="xpath">../J/text()</arg>
+                        <arg name="text" type="xpath">.</arg>
                     </label_generator>
                     <additional>
                         <relationship>parsec:P02_has_value</relationship>
                         <entity>
                         <type>rdfs:Literal</type>
-                        <label_generator name="Literal">
-                            <arg name="text" type="xpath">../J/text()</arg>
-                        </label_generator>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">.</arg>
+                        </instance_generator>
                         </entity>
                     </additional>
                     <additional>
-                        <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P05_has_lower_error_margin_value</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">../E_J/text()</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                            <additional>
+                                <relationship>parsec:P06_has_upper_error_margin_value</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">../E_J/text()</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                    <additional>
+                        <relationship>parsec:P21_is_measurement_from_column</relationship>
                         <entity>
                         <type>parsec:E16_Column</type>
                         <instance_generator name="ColumnURI">
@@ -2625,19 +2932,37 @@
                             <arg name="column_name" type="constant">h</arg>
                         </instance_generator>
                         <label_generator name="Literal">
-                            <arg name="text" type="xpath">../H/text()</arg>
+                            <arg name="text" type="xpath">.</arg>
                         </label_generator>
                         <additional>
                             <relationship>parsec:P02_has_value</relationship>
                             <entity>
                             <type>rdfs:Literal</type>
-                            <label_generator name="Literal">
-                                <arg name="text" type="xpath">../H/text()</arg>
-                            </label_generator>
+                            <instance_generator name="Literal">
+                                <arg name="text" type="xpath">.</arg>
+                            </instance_generator>
                             </entity>
                         </additional>
                         <additional>
-                            <relationship>parsec:P12_is_measurement_from_column</relationship>
+                                <relationship>parsec:P05_has_lower_error_margin_value</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">../E_H/text()</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                            <additional>
+                                <relationship>parsec:P06_has_upper_error_margin_value</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">../E_H/text()</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                        <additional>
+                            <relationship>parsec:P21_is_measurement_from_column</relationship>
                             <entity>
                             <type>parsec:E16_Column</type>
                             <instance_generator name="ColumnURI">
@@ -2673,19 +2998,37 @@
                         <arg name="column_name" type="constant">k</arg>
                     </instance_generator>
                     <label_generator name="Literal">
-                        <arg name="text" type="xpath">../K/text()</arg>
+                        <arg name="text" type="xpath">.</arg>
                     </label_generator>
                     <additional>
                         <relationship>parsec:P02_has_value</relationship>
                         <entity>
                         <type>rdfs:Literal</type>
-                        <label_generator name="Literal">
-                            <arg name="text" type="xpath">../K/text()</arg>
-                        </label_generator>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">.</arg>
+                        </instance_generator>
                         </entity>
                     </additional>
                     <additional>
-                        <relationship>parsec:P12_is_measurement_from_column</relationship>
+                        <relationship>parsec:P05_has_lower_error_margin_value</relationship>
+                        <entity>
+                        <type>rdfs:Literal</type>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">../E_K/text()</arg>
+                        </instance_generator>
+                        </entity>
+                    </additional>
+                    <additional>
+                        <relationship>parsec:P06_has_upper_error_margin_value</relationship>
+                        <entity>
+                        <type>rdfs:Literal</type>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">../E_K/text()</arg>
+                        </instance_generator>
+                        </entity>
+                    </additional>
+                    <additional>
+                        <relationship>parsec:P21_is_measurement_from_column</relationship>
                         <entity>
                         <type>parsec:E16_Column</type>
                         <instance_generator name="ColumnURI">
@@ -2702,7 +3045,7 @@
             </range>
         </link>
 
-        <link>
+        <!-- <link>
             <path>
             <source_relation>
                 <relation>E_J[text()!="-"]</relation>
@@ -2721,19 +3064,19 @@
                         <arg name="column_name" type="constant">e_j</arg>
                     </instance_generator>
                     <label_generator name="Literal">
-                        <arg name="text" type="xpath">../E_J/text()</arg>
+                        <arg name="text" type="xpath">.</arg>
                     </label_generator>
                     <additional>
                         <relationship>parsec:P02_has_value</relationship>
                         <entity>
                         <type>rdfs:Literal</type>
-                        <label_generator name="Literal">
-                            <arg name="text" type="xpath">../E_J/text()</arg>
-                        </label_generator>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">.</arg>
+                        </instance_generator>
                         </entity>
                     </additional>
                     <additional>
-                        <relationship>parsec:P12_is_measurement_from_column</relationship>
+                        <relationship>parsec:P21_is_measurement_from_column</relationship>
                         <entity>
                         <type>parsec:E16_Column</type>
                         <instance_generator name="ColumnURI">
@@ -2748,9 +3091,9 @@
                 </entity>
             </target_node>
             </range>
-        </link>
+        </link> -->
 
-        <link>
+        <!-- <link>
             <path>
             <source_relation>
                 <relation>E_H[text()!="-"]</relation>
@@ -2769,19 +3112,19 @@
                         <arg name="column_name" type="constant">e_h</arg>
                     </instance_generator>
                     <label_generator name="Literal">
-                        <arg name="text" type="xpath">../E_H/text()</arg>
+                        <arg name="text" type="xpath">.</arg>
                     </label_generator>
                     <additional>
                         <relationship>parsec:P02_has_value</relationship>
                         <entity>
                         <type>rdfs:Literal</type>
-                        <label_generator name="Literal">
-                            <arg name="text" type="xpath">../E_H/text()</arg>
-                        </label_generator>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">.</arg>
+                        </instance_generator>
                         </entity>
                     </additional>
                     <additional>
-                        <relationship>parsec:P12_is_measurement_from_column</relationship>
+                        <relationship>parsec:P21_is_measurement_from_column</relationship>
                         <entity>
                         <type>parsec:E16_Column</type>
                         <instance_generator name="ColumnURI">
@@ -2796,9 +3139,9 @@
                 </entity>
             </target_node>
             </range>
-        </link>
+        </link> -->
 
-        <link>
+        <!-- <link>
             <path>
             <source_relation>
                 <relation>E_K[text()!="-"]</relation>
@@ -2817,19 +3160,19 @@
                         <arg name="column_name" type="constant">e_k</arg>
                     </instance_generator>
                     <label_generator name="Literal">
-                        <arg name="text" type="xpath">../E_K/text()</arg>
+                        <arg name="text" type="xpath">.</arg>
                     </label_generator>
                     <additional>
                         <relationship>parsec:P02_has_value</relationship>
                         <entity>
                         <type>rdfs:Literal</type>
-                        <label_generator name="Literal">
-                            <arg name="text" type="xpath">../E_K/text()</arg>
-                        </label_generator>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">.</arg>
+                        </instance_generator>
                         </entity>
                     </additional>
                     <additional>
-                        <relationship>parsec:P12_is_measurement_from_column</relationship>
+                        <relationship>parsec:P21_is_measurement_from_column</relationship>
                         <entity>
                         <type>parsec:E16_Column</type>
                         <instance_generator name="ColumnURI">
@@ -2844,7 +3187,7 @@
                 </entity>
             </target_node>
             </range>
-        </link>
+        </link> -->
          <link>
             <path>
             <source_relation>
@@ -2864,19 +3207,19 @@
                         <arg name="column_name" type="constant">flag_2mass</arg>
                     </instance_generator>
                     <label_generator name="Literal">
-                        <arg name="text" type="xpath">../FLAG_2MASS/text()</arg>
+                        <arg name="text" type="xpath">.</arg>
                     </label_generator>
                     <additional>
                         <relationship>parsec:P02_has_value</relationship>
                         <entity>
                         <type>rdfs:Literal</type>
-                        <label_generator name="Literal">
-                            <arg name="text" type="xpath">../FLAG_2MASS/text()</arg>
-                        </label_generator>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">.</arg>
+                        </instance_generator>
                         </entity>
                     </additional>
                     <additional>
-                        <relationship>parsec:P12_is_measurement_from_column</relationship>
+                        <relationship>parsec:P21_is_measurement_from_column</relationship>
                         <entity>
                         <type>parsec:E16_Column</type>
                         <instance_generator name="ColumnURI">
@@ -2912,19 +3255,37 @@
                         <arg name="column_name" type="constant">u</arg>
                     </instance_generator>
                     <label_generator name="Literal">
-                        <arg name="text" type="xpath">../U/text()</arg>
+                        <arg name="text" type="xpath">.</arg>
                     </label_generator>
                     <additional>
                         <relationship>parsec:P02_has_value</relationship>
                         <entity>
                         <type>rdfs:Literal</type>
-                        <label_generator name="Literal">
-                            <arg name="text" type="xpath">../U/text()</arg>
-                        </label_generator>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">.</arg>
+                        </instance_generator>
                         </entity>
                     </additional>
                     <additional>
-                        <relationship>parsec:P12_is_measurement_from_column</relationship>
+                        <relationship>parsec:P05_has_lower_error_margin_value</relationship>
+                        <entity>
+                        <type>rdfs:Literal</type>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">../E_U/text()</arg>
+                        </instance_generator>
+                        </entity>
+                    </additional>
+                    <additional>
+                        <relationship>parsec:P06_has_upper_error_margin_value</relationship>
+                        <entity>
+                        <type>rdfs:Literal</type>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">../E_U/text()</arg>
+                        </instance_generator>
+                        </entity>
+                    </additional>
+                    <additional>
+                        <relationship>parsec:P21_is_measurement_from_column</relationship>
                         <entity>
                         <type>parsec:E16_Column</type>
                         <instance_generator name="ColumnURI">
@@ -2960,19 +3321,37 @@
                         <arg name="column_name" type="constant">g</arg>
                     </instance_generator>
                     <label_generator name="Literal">
-                        <arg name="text" type="xpath">../G/text()</arg>
+                        <arg name="text" type="xpath">.</arg>
                     </label_generator>
                     <additional>
                         <relationship>parsec:P02_has_value</relationship>
                         <entity>
                         <type>rdfs:Literal</type>
-                        <label_generator name="Literal">
-                            <arg name="text" type="xpath">../G/text()</arg>
-                        </label_generator>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">.</arg>
+                        </instance_generator>
                         </entity>
                     </additional>
                     <additional>
-                        <relationship>parsec:P12_is_measurement_from_column</relationship>
+                        <relationship>parsec:P05_has_lower_error_margin_value</relationship>
+                        <entity>
+                        <type>rdfs:Literal</type>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">../E_G/text()</arg>
+                        </instance_generator>
+                        </entity>
+                    </additional>
+                    <additional>
+                        <relationship>parsec:P06_has_upper_error_margin_value</relationship>
+                        <entity>
+                        <type>rdfs:Literal</type>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">../E_G/text()</arg>
+                        </instance_generator>
+                        </entity>
+                    </additional>
+                    <additional>
+                        <relationship>parsec:P21_is_measurement_from_column</relationship>
                         <entity>
                         <type>parsec:E16_Column</type>
                         <instance_generator name="ColumnURI">
@@ -3008,19 +3387,37 @@
                         <arg name="column_name" type="constant">r</arg>
                     </instance_generator>
                     <label_generator name="Literal">
-                        <arg name="text" type="xpath">../R/text()</arg>
+                        <arg name="text" type="xpath">.</arg>
                     </label_generator>
                     <additional>
                         <relationship>parsec:P02_has_value</relationship>
                         <entity>
                         <type>rdfs:Literal</type>
-                        <label_generator name="Literal">
-                            <arg name="text" type="xpath">../R/text()</arg>
-                        </label_generator>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">.</arg>
+                        </instance_generator>
                         </entity>
                     </additional>
                     <additional>
-                        <relationship>parsec:P12_is_measurement_from_column</relationship>
+                        <relationship>parsec:P05_has_lower_error_margin_value</relationship>
+                        <entity>
+                        <type>rdfs:Literal</type>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">../E_R/text()</arg>
+                        </instance_generator>
+                        </entity>
+                    </additional>
+                    <additional>
+                        <relationship>parsec:P06_has_upper_error_margin_value</relationship>
+                        <entity>
+                        <type>rdfs:Literal</type>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">../E_R/text()</arg>
+                        </instance_generator>
+                        </entity>
+                    </additional>
+                    <additional>
+                        <relationship>parsec:P21_is_measurement_from_column</relationship>
                         <entity>
                         <type>parsec:E16_Column</type>
                         <instance_generator name="ColumnURI">
@@ -3056,19 +3453,37 @@
                         <arg name="column_name" type="constant">i</arg>
                     </instance_generator>
                     <label_generator name="Literal">
-                        <arg name="text" type="xpath">../I/text()</arg>
+                        <arg name="text" type="xpath">.</arg>
                     </label_generator>
                     <additional>
                         <relationship>parsec:P02_has_value</relationship>
                         <entity>
                         <type>rdfs:Literal</type>
-                        <label_generator name="Literal">
-                            <arg name="text" type="xpath">../I/text()</arg>
-                        </label_generator>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">.</arg>
+                        </instance_generator>
                         </entity>
                     </additional>
                     <additional>
-                        <relationship>parsec:P12_is_measurement_from_column</relationship>
+                        <relationship>parsec:P05_has_lower_error_margin_value</relationship>
+                        <entity>
+                        <type>rdfs:Literal</type>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">../E_I/text()</arg>
+                        </instance_generator>
+                        </entity>
+                    </additional>
+                    <additional>
+                        <relationship>parsec:P06_has_upper_error_margin_value</relationship>
+                        <entity>
+                        <type>rdfs:Literal</type>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">../E_I/text()</arg>
+                        </instance_generator>
+                        </entity>
+                    </additional>
+                    <additional>
+                        <relationship>parsec:P21_is_measurement_from_column</relationship>
                         <entity>
                         <type>parsec:E16_Column</type>
                         <instance_generator name="ColumnURI">
@@ -3104,19 +3519,37 @@
                         <arg name="column_name" type="constant">z</arg>
                     </instance_generator>
                     <label_generator name="Literal">
-                        <arg name="text" type="xpath">../Z/text()</arg>
+                        <arg name="text" type="xpath">.</arg>
                     </label_generator>
                     <additional>
                         <relationship>parsec:P02_has_value</relationship>
                         <entity>
                         <type>rdfs:Literal</type>
-                        <label_generator name="Literal">
-                            <arg name="text" type="xpath">../Z/text()</arg>
-                        </label_generator>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">.</arg>
+                        </instance_generator>
                         </entity>
                     </additional>
                     <additional>
-                        <relationship>parsec:P12_is_measurement_from_column</relationship>
+                        <relationship>parsec:P05_has_lower_error_margin_value</relationship>
+                        <entity>
+                        <type>rdfs:Literal</type>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">../E_Z/text()</arg>
+                        </instance_generator>
+                        </entity>
+                    </additional>
+                    <additional>
+                        <relationship>parsec:P06_has_upper_error_margin_value</relationship>
+                        <entity>
+                        <type>rdfs:Literal</type>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">../E_Z/text()</arg>
+                        </instance_generator>
+                        </entity>
+                    </additional>
+                    <additional>
+                        <relationship>parsec:P21_is_measurement_from_column</relationship>
                         <entity>
                         <type>parsec:E16_Column</type>
                         <instance_generator name="ColumnURI">
@@ -3133,7 +3566,7 @@
             </range>
         </link>
 
-        <link>
+        <!-- <link>
             <path>
             <source_relation>
                 <relation>E_U[text()!="-"]</relation>
@@ -3152,19 +3585,19 @@
                         <arg name="column_name" type="constant">e_u</arg>
                     </instance_generator>
                     <label_generator name="Literal">
-                        <arg name="text" type="xpath">../E_U/text()</arg>
+                        <arg name="text" type="xpath">.</arg>
                     </label_generator>
                     <additional>
                         <relationship>parsec:P02_has_value</relationship>
                         <entity>
                         <type>rdfs:Literal</type>
-                        <label_generator name="Literal">
-                            <arg name="text" type="xpath">../E_U/text()</arg>
-                        </label_generator>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">.</arg>
+                        </instance_generator>
                         </entity>
                     </additional>
                     <additional>
-                        <relationship>parsec:P12_is_measurement_from_column</relationship>
+                        <relationship>parsec:P21_is_measurement_from_column</relationship>
                         <entity>
                         <type>parsec:E16_Column</type>
                         <instance_generator name="ColumnURI">
@@ -3179,9 +3612,9 @@
                 </entity>
             </target_node>
             </range>
-        </link>
+        </link> -->
 
-        <link>
+        <!-- <link>
             <path>
             <source_relation>
                 <relation>E_G[text()!="-"]</relation>
@@ -3200,19 +3633,19 @@
                         <arg name="column_name" type="constant">e_g</arg>
                     </instance_generator>
                     <label_generator name="Literal">
-                        <arg name="text" type="xpath">../E_G/text()</arg>
+                        <arg name="text" type="xpath">.</arg>
                     </label_generator>
                     <additional>
                         <relationship>parsec:P02_has_value</relationship>
                         <entity>
                         <type>rdfs:Literal</type>
-                        <label_generator name="Literal">
-                            <arg name="text" type="xpath">../E_G/text()</arg>
-                        </label_generator>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">.</arg>
+                        </instance_generator>
                         </entity>
                     </additional>
                     <additional>
-                        <relationship>parsec:P12_is_measurement_from_column</relationship>
+                        <relationship>parsec:P21_is_measurement_from_column</relationship>
                         <entity>
                         <type>parsec:E16_Column</type>
                         <instance_generator name="ColumnURI">
@@ -3227,9 +3660,9 @@
                 </entity>
             </target_node>
             </range>
-        </link>
+        </link> -->
 
-        <link>
+        <!-- <link>
             <path>
             <source_relation>
                 <relation>E_R[text()!="-"]</relation>
@@ -3248,19 +3681,19 @@
                         <arg name="column_name" type="constant">e_r</arg>
                     </instance_generator>
                     <label_generator name="Literal">
-                        <arg name="text" type="xpath">../E_R/text()</arg>
+                        <arg name="text" type="xpath">.</arg>
                     </label_generator>
                     <additional>
                         <relationship>parsec:P02_has_value</relationship>
                         <entity>
                         <type>rdfs:Literal</type>
-                        <label_generator name="Literal">
-                            <arg name="text" type="xpath">../E_R/text()</arg>
-                        </label_generator>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">.</arg>
+                        </instance_generator>
                         </entity>
                     </additional>
                     <additional>
-                        <relationship>parsec:P12_is_measurement_from_column</relationship>
+                        <relationship>parsec:P21_is_measurement_from_column</relationship>
                         <entity>
                         <type>parsec:E16_Column</type>
                         <instance_generator name="ColumnURI">
@@ -3275,9 +3708,9 @@
                 </entity>
             </target_node>
             </range>
-        </link>
+        </link> -->
 
-        <link>
+        <!-- <link>
             <path>
             <source_relation>
                 <relation>E_I[text()!="-"]</relation>
@@ -3296,19 +3729,19 @@
                         <arg name="column_name" type="constant">e_i</arg>
                     </instance_generator>
                     <label_generator name="Literal">
-                        <arg name="text" type="xpath">../E_I/text()</arg>
+                        <arg name="text" type="xpath">.</arg>
                     </label_generator>
                     <additional>
                         <relationship>parsec:P02_has_value</relationship>
                         <entity>
                         <type>rdfs:Literal</type>
-                        <label_generator name="Literal">
-                            <arg name="text" type="xpath">../E_I/text()</arg>
-                        </label_generator>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">.</arg>
+                        </instance_generator>
                         </entity>
                     </additional>
                     <additional>
-                        <relationship>parsec:P12_is_measurement_from_column</relationship>
+                        <relationship>parsec:P21_is_measurement_from_column</relationship>
                         <entity>
                         <type>parsec:E16_Column</type>
                         <instance_generator name="ColumnURI">
@@ -3323,9 +3756,9 @@
                 </entity>
             </target_node>
             </range>
-        </link>
+        </link> -->
 
-        <link>
+        <!-- <link>
             <path>
             <source_relation>
                 <relation>E_Z[text()!="-"]</relation>
@@ -3344,19 +3777,19 @@
                         <arg name="column_name" type="constant">e_z</arg>
                     </instance_generator>
                     <label_generator name="Literal">
-                        <arg name="text" type="xpath">../E_Z/text()</arg>
+                        <arg name="text" type="xpath">.</arg>
                     </label_generator>
                     <additional>
                         <relationship>parsec:P02_has_value</relationship>
                         <entity>
                         <type>rdfs:Literal</type>
-                        <label_generator name="Literal">
-                            <arg name="text" type="xpath">../E_Z/text()</arg>
-                        </label_generator>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">.</arg>
+                        </instance_generator>
                         </entity>
                     </additional>
                     <additional>
-                        <relationship>parsec:P12_is_measurement_from_column</relationship>
+                        <relationship>parsec:P21_is_measurement_from_column</relationship>
                         <entity>
                         <type>parsec:E16_Column</type>
                         <instance_generator name="ColumnURI">
@@ -3371,7 +3804,7 @@
                 </entity>
             </target_node>
             </range>
-        </link>
+        </link> -->
 
         <link>
             <path>
@@ -3392,19 +3825,19 @@
                         <arg name="column_name" type="constant">logL_TIR</arg>
                     </instance_generator>
                     <label_generator name="Literal">
-                        <arg name="text" type="xpath">../logL_TIR/text()</arg>
+                        <arg name="text" type="xpath">.</arg>
                     </label_generator>
                     <additional>
                         <relationship>parsec:P02_has_value</relationship>
                         <entity>
                         <type>rdfs:Literal</type>
-                        <label_generator name="Literal">
-                            <arg name="text" type="xpath">../logL_TIR/text()</arg>
-                        </label_generator>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">.</arg>
+                        </instance_generator>
                         </entity>
                     </additional>
                     <additional>
-                        <relationship>parsec:P12_is_measurement_from_column</relationship>
+                        <relationship>parsec:P21_is_measurement_from_column</relationship>
                         <entity>
                         <type>parsec:E16_Column</type>
                         <instance_generator name="ColumnURI">
@@ -3440,19 +3873,19 @@
                         <arg name="column_name" type="constant">logL_FIR</arg>
                     </instance_generator>
                     <label_generator name="Literal">
-                        <arg name="text" type="xpath">../logL_FIR/text()</arg>
+                        <arg name="text" type="xpath">.</arg>
                     </label_generator>
                     <additional>
                         <relationship>parsec:P02_has_value</relationship>
                         <entity>
                         <type>rdfs:Literal</type>
-                        <label_generator name="Literal">
-                            <arg name="text" type="xpath">../logL_FIR/text()</arg>
-                        </label_generator>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">.</arg>
+                        </instance_generator>
                         </entity>
                     </additional>
                     <additional>
-                        <relationship>parsec:P12_is_measurement_from_column</relationship>
+                        <relationship>parsec:P21_is_measurement_from_column</relationship>
                         <entity>
                         <type>parsec:E16_Column</type>
                         <instance_generator name="ColumnURI">
@@ -3488,19 +3921,19 @@
                         <arg name="column_name" type="constant">logL_60u</arg>
                     </instance_generator>
                     <label_generator name="Literal">
-                        <arg name="text" type="xpath">../logL_60u/text()</arg>
+                        <arg name="text" type="xpath">.</arg>
                     </label_generator>
                     <additional>
                         <relationship>parsec:P02_has_value</relationship>
                         <entity>
                         <type>rdfs:Literal</type>
-                        <label_generator name="Literal">
-                            <arg name="text" type="xpath">../logL_60u/text()</arg>
-                        </label_generator>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">.</arg>
+                        </instance_generator>
                         </entity>
                     </additional>
                     <additional>
-                        <relationship>parsec:P12_is_measurement_from_column</relationship>
+                        <relationship>parsec:P21_is_measurement_from_column</relationship>
                         <entity>
                         <type>parsec:E16_Column</type>
                         <instance_generator name="ColumnURI">
@@ -3536,19 +3969,19 @@
                         <arg name="column_name" type="constant">logL_12u</arg>
                     </instance_generator>
                     <label_generator name="Literal">
-                        <arg name="text" type="xpath">../logL_12u/text()</arg>
+                        <arg name="text" type="xpath">.</arg>
                     </label_generator>
                     <additional>
                         <relationship>parsec:P02_has_value</relationship>
                         <entity>
                         <type>rdfs:Literal</type>
-                        <label_generator name="Literal">
-                            <arg name="text" type="xpath">../logL_12u/text()</arg>
-                        </label_generator>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">.</arg>
+                        </instance_generator>
                         </entity>
                     </additional>
                     <additional>
-                        <relationship>parsec:P12_is_measurement_from_column</relationship>
+                        <relationship>parsec:P21_is_measurement_from_column</relationship>
                         <entity>
                         <type>parsec:E16_Column</type>
                         <instance_generator name="ColumnURI">
@@ -3584,19 +4017,19 @@
                         <arg name="column_name" type="constant">logL_22u</arg>
                     </instance_generator>
                     <label_generator name="Literal">
-                        <arg name="text" type="xpath">../logL_22u/text()</arg>
+                        <arg name="text" type="xpath">.</arg>
                     </label_generator>
                     <additional>
                         <relationship>parsec:P02_has_value</relationship>
                         <entity>
                         <type>rdfs:Literal</type>
-                        <label_generator name="Literal">
-                            <arg name="text" type="xpath">../logL_22u/text()</arg>
-                        </label_generator>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">.</arg>
+                        </instance_generator>
                         </entity>
                     </additional>
                     <additional>
-                        <relationship>parsec:P12_is_measurement_from_column</relationship>
+                        <relationship>parsec:P21_is_measurement_from_column</relationship>
                         <entity>
                         <type>parsec:E16_Column</type>
                         <instance_generator name="ColumnURI">
@@ -3632,19 +4065,19 @@
                         <arg name="column_name" type="constant">logL_K</arg>
                     </instance_generator>
                     <label_generator name="Literal">
-                        <arg name="text" type="xpath">../logL_K/text()</arg>
+                        <arg name="text" type="xpath">.</arg>
                     </label_generator>
                     <additional>
                         <relationship>parsec:P02_has_value</relationship>
                         <entity>
                         <type>rdfs:Literal</type>
-                        <label_generator name="Literal">
-                            <arg name="text" type="xpath">../logL_K/text()</arg>
-                        </label_generator>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">.</arg>
+                        </instance_generator>
                         </entity>
                     </additional>
                     <additional>
-                        <relationship>parsec:P12_is_measurement_from_column</relationship>
+                        <relationship>parsec:P21_is_measurement_from_column</relationship>
                         <entity>
                         <type>parsec:E16_Column</type>
                         <instance_generator name="ColumnURI">
@@ -3679,19 +4112,19 @@
                         <arg name="column_name" type="constant">ML_ratio</arg>
                     </instance_generator>
                     <label_generator name="Literal">
-                        <arg name="text" type="xpath">../ML_RATIO/text()</arg>
+                        <arg name="text" type="xpath">.</arg>
                     </label_generator>
                     <additional>
                         <relationship>parsec:P02_has_value</relationship>
                         <entity>
                         <type>rdfs:Literal</type>
-                        <label_generator name="Literal">
-                            <arg name="text" type="xpath">../ML_RATIO/text()</arg>
-                        </label_generator>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">.</arg>
+                        </instance_generator>
                         </entity>
                     </additional>
                     <additional>
-                        <relationship>parsec:P12_is_measurement_from_column</relationship>
+                        <relationship>parsec:P21_is_measurement_from_column</relationship>
                         <entity>
                         <type>parsec:E16_Column</type>
                         <instance_generator name="ColumnURI">
@@ -3727,19 +4160,19 @@
                         <arg name="column_name" type="constant">logSFR_TIR</arg>
                     </instance_generator>
                     <label_generator name="Literal">
-                        <arg name="text" type="xpath">../logSFR_TIR/text()</arg>
+                        <arg name="text" type="xpath">.</arg>
                     </label_generator>
                     <additional>
                         <relationship>parsec:P02_has_value</relationship>
                         <entity>
                         <type>rdfs:Literal</type>
-                        <label_generator name="Literal">
-                            <arg name="text" type="xpath">../logSFR_TIR/text()</arg>
-                        </label_generator>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">.</arg>
+                        </instance_generator>
                         </entity>
                     </additional>
                     <additional>
-                        <relationship>parsec:P12_is_measurement_from_column</relationship>
+                        <relationship>parsec:P21_is_measurement_from_column</relationship>
                         <entity>
                         <type>parsec:E16_Column</type>
                         <instance_generator name="ColumnURI">
@@ -3775,19 +4208,19 @@
                         <arg name="column_name" type="constant">logSFR_FIR</arg>
                     </instance_generator>
                     <label_generator name="Literal">
-                        <arg name="text" type="xpath">../logSFR_FIR/text()</arg>
+                        <arg name="text" type="xpath">.</arg>
                     </label_generator>
                     <additional>
                         <relationship>parsec:P02_has_value</relationship>
                         <entity>
                         <type>rdfs:Literal</type>
-                        <label_generator name="Literal">
-                            <arg name="text" type="xpath">../logSFR_FIR/text()</arg>
-                        </label_generator>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">.</arg>
+                        </instance_generator>
                         </entity>
                     </additional>
                     <additional>
-                        <relationship>parsec:P12_is_measurement_from_column</relationship>
+                        <relationship>parsec:P21_is_measurement_from_column</relationship>
                         <entity>
                         <type>parsec:E16_Column</type>
                         <instance_generator name="ColumnURI">
@@ -3823,19 +4256,19 @@
                         <arg name="column_name" type="constant">logSFR_60u</arg>
                     </instance_generator>
                     <label_generator name="Literal">
-                        <arg name="text" type="xpath">../logSFR_60u/text()</arg>
+                        <arg name="text" type="xpath">.</arg>
                     </label_generator>
                     <additional>
                         <relationship>parsec:P02_has_value</relationship>
                         <entity>
                         <type>rdfs:Literal</type>
-                        <label_generator name="Literal">
-                            <arg name="text" type="xpath">../logSFR_60u/text()</arg>
-                        </label_generator>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">.</arg>
+                        </instance_generator>
                         </entity>
                     </additional>
                     <additional>
-                        <relationship>parsec:P12_is_measurement_from_column</relationship>
+                        <relationship>parsec:P21_is_measurement_from_column</relationship>
                         <entity>
                         <type>parsec:E16_Column</type>
                         <instance_generator name="ColumnURI">
@@ -3871,19 +4304,19 @@
                         <arg name="column_name" type="constant">logSFR_12u</arg>
                     </instance_generator>
                     <label_generator name="Literal">
-                        <arg name="text" type="xpath">../logSFR_12u/text()</arg>
+                        <arg name="text" type="xpath">.</arg>
                     </label_generator>
                     <additional>
                         <relationship>parsec:P02_has_value</relationship>
                         <entity>
                         <type>rdfs:Literal</type>
-                        <label_generator name="Literal">
-                            <arg name="text" type="xpath">../logSFR_12u/text()</arg>
-                        </label_generator>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">.</arg>
+                        </instance_generator>
                         </entity>
                     </additional>
                     <additional>
-                        <relationship>parsec:P12_is_measurement_from_column</relationship>
+                        <relationship>parsec:P21_is_measurement_from_column</relationship>
                         <entity>
                         <type>parsec:E16_Column</type>
                         <instance_generator name="ColumnURI">
@@ -3919,19 +4352,19 @@
                         <arg name="column_name" type="constant">logSFR_22u</arg>
                     </instance_generator>
                     <label_generator name="Literal">
-                        <arg name="text" type="xpath">../logSFR_22u/text()</arg>
+                        <arg name="text" type="xpath">.</arg>
                     </label_generator>
                     <additional>
                         <relationship>parsec:P02_has_value</relationship>
                         <entity>
                         <type>rdfs:Literal</type>
-                        <label_generator name="Literal">
-                            <arg name="text" type="xpath">../logSFR_22u/text()</arg>
-                        </label_generator>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">.</arg>
+                        </instance_generator>
                         </entity>
                     </additional>
                     <additional>
-                        <relationship>parsec:P12_is_measurement_from_column</relationship>
+                        <relationship>parsec:P21_is_measurement_from_column</relationship>
                         <entity>
                         <type>parsec:E16_Column</type>
                         <instance_generator name="ColumnURI">
@@ -3967,19 +4400,19 @@
                         <arg name="column_name" type="constant">logSFR_HEC</arg>
                     </instance_generator>
                     <label_generator name="Literal">
-                        <arg name="text" type="xpath">../logSFR_HEC/text()</arg>
+                        <arg name="text" type="xpath">.</arg>
                     </label_generator>
                     <additional>
                         <relationship>parsec:P02_has_value</relationship>
                         <entity>
                         <type>rdfs:Literal</type>
-                        <label_generator name="Literal">
-                            <arg name="text" type="xpath">../logSFR_HEC/text()</arg>
-                        </label_generator>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">.</arg>
+                        </instance_generator>
                         </entity>
                     </additional>
                     <additional>
-                        <relationship>parsec:P12_is_measurement_from_column</relationship>
+                        <relationship>parsec:P21_is_measurement_from_column</relationship>
                         <entity>
                         <type>parsec:E16_Column</type>
                         <instance_generator name="ColumnURI">
@@ -4015,19 +4448,19 @@
                         <arg name="column_name" type="constant">FLAG_SFR_HEC</arg>
                     </instance_generator>
                     <label_generator name="Literal">
-                        <arg name="text" type="xpath">../FLAG_SFR_HEC/text()</arg>
+                        <arg name="text" type="xpath">.</arg>
                     </label_generator>
                     <additional>
                         <relationship>parsec:P02_has_value</relationship>
                         <entity>
                         <type>rdfs:Literal</type>
-                        <label_generator name="Literal">
-                            <arg name="text" type="xpath">../FLAG_SFR_HEC/text()</arg>
-                        </label_generator>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">.</arg>
+                        </instance_generator>
                         </entity>
                     </additional>
                     <additional>
-                        <relationship>parsec:P12_is_measurement_from_column</relationship>
+                        <relationship>parsec:P21_is_measurement_from_column</relationship>
                         <entity>
                         <type>parsec:E16_Column</type>
                         <instance_generator name="ColumnURI">
@@ -4063,19 +4496,19 @@
                         <arg name="column_name" type="constant">logM_HEC</arg>
                     </instance_generator>
                     <label_generator name="Literal">
-                        <arg name="text" type="xpath">../logM_HEC/text()</arg>
+                        <arg name="text" type="xpath">.</arg>
                     </label_generator>
                     <additional>
                         <relationship>parsec:P02_has_value</relationship>
                         <entity>
                         <type>rdfs:Literal</type>
-                        <label_generator name="Literal">
-                            <arg name="text" type="xpath">../logM_HEC/text()</arg>
-                        </label_generator>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">.</arg>
+                        </instance_generator>
                         </entity>
                     </additional>
                     <additional>
-                        <relationship>parsec:P12_is_measurement_from_column</relationship>
+                        <relationship>parsec:P21_is_measurement_from_column</relationship>
                         <entity>
                         <type>parsec:E16_Column</type>
                         <instance_generator name="ColumnURI">
@@ -4111,19 +4544,19 @@
                         <arg name="column_name" type="constant">logSFR_GSW</arg>
                     </instance_generator>
                     <label_generator name="Literal">
-                        <arg name="text" type="xpath">../logSFR_GSW/text()</arg>
+                        <arg name="text" type="xpath">.</arg>
                     </label_generator>
                     <additional>
                         <relationship>parsec:P02_has_value</relationship>
                         <entity>
                         <type>rdfs:Literal</type>
-                        <label_generator name="Literal">
-                            <arg name="text" type="xpath">../logSFR_GSW/text()</arg>
-                        </label_generator>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">.</arg>
+                        </instance_generator>
                         </entity>
                     </additional>
                     <additional>
-                        <relationship>parsec:P12_is_measurement_from_column</relationship>
+                        <relationship>parsec:P21_is_measurement_from_column</relationship>
                         <entity>
                         <type>parsec:E16_Column</type>
                         <instance_generator name="ColumnURI">
@@ -4159,19 +4592,19 @@
                         <arg name="column_name" type="constant">logM_GSW</arg>
                     </instance_generator>
                     <label_generator name="Literal">
-                        <arg name="text" type="xpath">../logM_GSW/text()</arg>
+                        <arg name="text" type="xpath">.</arg>
                     </label_generator>
                     <additional>
                         <relationship>parsec:P02_has_value</relationship>
                         <entity>
                         <type>rdfs:Literal</type>
-                        <label_generator name="Literal">
-                            <arg name="text" type="xpath">../logM_GSW/text()</arg>
-                        </label_generator>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">.</arg>
+                        </instance_generator>
                         </entity>
                     </additional>
                     <additional>
-                        <relationship>parsec:P12_is_measurement_from_column</relationship>
+                        <relationship>parsec:P21_is_measurement_from_column</relationship>
                         <entity>
                         <type>parsec:E16_Column</type>
                         <instance_generator name="ColumnURI">
@@ -4207,19 +4640,19 @@
                         <arg name="column_name" type="constant">MIN_SNR</arg>
                     </instance_generator>
                     <label_generator name="Literal">
-                        <arg name="text" type="xpath">../MIN_SNR/text()</arg>
+                        <arg name="text" type="xpath">.</arg>
                     </label_generator>
                     <additional>
                         <relationship>parsec:P02_has_value</relationship>
                         <entity>
                         <type>rdfs:Literal</type>
-                        <label_generator name="Literal">
-                            <arg name="text" type="xpath">../MIN_SNR/text()</arg>
-                        </label_generator>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">.</arg>
+                        </instance_generator>
                         </entity>
                     </additional>
                     <additional>
-                        <relationship>parsec:P12_is_measurement_from_column</relationship>
+                        <relationship>parsec:P21_is_measurement_from_column</relationship>
                         <entity>
                         <type>parsec:E16_Column</type>
                         <instance_generator name="ColumnURI">
@@ -4255,19 +4688,19 @@
                         <arg name="column_name" type="constant">METAL</arg>
                     </instance_generator>
                     <label_generator name="Literal">
-                        <arg name="text" type="xpath">../METAL/text()</arg>
+                        <arg name="text" type="xpath">.</arg>
                     </label_generator>
                     <additional>
                         <relationship>parsec:P02_has_value</relationship>
                         <entity>
                         <type>rdfs:Literal</type>
-                        <label_generator name="Literal">
-                            <arg name="text" type="xpath">../METAL/text()</arg>
-                        </label_generator>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">.</arg>
+                        </instance_generator>
                         </entity>
                     </additional>
                     <additional>
-                        <relationship>parsec:P12_is_measurement_from_column</relationship>
+                        <relationship>parsec:P21_is_measurement_from_column</relationship>
                         <entity>
                         <type>parsec:E16_Column</type>
                         <instance_generator name="ColumnURI">
@@ -4303,19 +4736,19 @@
                         <arg name="column_name" type="constant">FLAG_METAL</arg>
                     </instance_generator>
                     <label_generator name="Literal">
-                        <arg name="text" type="xpath">../FLAG_METAL/text()</arg>
+                        <arg name="text" type="xpath">.</arg>
                     </label_generator>
                     <additional>
                         <relationship>parsec:P02_has_value</relationship>
                         <entity>
                         <type>rdfs:Literal</type>
-                        <label_generator name="Literal">
-                            <arg name="text" type="xpath">../FLAG_METAL/text()</arg>
-                        </label_generator>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">.</arg>
+                        </instance_generator>
                         </entity>
                     </additional>
                     <additional>
-                        <relationship>parsec:P12_is_measurement_from_column</relationship>
+                        <relationship>parsec:P21_is_measurement_from_column</relationship>
                         <entity>
                         <type>parsec:E16_Column</type>
                         <instance_generator name="ColumnURI">
@@ -4331,9 +4764,9 @@
                         <relationship>parsec:P29_has_reliability_status</relationship>
                         <entity>
                             <type>rdfs:Literal</type>
-                            <label_generator name="Literal">
+                            <instance_generator name="Literal">
                                 <arg name="text" type="xpath">../FLAG_METAL/text()</arg>
-                            </label_generator>
+                            </instance_generator>
                         </entity>
                     </additional>
                 </entity>
@@ -4360,19 +4793,19 @@
                         <arg name="column_name" type="constant">CLASS_SP</arg>
                     </instance_generator>
                     <label_generator name="Literal">
-                        <arg name="text" type="xpath">../CLASS_SP/text()</arg>
+                        <arg name="text" type="xpath">.</arg>
                     </label_generator>
                     <additional>
                         <relationship>parsec:P02_has_value</relationship>
                         <entity>
                         <type>rdfs:Literal</type>
-                        <label_generator name="Literal">
-                            <arg name="text" type="xpath">../CLASS_SP/text()</arg>
-                        </label_generator>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">.</arg>
+                        </instance_generator>
                         </entity>
                     </additional>
                     <additional>
-                        <relationship>parsec:P12_is_measurement_from_column</relationship>
+                        <relationship>parsec:P21_is_measurement_from_column</relationship>
                         <entity>
                         <type>parsec:E16_Column</type>
                         <instance_generator name="ColumnURI">
@@ -4408,19 +4841,19 @@
                         <arg name="column_name" type="constant">AGN_S17</arg>
                     </instance_generator>
                     <label_generator name="Literal">
-                        <arg name="text" type="xpath">../AGN_S17/text()</arg>
+                        <arg name="text" type="xpath">.</arg>
                     </label_generator>
                     <additional>
                         <relationship>parsec:P02_has_value</relationship>
                         <entity>
                         <type>rdfs:Literal</type>
-                        <label_generator name="Literal">
-                            <arg name="text" type="xpath">../AGN_S17/text()</arg>
-                        </label_generator>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">.</arg>
+                        </instance_generator>
                         </entity>
                     </additional>
                     <additional>
-                        <relationship>parsec:P12_is_measurement_from_column</relationship>
+                        <relationship>parsec:P21_is_measurement_from_column</relationship>
                         <entity>
                         <type>parsec:E16_Column</type>
                         <instance_generator name="ColumnURI">
@@ -4456,19 +4889,19 @@
                         <arg name="column_name" type="constant">AGN_HEC</arg>
                     </instance_generator>
                     <label_generator name="Literal">
-                        <arg name="text" type="xpath">../AGN_HEC/text()</arg>
+                        <arg name="text" type="xpath">.</arg>
                     </label_generator>
                     <additional>
                         <relationship>parsec:P02_has_value</relationship>
                         <entity>
                         <type>rdfs:Literal</type>
-                        <label_generator name="Literal">
-                            <arg name="text" type="xpath">../AGN_HEC/text()</arg>
-                        </label_generator>
+                        <instance_generator name="Literal">
+                            <arg name="text" type="xpath">.</arg>
+                        </instance_generator>
                         </entity>
                     </additional>
                     <additional>
-                        <relationship>parsec:P12_is_measurement_from_column</relationship>
+                        <relationship>parsec:P21_is_measurement_from_column</relationship>
                         <entity>
                         <type>parsec:E16_Column</type>
                         <instance_generator name="ColumnURI">

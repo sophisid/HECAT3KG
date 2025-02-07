@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<x3ml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" source_type="xpath" version="1.0" xsi:noNamespaceSchemaLocation="x3ml_v1.0.xsd">
+<?xml version="1.0" encoding="UTF-8"?><x3ml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" source_type="xpath" version="1.0" xsi:noNamespaceSchemaLocation="x3ml_v1.0.xsd">
     <namespaces>
         <namespace prefix="xsd" uri="http://www.w3.org/2001/XMLSchema#"/>
         <namespace prefix="rdfs" uri="http://www.w3.org/2000/01/rdf-schema#"/>
@@ -13,30 +12,42 @@
                 <source_node>//row[1]</source_node>
                 <target_node>
                     <entity>
-                        <type>parsec:E05_Data_Source</type>
-                        <type>parsec:E15_Data_Table</type>
-                        <instance_generator name="DataTableURI">
-                            <arg name="data_table_id" type="constant">HECATE</arg>
+                        <type>parsec:E07_Catalogue</type>
+                        <instance_generator name="CatalogueURI">
+                            <arg name="url" type="constant">"https://hecate.ia.forth.gr/"</arg>
                         </instance_generator>
                         <label_generator name="Label">
                             <arg name="label" type="constant">HECATE</arg>
                         </label_generator>
                         <additional>
-                            <relationship>parsec:P17_data_source_version</relationship>
+                            <relationship>parsec:P13_contains_data_source</relationship>
                             <entity>
-                                <type>rdfs:Literal</type>
-                                <instance_generator name="Literal">
-                                    <arg name="text">"v.1.1"</arg>
+                                <type>parsec:E05_Data_Source</type>
+                                <type>parsec:E15_Data_Table</type>
+                                <instance_generator name="DataTableURI">
+                                    <arg name="data_table_id" type="constant">HECATE</arg>
                                 </instance_generator>
-                            </entity>
-                        </additional>
-                        <additional>
-                            <relationship>parsec:P39_has_webpage</relationship>
-                            <entity>
-                                <type>rdfs:Literal</type>
-                                <instance_generator name="Literal">
-                                    <arg name="text">"https://hecate.ia.forth.gr/"</arg>
-                                </instance_generator>
+                                <label_generator name="Label">
+                                    <arg name="label" type="constant">HECATE Datatable</arg>
+                                </label_generator>
+                                <additional>
+                                    <relationship>parsec:P17_data_source_version</relationship>
+                                    <entity>
+                                        <type>rdfs:Literal</type>
+                                        <instance_generator name="Literal">
+                                            <arg name="text">"v.1.1"</arg>
+                                        </instance_generator>
+                                    </entity>
+                                </additional>
+                                <additional>
+                                    <relationship>parsec:P39_has_webpage</relationship>
+                                    <entity>
+                                        <type>rdfs:Literal</type>
+                                        <instance_generator name="Literal">
+                                            <arg name="text">"https://hecate.ia.forth.gr/"</arg>
+                                        </instance_generator>
+                                    </entity>
+                                </additional>
                             </entity>
                         </additional>
                     </entity>
@@ -5242,7 +5253,6 @@
                     </label_generator>
                     </entity>
                 </additional>
-                </additional>
                 </entity>
             </target_node>
             </range>
@@ -5641,7 +5651,6 @@
                 <label_generator name="Label">
                     <arg name="label" type="constant">metal</arg>
                 </label_generator>
-                <additional>
                 <additional>
                     <relationship>parsec:P04_contains_measurements_of</relationship>
                     <entity>
