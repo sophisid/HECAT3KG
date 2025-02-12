@@ -59,6 +59,14 @@
         <pattern>data_source/{id}</pattern>
     </generator>
 
+    <generator name="2MASSURI" prefix="parsec">
+        <pattern>data_source/2MASS-{k}</pattern>
+    </generator>
+
+    <generator name="2MASSLabel" type="label">
+        <pattern>2MASS-{k}</pattern>
+    </generator>
+
     <generator name="CatalogueURI" prefix="parsec">
         <pattern>catalogue/{url}</pattern>
     </generator>
