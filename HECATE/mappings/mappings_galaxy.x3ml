@@ -355,7 +355,7 @@
                 </range>
             </link>
 
-            <link>
+            <!-- <link>
                 <path>
                     <source_relation>
                         <relation>RSOURCE[text()!="-"]</relation>
@@ -401,8 +401,331 @@
                         </entity>
                     </target_node>
                 </range>
+            </link> -->
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>RSOURCE[text()!="-"]</relation>
+                    </source_relation>
+                    <target_relation>
+                        <if>
+                            <equals value="H">../RSOURCE/text()</equals>
+                        </if>
+                        <relationship>parsec:P11_is_referred_in_data_source</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>RSOURCE[text()!="-"]</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E05_Data_Source</type>
+                            <instance_generator name="DataSourceURI">
+                                <arg name="id" type="constant">HyperLEDA</arg>
+                            </instance_generator>
+                            <label_generator name="Literal">
+                                <arg name="text" type="constant">HyperLEDA</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
             </link>
-
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>RSOURCE[text()!="-"]</relation>
+                    </source_relation>
+                    <target_relation>
+                        <if>
+                            <equals value="S">../RSOURCE/text()</equals>
+                        </if>
+                        <relationship>parsec:P11_is_referred_in_data_source</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>RSOURCE[text()!="-"]</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E05_Data_Source</type>
+                            <instance_generator name="DataSourceURI">
+                                <arg name="id" type="constant">SDSS</arg>
+                            </instance_generator>
+                            <label_generator name="Literal">
+                                <arg name="text" type="constant">SDSS</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>RSOURCE[text()!="-"]</relation>
+                    </source_relation>
+                    <target_relation>
+                        <if>
+                            <equals value="2">../RSOURCE/text()</equals>
+                        </if>
+                        <relationship>parsec:P11_is_referred_in_data_source</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>RSOURCE[text()!="-"]</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E05_Data_Source</type>
+                            <instance_generator name="DataSourceURI">
+                                <arg name="id" type="constant">2MASS</arg>
+                            </instance_generator>
+                            <label_generator name="Literal">
+                                <arg name="text" type="constant">2MASS</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>RSOURCE[text()!="-"]</relation>
+                    </source_relation>
+                    <target_relation>
+                        <if>
+                            <equals value="6">../RSOURCE/text()</equals>
+                        </if>
+                        <relationship>parsec:P11_is_referred_in_data_source</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>RSOURCE[text()!="-"]</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E05_Data_Source</type>
+                            <instance_generator name="DataSourceURI">
+                                <arg name="id" type="constant">2dFGS</arg>
+                            </instance_generator>
+                            <label_generator name="Literal">
+                                <arg name="text" type="constant">2dFGS</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>RSOURCE[text()!="-"]</relation>
+                    </source_relation>
+                    <target_relation>
+                        <if>
+                            <equals value="H">../RSOURCE/text()</equals>
+                        </if>
+                        <relationship>parsec:P11_is_referred_in_data_source</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>RSOURCE[text()!="-"]</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E05_Data_Source</type>
+                            <instance_generator name="DataSourceURI">
+                                <arg name="id" type="constant">WINGS</arg>
+                            </instance_generator>
+                            <label_generator name="Literal">
+                                <arg name="text" type="constant">WINGS</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>RSOURCE[text()!="-"]</relation>
+                    </source_relation>
+                    <target_relation>
+                        <if>
+                            <equals value="Y">../RSOURCE/text()</equals>
+                        </if>
+                        <relationship>parsec:P11_is_referred_in_data_source</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>RSOURCE[text()!="-"]</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E05_Data_Source</type>
+                            <instance_generator name="DataSourceURI">
+                                <arg name="id" type="constant">SkyMapper</arg>
+                            </instance_generator>
+                            <label_generator name="Literal">
+                                <arg name="text" type="constant">SkyMapper</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>RSOURCE[text()!="-"]</relation>
+                    </source_relation>
+                    <target_relation>
+                        <if>
+                            <equals value="A">../RSOURCE/text()</equals>
+                        </if>
+                        <relationship>parsec:P11_is_referred_in_data_source</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>RSOURCE[text()!="-"]</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E05_Data_Source</type>
+                            <instance_generator name="DataSourceURI">
+                                <arg name="id" type="constant">Amiga-CIG</arg>
+                            </instance_generator>
+                            <label_generator name="Literal">
+                                <arg name="text" type="constant">Amiga-CIG</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>RSOURCE[text()!="-"]</relation>
+                    </source_relation>
+                    <target_relation>
+                        <if>
+                            <equals value="K">../RSOURCE/text()</equals>
+                        </if>
+                        <relationship>parsec:P11_is_referred_in_data_source</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>RSOURCE[text()!="-"]</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E05_Data_Source</type>
+                            <instance_generator name="DataSourceURI">
+                                <arg name="id" type="constant">UNGC</arg>
+                            </instance_generator>
+                            <label_generator name="Literal">
+                                <arg name="text" type="constant">UNGC</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>RSOURCE[text()!="-"]</relation>
+                    </source_relation>
+                    <target_relation>
+                        <if>
+                            <equals value="V">../RSOURCE/text()</equals>
+                        </if>
+                        <relationship>parsec:P11_is_referred_in_data_source</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>RSOURCE[text()!="-"]</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E05_Data_Source</type>
+                            <instance_generator name="DataSourceURI">
+                                <arg name="id" type="constant">VIII/77</arg>
+                            </instance_generator>
+                            <label_generator name="Literal">
+                                <arg name="text" type="constant">VIII/77</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>RSOURCE[text()!="-"]</relation>
+                    </source_relation>
+                    <target_relation>
+                        <if>
+                            <equals value="1">../RSOURCE/text()</equals>
+                        </if>
+                        <relationship>parsec:P11_is_referred_in_data_source</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>RSOURCE[text()!="-"]</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E05_Data_Source</type>
+                            <instance_generator name="DataSourceURI">
+                                <arg name="id" type="constant">KKH2001</arg>
+                            </instance_generator>
+                            <label_generator name="Literal">
+                                <arg name="text" type="constant">KKH2001</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>RSOURCE[text()!="-"]</relation>
+                    </source_relation>
+                    <target_relation>
+                        <if>
+                            <equals value="7">../RSOURCE/text()</equals>
+                        </if>
+                        <relationship>parsec:P11_is_referred_in_data_source</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>RSOURCE[text()!="-"]</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E05_Data_Source</type>
+                            <instance_generator name="DataSourceURI">
+                                <arg name="id" type="constant">KKH2007</arg>
+                            </instance_generator>
+                            <label_generator name="Literal">
+                                <arg name="text" type="constant">KKH2007</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>RSOURCE[text()!="-"]</relation>
+                    </source_relation>
+                    <target_relation>
+                        <if>
+                            <equals value="N">../RSOURCE/text()</equals>
+                        </if>
+                        <relationship>parsec:P11_is_referred_in_data_source</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>RSOURCE[text()!="-"]</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E05_Data_Source</type>
+                            <instance_generator name="DataSourceURI">
+                                <arg name="id" type="constant">NED</arg>
+                            </instance_generator>
+                            <label_generator name="Literal">
+                                <arg name="text" type="constant">NED</arg>
+                            </label_generator>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
             <link>
                 <path>
                     <source_relation>
@@ -1118,6 +1441,191 @@
                                 </label_generator>
                                 </entity>
                             </additional>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>DMETHOD[text()!="-"]</relation>
+                    </source_relation>
+                    <target_relation>
+                        <if>
+                            <equals value="N">.</equals>
+                        </if>
+                        <relationship>parsec:P01_has_measurement</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>DMETHOD[text()!="-"]</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E08_Measurement</type>
+                            <instance_generator name="CustomHecateMeasurementURI">
+                                <arg name="celestial_body_id" type="xpath">../ROW_NUMBER/text()</arg>
+                                <arg name="column_name" type="constant">d</arg>
+                            </instance_generator>
+                            <label_generator name="Literal">
+                                <arg name="text" type="xpath">../D/text()</arg>
+                            </label_generator>
+                            <additional>
+                            <relationship>parsec:P20_has_estimation_method</relationship>
+                            <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                        <arg name="text" type="constant">using NED-D distance measurements</arg>
+                                </instance_generator>
+                            </entity>
+                        </additional>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>DMETHOD[text()!="-"]</relation>
+                    </source_relation>
+                    <target_relation>
+                        <if>
+                            <equals value="Z">.</equals>
+                        </if>
+                        <relationship>parsec:P01_has_measurement</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>DMETHOD[text()!="-"]</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E08_Measurement</type>
+                            <instance_generator name="CustomHecateMeasurementURI">
+                                <arg name="celestial_body_id" type="xpath">../ROW_NUMBER/text()</arg>
+                                <arg name="column_name" type="constant">d</arg>
+                            </instance_generator>
+                            <label_generator name="Literal">
+                                <arg name="text" type="xpath">../D/text()</arg>
+                            </label_generator>
+                            <additional>
+                            <relationship>parsec:P20_has_estimation_method</relationship>
+                            <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                        <arg name="text" type="constant">regression</arg>
+                                </instance_generator>
+                            </entity>
+                        </additional>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>DMETHOD[text()!="-"]</relation>
+                    </source_relation>
+                    <target_relation>
+                        <if>
+                            <equals value="Zv">.</equals>
+                        </if>
+                        <relationship>parsec:P01_has_measurement</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>DMETHOD[text()!="-"]</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E08_Measurement</type>
+                            <instance_generator name="CustomHecateMeasurementURI">
+                                <arg name="celestial_body_id" type="xpath">../ROW_NUMBER/text()</arg>
+                                <arg name="column_name" type="constant">d</arg>
+                            </instance_generator>
+                            <label_generator name="Literal">
+                                <arg name="text" type="xpath">../D/text()</arg>
+                            </label_generator>
+                            <additional>
+                            <relationship>parsec:P20_has_estimation_method</relationship>
+                            <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                        <arg name="text" type="constant">regression for Vigro Cluster members</arg>
+                                </instance_generator>
+                            </entity>
+                        </additional>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>DMETHOD[text()!="-"]</relation>
+                    </source_relation>
+                    <target_relation>
+                        <if>
+                            <equals value="C">.</equals>
+                        </if>
+                        <relationship>parsec:P01_has_measurement</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>DMETHOD[text()!="-"]</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E08_Measurement</type>
+                            <instance_generator name="CustomHecateMeasurementURI">
+                                <arg name="celestial_body_id" type="xpath">../ROW_NUMBER/text()</arg>
+                                <arg name="column_name" type="constant">d</arg>
+                            </instance_generator>
+                            <label_generator name="Literal">
+                                <arg name="text" type="xpath">../D/text()</arg>
+                            </label_generator>
+                            <additional>
+                            <relationship>parsec:P20_has_estimation_method</relationship>
+                            <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                        <arg name="text" type="constant">distance from NED-D measurements but uncertainty from regression</arg>
+                                </instance_generator>
+                            </entity>
+                        </additional>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>DMETHOD[text()!="-"]</relation>
+                    </source_relation>
+                    <target_relation>
+                        <if>
+                            <equals value="Cv">.</equals>
+                        </if>
+                        <relationship>parsec:P01_has_measurement</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>DMETHOD[text()!="-"]</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E08_Measurement</type>
+                            <instance_generator name="CustomHecateMeasurementURI">
+                                <arg name="celestial_body_id" type="xpath">../ROW_NUMBER/text()</arg>
+                                <arg name="column_name" type="constant">d</arg>
+                            </instance_generator>
+                            <label_generator name="Literal">
+                                <arg name="text" type="xpath">../D/text()</arg>
+                            </label_generator>
+                            <additional>
+                            <relationship>parsec:P20_has_estimation_method</relationship>
+                            <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                        <arg name="text" type="constant">distance from NED-D measurements but uncertainty from Vigro Cluster regression</arg>
+                                </instance_generator>
+                            </entity>
+                        </additional>
                         </entity>
                     </target_node>
                 </range>
@@ -2009,6 +2517,886 @@
                     </target_node>
                 </range>
             </link>
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>Q12[text()!="-"]</relation>
+                    </source_relation>
+                    <target_relation>
+                        <if>
+                            <and>
+                                <if>
+                                    <equals value="0">.</equals>
+                                </if>
+                                <if>
+                                    <exists>../S12/text()</exists>
+                                </if>
+                            </and>
+                        </if>
+                        <relationship>parsec:P01_has_measurement</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>Q12[text()!="-"]</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E08_Measurement</type>
+                            <instance_generator name="CustomHecateMeasurementURI">
+                                <arg name="celestial_body_id" type="xpath">../ROW_NUMBER/text()</arg>
+                                <arg name="column_name" type="constant">s12</arg>
+                            </instance_generator>
+                            <label_generator name="Literal">
+                                <arg name="text" type="xpath">../S12/text()</arg>
+                            </label_generator>
+                            <additional>
+                                <relationship>parsec:P29_has_reliability_status</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="constant">not in IRAS</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>Q12[text()!="-"]</relation>
+                    </source_relation>
+                    <target_relation>
+                        <if>
+                            <and>
+                                <if>
+                                    <equals value="1">.</equals>
+                                </if>
+                                <if>
+                                    <exists>../S12/text()</exists>
+                                </if>
+                            </and>
+                        </if>
+                        <relationship>parsec:P01_has_measurement</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>Q12[text()!="-"]</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E08_Measurement</type>
+                            <instance_generator name="CustomHecateMeasurementURI">
+                                <arg name="celestial_body_id" type="xpath">../ROW_NUMBER/text()</arg>
+                                <arg name="column_name" type="constant">s12</arg>
+                            </instance_generator>
+                            <label_generator name="Literal">
+                                <arg name="text" type="xpath">../S12/text()</arg>
+                            </label_generator>
+                            <additional>
+                                <relationship>parsec:P29_has_reliability_status</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="constant">upper limit</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>Q12[text()!="-"]</relation>
+                    </source_relation>
+                    <target_relation>
+                        <if>
+                            <and>
+                                <if>
+                                    <equals value="2">.</equals>
+                                </if>
+                                <if>
+                                    <exists>../S12/text()</exists>
+                                </if>
+                            </and>
+                        </if>
+                        <relationship>parsec:P01_has_measurement</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>Q12[text()!="-"]</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E08_Measurement</type>
+                            <instance_generator name="CustomHecateMeasurementURI">
+                                <arg name="celestial_body_id" type="xpath">../ROW_NUMBER/text()</arg>
+                                <arg name="column_name" type="constant">s12</arg>
+                            </instance_generator>
+                            <label_generator name="Literal">
+                                <arg name="text" type="xpath">../S12/text()</arg>
+                            </label_generator>
+                            <additional>
+                                <relationship>parsec:P29_has_reliability_status</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="constant">moderate</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>Q12[text()!="-"]</relation>
+                    </source_relation>
+                    <target_relation>
+                        <if>
+                            <and>
+                                <if>
+                                    <equals value="3">.</equals>
+                                </if>
+                                <if>
+                                    <exists>../S12/text()</exists>
+                                </if>
+                            </and>
+                        </if>
+                        <relationship>parsec:P01_has_measurement</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>Q12[text()!="-"]</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E08_Measurement</type>
+                            <instance_generator name="CustomHecateMeasurementURI">
+                                <arg name="celestial_body_id" type="xpath">../ROW_NUMBER/text()</arg>
+                                <arg name="column_name" type="constant">s12</arg>
+                            </instance_generator>
+                            <label_generator name="Literal">
+                                <arg name="text" type="xpath">../S12/text()</arg>
+                            </label_generator>
+                            <additional>
+                                <relationship>parsec:P29_has_reliability_status</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="constant">high</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>Q12[text()!="-"]</relation>
+                    </source_relation>
+                    <target_relation>
+                        <if>
+                            <and>
+                                <if>
+                                    <equals value="4">.</equals>
+                                </if>
+                                <if>
+                                    <exists>../S12/text()</exists>
+                                </if>
+                            </and>
+                        </if>
+                        <relationship>parsec:P01_has_measurement</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>Q12[text()!="-"]</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E08_Measurement</type>
+                            <instance_generator name="CustomHecateMeasurementURI">
+                                <arg name="celestial_body_id" type="xpath">../ROW_NUMBER/text()</arg>
+                                <arg name="column_name" type="constant">s12</arg>
+                            </instance_generator>
+                            <label_generator name="Literal">
+                                <arg name="text" type="xpath">../S12/text()</arg>
+                            </label_generator>
+                            <additional>
+                                <relationship>parsec:P29_has_reliability_status</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="constant">flux from IRAS-RBGS</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>Q25[text()!="-"]</relation>
+                    </source_relation>
+                    <target_relation>
+                        <if>
+                            <and>
+                                <if>
+                                    <equals value="0">.</equals>
+                                </if>
+                                <if>
+                                    <exists>../S25/text()</exists>
+                                </if>
+                            </and>
+                        </if>
+                        <relationship>parsec:P01_has_measurement</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>Q25[text()!="-"]</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E08_Measurement</type>
+                            <instance_generator name="CustomHecateMeasurementURI">
+                                <arg name="celestial_body_id" type="xpath">../ROW_NUMBER/text()</arg>
+                                <arg name="column_name" type="constant">s25</arg>
+                            </instance_generator>
+                            <label_generator name="Literal">
+                                <arg name="text" type="xpath">../S25/text()</arg>
+                            </label_generator>
+                            <additional>
+                                <relationship>parsec:P29_has_reliability_status</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="constant">not in IRAS</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>Q25[text()!="-"]</relation>
+                    </source_relation>
+                    <target_relation>
+                        <if>
+                            <and>
+                                <if>
+                                    <equals value="1">.</equals>
+                                </if>
+                                <if>
+                                    <exists>../S25/text()</exists>
+                                </if>
+                            </and>
+                        </if>
+                        <relationship>parsec:P01_has_measurement</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>Q25[text()!="-"]</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E08_Measurement</type>
+                            <instance_generator name="CustomHecateMeasurementURI">
+                                <arg name="celestial_body_id" type="xpath">../ROW_NUMBER/text()</arg>
+                                <arg name="column_name" type="constant">s25</arg>
+                            </instance_generator>
+                            <label_generator name="Literal">
+                                <arg name="text" type="xpath">../S25/text()</arg>
+                            </label_generator>
+                            <additional>
+                                <relationship>parsec:P29_has_reliability_status</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="constant">upper limit</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>Q25[text()!="-"]</relation>
+                    </source_relation>
+                    <target_relation>
+                        <if>
+                            <and>
+                                <if>
+                                    <equals value="2">.</equals>
+                                </if>
+                                <if>
+                                    <exists>../S25/text()</exists>
+                                </if>
+                            </and>
+                        </if>
+                        <relationship>parsec:P01_has_measurement</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>Q25[text()!="-"]</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E08_Measurement</type>
+                            <instance_generator name="CustomHecateMeasurementURI">
+                                <arg name="celestial_body_id" type="xpath">../ROW_NUMBER/text()</arg>
+                                <arg name="column_name" type="constant">s25</arg>
+                            </instance_generator>
+                            <label_generator name="Literal">
+                                <arg name="text" type="xpath">../S25/text()</arg>
+                            </label_generator>
+                            <additional>
+                                <relationship>parsec:P29_has_reliability_status</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="constant">moderate</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>Q25[text()!="-"]</relation>
+                    </source_relation>
+                    <target_relation>
+                        <if>
+                            <and>
+                                <if>
+                                    <equals value="3">.</equals>
+                                </if>
+                                <if>
+                                    <exists>../S25/text()</exists>
+                                </if>
+                            </and>
+                        </if>
+                        <relationship>parsec:P01_has_measurement</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>Q25[text()!="-"]</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E08_Measurement</type>
+                            <instance_generator name="CustomHecateMeasurementURI">
+                                <arg name="celestial_body_id" type="xpath">../ROW_NUMBER/text()</arg>
+                                <arg name="column_name" type="constant">s25</arg>
+                            </instance_generator>
+                            <label_generator name="Literal">
+                                <arg name="text" type="xpath">../S25/text()</arg>
+                            </label_generator>
+                            <additional>
+                                <relationship>parsec:P29_has_reliability_status</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="constant">high</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>Q25[text()!="-"]</relation>
+                    </source_relation>
+                    <target_relation>
+                        <if>
+                            <and>
+                                <if>
+                                    <equals value="4">.</equals>
+                                </if>
+                                <if>
+                                    <exists>../S25/text()</exists>
+                                </if>
+                            </and>
+                        </if>
+                        <relationship>parsec:P01_has_measurement</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>Q25[text()!="-"]</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E08_Measurement</type>
+                            <instance_generator name="CustomHecateMeasurementURI">
+                                <arg name="celestial_body_id" type="xpath">../ROW_NUMBER/text()</arg>
+                                <arg name="column_name" type="constant">s25</arg>
+                            </instance_generator>
+                            <label_generator name="Literal">
+                                <arg name="text" type="xpath">../S25/text()</arg>
+                            </label_generator>
+                            <additional>
+                                <relationship>parsec:P29_has_reliability_status</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="constant">flux from IRAS-RBGS</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>Q60[text()!="-"]</relation>
+                    </source_relation>
+                    <target_relation>
+                       <if>
+                            <and>
+                                <if>
+                                    <equals value="0">.</equals>
+                                </if>
+                                <if>
+                                    <exists>../S60/text()</exists>
+                                </if>
+                            </and>
+                        </if>
+                        <relationship>parsec:P01_has_measurement</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>Q60[text()!="-"]</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E08_Measurement</type>
+                            <instance_generator name="CustomHecateMeasurementURI">
+                                <arg name="celestial_body_id" type="xpath">../ROW_NUMBER/text()</arg>
+                                <arg name="column_name" type="constant">s60</arg>
+                            </instance_generator>
+                            <label_generator name="Literal">
+                                <arg name="text" type="xpath">../S60/text()</arg>
+                            </label_generator>
+                            <additional>
+                                <relationship>parsec:P29_has_reliability_status</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="constant">not in IRAS</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>Q60[text()!="-"]</relation>
+                    </source_relation>
+                    <target_relation>
+                        <if>
+                            <and>
+                                <if>
+                                    <equals value="1">.</equals>
+                                </if>
+                                <if>
+                                    <exists>../S60/text()</exists>
+                                </if>
+                            </and>
+                        </if>
+                        <relationship>parsec:P01_has_measurement</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>Q60[text()!="-"]</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E08_Measurement</type>
+                            <instance_generator name="CustomHecateMeasurementURI">
+                                <arg name="celestial_body_id" type="xpath">../ROW_NUMBER/text()</arg>
+                                <arg name="column_name" type="constant">s60</arg>
+                            </instance_generator>
+                            <label_generator name="Literal">
+                                <arg name="text" type="xpath">../S60/text()</arg>
+                            </label_generator>
+                            <additional>
+                                <relationship>parsec:P29_has_reliability_status</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="constant">upper limit</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>Q60[text()!="-"]</relation>
+                    </source_relation>
+                    <target_relation>
+                        <if>
+                            <and>
+                                <if>
+                                    <equals value="2">.</equals>
+                                </if>
+                                <if>
+                                    <exists>../S60/text()</exists>
+                                </if>
+                            </and>
+                        </if>
+                        <relationship>parsec:P01_has_measurement</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>Q60[text()!="-"]</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E08_Measurement</type>
+                            <instance_generator name="CustomHecateMeasurementURI">
+                                <arg name="celestial_body_id" type="xpath">../ROW_NUMBER/text()</arg>
+                                <arg name="column_name" type="constant">s60</arg>
+                            </instance_generator>
+                            <label_generator name="Literal">
+                                <arg name="text" type="xpath">../S60/text()</arg>
+                            </label_generator>
+                            <additional>
+                                <relationship>parsec:P29_has_reliability_status</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="constant">moderate</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>Q60[text()!="-"]</relation>
+                    </source_relation>
+                    <target_relation>
+                        <if>
+                            <and>
+                                <if>
+                                    <equals value="3">.</equals>
+                                </if>
+                                <if>
+                                    <exists>../S60/text()</exists>
+                                </if>
+                            </and>
+                        </if>
+                        <relationship>parsec:P01_has_measurement</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>Q60[text()!="-"]</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E08_Measurement</type>
+                            <instance_generator name="CustomHecateMeasurementURI">
+                                <arg name="celestial_body_id" type="xpath">../ROW_NUMBER/text()</arg>
+                                <arg name="column_name" type="constant">s60</arg>
+                            </instance_generator>
+                            <label_generator name="Literal">
+                                <arg name="text" type="xpath">../S60/text()</arg>
+                            </label_generator>
+                            <additional>
+                                <relationship>parsec:P29_has_reliability_status</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="constant">high</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>Q60[text()!="-"]</relation>
+                    </source_relation>
+                    <target_relation>
+                        <if>
+                            <and>
+                                <if>
+                                    <equals value="4">.</equals>
+                                </if>
+                                <if>
+                                    <exists>../S60/text()</exists>
+                                </if>
+                            </and>
+                        </if>
+                        <relationship>parsec:P01_has_measurement</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>Q60[text()!="-"]</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E08_Measurement</type>
+                            <instance_generator name="CustomHecateMeasurementURI">
+                                <arg name="celestial_body_id" type="xpath">../ROW_NUMBER/text()</arg>
+                                <arg name="column_name" type="constant">s60</arg>
+                            </instance_generator>
+                            <label_generator name="Literal">
+                                <arg name="text" type="xpath">../S60/text()</arg>
+                            </label_generator>
+                            <additional>
+                                <relationship>parsec:P29_has_reliability_status</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="constant">flux from IRAS-RBGS</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>Q100[text()!="-"]</relation>
+                    </source_relation>
+                    <target_relation>
+                        <if>
+                            <and>
+                                <if>
+                                    <equals value="0">.</equals>
+                                </if>
+                                <if>
+                                    <exists>../S100/text()</exists>
+                                </if>
+                            </and>
+                        </if>
+                        <relationship>parsec:P01_has_measurement</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>Q100[text()!="-"]</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E08_Measurement</type>
+                            <instance_generator name="CustomHecateMeasurementURI">
+                                <arg name="celestial_body_id" type="xpath">../ROW_NUMBER/text()</arg>
+                                <arg name="column_name" type="constant">s100</arg>
+                            </instance_generator>
+                            <label_generator name="Literal">
+                                <arg name="text" type="xpath">../S100/text()</arg>
+                            </label_generator>
+                            <additional>
+                                <relationship>parsec:P29_has_reliability_status</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="constant">not in IRAS</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>Q100[text()!="-"]</relation>
+                    </source_relation>
+                    <target_relation>
+                        <if>
+                            <and>
+                                <if>
+                                    <equals value="1">.</equals>
+                                </if>
+                                <if>
+                                    <exists>../S100/text()</exists>
+                                </if>
+                            </and>
+                        </if>
+                        <relationship>parsec:P01_has_measurement</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>Q100[text()!="-"]</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E08_Measurement</type>
+                            <instance_generator name="CustomHecateMeasurementURI">
+                                <arg name="celestial_body_id" type="xpath">../ROW_NUMBER/text()</arg>
+                                <arg name="column_name" type="constant">s100</arg>
+                            </instance_generator>
+                            <label_generator name="Literal">
+                                <arg name="text" type="xpath">../S100/text()</arg>
+                            </label_generator>
+                            <additional>
+                                <relationship>parsec:P29_has_reliability_status</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="constant">upper limit</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>Q100[text()!="-"]</relation>
+                    </source_relation>
+                    <target_relation>
+                        <if>
+                            <and>
+                                <if>
+                                    <equals value="2">.</equals>
+                                </if>
+                                <if>
+                                    <exists>../S100/text()</exists>
+                                </if>
+                            </and>
+                        </if>
+                        <relationship>parsec:P01_has_measurement</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>Q100[text()!="-"]</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E08_Measurement</type>
+                            <instance_generator name="CustomHecateMeasurementURI">
+                                <arg name="celestial_body_id" type="xpath">../ROW_NUMBER/text()</arg>
+                                <arg name="column_name" type="constant">s100</arg>
+                            </instance_generator>
+                            <label_generator name="Literal">
+                                <arg name="text" type="xpath">../S100/text()</arg>
+                            </label_generator>
+                            <additional>
+                                <relationship>parsec:P29_has_reliability_status</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="constant">moderate</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>Q100[text()!="-"]</relation>
+                    </source_relation>
+                    <target_relation>
+                        <if>
+                            <and>
+                                <if>
+                                    <equals value="3">.</equals>
+                                </if>
+                                <if>
+                                    <exists>../S100/text()</exists>
+                                </if>
+                            </and>
+                        </if>
+                        <relationship>parsec:P01_has_measurement</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>Q100[text()!="-"]</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E08_Measurement</type>
+                            <instance_generator name="CustomHecateMeasurementURI">
+                                <arg name="celestial_body_id" type="xpath">../ROW_NUMBER/text()</arg>
+                                <arg name="column_name" type="constant">s100</arg>
+                            </instance_generator>
+                            <label_generator name="Literal">
+                                <arg name="text" type="xpath">../S100/text()</arg>
+                            </label_generator>
+                            <additional>
+                                <relationship>parsec:P29_has_reliability_status</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="constant">high</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>Q100[text()!="-"]</relation>
+                    </source_relation>
+                    <target_relation>
+                        <if>
+                            <and>
+                                <if>
+                                    <equals value="4">.</equals>
+                                </if>
+                                <if>
+                                    <exists>../S100/text()</exists>
+                                </if>
+                            </and>
+                        </if>
+                        <relationship>parsec:P01_has_measurement</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>Q100[text()!="-"]</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E08_Measurement</type>
+                            <instance_generator name="CustomHecateMeasurementURI">
+                                <arg name="celestial_body_id" type="xpath">../ROW_NUMBER/text()</arg>
+                                <arg name="column_name" type="constant">s100</arg>
+                            </instance_generator>
+                            <label_generator name="Literal">
+                                <arg name="text" type="xpath">../S100/text()</arg>
+                            </label_generator>
+                            <additional>
+                                <relationship>parsec:P29_has_reliability_status</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="constant">flux from IRAS-RBGS</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
 
             <link>
                 <path>
@@ -2153,7 +3541,7 @@
                     </target_node>
                 </range>
             </link>
-        <link>
+        <!-- <link>
             <path>
                 <source_relation>
                     <relation>Q12[text()!="-"]</relation>
@@ -2199,9 +3587,9 @@
                         </entity>
                 </target_node>
             </range>
-        </link>
+        </link> -->
 
-        <link>
+        <!-- <link>
             <path>
                 <source_relation>
                     <relation>Q25[text()!="-"]</relation>
@@ -2247,9 +3635,9 @@
                         </entity>
                 </target_node>
             </range>
-        </link>
+        </link> -->
 
-        <link>
+        <!-- <link>
             <path>
                 <source_relation>
                     <relation>Q60[text()!="-"]</relation>
@@ -2295,9 +3683,9 @@
                         </entity>
                 </target_node>
             </range>
-        </link>
+        </link> -->
 
-        <link>
+        <!-- <link>
             <path>
                 <source_relation>
                     <relation>Q100[text()!="-"]</relation>
@@ -2343,7 +3731,7 @@
                         </entity>
                 </target_node>
             </range>
-        </link>
+        </link> -->
 
         <link>
             <path>
@@ -3237,7 +4625,7 @@
             </target_node>
             </range>
         </link> -->
-         <link>
+         <!-- <link>
             <path>
             <source_relation>
                 <relation>FLAG_2MASS[text()!="-"]</relation>
@@ -3280,6 +4668,87 @@
                         </label_generator>
                         </entity>
                     </additional>
+                </entity>
+            </target_node>
+            </range>
+        </link> -->
+        <link>
+            <path>
+            <source_relation>
+                <relation>FLAG_2MASS[text()!="-"]</relation>
+            </source_relation>
+            <target_relation>
+                <if>
+                    <equals value="1">.</equals>
+                </if>
+                <relationship>parsec:P11_is_referred_in_data_source</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>FLAG_2MASS[text()!="-"]</source_node>
+            <target_node>
+                <entity>
+                    <type>parsec:E05_Data_Source</type>
+                    <instance_generator name="2MASSURI">
+                        <arg name="k" type="constant">LGA</arg>
+                    </instance_generator>
+                    <label_generator name="2MASSLabel">
+                        <arg name="k" type="constant">LGA</arg>
+                    </label_generator>
+                </entity>
+            </target_node>
+            </range>
+        </link>
+        <link>
+            <path>
+            <source_relation>
+                <relation>FLAG_2MASS[text()!="-"]</relation>
+            </source_relation>
+            <target_relation>
+                <if>
+                    <equals value="2">.</equals>
+                </if>
+                <relationship>parsec:P11_is_referred_in_data_source</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>FLAG_2MASS[text()!="-"]</source_node>
+            <target_node>
+                <entity>
+                    <type>parsec:E05_Data_Source</type>
+                    <instance_generator name="2MASSURI">
+                        <arg name="k" type="constant">XSC</arg>
+                    </instance_generator>
+                    <label_generator name="2MASSLabel">
+                        <arg name="k" type="constant">XSC</arg>
+                    </label_generator>
+                </entity>
+            </target_node>
+            </range>
+        </link>
+        <link>
+            <path>
+            <source_relation>
+                <relation>FLAG_2MASS[text()!="-"]</relation>
+            </source_relation>
+            <target_relation>
+                <if>
+                    <equals value="3">.</equals>
+                </if>
+                <relationship>parsec:P11_is_referred_in_data_source</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>FLAG_2MASS[text()!="-"]</source_node>
+            <target_node>
+                <entity>
+                    <type>parsec:E05_Data_Source</type>
+                    <instance_generator name="2MASSURI">
+                        <arg name="k" type="constant">PSC</arg>
+                    </instance_generator>
+                    <label_generator name="2MASSLabel">
+                        <arg name="k" type="constant">PSC</arg>
+                    </label_generator>
                 </entity>
             </target_node>
             </range>
@@ -4766,7 +6235,7 @@
             </range>
         </link> -->
 
-        <link>
+        <!-- <link>
             <path>
             <source_relation>
                 <relation>FLAG_METAL[text()!="-"]</relation>
@@ -4809,12 +6278,151 @@
                         </label_generator>
                         </entity>
                     </additional>
+                </entity>
+            </target_node>
+            </range>
+        </link> -->
+        <link>
+            <path>
+            <source_relation>
+                <relation>FLAG_METAL[text()!="-"]</relation>
+            </source_relation>
+            <target_relation>
+                <if>
+                    <equals value="-1">.</equals>
+                </if>
+                <relationship>parsec:P01_has_measurement</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>FLAG_METAL[text()!="-"]</source_node>
+            <target_node>
+                <entity>
+                    <type>parsec:E08_Measurement</type>
+                    <instance_generator name="CustomHecateMeasurementURI">
+                        <arg name="celestial_body_id" type="xpath">../ROW_NUMBER/text()</arg>
+                        <arg name="column_name" type="constant">FLAG_METAL</arg>
+                    </instance_generator>
+                    <label_generator name="Literal">
+                        <arg name="text" type="xpath">.</arg>
+                    </label_generator>
                     <additional>
                         <relationship>parsec:P29_has_reliability_status</relationship>
                         <entity>
                             <type>rdfs:Literal</type>
                             <instance_generator name="Literal">
-                                <arg name="text" type="xpath">../FLAG_METAL/text()</arg>
+                                <arg name="text" type="constant">missing</arg>
+                            </instance_generator>
+                        </entity>
+                    </additional>
+                </entity>
+            </target_node>
+            </range>
+        </link>
+                <link>
+            <path>
+            <source_relation>
+                <relation>FLAG_METAL[text()!="-"]</relation>
+            </source_relation>
+            <target_relation>
+                <if>
+                    <equals value="0">.</equals>
+                </if>
+                <relationship>parsec:P01_has_measurement</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>FLAG_METAL[text()!="-"]</source_node>
+            <target_node>
+                <entity>
+                    <type>parsec:E08_Measurement</type>
+                    <instance_generator name="CustomHecateMeasurementURI">
+                        <arg name="celestial_body_id" type="xpath">../ROW_NUMBER/text()</arg>
+                        <arg name="column_name" type="constant">FLAG_METAL</arg>
+                    </instance_generator>
+                    <label_generator name="Literal">
+                        <arg name="text" type="xpath">.</arg>
+                    </label_generator>
+                    <additional>
+                        <relationship>parsec:P29_has_reliability_status</relationship>
+                        <entity>
+                            <type>rdfs:Literal</type>
+                            <instance_generator name="Literal">
+                                <arg name="text" type="constant">reliable</arg>
+                            </instance_generator>
+                        </entity>
+                    </additional>
+                </entity>
+            </target_node>
+            </range>
+        </link>
+                <link>
+            <path>
+            <source_relation>
+                <relation>FLAG_METAL[text()!="-"]</relation>
+            </source_relation>
+            <target_relation>
+                <if>
+                    <equals value="1">.</equals>
+                </if>
+                <relationship>parsec:P01_has_measurement</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>FLAG_METAL[text()!="-"]</source_node>
+            <target_node>
+                <entity>
+                    <type>parsec:E08_Measurement</type>
+                    <instance_generator name="CustomHecateMeasurementURI">
+                        <arg name="celestial_body_id" type="xpath">../ROW_NUMBER/text()</arg>
+                        <arg name="column_name" type="constant">FLAG_METAL</arg>
+                    </instance_generator>
+                    <label_generator name="Literal">
+                        <arg name="text" type="xpath">.</arg>
+                    </label_generator>
+                    <additional>
+                        <relationship>parsec:P29_has_reliability_status</relationship>
+                        <entity>
+                            <type>rdfs:Literal</type>
+                            <instance_generator name="Literal">
+                                <arg name="text" type="constant">O3N2 ration > 2 (outside the PP04 range)</arg>
+                            </instance_generator>
+                        </entity>
+                    </additional>
+                </entity>
+            </target_node>
+            </range>
+        </link>
+        <link>
+            <path>
+            <source_relation>
+                <relation>FLAG_METAL[text()!="-"]</relation>
+            </source_relation>
+            <target_relation>
+                <if>
+                    <equals value="2">.</equals>
+                </if>
+                <relationship>parsec:P01_has_measurement</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>FLAG_METAL[text()!="-"]</source_node>
+            <target_node>
+                <entity>
+                    <type>parsec:E08_Measurement</type>
+                    <instance_generator name="CustomHecateMeasurementURI">
+                        <arg name="celestial_body_id" type="xpath">../ROW_NUMBER/text()</arg>
+                        <arg name="column_name" type="constant">FLAG_METAL</arg>
+                    </instance_generator>
+                    <label_generator name="Literal">
+                        <arg name="text" type="xpath">.</arg>
+                    </label_generator>
+                    <additional>
+                        <relationship>parsec:P29_has_reliability_status</relationship>
+                        <entity>
+                            <type>rdfs:Literal</type>
+                            <instance_generator name="Literal">
+                                <arg name="text" type="constant">low signal-to-noise ratio (&lt;3 for the weakest line)</arg>
                             </instance_generator>
                         </entity>
                     </additional>
