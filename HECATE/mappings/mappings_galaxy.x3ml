@@ -846,6 +846,7 @@
                         <relation>NDIST[text()!="-"]</relation>
                     </source_relation>
                     <target_relation>
+                        <if><equals value="0">../EDIST/text()</equals></if>
                         <relationship>parsec:P01_has_measurement</relationship>
                     </target_relation>
                 </path>
@@ -871,20 +872,59 @@
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P05_has_lower_error_margin_value</relationship>
+                                <relationship>parsec:P21_is_measurement_from_column</relationship>
                                 <entity>
-                                <type>rdfs:Literal</type>
-                                <instance_generator name="Literal">
-                                    <arg name="text" type="xpath">../EDIST/text()</arg>
+                                <type>parsec:E16_Column</type>
+                                <instance_generator name="ColumnURI">
+                                    <arg name="data_source" type="constant">HECATE</arg>
+                                    <arg name="column_name" type="constant">ndist</arg>
                                 </instance_generator>
+                                <label_generator name="Literal">
+                                    <arg name="text" type="constant">ndist</arg>
+                                </label_generator>
                                 </entity>
                             </additional>
                             <additional>
-                                <relationship>parsec:P06_has_upper_error_margin_value</relationship>
+                                <relationship>parsec:P29_has_reliability_status</relationship>
                                 <entity>
                                 <type>rdfs:Literal</type>
                                 <instance_generator name="Literal">
-                                    <arg name="text" type="xpath">../EDIST/text()</arg>
+                                    <arg name="text" type="constant">measurement contains uncertainties</arg>
+                                </instance_generator>
+                                </entity>
+                            </additional>
+                        </entity>
+                    </target_node>
+                </range>
+            </link>
+            <link>
+                <path>
+                    <source_relation>
+                        <relation>NDIST[text()!="-"]</relation>
+                    </source_relation>
+                    <target_relation>
+                        <if><equals value="1">../EDIST/text()</equals></if>
+                        <relationship>parsec:P01_has_measurement</relationship>
+                    </target_relation>
+                </path>
+                <range>
+                    <source_node>NDIST[text()!="-"]</source_node>
+                    <target_node>
+                        <entity>
+                            <type>parsec:E08_Measurement</type>
+                            <instance_generator name="CustomHecateMeasurementURI">
+                                <arg name="celestial_body_id" type="xpath">../ROW_NUMBER/text()</arg>
+                                <arg name="column_name" type="constant">ndist</arg>
+                            </instance_generator>
+                            <label_generator name="Literal">
+                                <arg name="text" type="xpath">.</arg>
+                            </label_generator>
+                            <additional>
+                                <relationship>parsec:P02_has_value</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="xpath">.</arg>
                                 </instance_generator>
                                 </entity>
                             </additional>
@@ -899,6 +939,15 @@
                                 <label_generator name="Literal">
                                     <arg name="text" type="constant">ndist</arg>
                                 </label_generator>
+                                </entity>
+                            </additional>
+                            <additional>
+                                <relationship>parsec:P29_has_reliability_status</relationship>
+                                <entity>
+                                <type>rdfs:Literal</type>
+                                <instance_generator name="Literal">
+                                    <arg name="text" type="constant">measurement does not contain uncertainties</arg>
+                                </instance_generator>
                                 </entity>
                             </additional>
                         </entity>
@@ -4669,7 +4718,7 @@
             </range>
         </link>
 
-        <link>
+        <!-- <link>
             <path>
             <source_relation>
                 <relation>METAL[text()!="-"]</relation>
@@ -4715,7 +4764,7 @@
                 </entity>
             </target_node>
             </range>
-        </link>
+        </link> -->
 
         <link>
             <path>
@@ -4774,7 +4823,7 @@
             </range>
         </link>
 
-        <link>
+        <!-- <link>
             <path>
             <source_relation>
                 <relation>CLASS_SP[text()!="-"]</relation>
@@ -4817,6 +4866,125 @@
                         </label_generator>
                         </entity>
                     </additional>
+                </entity>
+            </target_node>
+            </range>
+        </link> -->
+         <link>
+            <path>
+            <source_relation>
+                <relation>CLASS_SP[text()!="-"]</relation>
+            </source_relation>
+            <target_relation>
+                <if>
+                    <equals value="-1">.</equals>
+                </if>
+                <relationship>parsec:P42_has_nuclear_activity_classification</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>CLASS_SP[text()!="-"]</source_node>
+            <target_node>
+                <entity>
+                    <type>rdfs:Literal</type>
+                     <instance_generator name="Literal">
+                        <arg name="text" type="constant">unknown</arg>
+                    </instance_generator>
+                </entity>
+            </target_node>
+            </range>
+        </link>
+         <link>
+            <path>
+            <source_relation>
+                <relation>CLASS_SP[text()!="-"]</relation>
+            </source_relation>
+            <target_relation>
+                <if>
+                    <equals value="0">.</equals>
+                </if>
+                <relationship>parsec:P42_has_nuclear_activity_classification</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>CLASS_SP[text()!="-"]</source_node>
+            <target_node>
+                <entity>
+                    <type>rdfs:Literal</type>
+                     <instance_generator name="Literal">
+                        <arg name="text" type="constant">star-formating</arg>
+                    </instance_generator>
+                </entity>
+            </target_node>
+            </range>
+        </link>
+         <link>
+            <path>
+            <source_relation>
+                <relation>CLASS_SP[text()!="-"]</relation>
+            </source_relation>
+            <target_relation>
+                <if>
+                    <equals value="1">.</equals>
+                </if>
+                <relationship>parsec:P42_has_nuclear_activity_classification</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>CLASS_SP[text()!="-"]</source_node>
+            <target_node>
+                <entity>
+                    <type>rdfs:Literal</type>
+                     <instance_generator name="Literal">
+                        <arg name="text" type="constant">Seyfert</arg>
+                    </instance_generator>
+                </entity>
+            </target_node>
+            </range>
+        </link>
+         <link>
+            <path>
+            <source_relation>
+                <relation>CLASS_SP[text()!="-"]</relation>
+            </source_relation>
+            <target_relation>
+                <if>
+                    <equals value="2">.</equals>
+                </if>
+                <relationship>parsec:P42_has_nuclear_activity_classification</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>CLASS_SP[text()!="-"]</source_node>
+            <target_node>
+                <entity>
+                    <type>rdfs:Literal</type>
+                     <instance_generator name="Literal">
+                        <arg name="text" type="constant">LINER</arg>
+                    </instance_generator>
+                </entity>
+            </target_node>
+            </range>
+        </link> <link>
+            <path>
+            <source_relation>
+                <relation>CLASS_SP[text()!="-"]</relation>
+            </source_relation>
+            <target_relation>
+                <if>
+                    <equals value="3">.</equals>
+                </if>
+                <relationship>parsec:P42_has_nuclear_activity_classification</relationship>
+            </target_relation>
+            </path>
+            <range>
+            <source_node>CLASS_SP[text()!="-"]</source_node>
+            <target_node>
+                <entity>
+                    <type>rdfs:Literal</type>
+                     <instance_generator name="Literal">
+                        <arg name="text" type="constant">composite</arg>
+                    </instance_generator>
                 </entity>
             </target_node>
             </range>
