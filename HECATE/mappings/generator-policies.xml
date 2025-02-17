@@ -9,6 +9,13 @@
         <pattern>{label}</pattern>
     </generator>
 
+    <generator name="MathExpression">
+        <custom generatorClass="gr.forth.MathExpressionGenerator">
+            <set-arg name="flag_value" type="xpath"/>
+        </custom>
+    </generator>
+
+
     <generator name="GalaxyLabel" type="label">
         <pattern>galaxy_{label}</pattern>
     </generator>
