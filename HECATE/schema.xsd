@@ -1,0 +1,24 @@
+<data_table>
+    <galaxy>
+        <name></name>
+        <identifiers>
+            <id>
+                <value></value>
+                <source></source>
+            </id>
+        </identifiers>
+        <measurenments>
+            <measurement>
+                <column></column>
+                <value></value>
+                <estimation_method></estimation_method>
+                <unit></unit>
+                <classification></classification>
+                <lower_error_margin></lower_error_margin>
+                <upper_error_margin></upper_error_margin>
+                <ci_lower_bound></ci_lower_bound>
+                <ci_upper_bound></ci_upper_bound>
+            </measurement>
+        </measurenments>
+    </galaxy>
+</data_table>
