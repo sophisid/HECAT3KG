@@ -26,4 +26,4 @@ def csv_to_xml(csv_file, xml_file):
     with open(xml_file, "w", encoding="utf-8") as file:
         file.write(pretty_xml)
 
-csv_to_xml("HECATE_small.csv", "HECATE_small.xml")
+csv_to_xml("HECATE_columns.csv", "HECATE_columns.xml")
