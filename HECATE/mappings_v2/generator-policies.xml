@@ -17,7 +17,7 @@
 
 
     <generator name="GalaxyLabel" type="label">
-        <pattern>galaxy_{label}</pattern>
+        <pattern>{label}</pattern>
     </generator>
 
     <generator name="URIwithType" prefix="parsec">
@@ -25,7 +25,11 @@
     </generator>
     
     <generator name="HecateCustomURIwithType" prefix="parsec">
-	    <pattern>{type}/galaxy_{id}</pattern>
+	    <pattern>{type}/{id}</pattern>
+    </generator>
+
+    <generator name="HecateCustomURIwithTypeIdentifier" prefix="parsec">
+	    <pattern>{type}/{column_name}/{id}</pattern>
     </generator>
 
     <generator name="URIwithTypeHashed" prefix="parsec" shorten="yes">
@@ -87,7 +91,7 @@
     </generator>
 
     <generator name="CustomHecateMeasurementURI" prefix="parsec">
-        <pattern>celestial_body/galaxy_{celestial_body_id}/column/{column_name}/measurement/galaxy_{celestial_body_id}_{column_name}</pattern>
+        <pattern>celestial_body/{celestial_body_id}/column/{column_name}/measurement/{celestial_body_id}_{column_name}</pattern>
     </generator>
 
     <generator name="MeasurementUnitURI" prefix="parsec">

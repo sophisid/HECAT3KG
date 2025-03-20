@@ -132,8 +132,11 @@ def parse_xml(xml_file):
 def export_to_xml(records, output_file):
     root = ET.Element("root")
 
-    for record in records:
+    for idx, record in enumerate(records, start=1):
         row_element = ET.SubElement(root, "row")
+
+        row_number_element = ET.SubElement(row_element, "ROW_NUMBER")
+        row_number_element.text = f"galaxy_{idx}"
 
         # ids
         identifier_fields = {'PGC', 'OBJNAME', 'ID_NED', 'ID_NEDD', 'ID_IRAS', 'ID_2MASS', 'SDSS_PHOTID', 'SDSS_SPECID'}
