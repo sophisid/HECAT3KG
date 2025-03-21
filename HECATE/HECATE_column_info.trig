@@ -1,7 +1,7 @@
 { 
 }
 
-<https://parsec.forth.gr/E03_Galaxy/galaxy_1> {
+<http://hecate_parsec.forth.gr/E03_Galaxy/galaxy_1> {
     <https://parsec.forth.gr/E03_Galaxy/galaxy_1>
             a       <https://parsec.forth.gr/E03_Galaxy> , <https://parsec.forth.gr/E02_Celestial_Body> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
@@ -11,7 +11,9 @@
             <https://parsec.forth.gr/P11_is_referred_in_data_source>
                     <https://parsec.forth.gr/data_table/HECATE> ;
             <https://parsec.forth.gr/P12_has_identifier>
-                    <https://parsec.forth.gr/E17_Identifier/PGC/galaxy_1> , <https://parsec.forth.gr/E17_Identifier/OBJNAME/galaxy_1> , <https://parsec.forth.gr/E17_Identifier/ID_NED/galaxy_1> , <https://parsec.forth.gr/E17_Identifier/ID_NEDD/galaxy_1> , <https://parsec.forth.gr/E17_Identifier/ID_2MASS/galaxy_1> .
+                    <https://parsec.forth.gr/E17_Identifier/PGC/galaxy_1> , <https://parsec.forth.gr/E17_Identifier/OBJNAME/galaxy_1> , <https://parsec.forth.gr/E17_Identifier/ID_NED/galaxy_1> , <https://parsec.forth.gr/E17_Identifier/ID_NEDD/galaxy_1> , <https://parsec.forth.gr/E17_Identifier/ID_2MASS/galaxy_1> ;
+            <https://parsec.forth.gr/P44_has_identifer_value>
+                    "2" , "UGC12889" , "UGC 12889" , "00000168+4716282" .
     
     <https://parsec.forth.gr/data_table/HECATE>
             a       <https://parsec.forth.gr/E15_Data_Table> ;
@@ -177,7 +179,11 @@
             <https://parsec.forth.gr/P02_has_value>
                     "3.1" ;
             <https://parsec.forth.gr/P21_is_measurement_from_column>
-                    <https://parsec.forth.gr/data_source/HECATE/column/T> .
+                    <https://parsec.forth.gr/data_source/HECATE/column/T> ;
+            <https://parsec.forth.gr/P5_has_lower_error_margin_value>
+                    "0.4" ;
+            <https://parsec.forth.gr/P5_has_upper_error_margin_value>
+                    "0.4" .
     
     <https://parsec.forth.gr/data_source/HECATE/column/T>
             a       <https://parsec.forth.gr/E16_Column> ;
@@ -205,7 +211,11 @@
             <https://parsec.forth.gr/P02_has_value>
                     "5016.7" ;
             <https://parsec.forth.gr/P21_is_measurement_from_column>
-                    <https://parsec.forth.gr/data_source/HECATE/column/V> .
+                    <https://parsec.forth.gr/data_source/HECATE/column/V> ;
+            <https://parsec.forth.gr/P5_has_lower_error_margin_value>
+                    "6.4" ;
+            <https://parsec.forth.gr/P5_has_upper_error_margin_value>
+                    "6.4" .
     
     <https://parsec.forth.gr/data_source/HECATE/column/V>
             a       <https://parsec.forth.gr/E16_Column> ;
@@ -219,7 +229,11 @@
             <https://parsec.forth.gr/P02_has_value>
                     "5203.2" ;
             <https://parsec.forth.gr/P21_is_measurement_from_column>
-                    <https://parsec.forth.gr/data_source/HECATE/column/V_VIR> .
+                    <https://parsec.forth.gr/data_source/HECATE/column/V_VIR> ;
+            <https://parsec.forth.gr/P5_has_lower_error_margin_value>
+                    "10.43" ;
+            <https://parsec.forth.gr/P5_has_upper_error_margin_value>
+                    "10.43" .
     
     <https://parsec.forth.gr/data_source/HECATE/column/V_VIR>
             a       <https://parsec.forth.gr/E16_Column> ;
@@ -261,7 +275,17 @@
             <https://parsec.forth.gr/P02_has_value>
                     "67.9204" ;
             <https://parsec.forth.gr/P21_is_measurement_from_column>
-                    <https://parsec.forth.gr/data_source/HECATE/column/D> .
+                    <https://parsec.forth.gr/data_source/HECATE/column/D> ;
+            <https://parsec.forth.gr/P26_has_error_confidence_interval_percentage>
+                    "68" , "95" ;
+            <https://parsec.forth.gr/P27_has_CI_lower_bound>
+                    "56.4937" , "46.9894" ;
+            <https://parsec.forth.gr/P28_has_CI_upper_bound>
+                    "81.6582" , "98.1748" ;
+            <https://parsec.forth.gr/P5_has_lower_error_margin_value>
+                    "12.5114" ;
+            <https://parsec.forth.gr/P5_has_upper_error_margin_value>
+                    "12.5114" .
     
     <https://parsec.forth.gr/data_source/HECATE/column/D>
             a       <https://parsec.forth.gr/E16_Column> ;
@@ -289,7 +313,11 @@
             <https://parsec.forth.gr/P02_has_value>
                     "14.241" ;
             <https://parsec.forth.gr/P21_is_measurement_from_column>
-                    <https://parsec.forth.gr/data_source/HECATE/column/BT> .
+                    <https://parsec.forth.gr/data_source/HECATE/column/BT> ;
+            <https://parsec.forth.gr/P5_has_lower_error_margin_value>
+                    "0.605" ;
+            <https://parsec.forth.gr/P5_has_upper_error_margin_value>
+                    "0.605" .
     
     <https://parsec.forth.gr/data_source/HECATE/column/BT>
             a       <https://parsec.forth.gr/E16_Column> ;
@@ -415,7 +443,11 @@
             <https://parsec.forth.gr/P02_has_value>
                     "10.643" ;
             <https://parsec.forth.gr/P21_is_measurement_from_column>
-                    <https://parsec.forth.gr/data_source/HECATE/column/J> .
+                    <https://parsec.forth.gr/data_source/HECATE/column/J> ;
+            <https://parsec.forth.gr/P5_has_lower_error_margin_value>
+                    "0.03" ;
+            <https://parsec.forth.gr/P5_has_upper_error_margin_value>
+                    "0.03" .
     
     <https://parsec.forth.gr/data_source/HECATE/column/J>
             a       <https://parsec.forth.gr/E16_Column> ;
@@ -429,7 +461,11 @@
             <https://parsec.forth.gr/P02_has_value>
                     "9.892" ;
             <https://parsec.forth.gr/P21_is_measurement_from_column>
-                    <https://parsec.forth.gr/data_source/HECATE/column/H> .
+                    <https://parsec.forth.gr/data_source/HECATE/column/H> ;
+            <https://parsec.forth.gr/P5_has_lower_error_margin_value>
+                    "0.031" ;
+            <https://parsec.forth.gr/P5_has_upper_error_margin_value>
+                    "0.031" .
     
     <https://parsec.forth.gr/data_source/HECATE/column/H>
             a       <https://parsec.forth.gr/E16_Column> ;
@@ -443,7 +479,11 @@
             <https://parsec.forth.gr/P02_has_value>
                     "9.542" ;
             <https://parsec.forth.gr/P21_is_measurement_from_column>
-                    <https://parsec.forth.gr/data_source/HECATE/column/K> .
+                    <https://parsec.forth.gr/data_source/HECATE/column/K> ;
+            <https://parsec.forth.gr/P5_has_lower_error_margin_value>
+                    "0.039" ;
+            <https://parsec.forth.gr/P5_has_upper_error_margin_value>
+                    "0.039" .
     
     <https://parsec.forth.gr/data_source/HECATE/column/K>
             a       <https://parsec.forth.gr/E16_Column> ;
