@@ -91,7 +91,7 @@
     </generator>
 
     <generator name="CustomHecateMeasurementURI" prefix="parsec">
-        <pattern>celestial_body/{celestial_body_id}/column/{column_name}/measurement/{celestial_body_id}_{column_name}</pattern>
+        <pattern>column/{column_name}/measurement/{celestial_body_id}_{column_name}</pattern>
     </generator>
 
     <generator name="MeasurementUnitURI" prefix="parsec">
