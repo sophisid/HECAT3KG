@@ -1,0 +1,2193 @@
+@base <http://example.org/mapping/> .
+@prefix rr:   <http://www.w3.org/ns/r2rml#> .          # R2RML mapping vocabulary
+@prefix rml:  <http://semweb.mmlab.be/ns/rml#> .         # RML extension for heterogeneous sources
+@prefix ql:   <http://semweb.mmlab.be/ns/ql#> .           # Query language; here we use CSV
+@prefix parsec: <https://hecate.ia.forth.gr#> .          # PARSEC ontology namespace (blueprint source)
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .  # RDF Schema (for labels, etc.)
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .       # XML Schema (for datatypes)
+
+
+<#HecateCSV> a rml:LogicalSource ;
+    rml:source "../HECATE_v1.1.csv" ;
+    rml:referenceFormulation ql:CSV .
+
+
+################################################################################
+# Galaxy Mapping: Create a Galaxy entity (E3_Galaxy)
+################################################################################
+<#GalaxyMapping> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+
+    # Generate a unique URI for each galaxy using the PGC column.
+    rr:subjectMap [
+        rr:template "https://hecate.ia.forth.gr/galaxy/{PGC}" ;
+        rr:class parsec:E3_Galaxy ;
+    ] ;
+    
+    # Instead of directly using P12_has_identifier, we link to an identifier entity.
+    rr:predicateObjectMap [
+        rr:predicate parsec:P33_provides_identifier ;
+        rr:objectMap [ rr:parentTriplesMap <#GalaxyIdentifier> ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P44_is_identified_by ;
+        rr:objectMap [ rr:parentTriplesMap <#GalaxyIdentifier> ] ;
+    ] ;
+
+    # Map the OBJNAME column to rdfs:label for a human-readable name.
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [ rml:reference "OBJNAME" ] ;
+    ] ;
+
+
+
+    ################################################################################
+    # Linking the Galaxy to its Measurements
+    ################################################################################
+
+    # RA & DEC & D Measurements
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementRA> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementDEC> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementD> ] ] ;
+
+
+    # AGN_S17, AG, AI, AGN_HEC Measurements, CLASS_SP
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementAGN_S17> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementAGN_HEC> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementAG> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementAI> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementCLASS_SP> ] ] ;
+
+    # UT, BT, VT, IT Measurements
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementUT> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementBT> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementVT> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementIT> ] ] ;
+
+    # Photometric Bands: U, G, R, T, I, Z
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementU> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementG> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementR> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementT> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementI> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementZ> ] ] ;
+
+    #Additional measurements
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementJ> ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementH> ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementK> ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementFLAG_SFR_HEC> ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementINCL> ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementV> ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementV_VIR> ] ; ] ;
+
+
+    #S band measurements
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementS12> ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementS25> ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementS60> ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementS100> ] ; ] ;
+    
+
+    #WF apparent magnitude measurements
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementWF1> ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementWF2> ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementWF3> ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementWF4> ] ; ] ;
+        
+
+    #WFPOINT AND WFTREAT measurements
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementWFPOINT> ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementWFTREAT> ] ; ] ;
+    
+    #logL Decimal logarithms in solar luminosities measurements
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementlogL_12u> ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementlogL_22u> ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementlogL_60u> ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementlogL_K> ] ; ] ;
+    
+    #ML_ratio measurements
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementML_ratio> ] ; ] ;
+
+    #Decimal logarithm of star-formation rate in solar masses per year measurements
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementlogSFR_12u> ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementlogSFR_22u> ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementlogSFR_60u> ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementlogSFR_HEC> ] ; ] ;
+    
+    #Decimal logarithm of stellar mass and SED-based formation rate measurements
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementlogM_HEC> ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementlogSFR_GSW> ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementlogM_GSW> ] ; ] ;
+
+    # Minimum signal-to-noise ratio and metallicity measurements
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementMIN_SNR> ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementMETAL> ] ; ] ;
+
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementlogL_TIR> ] ; ] ;
+
+
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementlogL_FIR> ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementlogSFR_TIR> ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementlogSFR_FIR> ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementNDIST> ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P1_has_measurement ; rr:objectMap [ rr:parentTriplesMap <#MeasurementPA> ] ; ] ;
+
+
+    .
+
+
+
+
+
+################################################################################
+# Identifier Mapping: Now includes ID_NED and ID_IRAS
+################################################################################
+<#IdentifierID_2MASS> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    
+    # Create a unique identifier resource per galaxy using the PGC.
+    rr:subjectMap [
+        rr:template "https://hecate.ia.forth.gr/E17_Identifier/ID_2MASS/galaxy_{pgc}" ;
+        rr:class parsec:E17_Identifier ;
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate parsec:P43_identifier_value ;
+        rr:objectMap [
+            rr:template "{ID_2MASS}" ;
+            rr:termType rr:Literal ;
+        ] ;
+    ] .
+
+<#IdentifierOBJNAME> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    
+    rr:subjectMap [
+        rr:template "https://hecate.ia.forth.gr/E17_Identifier/OBJNAME/galaxy_{PGC}" ;
+        rr:class parsec:E17_Identifier ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P43_identifier_value ;
+        rr:objectMap [
+            rr:template "{OBJNAME}" ;
+            rr:termType rr:Literal ;
+        ] ;
+    ] .
+
+<#IdentifierPGC> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    
+    rr:subjectMap [
+        rr:template "https://hecate.ia.forth.gr/E17_Identifier/PGC/galaxy_{pgc}" ;
+        rr:class parsec:E17_Identifier ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P43_identifier_value ;
+        rr:objectMap [
+            rr:template "{PGC}" ;
+            rr:termType rr:Literal ;
+        ] ;
+    ] .
+    
+<#IdentifierID_NED> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    
+    rr:subjectMap [
+        rr:template "https://hecate.ia.forth.gr/E17_Identifier/ID_NED/galaxy_{pgc}" ;
+        rr:class parsec:E17_Identifier ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P43_identifier_value ;
+        rr:objectMap [
+            rr:template "{ID_NED}" ;
+            rr:termType rr:Literal ;
+        ] ;
+    ] .
+
+<#Identifiersdss_photid> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    
+    rr:subjectMap [
+        rr:template "https://hecate.ia.forth.gr/E17_Identifier/sdss_photid/galaxy_{pgc}" ;
+        rr:class parsec:E17_Identifier ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P43_identifier_value ;
+        rr:objectMap [
+            rr:template "{sdss_photid}" ;
+            rr:termType rr:Literal ;
+        ] ;
+    ] .
+
+<#Identifiersdss_specid> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    
+    rr:subjectMap [
+        rr:template "https://hecate.ia.forth.gr/E17_Identifier/sdss_specid/galaxy_{pgc}" ;
+        rr:class parsec:E17_Identifier ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P43_identifier_value ;
+        rr:objectMap [
+            rr:template "{sdss_specid}" ;
+            rr:termType rr:Literal ;
+        ] ;
+    ] .
+
+<#IdentifierID_IRAS> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    
+    rr:subjectMap [
+        rr:template "https://hecate.ia.forth.gr/E17_Identifier/ID_IRAS/galaxy_{pgc}" ;
+        rr:class parsec:E17_Identifier ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P43_identifier_value ;
+        rr:objectMap [
+            rr:template "{ID_IRAS}" ;
+            rr:termType rr:Literal ;
+        ] ;
+    ] .
+
+
+
+
+
+
+
+
+<#GalaxyIdentifier> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    
+    # Create a unique identifier resource per galaxy using the PGC.
+    rr:subjectMap [
+        rr:template "https://hecate.ia.forth.gr/galaxy_identifier/{PGC}" ;
+        rr:class parsec:E17_Identifier ;
+    ] ;
+    # P12 Has Identifier
+    rr:predicateObjectMap [
+        rr:predicate parsec:P12_has_identifier ;
+        rr:objectMap [
+            rr:template "{ID_2MASS}" ;
+            rr:termType rr:Literal ;
+        ] ;
+    ] ;
+    # P12 Has Identifier
+    rr:predicateObjectMap [
+        rr:predicate parsec:P12_has_identifier ;
+        rr:objectMap [
+            rr:template "{OBJNAME}" ;
+            rr:termType rr:Literal ;
+        ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P12_has_identifier ;
+        rr:objectMap [
+            rr:template "{PGC}" ;
+            rr:datatype xsd:int ;
+        ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P12_has_identifier ;
+        rr:objectMap [
+            rr:template "{ID_NED}" ;
+            rr:termType rr:Literal ;
+        ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P12_has_identifier ;
+        rr:objectMap [
+            rr:template "{sdss_photid}" ;
+            rr:termType rr:Literal ;
+        ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P12_has_identifier ;
+        rr:objectMap [
+            rr:template "{sdss_specid}" ;
+            rr:termType rr:Literal ;
+        ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P12_has_identifier ;
+        rr:objectMap [
+            rr:template "{ID_IRAS}" ;
+            rr:termType rr:Literal ;
+        ] ;
+    ] ;
+
+    # P44 Stores Identifiers as Literals (NO encoding)
+    rr:predicateObjectMap [
+        rr:predicate parsec:P44_is_identified_by ;
+        rr:objectMap [
+            rml:reference "ID_2MASS" ;
+        ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P44_is_identified_by ;
+        rr:objectMap [
+            rml:reference "OBJNAME" ;
+        ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P44_is_identified_by ;
+        rr:objectMap [
+            rml:reference "PGC" ;
+            rr:datatype xsd:int ;
+        ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P44_is_identified_by ;
+        rr:objectMap [
+            rml:reference "ID_NED" ;
+        ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P44_is_identified_by ;
+        rr:objectMap [
+            rml:reference "sdss_photid" ;
+        ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P44_is_identified_by ;
+        rr:objectMap [
+            rml:reference "sdss_specid" ;
+        ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P44_is_identified_by ;
+        rr:objectMap [
+            rml:reference "ID_IRAS" ;
+        ] ;
+    ] .
+# Identifier Mappings Generated Below
+
+
+
+
+
+################################################################################
+# Measurement Mapping for Right Ascension (RA)
+################################################################################
+<#MeasurementRA> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    
+    # Create a unique URI for the RA measurement using the galaxy's PGC.
+    rr:subjectMap [
+        rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/RA/measurement/galaxy_{PGC}_RA" ;
+        rr:class parsec:E8_Measurement ;                      # Measurement entity type
+    ] ;
+    # Map the RA value from the CSV (as a float).
+    rr:predicateObjectMap [
+        rr:predicate parsec:P02_has_value ;
+        rr:objectMap [ rml:reference "RA" ; rr:datatype xsd:float ] ;
+    ] ;
+    # Link this measurement to the RA column entity.
+    rr:predicateObjectMap [
+        rr:predicate parsec:P21_is_measurement_from_column ;
+        rr:objectMap [ rr:parentTriplesMap <#ColumnRA> ] ;
+    ] ;
+        rr:predicateObjectMap [
+        rr:predicate parsec:P05_has_lower_margin_value ;
+        rr:objectMap [ rml:reference "E_RA" ; rr:datatype xsd:float ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P06_has_upper_margin_value ;
+        rr:objectMap [ rml:reference "E_RA" ; rr:datatype xsd:float ] ;
+    ] .
+
+################################################################################
+# Measurement Mapping for Declination (DEC)
+################################################################################
+<#MeasurementDEC> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+
+    rr:subjectMap [
+        rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/DEC/measurement/galaxy_{PGC}_DEC" ;
+        rr:class parsec:E8_Measurement ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P02_has_value ;
+        rr:objectMap [ rml:reference "DEC" ; rr:datatype xsd:float ] ;
+    ] ;
+        rr:predicateObjectMap [
+        rr:predicate parsec:P21_is_measurement_from_column ;
+        rr:objectMap [ rr:parentTriplesMap <#ColumnDEC> ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P05_has_lower_margin_value ;
+        rr:objectMap [ rml:reference "E_DEC" ; rr:datatype xsd:float ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P06_has_upper_margin_value ;
+        rr:objectMap [ rml:reference "E_DEC" ; rr:datatype xsd:float ] ;
+    ] .
+
+
+################################################################################
+# D Mapping 
+################################################################################
+<#MeasurementD> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    
+    rr:subjectMap [
+        rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/D/measurement/galaxy_{PGC}_D" ;
+        rr:class parsec:E08_Measurement ;
+    ] ;
+    
+    # D Value
+    rr:predicateObjectMap [
+        rr:predicate parsec:P02_has_value ;
+        rr:objectMap [
+            rml:reference "D" ;
+            rr:datatype xsd:float ;
+        ] ;
+    ] ;
+
+    # Links to D column definition
+    rr:predicateObjectMap [
+        rr:predicate parsec:P21_is_measurement_from_column ;
+        rr:objectMap [
+            rr:constant parsec:HECATE_D ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate parsec:P20_has_estimation_method ; 
+        rr:objectMap [ rr:template "{D_Estimation_Method}" ; 
+        rr:termType rr:Literal ] 
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate parsec:P26_has_error_confidence_interval_percentage ;
+        rr:objectMap [ rr:constant "68" ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P26_has_error_confidence_interval_percentage ;
+        rr:objectMap [ rr:constant "95" ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P27_has_CI_lower_bound ;
+        rr:objectMap [ rml:reference "D_LO68" ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P27_has_CI_lower_bound ;
+        rr:objectMap [ rml:reference "D_LO95" ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P28_has_CI_upper_bound ;
+        rr:objectMap [ rml:reference "D_HI68" ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P28_has_CI_upper_bound ;
+        rr:objectMap [ rml:reference "D_HI95" ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P05_has_lower_margin_value ;
+        rr:objectMap [ rml:reference "E_D" ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P06_has_upper_margin_value ;
+        rr:objectMap [ rml:reference "E_D" ] ;
+    ] .
+
+
+################################################################################
+# AGN_S17 Measurement Mapping
+################################################################################
+<#MeasurementAGN_S17> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+
+    rr:subjectMap [
+        rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/AGN_S17/measurement/galaxy_{PGC}_AGN_S17" ;
+        rr:class parsec:E8_Measurement ;
+    ] ;
+    # Main AGN_S17 value
+    rr:predicateObjectMap [
+        rr:predicate parsec:P02_has_value ;
+        rr:objectMap [ rml:reference "AGN_S17" ; rr:datatype xsd:float ] ;
+    ] ;
+    # Link to the AGN_S17 column entity
+    rr:predicateObjectMap [
+        rr:predicate parsec:P21_is_measurement_from_column ;
+        rr:objectMap [ rr:parentTriplesMap <#ColumnAGN_S17> ] ;
+    ] .
+
+
+
+################################################################################
+# AGN_HEC Measurement Mapping
+################################################################################
+<#MeasurementAGN_HEC> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+
+    rr:subjectMap [
+        rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/AGN_HEC/measurement/galaxy_{PGC}_AGN_HEC" ;
+        rr:class parsec:E8_Measurement ;
+    ] ;
+    # Main AGN_HEC value
+    rr:predicateObjectMap [
+        rr:predicate parsec:P02_has_value ;
+        rr:objectMap [ rml:reference "AGN_HEC" ; rr:datatype xsd:float ] ;
+    ] ;
+    # Link to the AGN_HEC column entity
+    rr:predicateObjectMap [
+        rr:predicate parsec:P21_is_measurement_from_column ;
+        rr:objectMap [ rr:parentTriplesMap <#ColumnAGN_HEC> ] ;
+    ] .
+
+
+################################################################################
+# AG Measurement Mapping
+################################################################################
+<#MeasurementAG> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+
+    rr:subjectMap [
+        rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/AG/measurement/galaxy_{PGC}_AG" ;
+        rr:class parsec:E8_Measurement ;
+    ] ;
+    # Main AG value
+    rr:predicateObjectMap [
+        rr:predicate parsec:P02_has_value ;
+        rr:objectMap [ rml:reference "AG" ; rr:datatype xsd:float ] ;
+    ] ;
+    # Link to the AG column entity
+    rr:predicateObjectMap [
+        rr:predicate parsec:P21_is_measurement_from_column ;
+        rr:objectMap [ rr:parentTriplesMap <#ColumnAG> ] ;
+    ] .
+
+
+################################################################################
+# AI Measurement Mapping
+################################################################################
+<#MeasurementAI> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+
+    rr:subjectMap [
+        rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/AI/measurement/galaxy_{PGC}_AI" ;
+        rr:class parsec:E8_Measurement ;
+    ] ;
+    # Main AI value
+    rr:predicateObjectMap [
+        rr:predicate parsec:P02_has_value ;
+        rr:objectMap [ rml:reference "AI" ; rr:datatype xsd:float ] ;
+    ] ;
+    # Link to the AI column entity
+    rr:predicateObjectMap [
+        rr:predicate parsec:P21_is_measurement_from_column ;
+        rr:objectMap [ rr:parentTriplesMap <#ColumnAI> ] ;
+    ] .
+
+################################################################################
+# CLASS_SP Measurement Mapping
+################################################################################
+<#MeasurementCLASS_SP> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+
+    rr:subjectMap [
+        rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/CLASS_SP/measurement/galaxy_{PGC}_CLASS_SP" ;
+        rr:class parsec:E8_Measurement ;
+    ] ;
+    # Main CLASS_SP value
+    rr:predicateObjectMap [
+        rr:predicate parsec:P02_has_value ;
+        rr:objectMap [ rml:reference "CLASS_SP" ; rr:datatype xsd:float ] ;
+    ] ;
+    # Link to the CLASS_SP column entity
+    rr:predicateObjectMap [
+        rr:predicate parsec:P21_is_measurement_from_column ;
+        rr:objectMap [ rr:parentTriplesMap <#ColumnCLASS_SP> ] ;
+    ] .
+
+################################################################################
+# Measurement Mapping for UT, BT, VT, IT (Photometry)
+################################################################################
+<#MeasurementUT> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+
+    rr:subjectMap [ 
+        rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/UT/measurement/galaxy_{PGC}_UT" ; 
+        rr:class parsec:E8_Measurement ; 
+    ] ;
+    rr:predicateObjectMap [ 
+        rr:predicate parsec:P02_has_value ; 
+        rr:objectMap [ rml:reference "UT" ; rr:datatype xsd:float ] ; 
+        ] ;
+    rr:predicateObjectMap [ 
+        rr:predicate parsec:P21_is_measurement_from_column ; 
+        rr:objectMap [ rr:parentTriplesMap <#ColumnUT> ] ; 
+        ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P05_has_lower_margin_value ;
+        rr:objectMap [ rml:reference "E_UT" ; rr:datatype xsd:float ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P06_has_upper_margin_value ;
+        rr:objectMap [ rml:reference "E_UT" ; rr:datatype xsd:float ] ;
+    ] .
+
+<#MeasurementBT> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/BT/measurement/galaxy_{PGC}_BT" ; rr:class parsec:E8_Measurement ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "BT" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnBT> ] ; ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P05_has_lower_margin_value ;
+        rr:objectMap [ rml:reference "E_BT" ; rr:datatype xsd:float ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P06_has_upper_margin_value ;
+        rr:objectMap [ rml:reference "E_BT" ; rr:datatype xsd:float ] ;
+    ] .
+
+<#MeasurementVT> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/VT/measurement/galaxy_{PGC}_VT" ; rr:class parsec:E8_Measurement ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "VT" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnVT> ] ; ] .
+
+<#MeasurementIT> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/IT/measurement/galaxy_{PGC}_IT" ; rr:class parsec:E8_Measurement ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "IT" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnIT> ] ; ] .
+
+
+################################################################################
+# Measurement Mapping for U-band Photometry
+################################################################################
+<#MeasurementU> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [
+        rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/U/measurement/galaxy_{PGC}_U" ;
+        rr:class parsec:E8_Measurement ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P02_has_value ;
+        rr:objectMap [ rml:reference "U" ; rr:datatype xsd:float ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P21_is_measurement_from_column ;
+        rr:objectMap [ rr:parentTriplesMap <#ColumnU> ] ;
+    ] ;
+        rr:predicateObjectMap [
+        rr:predicate parsec:P05_has_lower_margin_value ;
+        rr:objectMap [ rml:reference "E_U" ; rr:datatype xsd:float ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P06_has_upper_margin_value ;
+        rr:objectMap [ rml:reference "E_U" ; rr:datatype xsd:float ] ;
+    ] .
+
+
+################################################################################
+# Measurement Mapping for G-band Photometry
+################################################################################
+<#MeasurementG> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [
+        rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/G/measurement/galaxy_{PGC}_G" ;
+        rr:class parsec:E8_Measurement ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P02_has_value ;
+        rr:objectMap [ rml:reference "G" ; rr:datatype xsd:float ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P21_is_measurement_from_column ;
+        rr:objectMap [ rr:parentTriplesMap <#ColumnG> ] ;
+    ] ;
+        rr:predicateObjectMap [
+        rr:predicate parsec:P05_has_lower_margin_value ;
+        rr:objectMap [ rml:reference "E_G" ; rr:datatype xsd:float ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P06_has_upper_margin_value ;
+        rr:objectMap [ rml:reference "E_G" ; rr:datatype xsd:float ] ;
+    ] .
+
+################################################################################
+# Measurement Mapping for R
+################################################################################
+<#MeasurementR> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/R/measurement/galaxy_{PGC}_R" ; rr:class parsec:E8_Measurement ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "R" ; rr:datatype xsd:float ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnR> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P05_has_lower_margin_value ; rr:objectMap [ rml:reference "E_R" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P06_has_upper_margin_value ; rr:objectMap [ rml:reference "E_R" ; rr:datatype xsd:float ] ; ] .
+
+################################################################################
+# Measurement Mapping for T
+################################################################################
+<#MeasurementT> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/T/measurement/galaxy_{PGC}_T" ; rr:class parsec:E8_Measurement ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "T" ; rr:datatype xsd:float ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnT> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P05_has_lower_margin_value ; rr:objectMap [ rml:reference "E_T" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P06_has_upper_margin_value ; rr:objectMap [ rml:reference "E_T" ; rr:datatype xsd:float ] ; ] .
+
+
+################################################################################
+# Measurement Mapping for I
+################################################################################
+<#MeasurementI> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/I/measurement/galaxy_{PGC}_I" ; rr:class parsec:E8_Measurement ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "I" ; rr:datatype xsd:float ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnI> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P05_has_lower_margin_value ; rr:objectMap [ rml:reference "E_I" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P06_has_upper_margin_value ; rr:objectMap [ rml:reference "E_I" ; rr:datatype xsd:float ] ; ] .
+
+################################################################################
+# Measurement Mapping for Z
+################################################################################
+<#MeasurementZ> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/Z/measurement/galaxy_{PGC}_Z" ; rr:class parsec:E8_Measurement ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "Z" ; rr:datatype xsd:float ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnZ> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P05_has_lower_margin_value ; rr:objectMap [ rml:reference "E_Z" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P06_has_upper_margin_value ; rr:objectMap [ rml:reference "E_Z" ; rr:datatype xsd:float ] ; ] .
+
+
+################################################################################
+# Measurement Mapping for Additional Properties
+################################################################################
+
+<#MeasurementJ> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+
+    rr:subjectMap [
+        rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/J/measurement/galaxy_{PGC}_J" ;
+        rr:class parsec:E8_Measurement ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P02_has_value ;
+        rr:objectMap [ rml:reference "J" ; rr:datatype xsd:float ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P21_is_measurement_from_column ;
+        rr:objectMap [ rr:parentTriplesMap <#ColumnJ> ] ;
+    ] ;
+        rr:predicateObjectMap [
+        rr:predicate parsec:P05_has_lower_margin_value ;
+        rr:objectMap [ rml:reference "E_J" ; rr:datatype xsd:float ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P06_has_upper_margin_value ;
+        rr:objectMap [ rml:reference "E_J" ; rr:datatype xsd:float ] ;
+    ] .
+
+<#MeasurementH> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+
+    rr:subjectMap [
+        rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/H/measurement/galaxy_{PGC}_H" ;
+        rr:class parsec:E8_Measurement ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P02_has_value ;
+        rr:objectMap [ rml:reference "H" ; rr:datatype xsd:float ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P21_is_measurement_from_column ;
+        rr:objectMap [ rr:parentTriplesMap <#ColumnH> ] ;
+    ] ;
+        rr:predicateObjectMap [
+        rr:predicate parsec:P05_has_lower_margin_value ;
+        rr:objectMap [ rml:reference "E_H" ; rr:datatype xsd:float ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P06_has_upper_margin_value ;
+        rr:objectMap [ rml:reference "E_H" ; rr:datatype xsd:float ] ;
+    ] .
+
+<#MeasurementK> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+
+    rr:subjectMap [
+        rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/K/measurement/galaxy_{PGC}_K" ;
+        rr:class parsec:E8_Measurement ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P02_has_value ;
+        rr:objectMap [ rml:reference "K" ; rr:datatype xsd:float ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P21_is_measurement_from_column ;
+        rr:objectMap [ rr:parentTriplesMap <#ColumnK> ] ;
+    ] ;
+        rr:predicateObjectMap [
+        rr:predicate parsec:P05_has_lower_margin_value ;
+        rr:objectMap [ rml:reference "E_K" ; rr:datatype xsd:float ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P06_has_upper_margin_value ;
+        rr:objectMap [ rml:reference "E_K" ; rr:datatype xsd:float ] ;
+    ] .
+
+
+
+<#MeasurementFLAG_SFR_HEC> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+
+    rr:subjectMap [
+        rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/FLAG_SFR_HEC/measurement/galaxy_{PGC}_FLAG_SFR_HEC" ;
+        rr:class parsec:E8_Measurement ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P02_has_value ;
+        rr:objectMap [ rml:reference "FLAG_SFR_HEC" ; rr:datatype xsd:float ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P21_is_measurement_from_column ;
+        rr:objectMap [ rr:parentTriplesMap <#ColumnFLAG_SFR_HEC> ] ;
+    ] .
+
+
+<#MeasurementINCL> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+
+    rr:subjectMap [
+        rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/INCL/measurement/galaxy_{PGC}_INCL" ;
+        rr:class parsec:E8_Measurement ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P02_has_value ;
+        rr:objectMap [ rml:reference "INCL" ; rr:datatype xsd:float ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P21_is_measurement_from_column ;
+        rr:objectMap [ rr:parentTriplesMap <#ColumnINCL> ] ;
+    ] .
+
+################################################################################
+# Measurement Mapping for V, V_VIR
+################################################################################
+<#MeasurementV> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/V/measurement/galaxy_{PGC}_V" ; rr:class parsec:E8_Measurement ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "V" ; rr:datatype xsd:float ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnV> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P05_has_lower_margin_value ; rr:objectMap [ rml:reference "E_V" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P06_has_upper_margin_value ; rr:objectMap [ rml:reference "E_V" ; rr:datatype xsd:float ] ; ] .
+
+<#MeasurementV_VIR> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/V_VIR/measurement/galaxy_{PGC}_V_VIR" ; rr:class parsec:E8_Measurement ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "V_VIR" ; rr:datatype xsd:float ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnV_VIR> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P05_has_lower_margin_value ; rr:objectMap [ rml:reference "E_V_VIR" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P06_has_upper_margin_value ; rr:objectMap [ rml:reference "E_V_VIR" ; rr:datatype xsd:float ] ; ] .
+
+
+
+
+################################################################################
+# Position Angle (PA) Mapping with Reliability Status
+################################################################################
+<#MeasurementPA> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    
+    # Create a unique resource for the PA measurement for each galaxy
+    rr:subjectMap [
+        rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/PA/measurement/galaxy_{PGC}_PA" ;
+        rr:class parsec:E08_Measurement ;
+    ] ;
+    
+    # PA Value
+    rr:predicateObjectMap [
+        rr:predicate parsec:P02_has_value ;
+        rr:objectMap [
+            rml:reference "PA" ;
+            rr:datatype xsd:float ;
+        ] ;
+    ] ;
+
+    # Links to PA column definition
+    rr:predicateObjectMap [
+        rr:predicate parsec:P21_is_measurement_from_column ;
+        rr:objectMap [
+            rr:constant parsec:HECATE_PA ;
+        ] ;
+    ] ;
+
+    # Reliability Status Mapping
+    rr:predicateObjectMap [
+    rr:predicate parsec:P29_has_reliability_status ;
+    rr:objectMap [
+        rml:reference "Reliability_Status" ;
+    ] ;
+    ] ;
+
+
+    # Data Source (Calculated from preprocessing, it is static HyperLEDA)
+    rr:predicateObjectMap [
+        rr:predicate parsec:P46_originates_from_data_source ;
+        rr:objectMap [
+            rml:reference "Source_Label" ;
+        ] ;
+    ] .
+
+
+################################################################################
+# R1 - D25 semi-major axis Mapping 
+################################################################################
+<#GalaxyR1Measurement> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    
+    # Create a unique resource for the R1 measurement for each galaxy
+    rr:subjectMap [
+        rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/R1/measurement/galaxy_{PGC}_R1" ;
+        rr:class parsec:E08_Measurement ;
+    ] ;
+    
+    # R1 Value
+    rr:predicateObjectMap [
+        rr:predicate parsec:P02_has_value ;
+        rr:objectMap [
+            rml:reference "R1" ;
+            rr:datatype xsd:float ;
+        ] ;
+    ] ;
+
+    # Links to R1 column definition
+    rr:predicateObjectMap [
+        rr:predicate parsec:P21_is_measurement_from_column ;
+        rr:objectMap [
+            rr:constant parsec:HECATE_R1 ;
+        ] ;
+    ] ;
+
+    # Data Source (Calculated from preprocessing, it is static HyperLEDA)
+    rr:predicateObjectMap [
+        rr:predicate parsec:P46_originates_from_data_source ;
+        rr:objectMap [
+            rml:reference "Source_Label" ;
+        ] ;
+    ] .
+
+
+################################################################################
+# R2 - D25 semi-minor axis Mapping
+################################################################################
+<#GalaxyR2Measurement> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    
+    # Create a unique resource for the R2 measurement for each galaxy
+    rr:subjectMap [
+        rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/R2/measurement/galaxy_{PGC}_R2" ;
+        rr:class parsec:E08_Measurement ;
+    ] ;
+    
+    # R2 Value
+    rr:predicateObjectMap [
+        rr:predicate parsec:P02_has_value ;
+        rr:objectMap [
+            rml:reference "R2" ;
+            rr:datatype xsd:float ;
+        ] ;
+    ] ;
+
+    # Links to R2 column definition
+    rr:predicateObjectMap [
+        rr:predicate parsec:P21_is_measurement_from_column ;
+        rr:objectMap [
+            rr:constant parsec:HECATE_R2 ;
+        ] ;
+    ] ;
+
+    # Data Source (Calculated from preprocessing, it is static HyperLEDA)
+    rr:predicateObjectMap [
+        rr:predicate parsec:P46_originates_from_data_source ;
+        rr:objectMap [
+            rml:reference "Source_Label" ;
+        ] ;
+    ] .
+
+
+################################################################################
+# S band Mappings with Reliability Status 
+################################################################################
+<#MeasurementS12> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+
+    rr:subjectMap [
+        rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/S12/measurement/galaxy_{PGC}_S12" ;
+        rr:class parsec:E8_Measurement ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P02_has_value ;
+        rr:objectMap [ rml:reference "S12" ; rr:datatype xsd:float ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P21_is_measurement_from_column ;
+        rr:objectMap [ rr:parentTriplesMap <#ColumnS12> ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P29_has_reliability_status ;
+        rr:objectMap [
+            rr:template "{Q12_Description}" ;
+            rr:termType rr:Literal
+        ] ;
+    ] .
+
+<#MeasurementS25> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;    
+    rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/S25/measurement/galaxy_{PGC}_S25" ; rr:class parsec:E8_Measurement ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "S25" ; rr:datatype xsd:float ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnS25> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P29_has_reliability_status ; rr:objectMap [ rr:template "{Q25_Description}" ; rr:termType rr:Literal ] ] .
+
+
+<#MeasurementS60> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;    
+    rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/S60/measurement/galaxy_{PGC}_S60" ; rr:class parsec:E8_Measurement ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "S60" ; rr:datatype xsd:float ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnS60> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P29_has_reliability_status ; rr:objectMap [ rr:template "{Q60_Description}" ; rr:termType rr:Literal ] ] .
+
+<#MeasurementS100> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/S100/measurement/galaxy_{PGC}_S100" ; rr:class parsec:E8_Measurement ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "S100" ; rr:datatype xsd:float ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnS100> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P29_has_reliability_status ; rr:objectMap [ rr:template "{Q100_Description}" ; rr:termType rr:Literal ] ] .
+
+
+################################################################################
+# WF apparent magnitude Mappings with Eror Margins
+################################################################################
+
+<#MeasurementWF1> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/WF1/measurement/galaxy_{PGC}_WF1" ; rr:class parsec:E8_Measurement ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "WF1" ; rr:datatype xsd:float ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnWF1> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P05_has_lower_margin_value ; rr:objectMap [ rml:reference "E_WF1" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P06_has_upper_margin_value ; rr:objectMap [ rml:reference "E_WF1" ; rr:datatype xsd:float ] ; ] .
+
+<#MeasurementWF2> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/WF2/measurement/galaxy_{PGC}_WF2" ; rr:class parsec:E8_Measurement ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "WF2" ; rr:datatype xsd:float ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnWF2> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P05_has_lower_margin_value ; rr:objectMap [ rml:reference "E_WF2" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P06_has_upper_margin_value ; rr:objectMap [ rml:reference "E_WF2" ; rr:datatype xsd:float ] ; ] .
+
+<#MeasurementWF3> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/WF3/measurement/galaxy_{PGC}_WF3" ; rr:class parsec:E8_Measurement ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "WF3" ; rr:datatype xsd:float ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnWF3> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P05_has_lower_margin_value ; rr:objectMap [ rml:reference "E_WF3" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P06_has_upper_margin_value ; rr:objectMap [ rml:reference "E_WF3" ; rr:datatype xsd:float ] ; ] .
+
+<#MeasurementWF4> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/WF4/measurement/galaxy_{PGC}_WF4" ; rr:class parsec:E8_Measurement ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "WF4" ; rr:datatype xsd:float ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnWF4> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P05_has_lower_margin_value ; rr:objectMap [ rml:reference "E_WF4" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P06_has_upper_margin_value ; rr:objectMap [ rml:reference "E_WF4" ; rr:datatype xsd:float ] ; ] .
+
+
+################################################################################
+# WF apparent magnitude Mappings with Eror Margins
+################################################################################
+
+<#MeasurementWFPOINT> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/WFPOINT/measurement/galaxy_{PGC}_WFPOINT" ; rr:class parsec:E8_Measurement ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "WFPOINT" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnWFPOINT> ] ; ] .
+
+<#MeasurementWFTREAT> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/WFTREAT/measurement/galaxy_{PGC}_WFTREAT" ; rr:class parsec:E8_Measurement ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "WFTREAT" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnWFTREAT> ] ; ] .
+
+
+################################################################################
+# Decimal logarithm in solar luminosities Mappings 
+################################################################################
+
+<#MeasurementlogL_12u> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/logL_12u/measurement/galaxy_{PGC}_logL_12u" ; rr:class parsec:E8_Measurement ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "logL_12u" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnlogL_12u> ] ; ] .
+
+<#MeasurementlogL_22u> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/logL_22u/measurement/galaxy_{PGC}_logL_22u" ; rr:class parsec:E8_Measurement ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "logL_22u" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnlogL_22u> ] ; ] .
+
+<#MeasurementlogL_60u> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/logL_60u/measurement/galaxy_{PGC}_logL_60u" ; rr:class parsec:E8_Measurement ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "logL_60u" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnlogL_60u> ] ; ] .
+
+<#MeasurementlogL_K> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/logL_K/measurement/galaxy_{PGC}_logL_K" ; rr:class parsec:E8_Measurement ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "logL_K" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnlogL_K> ] ; ] .
+
+################################################################################
+# ML_ratio Mappings 
+################################################################################
+<#MeasurementML_ratio> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/ML_ratio/measurement/galaxy_{PGC}_ML_ratio" ; rr:class parsec:E8_Measurement ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "ML_ratio" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnML_ratio> ] ; ] .
+
+################################################################################
+# Decimal logarithm of star-formation rate in solar masses per year Mappings 
+################################################################################
+
+<#MeasurementlogSFR_12u> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/logSFR_12u/measurement/galaxy_{PGC}_logSFR_12u" ; rr:class parsec:E8_Measurement ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "logSFR_12u" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnlogSFR_12u> ] ; ] .
+
+<#MeasurementlogSFR_22u> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/logSFR_22u/measurement/galaxy_{PGC}_logSFR_22u" ; rr:class parsec:E8_Measurement ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "logSFR_22u" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnlogSFR_22u> ] ; ] .
+
+<#MeasurementlogSFR_60u> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/logSFR_60u/measurement/galaxy_{PGC}_logSFR_60u" ; rr:class parsec:E8_Measurement ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "logSFR_60u" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnlogSFR_60u> ] ; ] .
+
+<#MeasurementlogSFR_HEC> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/logSFR_HEC/measurement/galaxy_{PGC}_logSFR_HEC" ; rr:class parsec:E8_Measurement ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "logSFR_HEC" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnlogSFR_HEC> ] ; ] .
+
+################################################################################
+# Decimal logarithm of stellar mass and SED-based formation rate  Mappings 
+################################################################################
+
+<#MeasurementlogM_HEC> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/logM_HEC/measurement/galaxy_{PGC}_logM_HEC" ; rr:class parsec:E8_Measurement ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "logM_HEC" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnlogM_HEC> ] ; ] .
+
+<#MeasurementlogSFR_GSW> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/logSFR_GSW/measurement/galaxy_{PGC}_logSFR_GSW" ; rr:class parsec:E8_Measurement ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "logSFR_GSW" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnlogSFR_GSW> ] ; ] .
+
+<#MeasurementlogM_GSW> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/logM_GSW/measurement/galaxy_{PGC}_logM_GSW" ; rr:class parsec:E8_Measurement ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "logM_GSW" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnlogM_GSW> ] ; ] .
+
+################################################################################
+# Minimum signal-to-noise ratio and metallicity Mappings
+################################################################################
+
+<#MeasurementMIN_SNR> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/MIN_SNR/measurement/galaxy_{PGC}_MIN_SNR" ; rr:class parsec:E8_Measurement ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "MIN_SNR" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnMIN_SNR> ] ; ] .
+
+<#MeasurementMETAL> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/METAL/measurement/galaxy_{PGC}_METAL" ; rr:class parsec:E8_Measurement ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "METAL" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnMETAL> ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P29_has_reliability_status ; rr:objectMap [ rr:template "{Metallicity_Status}" ; rr:termType rr:Literal ] ] .
+
+################################################################################
+# NDIST Mapping with Reliability Status
+################################################################################
+<#MeasurementNDIST> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    
+    rr:subjectMap [
+        rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/NDIST/measurement/galaxy_{PGC}_NDIST" ;
+        rr:class parsec:E08_Measurement ;
+    ] ;
+    
+    # NDIST Value
+    rr:predicateObjectMap [
+        rr:predicate parsec:P02_has_value ;
+        rr:objectMap [
+            rml:reference "NDIST" ;
+            rr:datatype xsd:float ;
+        ] ;
+    ] ;
+
+    # Links to NDIST column definition
+    rr:predicateObjectMap [
+        rr:predicate parsec:P21_is_measurement_from_column ;
+        rr:objectMap [
+            rr:constant parsec:HECATE_NDIST ;
+        ] ;
+    ] ;
+    rr:predicateObjectMap [
+    rr:predicate parsec:P29_has_reliability_status ; 
+        rr:objectMap [ rr:template "{EDIST}" ; 
+        rr:termType rr:Literal ] 
+    ] .
+
+
+
+
+
+
+
+################################################################################
+# Column Mapping for RA
+################################################################################
+<#ColumnRA> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+
+    rr:subjectMap [
+        rr:template "https://hecate.ia.forth.gr/column/RA" ;
+        rr:class parsec:E16_Column ;
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate parsec:P03_has_unit ;
+        rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Degrees> ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Right+Ascension> ] ;
+    ] .
+
+################################################################################
+# Column Mapping for DEC
+################################################################################
+<#ColumnDEC> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+
+    rr:subjectMap [
+        rr:template "https://hecate.ia.forth.gr/column/DEC" ;
+        rr:class parsec:E16_Column ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P03_has_unit ;
+        rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Degrees> ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Declination> ] ;
+    ] .
+
+
+################################################################################
+# Column Mapping for D
+################################################################################
+<#ColumnD> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+
+    rr:subjectMap [
+        rr:template "https://hecate.ia.forth.gr/column/D" ;
+        rr:class parsec:E16_Column ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P03_has_unit ;
+        rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Mpc> ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Distance> ] ;
+    ] .
+
+
+################################################################################
+# Column Mapping for AGN_S17
+################################################################################
+<#ColumnAGN_S17> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+
+    rr:subjectMap [
+        rr:template "https://hecate.ia.forth.gr/column/AGN_S17" ;
+        rr:class parsec:E16_Column ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#AGN+classification> ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant parsec:Classification ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant parsec:Flag ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P20_has_estimation_method ;
+        rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#She+et+al.+2017> ] ;
+    ] .
+
+################################################################################
+# Column Mapping for AGN_HEC
+################################################################################
+<#ColumnAGN_HEC> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+
+    rr:subjectMap [
+        rr:template "https://hecate.ia.forth.gr/column/AGN_HEC" ;
+        rr:class parsec:E16_Column ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Adopted+activity+classification+based+on+the+combination+of+class_sp+and+agn_s17> ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant parsec:Classification ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant parsec:Flag ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P20_has_estimation_method ;
+        rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Adopted+activity+classification+based+on+the+Stampoulis+et+al+2019+and+She+et+al.+2017> ] ;
+    ] .
+
+################################################################################
+# Column Mapping for AG
+################################################################################
+<#ColumnAG> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+
+    rr:subjectMap [
+        rr:template "https://hecate.ia.forth.gr/column/AG" ;
+        rr:class parsec:E16_Column ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P03_has_unit ;
+        rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#mag> ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Absorption> ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Galactic+absorption+in+B-band> ] ;
+    ] .
+
+################################################################################
+# Column Mapping for AI
+################################################################################
+<#ColumnAI> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+
+    rr:subjectMap [
+        rr:template "https://hecate.ia.forth.gr/column/AI" ;
+        rr:class parsec:E16_Column ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P03_has_unit ;
+        rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#mag> ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Absorption> ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Intrinsic+absorption+in+B-band> ] ;
+    ] .
+
+################################################################################
+# Column Mapping for CLASS_SP
+################################################################################
+<#ColumnCLASS_SP> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+
+    rr:subjectMap [
+        rr:template "https://hecate.ia.forth.gr/column/CLASS_SP" ;
+        rr:class parsec:E16_Column ;
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate parsec:P20_has_estimation_method ;
+        rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Stampoulis+et+al.+2019> ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant parsec:Classification ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant parsec:Flag ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Nuclear+activity+classification> ] ;
+    ] .
+
+################################################################################
+# Column Mapping for UT, BT, VT, IT (Photometric Properties)
+################################################################################
+<#ColumnUT> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+
+    rr:subjectMap [ 
+        rr:template "https://hecate.ia.forth.gr/column/UT" ; 
+        rr:class parsec:E16_Column ; 
+        ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P03_has_unit ;
+        rr:objectMap [ rr:constant parsec:mag ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#U+Magnitude> ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant parsec:Magnitude ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Total+U-band+apparent+magnitude> ] ;
+    ] .
+
+<#ColumnBT> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+
+    rr:subjectMap [ 
+        rr:template "https://hecate.ia.forth.gr/column/BT" ; 
+        rr:class parsec:E16_Column ; 
+        ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P03_has_unit ;
+        rr:objectMap [ rr:constant parsec:mag ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#B+Magnitude> ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant parsec:Magnitude ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Total+B-band+apparent+magnitude> ] ;
+    ] .
+
+<#ColumnVT> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://hecate.ia.forth.gr/column/VT" ; rr:class parsec:E16_Column ; ] ;    
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P03_has_unit ;
+        rr:objectMap [ rr:constant parsec:mag ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#V+Magnitude> ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant parsec:Magnitude ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Total+V-band+apparent+magnitude> ] ;
+    ] .
+
+<#ColumnIT> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://hecate.ia.forth.gr/column/IT" ; rr:class parsec:E16_Column ; ] ;    
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P03_has_unit ;
+        rr:objectMap [ rr:constant parsec:mag ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#I+Magnitude> ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant parsec:Magnitude ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Total+I-band+apparent+magnitude> ] ;
+    ] .
+
+
+
+################################################################################
+# Column Mappings for Additional Measurements
+################################################################################
+<#ColumnPA> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://hecate.ia.forth.gr/column/PA" ; rr:class parsec:E16_Column ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate parsec:P03_has_unit ;
+        rr:objectMap [ rr:constant parsec:degrees ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#D25+positional+angle%2C+North-to-Northeast> ] ;
+    ] .
+
+<#ColumnNDIST> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://hecate.ia.forth.gr/column/NDIST" ; rr:class parsec:E16_Column ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Number+of+redshift-independent+measurements+in+NED-D> ] ;
+    ] .
+
+<#ColumnU> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://hecate.ia.forth.gr/column/U" ; rr:class parsec:E16_Column ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P03_has_unit ;
+        rr:objectMap [ rr:constant parsec:mag ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#U+Magnitude> ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant parsec:Magnitude ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#u-band+SDSS+apparent+magnitude> ] ;
+    ] .
+
+<#ColumnG> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://hecate.ia.forth.gr/column/G" ; rr:class parsec:E16_Column ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate parsec:P03_has_unit ;
+        rr:objectMap [ rr:constant parsec:mag ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#G+Magnitude> ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant parsec:Magnitude ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#g-band+SDSS+apparent+magnitude> ] ;
+    ] .
+
+<#ColumnR> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://hecate.ia.forth.gr/column/R" ; rr:class parsec:E16_Column ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate parsec:P03_has_unit ;
+        rr:objectMap [ rr:constant parsec:mag ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#R+Magnitude> ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant parsec:Magnitude ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#r-band+SDSS+apparent+magnitude> ] ;
+    ] .
+
+<#ColumnT> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://hecate.ia.forth.gr/column/T" ; rr:class parsec:E16_Column ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Numerical+Hubble-type> ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P20_has_estimation_method ;
+        rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#de+Vaucouleurs+et+al.+1976+system> ] ;
+    ] .
+
+
+<#ColumnI> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://hecate.ia.forth.gr/column/I" ; rr:class parsec:E16_Column ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P03_has_unit ;
+        rr:objectMap [ rr:constant parsec:mag ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#I+Magnitude> ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant parsec:Magnitude ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#i-band+SDSS+apparent+magnitude> ] ;
+    ] .
+
+<#ColumnZ> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://hecate.ia.forth.gr/column/Z" ; rr:class parsec:E16_Column ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P03_has_unit ;
+        rr:objectMap [ rr:constant parsec:mag ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Z+Magnitude> ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant parsec:Magnitude ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#z-band+SDSS+apparent+magnitude> ] ;
+    ] .
+
+<#ColumnJ> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+
+    rr:subjectMap [
+        rr:template "https://hecate.ia.forth.gr/column/J" ;
+        rr:class parsec:E16_Column ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P03_has_unit ;
+        rr:objectMap [ rr:constant parsec:mag ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#J+Magnitude> ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant parsec:Magnitude ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#J-band+apparent+magnitude+in+2MASS> ] ;
+    ] .
+
+<#ColumnH> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+
+    rr:subjectMap [
+        rr:template "https://hecate.ia.forth.gr/column/H" ;
+        rr:class parsec:E16_Column ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P03_has_unit ;
+        rr:objectMap [ rr:constant parsec:mag ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#H+Magnitude> ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant parsec:Magnitude ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#H-band+apparent+magnitude+in+2MASS> ] ;
+    ] .
+
+<#ColumnK> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+
+    rr:subjectMap [
+        rr:template "https://hecate.ia.forth.gr/column/K" ;
+        rr:class parsec:E16_Column ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate parsec:P03_has_unit ;
+        rr:objectMap [ rr:constant parsec:mag ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#K+Magnitude> ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant parsec:Magnitude ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#K-band+apparent+magnitude+in+2MASS> ] ;
+    ] .
+
+
+<#ColumnFLAG_SFR_HEC> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+
+    rr:subjectMap [
+        rr:template "https://hecate.ia.forth.gr/column/FLAG_SFR_HEC" ;
+        rr:class parsec:E16_Column ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant parsec:Flag ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant <Flag+indicating+the+source+of+the+photometry+and+the+SFR+indicator+used+in+the+homogenised+SFR%3A+RT%3DIRAS-RBGS+photometry+and+TIR+indicator> ] ;
+    ] .
+    
+
+<#ColumnINCL> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+
+    rr:subjectMap [
+        rr:template "https://hecate.ia.forth.gr/column/INCL" ;
+        rr:class parsec:E16_Column ; 
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P03_has_unit ;
+        rr:objectMap [ rr:constant parsec:degrees ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant parsec:Inclination ] ;
+    ] .
+
+<#ColumnV> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://hecate.ia.forth.gr/column/V" ; rr:class parsec:E16_Column ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P03_has_unit ;
+        rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#km+per+sec> ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Heliocentric+radial+velocity> ] ;
+    ] .
+
+<#ColumnV_VIR> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://hecate.ia.forth.gr/column/V_VIR" ; rr:class parsec:E16_Column ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P03_has_unit ;
+        rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#km+per+sec> ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Virgo-infall+corrected+radial+velocity> ] ;
+    ] .
+
+
+################################################################################
+# Column Mapping for S band 
+################################################################################
+
+<#ColumnS12> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://hecate.ia.forth.gr/column/S12" ; rr:class parsec:E16_Column ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate parsec:P03_has_unit ;
+        rr:objectMap [ rr:constant parsec:Jy ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P04_contains_measurements_of ;
+        rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#12%CE%BCm-band+flux+from+IRAS> ] ;
+    ] .
+
+<#ColumnS25> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://hecate.ia.forth.gr/column/S25" ; rr:class parsec:E16_Column ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P03_has_unit ; rr:objectMap [ rr:constant parsec:Jy ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#25μm-band+flux+from+IRAS> ] ] .
+
+
+<#ColumnS60> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://hecate.ia.forth.gr/column/S60" ; rr:class parsec:E16_Column ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P03_has_unit ; rr:objectMap [ rr:constant parsec:Jy ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#60μm-band+flux+from+IRAS> ] ] .
+
+
+<#ColumnS100> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://hecate.ia.forth.gr/column/S100" ; rr:class parsec:E16_Column ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P03_has_unit ; rr:objectMap [ rr:constant parsec:Jy ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#100μm-band+flux+from+IRAS> ] ] .
+
+################################################################################
+# Column Mapping for WF apparent magnitude 
+################################################################################
+
+<#ColumnWF1> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://hecate.ia.forth.gr/column/WF1" ; rr:class parsec:E16_Column ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P03_has_unit ; rr:objectMap [ rr:constant parsec:mag ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#3.3μm-band+%28W1%29+apparent+magnitude+in+the+WISE+forced+photometry+catalog> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant parsec:Magnitude ] ] .
+
+
+<#ColumnWF2> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://hecate.ia.forth.gr/column/WF2" ; rr:class parsec:E16_Column ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P03_has_unit ; rr:objectMap [ rr:constant parsec:mag ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#4.6μm-band+%28W2%29+apparent+magnitude+in+the+WISE+forced+photometry+catalog> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant parsec:Magnitude ] ] .
+   
+
+<#ColumnWF3> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://hecate.ia.forth.gr/column/WF3" ; rr:class parsec:E16_Column ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P03_has_unit ; rr:objectMap [ rr:constant parsec:mag ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#12μm-band+%28W3%29+apparent+magnitude+in+the+WISE+forced+photometry+catalog> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant parsec:Magnitude ] ] .
+
+<#ColumnWF4> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://hecate.ia.forth.gr/column/WF4" ; rr:class parsec:E16_Column ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P03_has_unit ; rr:objectMap [ rr:constant parsec:mag ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#22μm-band+%28W4%29+apparent+magnitude+in+the+WISE+forced+photometry+catalog> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant parsec:Magnitude ] ] .
+
+
+################################################################################
+# Column Mapping for WF apparent magnitude 
+################################################################################
+
+<#ColumnWFPOINT> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://hecate.ia.forth.gr/column/WFPOINT" ; rr:class parsec:E16_Column ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Is+point+source+in+the+WISE+forced+photometry+catalog> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant parsec:Flag ] ] .
+
+
+<#ColumnWFTREAT> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://hecate.ia.forth.gr/column/WFTREAT" ; rr:class parsec:E16_Column ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Treated+as+point+source+in+the+WISE+forced+photometry+catalog> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant parsec:Flag ] ] .
+
+
+
+
+################################################################################
+# Column Mapping for Decimal logarithm in solar luminosities
+################################################################################
+
+<#ColumnlogL_12u> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://hecate.ia.forth.gr/column/logL_12u" ; rr:class parsec:E16_Column ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P03_has_unit ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#log10+of+solar+luminosity> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Decimal+logarithm+of+the+12um-band+luminosity+in+solar+luminosities.> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant parsec:luminosity ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#luminosity+logarithm> ] ] .
+
+
+<#ColumnlogL_22u> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://hecate.ia.forth.gr/column/logL_22u" ; rr:class parsec:E16_Column ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P03_has_unit ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#log10+of+solar+luminosity> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Decimal+logarithm+of+the+22um-band+luminosity+in+solar+luminosities.> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant parsec:luminosity ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#luminosity+logarithm> ] ] .
+
+
+<#ColumnlogL_60u> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://hecate.ia.forth.gr/column/logL_60u" ; rr:class parsec:E16_Column ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P03_has_unit ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#log10+of+solar+luminosity> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Decimal+logarithm+of+the+60um-band+luminosity+in+solar+luminosities.> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant parsec:luminosity ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#luminosity+logarithm> ] ] .
+
+
+<#ColumnlogL_K> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://hecate.ia.forth.gr/column/logL_K" ; rr:class parsec:E16_Column ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P03_has_unit ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#log10+of+solar+luminosity> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Decimal+logarithm+of+the+K-band+luminosity+in+solar+luminosities.> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant parsec:luminosity ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#luminosity+logarithm> ] ] .
+
+
+################################################################################
+# Column Mapping for ML_ratio
+################################################################################
+
+<#ColumnML_ratio> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://hecate.ia.forth.gr/column/ML_ratio" ; rr:class parsec:E16_Column ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant parsec:Ratio ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Mass-to-light+ratio+for+the+2MASS+K-band+using+SDSS+g-r+colour+%28Bell+et+al.+2003%29.> ] ] .
+
+
+########################################################################################
+# Column Mapping for Decimal logarithm of star-formation rate in solar masses per year
+########################################################################################
+<#ColumnlogSFR_12u> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://hecate.ia.forth.gr/column/logSFR_12u" ; rr:class parsec:E16_Column ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P03_has_unit ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#log10+solar+masses+per+year> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Decimal+logarithm+of+the+12um-based+star-formation+rate+in+solar+masses+per+year.> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Star+Formation+Rate> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Star+Formation+Rate+Logarithm> ] ] .
+
+
+<#ColumnlogSFR_22u> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://hecate.ia.forth.gr/column/logSFR_22u" ; rr:class parsec:E16_Column ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P03_has_unit ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#log10+solar+masses+per+year> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Decimal+logarithm+of+the+22um-based+star-formation+rate+in+solar+masses+per+year.> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Star+Formation+Rate> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Star+Formation+Rate+Logarithm> ] ] .
+
+
+<#ColumnlogSFR_60u> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://hecate.ia.forth.gr/column/logSFR_60u" ; rr:class parsec:E16_Column ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P03_has_unit ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#log10+solar+masses+per+year> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Decimal+logarithm+of+the+60um-based+star-formation+rate+in+solar+masses+per+year.> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Star+Formation+Rate> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Star+Formation+Rate+Logarithm> ] ] .
+
+
+<#ColumnlogSFR_HEC> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://hecate.ia.forth.gr/column/logSFR_HEC" ; rr:class parsec:E16_Column ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P03_has_unit ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#log10+solar+masses+per+year> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Decimal+logarithm+of+the+homogenised+star-formation+rate+in+solar+masses+per+year.> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Star+Formation+Rate> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Star+Formation+Rate+Logarithm> ] ] .
+
+<#ColumnlogSFR_GSW> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://hecate.ia.forth.gr/column/logSFR_GSW" ; rr:class parsec:E16_Column ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P03_has_unit ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#log10+solar+masses+per+year> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Decimal+logarithm+of+the+SED-based+star-formation+rate+from+the+GSWLC-2+in+solar+masses+per+year.> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Star+Formation+Rate> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Star+Formation+Rate+Logarithm> ] ] .
+
+#########################################################################################
+# Column Mapping for Decimal logarithm of stellar mass and SED-based formation rate 
+#########################################################################################
+
+<#ColumnlogM_HEC> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://hecate.ia.forth.gr/column/logM_HEC" ; rr:class parsec:E16_Column ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P03_has_unit ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#log10+solar+masses> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Decimal+logarithm+of+the+total+stellar+mass+in+solar+masses.> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Stellar+Mass> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Stellar+Mass+Logarithm> ] ] .
+
+<#ColumnlogM_GSW> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://hecate.ia.forth.gr/column/logM_GSW" ; rr:class parsec:E16_Column ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P03_has_unit ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#log10+solar+masses> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Decimal+logarithm+of+the+SED-based+stellar+mass+from+the+GSWLC-2+in+solar+masses.> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Stellar+Mass+Rate> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Stellar+Mass+Logarithm> ] ] .
+
+################################################################################
+# Minimum signal-to-noise ratio and metallicity Mappings
+################################################################################
+
+<#ColumnMIN_SNR> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://hecate.ia.forth.gr/column/MIN_SNR" ; rr:class parsec:E16_Column ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant parsec:Ratio ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Minimum+signal-to-noise+ratio+of+the+emission+lines+used+for+the+activity+classification+%28class_sp%29.> ] ] .
+
+
+<#ColumnMETAL> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://hecate.ia.forth.gr/column/METAL" ; rr:class parsec:E16_Column ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#12%2Blog%28O%2FH%29+gas-phase+metallicity.> ] ] .
+
+
+
+
+
+
+
+
+
+### --- AUTO-GENERATED MAPPING FOR COLUMN: logL_TIR --- ###
+<#MeasurementlogL_TIR> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [
+        rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/logL_TIR/measurement/galaxy_{PGC}_logL_TIR" ;
+        rr:class parsec:E8_Measurement ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P02_has_value ;
+        rr:objectMap [ rml:reference "logL_TIR" ; rr:datatype xsd:float ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate parsec:P21_is_measurement_from_column ;
+        rr:objectMap [ rr:parentTriplesMap <#ColumnlogL_TIR> ] ;
+    ] .
+
+
+
+<#ColumnlogL_TIR> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://hecate.ia.forth.gr/column/logL_TIR" ; rr:class parsec:E16_Column ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P03_has_unit ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#log10+of+solar+luminosity> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Decimal+logarithm+of+the+total-infrared+%28TIR%29+luminosity> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant parsec:luminosity ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#luminosity+logarithm> ] ] .
+
+
+
+### --- AUTO-GENERATED MAPPING FOR COLUMN: logL_FIR --- ###
+<#MeasurementlogL_FIR> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/logL_FIR/measurement/galaxy_{PGC}_logL_FIR" ; rr:class parsec:E8_Measurement ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "logL_FIR" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnlogL_FIR> ] ; ] ;
+.
+
+
+<#ColumnlogL_FIR> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://hecate.ia.forth.gr/column/logL_FIR" ; rr:class parsec:E16_Column ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P03_has_unit ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#log10+of+solar+luminosity> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Decimal+logarithm+of+the+far-infrared+%28FIR%29+luminosity+in+solar+luminosities> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant parsec:luminosity ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#luminosity+logarithm> ] ] .
+    
+
+
+### --- AUTO-GENERATED MAPPING FOR COLUMN:logSFR_TIR --- ###
+<#MeasurementlogSFR_TIR> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/logSFR_TIR/measurement/galaxy_{PGC}_logSFR_TIR" ; rr:class parsec:E8_Measurement ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "logSFR_TIR" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnlogSFR_TIR> ] ; ] ;
+.
+
+
+<#ColumnlogSFR_TIR> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://hecate.ia.forth.gr/column/logSFR_TIR" ; rr:class parsec:E16_Column ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P03_has_unit ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#log10+solar+masses+per+year> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Decimal+logarithm+of+the+TIR-based+star-formation+rate+in+solar+masses+per+year.> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Star+Formation+Rate> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Star+Formation+Rate+Logarithm> ] ] .
+
+
+### --- AUTO-GENERATED MAPPING FOR COLUMN:logSFR_FIR --- ###
+<#MeasurementlogSFR_FIR> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/logSFR_FIR/measurement/galaxy_{PGC}_logSFR_FIR" ; rr:class parsec:E8_Measurement ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "logSFR_FIR" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnlogSFR_FIR> ] ; ] ;
+.
+
+
+<#ColumnlogSFR_FIR> a rr:TriplesMap ;
+    rml:logicalSource <#HecateCSV> ;
+    rr:subjectMap [ rr:template "https://hecate.ia.forth.gr/column/logSFR_FIR" ; rr:class parsec:E16_Column ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P03_has_unit ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#log10+solar+masses+per+year> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Decimal+logarithm+of+the+FIR-based+star-formation+rate+in+solar+masses+per+year.> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Star+Formation+Rate> ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P04_contains_measurements_of ; rr:objectMap [ rr:constant <https://hecate.ia.forth.gr#Star+Formation+Rate+Logarithm> ] ] .
+
+
+
+
