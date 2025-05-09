@@ -8,7 +8,7 @@
 
 
 <#HecateCSV> a rml:LogicalSource ;
-    rml:source "../HECATE_v1.1.csv" ;
+    rml:source "CURRENT_CSV" ;
     rml:referenceFormulation ql:CSV .
 
 

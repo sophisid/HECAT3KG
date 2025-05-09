@@ -9,3 +9,6 @@ HECATE/HECATE_columns.csv
 HECATE/HECATE_columns-inter.xml
 HECATE-inter.xml
 HECATE/HECATE_column_info.trig
+rml_mappings/output_rdf/*
+rml_mappings/split_csvs/*
+rml_mappings/temp_mapping.ttl
