@@ -1,0 +1,1513 @@
+{ 
+}
+
+<http://graph_parsec.forth.gr/catalogue/%22https%3A//hecate.ia.forth.gr/%22> {
+    <https://parsec.forth.gr/catalogue/%22https%3A//hecate.ia.forth.gr/%22>
+            a       <https://parsec.forth.gr/E07_Catalogue> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "HECATE" ;
+            <https://parsec.forth.gr/P13_contains_data_source>
+                    <https://parsec.forth.gr/data_table/HECATE> ;
+            <https://parsec.forth.gr/P34_has_column>
+                    <https://parsec.forth.gr/data_source/HECATE/column/pgc> , <https://parsec.forth.gr/data_source/HECATE/column/objname> , <https://parsec.forth.gr/data_source/HECATE/column/id_ned> , <https://parsec.forth.gr/data_source/HECATE/column/id_nedd> , <https://parsec.forth.gr/data_source/HECATE/column/id_iras> , <https://parsec.forth.gr/data_source/HECATE/column/id_2mass> , <https://parsec.forth.gr/data_source/HECATE/column/sdss_photid> , <https://parsec.forth.gr/data_source/HECATE/column/sdss_specid> , <https://parsec.forth.gr/data_source/HECATE/column/ra> , <https://parsec.forth.gr/data_source/HECATE/column/dec> , <https://parsec.forth.gr/data_source/HECATE/column/f_astrom> , <https://parsec.forth.gr/data_source/HECATE/column/r1> , <https://parsec.forth.gr/data_source/HECATE/column/r2> , <https://parsec.forth.gr/data_source/HECATE/column/pa> , <https://parsec.forth.gr/data_source/HECATE/column/rsource> , <https://parsec.forth.gr/data_source/HECATE/column/rflag> , <https://parsec.forth.gr/data_source/HECATE/column/t> , <https://parsec.forth.gr/data_source/HECATE/column/e_t> , <https://parsec.forth.gr/data_source/HECATE/column/incl> , <https://parsec.forth.gr/data_source/HECATE/column/v> , <https://parsec.forth.gr/data_source/HECATE/column/e_v> , <https://parsec.forth.gr/data_source/HECATE/column/v_vir> , <https://parsec.forth.gr/data_source/HECATE/column/e_v_vir> , <https://parsec.forth.gr/data_source/HECATE/column/ndist> , <https://parsec.forth.gr/data_source/HECATE/column/edist> , <https://parsec.forth.gr/data_source/HECATE/column/d> , <https://parsec.forth.gr/data_source/HECATE/column/e_d> , <https://parsec.forth.gr/data_source/HECATE/column/d_lo68> , <https://parsec.forth.gr/data_source/HECATE/column/d_hi68> , <https://parsec.forth.gr/data_source/HECATE/column/d_lo95> , <https://parsec.forth.gr/data_source/HECATE/column/d_hi95> , <https://parsec.forth.gr/data_source/HECATE/column/dmethod> , <https://parsec.forth.gr/data_source/HECATE/column/ut> , <https://parsec.forth.gr/data_source/HECATE/column/bt> , <https://parsec.forth.gr/data_source/HECATE/column/vt> , <https://parsec.forth.gr/data_source/HECATE/column/it> , <https://parsec.forth.gr/data_source/HECATE/column/e_ut> , <https://parsec.forth.gr/data_source/HECATE/column/e_bt> , <https://parsec.forth.gr/data_source/HECATE/column/e_vt> , <https://parsec.forth.gr/data_source/HECATE/column/e_it> , <https://parsec.forth.gr/data_source/HECATE/column/ag> , <https://parsec.forth.gr/data_source/HECATE/column/ai> , <https://parsec.forth.gr/data_source/HECATE/column/s12> , <https://parsec.forth.gr/data_source/HECATE/column/s25> , <https://parsec.forth.gr/data_source/HECATE/column/s60> , <https://parsec.forth.gr/data_source/HECATE/column/s100> , <https://parsec.forth.gr/data_source/HECATE/column/q12> , <https://parsec.forth.gr/data_source/HECATE/column/q25> , <https://parsec.forth.gr/data_source/HECATE/column/q60> , <https://parsec.forth.gr/data_source/HECATE/column/q100> , <https://parsec.forth.gr/data_source/HECATE/column/wf1> , <https://parsec.forth.gr/data_source/HECATE/column/wf2> , <https://parsec.forth.gr/data_source/HECATE/column/wf3> , <https://parsec.forth.gr/data_source/HECATE/column/wf4> , <https://parsec.forth.gr/data_source/HECATE/column/e_wf1> , <https://parsec.forth.gr/data_source/HECATE/column/e_wf2> , <https://parsec.forth.gr/data_source/HECATE/column/e_wf3> , <https://parsec.forth.gr/data_source/HECATE/column/e_wf4> , <https://parsec.forth.gr/data_source/HECATE/column/wfpoint> , <https://parsec.forth.gr/data_source/HECATE/column/wftreat> , <https://parsec.forth.gr/data_source/HECATE/column/j> , <https://parsec.forth.gr/data_source/HECATE/column/h> , <https://parsec.forth.gr/data_source/HECATE/column/k> , <https://parsec.forth.gr/data_source/HECATE/column/e_j> , <https://parsec.forth.gr/data_source/HECATE/column/e_h> , <https://parsec.forth.gr/data_source/HECATE/column/e_k> , <https://parsec.forth.gr/data_source/HECATE/column/flag_2mass> , <https://parsec.forth.gr/data_source/HECATE/column/u> , <https://parsec.forth.gr/data_source/HECATE/column/g> , <https://parsec.forth.gr/data_source/HECATE/column/r> , <https://parsec.forth.gr/data_source/HECATE/column/i> , <https://parsec.forth.gr/data_source/HECATE/column/z> , <https://parsec.forth.gr/data_source/HECATE/column/e_u> , <https://parsec.forth.gr/data_source/HECATE/column/e_g> , <https://parsec.forth.gr/data_source/HECATE/column/e_r> , <https://parsec.forth.gr/data_source/HECATE/column/e_i> , <https://parsec.forth.gr/data_source/HECATE/column/e_z> , <https://parsec.forth.gr/data_source/HECATE/column/logL_TIR> , <https://parsec.forth.gr/data_source/HECATE/column/logL_FIR> , <https://parsec.forth.gr/data_source/HECATE/column/logL_60%CE%BC> , <https://parsec.forth.gr/data_source/HECATE/column/logL_12%CE%BC> , <https://parsec.forth.gr/data_source/HECATE/column/logL_22%CE%BC> , <https://parsec.forth.gr/data_source/HECATE/column/logL_K> , <https://parsec.forth.gr/data_source/HECATE/column/ML_ratio> , <https://parsec.forth.gr/data_source/HECATE/column/logSFR_TIR> , <https://parsec.forth.gr/data_source/HECATE/column/logSFR_FIR> , <https://parsec.forth.gr/data_source/HECATE/column/logSFR_60u> , <https://parsec.forth.gr/data_source/HECATE/column/logSFR_12u> , <https://parsec.forth.gr/data_source/HECATE/column/logSFR_22u> , <https://parsec.forth.gr/data_source/HECATE/column/logSFR_HEC> , <https://parsec.forth.gr/data_source/HECATE/column/FLAG_SFR_HEC> , <https://parsec.forth.gr/data_source/HECATE/column/logM_HEC> , <https://parsec.forth.gr/data_source/HECATE/column/logSFR_GSW> , <https://parsec.forth.gr/data_source/HECATE/column/logM_GSW> , <https://parsec.forth.gr/data_source/HECATE/column/min_snr> , <https://parsec.forth.gr/data_source/HECATE/column/metal> , <https://parsec.forth.gr/data_source/HECATE/column/flag_metal> , <https://parsec.forth.gr/data_source/HECATE/column/class_sp> , <https://parsec.forth.gr/data_source/HECATE/column/agn_s17> , <https://parsec.forth.gr/data_source/HECATE/column/agn_hec> .
+    
+    <https://parsec.forth.gr/data_table/HECATE>
+            a       <https://parsec.forth.gr/E05_Data_Source> , <https://parsec.forth.gr/E15_Data_Table> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "HECATE Datatable" ;
+            <https://parsec.forth.gr/P17_data_source_version>
+                    "v.1.1" ;
+            <https://parsec.forth.gr/P39_has_webpage>
+                    "https://hecate.ia.forth.gr/" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/pgc>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "pgc" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Identification> .
+    
+    <https://parsec.forth.gr/measurement_classification/Identification>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Identification" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/objname>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "objname" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Identification> .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/id_ned>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "id_ned" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Identification> .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/id_nedd>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "id_nedd" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Identification> .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/id_iras>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "id_iras" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Identification> .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/id_2mass>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "id_2mass" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Identification> .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/sdss_photid>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "sdss_photid" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Identification> .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/sdss_specid>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "sdss_specid" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Identification> .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/ra>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "ra" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Right%20Ascension> ;
+            <https://parsec.forth.gr/P20_has_estimation_method>
+                    <https://parsec.forth.gr/estimation_method/Astrometric%20measurement%20> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/degrees> .
+    
+    <https://parsec.forth.gr/estimation_method/Astrometric%20measurement%20>
+            a       <https://parsec.forth.gr/E12_Estimation_Method> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Astrometric measurement " .
+    
+    <https://parsec.forth.gr/measurement_unit/degrees>
+            a       <https://parsec.forth.gr/E09_Measurement_Unit> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "degrees" .
+    
+    <https://parsec.forth.gr/measurement_classification/Right%20Ascension>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Right Ascension" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/dec>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "dec" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Declination> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/degrees> .
+    
+    <https://parsec.forth.gr/measurement_classification/Declination>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Declination" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/f_astrom>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "f_astrom" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Astrometric%20Precision%20Flag> , <https://parsec.forth.gr/measurement_classification/Flag> .
+    
+    <https://parsec.forth.gr/measurement_classification/Astrometric%20Precision%20Flag>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Astrometric Precision Flag" .
+    
+    <https://parsec.forth.gr/measurement_classification/Flag>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Flag" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/r1>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "r1" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/D25%20semi-major%20axis%20> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/arcmin> .
+    
+    <https://parsec.forth.gr/measurement_unit/arcmin>
+            a       <https://parsec.forth.gr/E09_Measurement_Unit> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "arcmin" .
+    
+    <https://parsec.forth.gr/measurement_classification/D25%20semi-major%20axis%20>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "D25 semi-major axis " .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/r2>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "r2" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/D25%20semi-minor%20axis> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/arcmin> .
+    
+    <https://parsec.forth.gr/measurement_classification/D25%20semi-minor%20axis>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "D25 semi-minor axis" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/pa>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "pa" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/D25%20positional%20angle%2C%20North-to-Northeast> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/degrees> .
+    
+    <https://parsec.forth.gr/measurement_classification/D25%20positional%20angle%2C%20North-to-Northeast>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "D25 positional angle, North-to-Northeast" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/rsource>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "rsource" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Data%20source%20code> .
+    
+    <https://parsec.forth.gr/measurement_classification/Data%20source%20code>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Data source code" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/rflag>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "rflag" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Source%20of%20the%20galaxy-size%20information> , <https://parsec.forth.gr/measurement_classification/Flag> .
+    
+    <https://parsec.forth.gr/measurement_classification/Source%20of%20the%20galaxy-size%20information>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Source of the galaxy-size information" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/t>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "t" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Numerical%20Hubble-type> ;
+            <https://parsec.forth.gr/P20_has_estimation_method>
+                    <https://parsec.forth.gr/estimation_method/de%20Vaucouleurs%20et%20al.%201976%20system> .
+    
+    <https://parsec.forth.gr/estimation_method/de%20Vaucouleurs%20et%20al.%201976%20system>
+            a       <https://parsec.forth.gr/E12_Estimation_Method> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "de Vaucouleurs et al. 1976 system" .
+    
+    <https://parsec.forth.gr/measurement_classification/Numerical%20Hubble-type>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Numerical Hubble-type" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/e_t>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "e_t" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/de%20Vaucouleurs%20et%20al.%201976%20system> , <https://parsec.forth.gr/measurement_classification/Error> .
+    
+    <https://parsec.forth.gr/measurement_classification/de%20Vaucouleurs%20et%20al.%201976%20system>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "de Vaucouleurs et al. 1976 system" .
+    
+    <https://parsec.forth.gr/measurement_classification/Error>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Error" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/incl>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "incl" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Inclination> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/degrees> .
+    
+    <https://parsec.forth.gr/measurement_classification/Inclination>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Inclination" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/v>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "v" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Heliocentric%20radial%20velocity> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/km%2Fs> .
+    
+    <https://parsec.forth.gr/measurement_unit/km%2Fs>
+            a       <https://parsec.forth.gr/E09_Measurement_Unit> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "km/s" .
+    
+    <https://parsec.forth.gr/measurement_classification/Heliocentric%20radial%20velocity>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Heliocentric radial velocity" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/e_v>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "e_v" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Heliocentric%20radial%20velocity> , <https://parsec.forth.gr/measurement_classification/Error> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/km%2Fs> .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/v_vir>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "v_vir" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Virgo-infall%20corrected%20radial%20velocity> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/km%2Fs> .
+    
+    <https://parsec.forth.gr/measurement_classification/Virgo-infall%20corrected%20radial%20velocity>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Virgo-infall corrected radial velocity" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/e_v_vir>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "e_v_vir" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Virgo-infall%20corrected%20radial%20velocity%20error> , <https://parsec.forth.gr/measurement_classification/Error> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/km%2Fs> .
+    
+    <https://parsec.forth.gr/measurement_classification/Virgo-infall%20corrected%20radial%20velocity%20error>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Virgo-infall corrected radial velocity error" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/ndist>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "ndist" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Number%20of%20redshift-independent%20measurements%20in%20NED-D> .
+    
+    <https://parsec.forth.gr/measurement_classification/Number%20of%20redshift-independent%20measurements%20in%20NED-D>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Number of redshift-independent measurements in NED-D" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/edist>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "edist" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/NED-D%20has%20uncertainties%20flag> , <https://parsec.forth.gr/measurement_classification/Flag> .
+    
+    <https://parsec.forth.gr/measurement_classification/NED-D%20has%20uncertainties%20flag>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "NED-D has uncertainties flag" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/d>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "d" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Distance> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/Mpc> .
+    
+    <https://parsec.forth.gr/measurement_unit/Mpc>
+            a       <https://parsec.forth.gr/E09_Measurement_Unit> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Mpc" .
+    
+    <https://parsec.forth.gr/measurement_classification/Distance>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Distance" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/e_d>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "e_d" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Distance%20error> , <https://parsec.forth.gr/measurement_classification/Error> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/Mpc> .
+    
+    <https://parsec.forth.gr/measurement_classification/Distance%20error>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Distance error" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/d_lo68>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "d_lo68" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Distance%20Lower%20bound%20of%20the%2068%25%20confidence%20interval%20> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/Mpc> .
+    
+    <https://parsec.forth.gr/measurement_classification/Distance%20Lower%20bound%20of%20the%2068%25%20confidence%20interval%20>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Distance Lower bound of the 68% confidence interval " .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/d_hi68>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "d_hi68" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Distance%20Upper%20bound%20of%20the%2068%25%20confidence%20interval%20> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/Mpc> .
+    
+    <https://parsec.forth.gr/measurement_classification/Distance%20Upper%20bound%20of%20the%2068%25%20confidence%20interval%20>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Distance Upper bound of the 68% confidence interval " .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/d_lo95>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "d_lo95" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Distance%20Lower%20bound%20of%20the%2095%25%20confidence%20interval%20> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/Mpc> .
+    
+    <https://parsec.forth.gr/measurement_classification/Distance%20Lower%20bound%20of%20the%2095%25%20confidence%20interval%20>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Distance Lower bound of the 95% confidence interval " .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/d_hi95>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "d_hi95" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Distance%20Upper%20bound%20of%20the%2095%25%20confidence%20interval%20> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/Mpc> .
+    
+    <https://parsec.forth.gr/measurement_classification/Distance%20Upper%20bound%20of%20the%2095%25%20confidence%20interval%20>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Distance Upper bound of the 95% confidence interval " .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/dmethod>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "dmethod" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Distance%20Estimation%20Method%20Flag> , <https://parsec.forth.gr/measurement_classification/Flag> .
+    
+    <https://parsec.forth.gr/measurement_classification/Distance%20Estimation%20Method%20Flag>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Distance Estimation Method Flag" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/ut>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "ut" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Total%20U-band%20apparent%20magnitude> , <https://parsec.forth.gr/measurement_classification/U%20Magnitude> , <https://parsec.forth.gr/measurement_classification/Magnitude> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/mag> .
+    
+    <https://parsec.forth.gr/measurement_unit/mag>
+            a       <https://parsec.forth.gr/E09_Measurement_Unit> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "mag" .
+    
+    <https://parsec.forth.gr/measurement_classification/Total%20U-band%20apparent%20magnitude>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Total U-band apparent magnitude" .
+    
+    <https://parsec.forth.gr/measurement_classification/U%20Magnitude>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "U Magnitude" .
+    
+    <https://parsec.forth.gr/measurement_classification/Magnitude>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Magnitude" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/bt>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "bt" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Total%20B-band%20apparent%20magnitude> , <https://parsec.forth.gr/measurement_classification/B%20Magnitude> , <https://parsec.forth.gr/measurement_classification/Magnitude> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/mag> .
+    
+    <https://parsec.forth.gr/measurement_classification/Total%20B-band%20apparent%20magnitude>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Total B-band apparent magnitude" .
+    
+    <https://parsec.forth.gr/measurement_classification/B%20Magnitude>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "B Magnitude" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/vt>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "vt" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Total%20V-band%20apparent%20magnitude> , <https://parsec.forth.gr/measurement_classification/V%20Magnitude> , <https://parsec.forth.gr/measurement_classification/Magnitude> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/mag> .
+    
+    <https://parsec.forth.gr/measurement_classification/Total%20V-band%20apparent%20magnitude>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Total V-band apparent magnitude" .
+    
+    <https://parsec.forth.gr/measurement_classification/V%20Magnitude>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "V Magnitude" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/it>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "it" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Total%20I-band%20apparent%20magnitude> , <https://parsec.forth.gr/measurement_classification/I%20Magnitude> , <https://parsec.forth.gr/measurement_classification/Magnitude> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/mag> .
+    
+    <https://parsec.forth.gr/measurement_classification/Total%20I-band%20apparent%20magnitude>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Total I-band apparent magnitude" .
+    
+    <https://parsec.forth.gr/measurement_classification/I%20Magnitude>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "I Magnitude" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/e_ut>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "e_ut" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Total%20U-band%20apparent%20magnitude%20error> , <https://parsec.forth.gr/measurement_classification/Error> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/mag> .
+    
+    <https://parsec.forth.gr/measurement_classification/Total%20U-band%20apparent%20magnitude%20error>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Total U-band apparent magnitude error" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/e_bt>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "e_bt" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Total%20B-band%20apparent%20magnitude%20error> , <https://parsec.forth.gr/measurement_classification/Error> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/mag> .
+    
+    <https://parsec.forth.gr/measurement_classification/Total%20B-band%20apparent%20magnitude%20error>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Total B-band apparent magnitude error" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/e_vt>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "e_vt" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Total%20V-band%20apparent%20magnitude%20error> , <https://parsec.forth.gr/measurement_classification/Error> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/mag> .
+    
+    <https://parsec.forth.gr/measurement_classification/Total%20V-band%20apparent%20magnitude%20error>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Total V-band apparent magnitude error" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/e_it>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "e_it" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Total%20I-band%20apparent%20magnitude%20error> , <https://parsec.forth.gr/measurement_classification/Error> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/mag> .
+    
+    <https://parsec.forth.gr/measurement_classification/Total%20I-band%20apparent%20magnitude%20error>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Total I-band apparent magnitude error" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/ag>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "ag" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Galactic%20absorption%20in%20B-band> , <https://parsec.forth.gr/measurement_classification/Error> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/mag> .
+    
+    <https://parsec.forth.gr/measurement_classification/Galactic%20absorption%20in%20B-band>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Galactic absorption in B-band" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/ai>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "ai" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Intrinsic%20absorption%20in%20B-band> , <https://parsec.forth.gr/measurement_classification/Absorption> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/mag> .
+    
+    <https://parsec.forth.gr/measurement_classification/Intrinsic%20absorption%20in%20B-band>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Intrinsic absorption in B-band" .
+    
+    <https://parsec.forth.gr/measurement_classification/Absorption>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Absorption" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/s12>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "s12" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/12%CE%BCm-band%20flux%20from%20IRAS> , <https://parsec.forth.gr/measurement_classification/Flux> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/Jy> .
+    
+    <https://parsec.forth.gr/measurement_unit/Jy>
+            a       <https://parsec.forth.gr/E09_Measurement_Unit> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Jy" .
+    
+    <https://parsec.forth.gr/measurement_classification/12%CE%BCm-band%20flux%20from%20IRAS>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "12μm-band flux from IRAS" .
+    
+    <https://parsec.forth.gr/measurement_classification/Flux>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Flux" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/s25>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "s25" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/25%CE%BCm-band%20flux%20from%20IRAS> , <https://parsec.forth.gr/measurement_classification/Flux> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/Jy> .
+    
+    <https://parsec.forth.gr/measurement_classification/25%CE%BCm-band%20flux%20from%20IRAS>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "25μm-band flux from IRAS" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/s60>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "s60" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/60%CE%BCm-band%20flux%20from%20IRAS> , <https://parsec.forth.gr/measurement_classification/Flux> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/Jy> .
+    
+    <https://parsec.forth.gr/measurement_classification/60%CE%BCm-band%20flux%20from%20IRAS>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "60μm-band flux from IRAS" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/s100>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "s100" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/25%CE%BCm-band%20flux%20from%20IRAS> , <https://parsec.forth.gr/measurement_classification/Flux> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/Jy> .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/q12>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "q12" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Quality%20flag%20for%20the%2012%CE%BCm-band%20flux%20from%20IRAS> , <https://parsec.forth.gr/measurement_classification/Flag> .
+    
+    <https://parsec.forth.gr/measurement_classification/Quality%20flag%20for%20the%2012%CE%BCm-band%20flux%20from%20IRAS>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Quality flag for the 12μm-band flux from IRAS" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/q25>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "q25" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Quality%20flag%20for%20the%2025%CE%BCm-band%20flux%20from%20IRAS> , <https://parsec.forth.gr/measurement_classification/Flag> .
+    
+    <https://parsec.forth.gr/measurement_classification/Quality%20flag%20for%20the%2025%CE%BCm-band%20flux%20from%20IRAS>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Quality flag for the 25μm-band flux from IRAS" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/q60>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "q60" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Quality%20flag%20for%20the%2060%CE%BCm-band%20flux%20from%20IRAS> , <https://parsec.forth.gr/measurement_classification/Flag> .
+    
+    <https://parsec.forth.gr/measurement_classification/Quality%20flag%20for%20the%2060%CE%BCm-band%20flux%20from%20IRAS>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Quality flag for the 60μm-band flux from IRAS" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/q100>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "q100" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Quality%20flag%20for%20the%20100%CE%BCm-band%20flux%20from%20IRAS> , <https://parsec.forth.gr/measurement_classification/Flag> .
+    
+    <https://parsec.forth.gr/measurement_classification/Quality%20flag%20for%20the%20100%CE%BCm-band%20flux%20from%20IRAS>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Quality flag for the 100μm-band flux from IRAS" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/wf1>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "wf1" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/IR%20magnitude%20%283.4%C2%B5m%29> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/mag> .
+    
+    <https://parsec.forth.gr/measurement_classification/IR%20magnitude%20%283.4%C2%B5m%29>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "IR magnitude (3.4µm)" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/wf2>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "wf2" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/IR%20magnitude%20%284.6%C2%B5m%29> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/mag> .
+    
+    <https://parsec.forth.gr/measurement_classification/IR%20magnitude%20%284.6%C2%B5m%29>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "IR magnitude (4.6µm)" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/wf3>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "wf3" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/IR%20magnitude%20%2812%C2%B5m%29> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/mag> .
+    
+    <https://parsec.forth.gr/measurement_classification/IR%20magnitude%20%2812%C2%B5m%29>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "IR magnitude (12µm)" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/wf4>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "wf4" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/IR%20magnitude%20%2822%C2%B5m%29> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/mag> .
+    
+    <https://parsec.forth.gr/measurement_classification/IR%20magnitude%20%2822%C2%B5m%29>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "IR magnitude (22µm)" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/e_wf1>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "e_wf1" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Error%20of%203.3%CE%BCm-band%20%28W1%29> , <https://parsec.forth.gr/measurement_classification/Error> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/mag> .
+    
+    <https://parsec.forth.gr/measurement_classification/Error%20of%203.3%CE%BCm-band%20%28W1%29>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Error of 3.3μm-band (W1)" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/e_wf2>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "e_wf2" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Error%20of%204.6%CE%BCm-band%20%28W1%29> , <https://parsec.forth.gr/measurement_classification/Error> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/mag> .
+    
+    <https://parsec.forth.gr/measurement_classification/Error%20of%204.6%CE%BCm-band%20%28W1%29>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Error of 4.6μm-band (W1)" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/e_wf3>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "e_wf3" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Error%20of%2012%CE%BCm-band%20%28W1%29> , <https://parsec.forth.gr/measurement_classification/Error> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/mag> .
+    
+    <https://parsec.forth.gr/measurement_classification/Error%20of%2012%CE%BCm-band%20%28W1%29>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Error of 12μm-band (W1)" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/e_wf4>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "e_wf4" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Error%20of%2022%CE%BCm-band%20%28W1%29> , <https://parsec.forth.gr/measurement_classification/Error> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/mag> .
+    
+    <https://parsec.forth.gr/measurement_classification/Error%20of%2022%CE%BCm-band%20%28W1%29>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Error of 22μm-band (W1)" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/wfpoint>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "wfpoint" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Source-type%20flag> , <https://parsec.forth.gr/measurement_classification/Flag> .
+    
+    <https://parsec.forth.gr/measurement_classification/Source-type%20flag>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Source-type flag" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/wftreat>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "wftreat" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Photometry%20treatment%20flag> , <https://parsec.forth.gr/measurement_classification/Flag> .
+    
+    <https://parsec.forth.gr/measurement_classification/Photometry%20treatment%20flag>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Photometry treatment flag" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/j>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "j" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/J-band%20apparent%20magnitude%20in%202MASS> , <https://parsec.forth.gr/measurement_classification/J%20Magnitude> , <https://parsec.forth.gr/measurement_classification/Magnitude> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/mag> .
+    
+    <https://parsec.forth.gr/measurement_classification/J-band%20apparent%20magnitude%20in%202MASS>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "J-band apparent magnitude in 2MASS" .
+    
+    <https://parsec.forth.gr/measurement_classification/J%20Magnitude>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "J Magnitude" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/h>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "h" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/H-band%20apparent%20magnitude%20in%202MASS> , <https://parsec.forth.gr/measurement_classification/H%20Magnitude> , <https://parsec.forth.gr/measurement_classification/Magnitude> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/mag> .
+    
+    <https://parsec.forth.gr/measurement_classification/H-band%20apparent%20magnitude%20in%202MASS>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "H-band apparent magnitude in 2MASS" .
+    
+    <https://parsec.forth.gr/measurement_classification/H%20Magnitude>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "H Magnitude" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/k>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "k" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/K-band%20apparent%20magnitude%20in%202MASS> , <https://parsec.forth.gr/measurement_classification/K%20Magnitude> , <https://parsec.forth.gr/measurement_classification/Magnitude> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/mag> .
+    
+    <https://parsec.forth.gr/measurement_classification/K-band%20apparent%20magnitude%20in%202MASS>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "K-band apparent magnitude in 2MASS" .
+    
+    <https://parsec.forth.gr/measurement_classification/K%20Magnitude>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "K Magnitude" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/e_j>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "e_j" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Error%20of%20J-band%20apparent%20magnitude%20in%202MASS%20> , <https://parsec.forth.gr/measurement_classification/Error> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/mag> .
+    
+    <https://parsec.forth.gr/measurement_classification/Error%20of%20J-band%20apparent%20magnitude%20in%202MASS%20>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Error of J-band apparent magnitude in 2MASS " .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/e_h>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "e_h" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Error%20of%20H-band%20apparent%20magnitude%20in%202MASS%20> , <https://parsec.forth.gr/measurement_classification/Error> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/mag> .
+    
+    <https://parsec.forth.gr/measurement_classification/Error%20of%20H-band%20apparent%20magnitude%20in%202MASS%20>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Error of H-band apparent magnitude in 2MASS " .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/e_k>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "e_k" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Error%20of%20K-band%20apparent%20magnitude%20in%202MASS%20> , <https://parsec.forth.gr/measurement_classification/Error> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/mag> .
+    
+    <https://parsec.forth.gr/measurement_classification/Error%20of%20K-band%20apparent%20magnitude%20in%202MASS%20>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Error of K-band apparent magnitude in 2MASS " .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/flag_2mass>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "flag_2mass" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Source%20of%20the%202MASS%20ID%20and%20magnitudes%20flag> , <https://parsec.forth.gr/measurement_classification/Flag> .
+    
+    <https://parsec.forth.gr/measurement_classification/Source%20of%20the%202MASS%20ID%20and%20magnitudes%20flag>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Source of the 2MASS ID and magnitudes flag" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/u>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "u" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/u-band%20SDSS%20apparent%20magnitude> , <https://parsec.forth.gr/measurement_classification/U%20Magnitude> , <https://parsec.forth.gr/measurement_classification/Magnitude> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/mag> .
+    
+    <https://parsec.forth.gr/measurement_classification/u-band%20SDSS%20apparent%20magnitude>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "u-band SDSS apparent magnitude" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/g>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "g" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/g-band%20SDSS%20apparent%20magnitude> , <https://parsec.forth.gr/measurement_classification/G%20Magnitude> , <https://parsec.forth.gr/measurement_classification/Magnitude> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/mag> .
+    
+    <https://parsec.forth.gr/measurement_classification/g-band%20SDSS%20apparent%20magnitude>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "g-band SDSS apparent magnitude" .
+    
+    <https://parsec.forth.gr/measurement_classification/G%20Magnitude>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "G Magnitude" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/r>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "r" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/r-band%20SDSS%20apparent%20magnitude> , <https://parsec.forth.gr/measurement_classification/R%20Magnitude> , <https://parsec.forth.gr/measurement_classification/Magnitude> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/mag> .
+    
+    <https://parsec.forth.gr/measurement_classification/r-band%20SDSS%20apparent%20magnitude>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "r-band SDSS apparent magnitude" .
+    
+    <https://parsec.forth.gr/measurement_classification/R%20Magnitude>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "R Magnitude" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/i>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "i" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/i-band%20SDSS%20apparent%20magnitude> , <https://parsec.forth.gr/measurement_classification/I%20Magnitude> , <https://parsec.forth.gr/measurement_classification/Magnitude> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/mag> .
+    
+    <https://parsec.forth.gr/measurement_classification/i-band%20SDSS%20apparent%20magnitude>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "i-band SDSS apparent magnitude" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/z>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "z" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/z-band%20SDSS%20apparent%20magnitude> , <https://parsec.forth.gr/measurement_classification/Z%20Magnitude> , <https://parsec.forth.gr/measurement_classification/Magnitude> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/mag> .
+    
+    <https://parsec.forth.gr/measurement_classification/z-band%20SDSS%20apparent%20magnitude>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "z-band SDSS apparent magnitude" .
+    
+    <https://parsec.forth.gr/measurement_classification/Z%20Magnitude>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Z Magnitude" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/e_u>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "e_u" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Error%20of%20u-band%20SDSS%20apparent%20magnitude> , <https://parsec.forth.gr/measurement_classification/Error> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/mag> .
+    
+    <https://parsec.forth.gr/measurement_classification/Error%20of%20u-band%20SDSS%20apparent%20magnitude>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Error of u-band SDSS apparent magnitude" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/e_g>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "e_g" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Error%20of%20g-band%20SDSS%20apparent%20magnitude> , <https://parsec.forth.gr/measurement_classification/Error> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/mag> .
+    
+    <https://parsec.forth.gr/measurement_classification/Error%20of%20g-band%20SDSS%20apparent%20magnitude>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Error of g-band SDSS apparent magnitude" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/e_r>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "e_r" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Error%20of%20r-band%20SDSS%20apparent%20magnitude> , <https://parsec.forth.gr/measurement_classification/Error> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/mag> .
+    
+    <https://parsec.forth.gr/measurement_classification/Error%20of%20r-band%20SDSS%20apparent%20magnitude>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Error of r-band SDSS apparent magnitude" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/e_i>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "e_i" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Error%20of%20i-band%20SDSS%20apparent%20magnitude> , <https://parsec.forth.gr/measurement_classification/Error> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/mag> .
+    
+    <https://parsec.forth.gr/measurement_classification/Error%20of%20i-band%20SDSS%20apparent%20magnitude>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Error of i-band SDSS apparent magnitude" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/e_z>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "E_z" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Error%20of%20zz-band%20SDSS%20apparent%20magnitude> , <https://parsec.forth.gr/measurement_classification/Error> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/mag> .
+    
+    <https://parsec.forth.gr/measurement_classification/Error%20of%20zz-band%20SDSS%20apparent%20magnitude>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Error of zz-band SDSS apparent magnitude" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/logL_TIR>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "logL_TIR" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Decimal%20logarithm%20of%20the%20total-infrared%20%28TIR%29%20luminosity> , <https://parsec.forth.gr/measurement_classification/Luminosity%20logarithm> , <https://parsec.forth.gr/measurement_classification/Luminosity> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/log%28L_sun%29> .
+    
+    <https://parsec.forth.gr/measurement_unit/log%28L_sun%29>
+            a       <https://parsec.forth.gr/E09_Measurement_Unit> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "log(L_sun)" .
+    
+    <https://parsec.forth.gr/measurement_classification/Decimal%20logarithm%20of%20the%20total-infrared%20%28TIR%29%20luminosity>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Decimal logarithm of the total-infrared (TIR) luminosity" .
+    
+    <https://parsec.forth.gr/measurement_classification/Luminosity%20logarithm>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Luminosity logarithm" .
+    
+    <https://parsec.forth.gr/measurement_classification/Luminosity>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Luminosity" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/logL_FIR>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "logL_FIR" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Decimal%20logarithm%20of%20the%20far-infrared%20%28FIR%29%20luminosity%20in%20solar%20luminosities> , <https://parsec.forth.gr/measurement_classification/Luminosity%20logarithm> , <https://parsec.forth.gr/measurement_classification/Luminosity> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/log%28L_sun%29> .
+    
+    <https://parsec.forth.gr/measurement_classification/Decimal%20logarithm%20of%20the%20far-infrared%20%28FIR%29%20luminosity%20in%20solar%20luminosities>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Decimal logarithm of the far-infrared (FIR) luminosity in solar luminosities" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/logL_60%CE%BC>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "logL_60μ" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/IR%20luminosity> , <https://parsec.forth.gr/measurement_classification/Decimal%20logarithm%20of%20the%2060um-band%20luminosity%20in%20solar%20luminosities> , <https://parsec.forth.gr/measurement_classification/Luminosity%20logarithm> , <https://parsec.forth.gr/measurement_classification/Luminosity> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/log%28L_sun%29> .
+    
+    <https://parsec.forth.gr/measurement_classification/IR%20luminosity>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "IR luminosity" .
+    
+    <https://parsec.forth.gr/measurement_classification/Decimal%20logarithm%20of%20the%2060um-band%20luminosity%20in%20solar%20luminosities>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Decimal logarithm of the 60um-band luminosity in solar luminosities" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/logL_12%CE%BC>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "logL_12μ" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Decimal%20logarithm%20of%20the%2012um-band%20luminosity%20in%20solar%20luminosities> , <https://parsec.forth.gr/measurement_classification/Luminosity%20logarithm> , <https://parsec.forth.gr/measurement_classification/Luminosity> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/log%28L_sun%29> .
+    
+    <https://parsec.forth.gr/measurement_classification/Decimal%20logarithm%20of%20the%2012um-band%20luminosity%20in%20solar%20luminosities>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Decimal logarithm of the 12um-band luminosity in solar luminosities" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/logL_22%CE%BC>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "logL_22μ" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Decimal%20logarithm%20of%20the%2022um-band%20luminosity%20in%20solar%20luminosities> , <https://parsec.forth.gr/measurement_classification/Luminosity%20logarithm> , <https://parsec.forth.gr/measurement_classification/Luminosity> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/log%28L_sun%29> .
+    
+    <https://parsec.forth.gr/measurement_classification/Decimal%20logarithm%20of%20the%2022um-band%20luminosity%20in%20solar%20luminosities>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Decimal logarithm of the 22um-band luminosity in solar luminosities" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/logL_K>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "logL_K" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Decimal%20logarithm%20of%20the%20K-band%20luminosity%20in%20solar%20luminosities> , <https://parsec.forth.gr/measurement_classification/Luminosity%20logarithm> , <https://parsec.forth.gr/measurement_classification/Luminosity> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/log%28L_sun%29> .
+    
+    <https://parsec.forth.gr/measurement_classification/Decimal%20logarithm%20of%20the%20K-band%20luminosity%20in%20solar%20luminosities>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Decimal logarithm of the K-band luminosity in solar luminosities" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/ML_ratio>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "ML_ratio" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Mass-to-light%20ratio> , <https://parsec.forth.gr/measurement_classification/Ratio> ;
+            <https://parsec.forth.gr/P20_has_estimation_method>
+                    <https://parsec.forth.gr/estimation_method/Mass-to-light%20ratio%20for%20the%202MASS%20K-band%20using%20SDSS%20g-r%20colour%20%28Bell%20et%20al.%202003%29> .
+    
+    <https://parsec.forth.gr/estimation_method/Mass-to-light%20ratio%20for%20the%202MASS%20K-band%20using%20SDSS%20g-r%20colour%20%28Bell%20et%20al.%202003%29>
+            a       <https://parsec.forth.gr/E12_Estimation_Method> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Mass-to-light ratio for the 2MASS K-band using SDSS g-r colour (Bell et al. 2003)" .
+    
+    <https://parsec.forth.gr/measurement_classification/Mass-to-light%20ratio>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Mass-to-light ratio" .
+    
+    <https://parsec.forth.gr/measurement_classification/Ratio>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Ratio" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/logSFR_TIR>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "logSFR_TIR" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Decimal%20logarithm%20of%20the%20TIR-based%20star-formation%20rate%20in%20solar%20masses%20per%20year> , <https://parsec.forth.gr/measurement_classification/Star%20formation%20rate> , <https://parsec.forth.gr/measurement_classification/Star%20formation%20rate%20logarithm> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/log%28M_sun%2Fyr%29> .
+    
+    <https://parsec.forth.gr/measurement_unit/log%28M_sun%2Fyr%29>
+            a       <https://parsec.forth.gr/E09_Measurement_Unit> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "log(M_sun/yr)" .
+    
+    <https://parsec.forth.gr/measurement_classification/Decimal%20logarithm%20of%20the%20TIR-based%20star-formation%20rate%20in%20solar%20masses%20per%20year>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Decimal logarithm of the TIR-based star-formation rate in solar masses per year" .
+    
+    <https://parsec.forth.gr/measurement_classification/Star%20formation%20rate>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Star formation rate" .
+    
+    <https://parsec.forth.gr/measurement_classification/Star%20formation%20rate%20logarithm>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Star formation rate logarithm" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/logSFR_FIR>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "logSFR_FIR" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Decimal%20logarithm%20of%20the%20FIR-based%20star-formation%20rate%20in%20solar%20masses%20per%20year> , <https://parsec.forth.gr/measurement_classification/Star%20formation%20rate> , <https://parsec.forth.gr/measurement_classification/Star%20formation%20rate%20logarithm> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/log%28M_sun%2Fyr%29> .
+    
+    <https://parsec.forth.gr/measurement_classification/Decimal%20logarithm%20of%20the%20FIR-based%20star-formation%20rate%20in%20solar%20masses%20per%20year>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Decimal logarithm of the FIR-based star-formation rate in solar masses per year" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/logSFR_60u>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "logSFR_60u" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Decimal%20logarithm%20of%20the%2060um-based%20star-formation%20rate%20in%20solar%20masses%20per%20year> , <https://parsec.forth.gr/measurement_classification/Star%20formation%20rate> , <https://parsec.forth.gr/measurement_classification/Star%20formation%20rate%20logarithm> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/log%28M_sun%2Fyr%29> .
+    
+    <https://parsec.forth.gr/measurement_classification/Decimal%20logarithm%20of%20the%2060um-based%20star-formation%20rate%20in%20solar%20masses%20per%20year>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Decimal logarithm of the 60um-based star-formation rate in solar masses per year" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/logSFR_12u>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "logSFR_12u" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Decimal%20logarithm%20of%20the%2012um-based%20star-formation%20rate%20in%20solar%20masses%20per%20year> , <https://parsec.forth.gr/measurement_classification/Star%20formation%20rate> , <https://parsec.forth.gr/measurement_classification/Star%20formation%20rate%20logarithm> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/log%28M_sun%2Fyr%29> .
+    
+    <https://parsec.forth.gr/measurement_classification/Decimal%20logarithm%20of%20the%2012um-based%20star-formation%20rate%20in%20solar%20masses%20per%20year>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Decimal logarithm of the 12um-based star-formation rate in solar masses per year" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/logSFR_22u>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "logSFR_22u" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Decimal%20logarithm%20of%20the%2022um-based%20star-formation%20rate%20in%20solar%20masses%20per%20year> , <https://parsec.forth.gr/measurement_classification/Star%20formation%20rate> , <https://parsec.forth.gr/measurement_classification/Star%20formation%20rate%20logarithm> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/log%28M_sun%2Fyr%29> .
+    
+    <https://parsec.forth.gr/measurement_classification/Decimal%20logarithm%20of%20the%2022um-based%20star-formation%20rate%20in%20solar%20masses%20per%20year>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Decimal logarithm of the 22um-based star-formation rate in solar masses per year" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/logSFR_HEC>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "logSFR_HEC" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Decimal%20logarithm%20of%20the%20homogenised%20star-formation%20rate%20in%20solar%20masses%20per%20year> , <https://parsec.forth.gr/measurement_classification/Star%20formation%20rate> , <https://parsec.forth.gr/measurement_classification/Star%20formation%20rate%20logarithm> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/log%28M_sun%2Fyr%29> .
+    
+    <https://parsec.forth.gr/measurement_classification/Decimal%20logarithm%20of%20the%20homogenised%20star-formation%20rate%20in%20solar%20masses%20per%20year>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Decimal logarithm of the homogenised star-formation rate in solar masses per year" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/FLAG_SFR_HEC>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "FLAG_SFR_HEC" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Flag%20indicating%20the%20source%20of%20the%20photometry%20and%20the%20SFR%20indicator%20used%20in%20the%20homogenised%20SFR%3A%20RT%3DIRAS-RBGS%20photometry%20and%20TIR%20indicator> .
+    
+    <https://parsec.forth.gr/measurement_classification/Flag%20indicating%20the%20source%20of%20the%20photometry%20and%20the%20SFR%20indicator%20used%20in%20the%20homogenised%20SFR%3A%20RT%3DIRAS-RBGS%20photometry%20and%20TIR%20indicator>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Flag indicating the source of the photometry and the SFR indicator used in the homogenised SFR: RT=IRAS-RBGS photometry and TIR indicator" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/logM_HEC>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "logM_HEC" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Decimal%20logarithm%20of%20the%20total%20stellar%20mass%20in%20solar%20masses> , <https://parsec.forth.gr/measurement_classification/Stellar%20mass> , <https://parsec.forth.gr/measurement_classification/Stellar%20mass%20logarithm> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/log%28M_sun%29> .
+    
+    <https://parsec.forth.gr/measurement_unit/log%28M_sun%29>
+            a       <https://parsec.forth.gr/E09_Measurement_Unit> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "log(M_sun)" .
+    
+    <https://parsec.forth.gr/measurement_classification/Decimal%20logarithm%20of%20the%20total%20stellar%20mass%20in%20solar%20masses>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Decimal logarithm of the total stellar mass in solar masses" .
+    
+    <https://parsec.forth.gr/measurement_classification/Stellar%20mass>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Stellar mass" .
+    
+    <https://parsec.forth.gr/measurement_classification/Stellar%20mass%20logarithm>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Stellar mass logarithm" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/logSFR_GSW>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "logSFR_GSW" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Decimal%20logarithm%20of%20the%20SED-based%20star-formation%20rate%20from%20the%20GSWLC-2%20in%20solar%20masses%20per%20year> , <https://parsec.forth.gr/measurement_classification/Stellar%20mass> , <https://parsec.forth.gr/measurement_classification/Stellar%20mass%20logarithm> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/log%28M_sun%2Fyr%29> .
+    
+    <https://parsec.forth.gr/measurement_classification/Decimal%20logarithm%20of%20the%20SED-based%20star-formation%20rate%20from%20the%20GSWLC-2%20in%20solar%20masses%20per%20year>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Decimal logarithm of the SED-based star-formation rate from the GSWLC-2 in solar masses per year" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/logM_GSW>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "logM_GSW" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Decimal%20logarithm%20of%20the%20SED-based%20stellar%20mass%20from%20the%20GSWLC-2%20in%20solar%20masses> , <https://parsec.forth.gr/measurement_classification/Stellar%20mass> , <https://parsec.forth.gr/measurement_classification/Stellar%20mass%20logarithm> ;
+            <https://parsec.forth.gr/P3_has_unit>
+                    <https://parsec.forth.gr/measurement_unit/log%28M_sun%29> .
+    
+    <https://parsec.forth.gr/measurement_classification/Decimal%20logarithm%20of%20the%20SED-based%20stellar%20mass%20from%20the%20GSWLC-2%20in%20solar%20masses>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Decimal logarithm of the SED-based stellar mass from the GSWLC-2 in solar masses" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/min_snr>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "min_snr" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Minimum%20signal-to-noise%20ratio%20of%20the%20emission%20lines%20used%20for%20the%20activity%20classification%20%28class_sp%29> .
+    
+    <https://parsec.forth.gr/measurement_classification/Minimum%20signal-to-noise%20ratio%20of%20the%20emission%20lines%20used%20for%20the%20activity%20classification%20%28class_sp%29>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Minimum signal-to-noise ratio of the emission lines used for the activity classification (class_sp)" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/metal>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "metal" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/12%2Blog%28O/H%29%20gas-phase%20metallicity> .
+    
+    <https://parsec.forth.gr/measurement_classification/12%2Blog%28O/H%29%20gas-phase%20metallicity>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "12+log(O/H) gas-phase metallicity" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/flag_metal>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Metallicity%20flag> , <https://parsec.forth.gr/measurement_classification/Flag> .
+    
+    <https://parsec.forth.gr/measurement_classification/Metallicity%20flag>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Metallicity flag" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/class_sp>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "class_sp" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Nuclear%20activity%20classification> , <https://parsec.forth.gr/measurement_classification/Classification> , <https://parsec.forth.gr/measurement_classification/Flag> ;
+            <https://parsec.forth.gr/P20_has_estimation_method>
+                    <https://parsec.forth.gr/estimation_method/Stampoulis%20et%20al.%202019> .
+    
+    <https://parsec.forth.gr/estimation_method/Stampoulis%20et%20al.%202019>
+            a       <https://parsec.forth.gr/E12_Estimation_Method> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Stampoulis et al. 2019" .
+    
+    <https://parsec.forth.gr/measurement_classification/Nuclear%20activity%20classification>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Nuclear activity classification" .
+    
+    <https://parsec.forth.gr/measurement_classification/Classification>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Classification" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/agn_s17>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "agn_s17" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/AGN%20classification> , <https://parsec.forth.gr/measurement_classification/Classification> , <https://parsec.forth.gr/measurement_classification/Flag> ;
+            <https://parsec.forth.gr/P20_has_estimation_method>
+                    <https://parsec.forth.gr/estimation_method/She%20et%20al.%202017> .
+    
+    <https://parsec.forth.gr/estimation_method/She%20et%20al.%202017>
+            a       <https://parsec.forth.gr/E12_Estimation_Method> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "She et al. 2017" .
+    
+    <https://parsec.forth.gr/measurement_classification/AGN%20classification>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "AGN classification" .
+    
+    <https://parsec.forth.gr/data_source/HECATE/column/agn_hec>
+            a       <https://parsec.forth.gr/E16_Column> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "agn_hec" ;
+            <https://parsec.forth.gr/P04_contains_measurements_of>
+                    <https://parsec.forth.gr/measurement_classification/Adopted%20activity%20classification%20based%20on%20the%20combination%20of%20class_sp%20and%20agn_s17> , <https://parsec.forth.gr/measurement_classification/Classification> , <https://parsec.forth.gr/measurement_classification/Flag> .
+    
+    <https://parsec.forth.gr/measurement_classification/Adopted%20activity%20classification%20based%20on%20the%20combination%20of%20class_sp%20and%20agn_s17>
+            a       <https://parsec.forth.gr/E11_Measurement_Classification> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Adopted activity classification based on the combination of class_sp and agn_s17" .
+}
