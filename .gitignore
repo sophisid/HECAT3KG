@@ -15,3 +15,4 @@ rml_mappings/temp_mapping.ttl
 x3ml_mappings/output_rdf/*
 rml_merged.ttl
 x3ml_merged.trig
+x3ml_mappings/x3ml_output_rdf.zip
