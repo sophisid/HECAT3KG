@@ -18,3 +18,5 @@ x3ml_merged.trig
 x3ml_mappings/x3ml_output_rdf.zip
 rml_mappings/rml_rdf_output.zip
 rml_mappings/rml_rdf_output.zip
+rml_mappings/output_rdf_new/*
+rml_mappings/output_rdf_rml/*

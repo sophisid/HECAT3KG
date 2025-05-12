@@ -379,10 +379,10 @@
         rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/RA/measurement/galaxy_{PGC}_RA" ;
         rr:class parsec:E8_Measurement ;                      # Measurement entity type
     ] ;
-    # Map the RA value from the CSV (as a float).
+    # Map the RA value from the CSV (as a string).
     rr:predicateObjectMap [
         rr:predicate parsec:P02_has_value ;
-        rr:objectMap [ rml:reference "RA" ; rr:datatype xsd:float ] ;
+        rr:objectMap [ rml:reference "RA" ; rr:datatype xsd:string ] ;
     ] ;
     # Link this measurement to the RA column entity.
     rr:predicateObjectMap [
@@ -391,12 +391,12 @@
     ] ;
         rr:predicateObjectMap [
         rr:predicate parsec:P05_has_lower_margin_value ;
-        rr:objectMap [ rml:reference "E_RA" ; rr:datatype xsd:float ] ;
+        rr:objectMap [ rml:reference "E_RA" ; rr:datatype xsd:string ] ;
     ] ;
 
     rr:predicateObjectMap [
         rr:predicate parsec:P06_has_upper_margin_value ;
-        rr:objectMap [ rml:reference "E_RA" ; rr:datatype xsd:float ] ;
+        rr:objectMap [ rml:reference "E_RA" ; rr:datatype xsd:string ] ;
     ] .
 
 ################################################################################
@@ -412,7 +412,7 @@
 
     rr:predicateObjectMap [
         rr:predicate parsec:P02_has_value ;
-        rr:objectMap [ rml:reference "DEC" ; rr:datatype xsd:float ] ;
+        rr:objectMap [ rml:reference "DEC" ; rr:datatype xsd:string ] ;
     ] ;
         rr:predicateObjectMap [
         rr:predicate parsec:P21_is_measurement_from_column ;
@@ -420,12 +420,12 @@
     ] ;
     rr:predicateObjectMap [
         rr:predicate parsec:P05_has_lower_margin_value ;
-        rr:objectMap [ rml:reference "E_DEC" ; rr:datatype xsd:float ] ;
+        rr:objectMap [ rml:reference "E_DEC" ; rr:datatype xsd:string ] ;
     ] ;
 
     rr:predicateObjectMap [
         rr:predicate parsec:P06_has_upper_margin_value ;
-        rr:objectMap [ rml:reference "E_DEC" ; rr:datatype xsd:float ] ;
+        rr:objectMap [ rml:reference "E_DEC" ; rr:datatype xsd:string ] ;
     ] .
 
 
@@ -445,7 +445,7 @@
         rr:predicate parsec:P02_has_value ;
         rr:objectMap [
             rml:reference "D" ;
-            rr:datatype xsd:float ;
+            rr:datatype xsd:string ;
         ] ;
     ] ;
 
@@ -514,7 +514,7 @@
     # Main AGN_S17 value
     rr:predicateObjectMap [
         rr:predicate parsec:P02_has_value ;
-        rr:objectMap [ rml:reference "AGN_S17" ; rr:datatype xsd:float ] ;
+        rr:objectMap [ rml:reference "AGN_S17" ; rr:datatype xsd:string ] ;
     ] ;
     # Link to the AGN_S17 column entity
     rr:predicateObjectMap [
@@ -537,7 +537,7 @@
     # Main AGN_HEC value
     rr:predicateObjectMap [
         rr:predicate parsec:P02_has_value ;
-        rr:objectMap [ rml:reference "AGN_HEC" ; rr:datatype xsd:float ] ;
+        rr:objectMap [ rml:reference "AGN_HEC" ; rr:datatype xsd:string ] ;
     ] ;
     # Link to the AGN_HEC column entity
     rr:predicateObjectMap [
@@ -559,7 +559,7 @@
     # Main AG value
     rr:predicateObjectMap [
         rr:predicate parsec:P02_has_value ;
-        rr:objectMap [ rml:reference "AG" ; rr:datatype xsd:float ] ;
+        rr:objectMap [ rml:reference "AG" ; rr:datatype xsd:string ] ;
     ] ;
     # Link to the AG column entity
     rr:predicateObjectMap [
@@ -581,7 +581,7 @@
     # Main AI value
     rr:predicateObjectMap [
         rr:predicate parsec:P02_has_value ;
-        rr:objectMap [ rml:reference "AI" ; rr:datatype xsd:float ] ;
+        rr:objectMap [ rml:reference "AI" ; rr:datatype xsd:string ] ;
     ] ;
     # Link to the AI column entity
     rr:predicateObjectMap [
@@ -602,7 +602,7 @@
     # Main CLASS_SP value
     rr:predicateObjectMap [
         rr:predicate parsec:P02_has_value ;
-        rr:objectMap [ rml:reference "CLASS_SP" ; rr:datatype xsd:float ] ;
+        rr:objectMap [ rml:reference "CLASS_SP" ; rr:datatype xsd:string ] ;
     ] ;
     # Link to the CLASS_SP column entity
     rr:predicateObjectMap [
@@ -622,7 +622,7 @@
     ] ;
     rr:predicateObjectMap [ 
         rr:predicate parsec:P02_has_value ; 
-        rr:objectMap [ rml:reference "UT" ; rr:datatype xsd:float ] ; 
+        rr:objectMap [ rml:reference "UT" ; rr:datatype xsd:string ] ; 
         ] ;
     rr:predicateObjectMap [ 
         rr:predicate parsec:P21_is_measurement_from_column ; 
@@ -630,39 +630,39 @@
         ] ;
     rr:predicateObjectMap [
         rr:predicate parsec:P05_has_lower_margin_value ;
-        rr:objectMap [ rml:reference "E_UT" ; rr:datatype xsd:float ] ;
+        rr:objectMap [ rml:reference "E_UT" ; rr:datatype xsd:string ] ;
     ] ;
 
     rr:predicateObjectMap [
         rr:predicate parsec:P06_has_upper_margin_value ;
-        rr:objectMap [ rml:reference "E_UT" ; rr:datatype xsd:float ] ;
+        rr:objectMap [ rml:reference "E_UT" ; rr:datatype xsd:string ] ;
     ] .
 
 <#MeasurementBT> a rr:TriplesMap ;
     rml:logicalSource <#HecateCSV> ;
     rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/BT/measurement/galaxy_{PGC}_BT" ; rr:class parsec:E8_Measurement ; ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "BT" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "BT" ; rr:datatype xsd:string ] ; ] ;
     rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnBT> ] ; ] ;
     rr:predicateObjectMap [
         rr:predicate parsec:P05_has_lower_margin_value ;
-        rr:objectMap [ rml:reference "E_BT" ; rr:datatype xsd:float ] ;
+        rr:objectMap [ rml:reference "E_BT" ; rr:datatype xsd:string ] ;
     ] ;
 
     rr:predicateObjectMap [
         rr:predicate parsec:P06_has_upper_margin_value ;
-        rr:objectMap [ rml:reference "E_BT" ; rr:datatype xsd:float ] ;
+        rr:objectMap [ rml:reference "E_BT" ; rr:datatype xsd:string ] ;
     ] .
 
 <#MeasurementVT> a rr:TriplesMap ;
     rml:logicalSource <#HecateCSV> ;
     rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/VT/measurement/galaxy_{PGC}_VT" ; rr:class parsec:E8_Measurement ; ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "VT" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "VT" ; rr:datatype xsd:string ] ; ] ;
     rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnVT> ] ; ] .
 
 <#MeasurementIT> a rr:TriplesMap ;
     rml:logicalSource <#HecateCSV> ;
     rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/IT/measurement/galaxy_{PGC}_IT" ; rr:class parsec:E8_Measurement ; ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "IT" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "IT" ; rr:datatype xsd:string ] ; ] ;
     rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnIT> ] ; ] .
 
 
@@ -677,7 +677,7 @@
     ] ;
     rr:predicateObjectMap [
         rr:predicate parsec:P02_has_value ;
-        rr:objectMap [ rml:reference "U" ; rr:datatype xsd:float ] ;
+        rr:objectMap [ rml:reference "U" ; rr:datatype xsd:string ] ;
     ] ;
     rr:predicateObjectMap [
         rr:predicate parsec:P21_is_measurement_from_column ;
@@ -685,12 +685,12 @@
     ] ;
         rr:predicateObjectMap [
         rr:predicate parsec:P05_has_lower_margin_value ;
-        rr:objectMap [ rml:reference "E_U" ; rr:datatype xsd:float ] ;
+        rr:objectMap [ rml:reference "E_U" ; rr:datatype xsd:string ] ;
     ] ;
 
     rr:predicateObjectMap [
         rr:predicate parsec:P06_has_upper_margin_value ;
-        rr:objectMap [ rml:reference "E_U" ; rr:datatype xsd:float ] ;
+        rr:objectMap [ rml:reference "E_U" ; rr:datatype xsd:string ] ;
     ] .
 
 
@@ -705,7 +705,7 @@
     ] ;
     rr:predicateObjectMap [
         rr:predicate parsec:P02_has_value ;
-        rr:objectMap [ rml:reference "G" ; rr:datatype xsd:float ] ;
+        rr:objectMap [ rml:reference "G" ; rr:datatype xsd:string ] ;
     ] ;
     rr:predicateObjectMap [
         rr:predicate parsec:P21_is_measurement_from_column ;
@@ -713,12 +713,12 @@
     ] ;
         rr:predicateObjectMap [
         rr:predicate parsec:P05_has_lower_margin_value ;
-        rr:objectMap [ rml:reference "E_G" ; rr:datatype xsd:float ] ;
+        rr:objectMap [ rml:reference "E_G" ; rr:datatype xsd:string ] ;
     ] ;
 
     rr:predicateObjectMap [
         rr:predicate parsec:P06_has_upper_margin_value ;
-        rr:objectMap [ rml:reference "E_G" ; rr:datatype xsd:float ] ;
+        rr:objectMap [ rml:reference "E_G" ; rr:datatype xsd:string ] ;
     ] .
 
 ################################################################################
@@ -727,10 +727,10 @@
 <#MeasurementR> a rr:TriplesMap ;
     rml:logicalSource <#HecateCSV> ;
     rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/R/measurement/galaxy_{PGC}_R" ; rr:class parsec:E8_Measurement ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "R" ; rr:datatype xsd:float ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "R" ; rr:datatype xsd:string ] ] ;
     rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnR> ] ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P05_has_lower_margin_value ; rr:objectMap [ rml:reference "E_R" ; rr:datatype xsd:float ] ; ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P06_has_upper_margin_value ; rr:objectMap [ rml:reference "E_R" ; rr:datatype xsd:float ] ; ] .
+    rr:predicateObjectMap [ rr:predicate parsec:P05_has_lower_margin_value ; rr:objectMap [ rml:reference "E_R" ; rr:datatype xsd:string ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P06_has_upper_margin_value ; rr:objectMap [ rml:reference "E_R" ; rr:datatype xsd:string ] ; ] .
 
 ################################################################################
 # Measurement Mapping for T
@@ -738,10 +738,10 @@
 <#MeasurementT> a rr:TriplesMap ;
     rml:logicalSource <#HecateCSV> ;
     rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/T/measurement/galaxy_{PGC}_T" ; rr:class parsec:E8_Measurement ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "T" ; rr:datatype xsd:float ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "T" ; rr:datatype xsd:string ] ] ;
     rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnT> ] ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P05_has_lower_margin_value ; rr:objectMap [ rml:reference "E_T" ; rr:datatype xsd:float ] ; ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P06_has_upper_margin_value ; rr:objectMap [ rml:reference "E_T" ; rr:datatype xsd:float ] ; ] .
+    rr:predicateObjectMap [ rr:predicate parsec:P05_has_lower_margin_value ; rr:objectMap [ rml:reference "E_T" ; rr:datatype xsd:string ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P06_has_upper_margin_value ; rr:objectMap [ rml:reference "E_T" ; rr:datatype xsd:string ] ; ] .
 
 
 ################################################################################
@@ -750,10 +750,10 @@
 <#MeasurementI> a rr:TriplesMap ;
     rml:logicalSource <#HecateCSV> ;
     rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/I/measurement/galaxy_{PGC}_I" ; rr:class parsec:E8_Measurement ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "I" ; rr:datatype xsd:float ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "I" ; rr:datatype xsd:string ] ] ;
     rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnI> ] ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P05_has_lower_margin_value ; rr:objectMap [ rml:reference "E_I" ; rr:datatype xsd:float ] ; ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P06_has_upper_margin_value ; rr:objectMap [ rml:reference "E_I" ; rr:datatype xsd:float ] ; ] .
+    rr:predicateObjectMap [ rr:predicate parsec:P05_has_lower_margin_value ; rr:objectMap [ rml:reference "E_I" ; rr:datatype xsd:string ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P06_has_upper_margin_value ; rr:objectMap [ rml:reference "E_I" ; rr:datatype xsd:string ] ; ] .
 
 ################################################################################
 # Measurement Mapping for Z
@@ -761,10 +761,10 @@
 <#MeasurementZ> a rr:TriplesMap ;
     rml:logicalSource <#HecateCSV> ;
     rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/Z/measurement/galaxy_{PGC}_Z" ; rr:class parsec:E8_Measurement ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "Z" ; rr:datatype xsd:float ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "Z" ; rr:datatype xsd:string ] ] ;
     rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnZ> ] ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P05_has_lower_margin_value ; rr:objectMap [ rml:reference "E_Z" ; rr:datatype xsd:float ] ; ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P06_has_upper_margin_value ; rr:objectMap [ rml:reference "E_Z" ; rr:datatype xsd:float ] ; ] .
+    rr:predicateObjectMap [ rr:predicate parsec:P05_has_lower_margin_value ; rr:objectMap [ rml:reference "E_Z" ; rr:datatype xsd:string ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P06_has_upper_margin_value ; rr:objectMap [ rml:reference "E_Z" ; rr:datatype xsd:string ] ; ] .
 
 
 ################################################################################
@@ -780,7 +780,7 @@
     ] ;
     rr:predicateObjectMap [
         rr:predicate parsec:P02_has_value ;
-        rr:objectMap [ rml:reference "J" ; rr:datatype xsd:float ] ;
+        rr:objectMap [ rml:reference "J" ; rr:datatype xsd:string ] ;
     ] ;
     rr:predicateObjectMap [
         rr:predicate parsec:P21_is_measurement_from_column ;
@@ -788,12 +788,12 @@
     ] ;
         rr:predicateObjectMap [
         rr:predicate parsec:P05_has_lower_margin_value ;
-        rr:objectMap [ rml:reference "E_J" ; rr:datatype xsd:float ] ;
+        rr:objectMap [ rml:reference "E_J" ; rr:datatype xsd:string ] ;
     ] ;
 
     rr:predicateObjectMap [
         rr:predicate parsec:P06_has_upper_margin_value ;
-        rr:objectMap [ rml:reference "E_J" ; rr:datatype xsd:float ] ;
+        rr:objectMap [ rml:reference "E_J" ; rr:datatype xsd:string ] ;
     ] .
 
 <#MeasurementH> a rr:TriplesMap ;
@@ -805,7 +805,7 @@
     ] ;
     rr:predicateObjectMap [
         rr:predicate parsec:P02_has_value ;
-        rr:objectMap [ rml:reference "H" ; rr:datatype xsd:float ] ;
+        rr:objectMap [ rml:reference "H" ; rr:datatype xsd:string ] ;
     ] ;
     rr:predicateObjectMap [
         rr:predicate parsec:P21_is_measurement_from_column ;
@@ -813,12 +813,12 @@
     ] ;
         rr:predicateObjectMap [
         rr:predicate parsec:P05_has_lower_margin_value ;
-        rr:objectMap [ rml:reference "E_H" ; rr:datatype xsd:float ] ;
+        rr:objectMap [ rml:reference "E_H" ; rr:datatype xsd:string ] ;
     ] ;
 
     rr:predicateObjectMap [
         rr:predicate parsec:P06_has_upper_margin_value ;
-        rr:objectMap [ rml:reference "E_H" ; rr:datatype xsd:float ] ;
+        rr:objectMap [ rml:reference "E_H" ; rr:datatype xsd:string ] ;
     ] .
 
 <#MeasurementK> a rr:TriplesMap ;
@@ -830,7 +830,7 @@
     ] ;
     rr:predicateObjectMap [
         rr:predicate parsec:P02_has_value ;
-        rr:objectMap [ rml:reference "K" ; rr:datatype xsd:float ] ;
+        rr:objectMap [ rml:reference "K" ; rr:datatype xsd:string ] ;
     ] ;
     rr:predicateObjectMap [
         rr:predicate parsec:P21_is_measurement_from_column ;
@@ -838,12 +838,12 @@
     ] ;
         rr:predicateObjectMap [
         rr:predicate parsec:P05_has_lower_margin_value ;
-        rr:objectMap [ rml:reference "E_K" ; rr:datatype xsd:float ] ;
+        rr:objectMap [ rml:reference "E_K" ; rr:datatype xsd:string ] ;
     ] ;
 
     rr:predicateObjectMap [
         rr:predicate parsec:P06_has_upper_margin_value ;
-        rr:objectMap [ rml:reference "E_K" ; rr:datatype xsd:float ] ;
+        rr:objectMap [ rml:reference "E_K" ; rr:datatype xsd:string ] ;
     ] .
 
 
@@ -857,7 +857,7 @@
     ] ;
     rr:predicateObjectMap [
         rr:predicate parsec:P02_has_value ;
-        rr:objectMap [ rml:reference "FLAG_SFR_HEC" ; rr:datatype xsd:float ] ;
+        rr:objectMap [ rml:reference "FLAG_SFR_HEC" ; rr:datatype xsd:string ] ;
     ] ;
     rr:predicateObjectMap [
         rr:predicate parsec:P21_is_measurement_from_column ;
@@ -874,7 +874,7 @@
     ] ;
     rr:predicateObjectMap [
         rr:predicate parsec:P02_has_value ;
-        rr:objectMap [ rml:reference "INCL" ; rr:datatype xsd:float ] ;
+        rr:objectMap [ rml:reference "INCL" ; rr:datatype xsd:string ] ;
     ] ;
     rr:predicateObjectMap [
         rr:predicate parsec:P21_is_measurement_from_column ;
@@ -887,18 +887,18 @@
 <#MeasurementV> a rr:TriplesMap ;
     rml:logicalSource <#HecateCSV> ;
     rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/V/measurement/galaxy_{PGC}_V" ; rr:class parsec:E8_Measurement ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "V" ; rr:datatype xsd:float ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "V" ; rr:datatype xsd:string ] ] ;
     rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnV> ] ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P05_has_lower_margin_value ; rr:objectMap [ rml:reference "E_V" ; rr:datatype xsd:float ] ; ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P06_has_upper_margin_value ; rr:objectMap [ rml:reference "E_V" ; rr:datatype xsd:float ] ; ] .
+    rr:predicateObjectMap [ rr:predicate parsec:P05_has_lower_margin_value ; rr:objectMap [ rml:reference "E_V" ; rr:datatype xsd:string ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P06_has_upper_margin_value ; rr:objectMap [ rml:reference "E_V" ; rr:datatype xsd:string ] ; ] .
 
 <#MeasurementV_VIR> a rr:TriplesMap ;
     rml:logicalSource <#HecateCSV> ;
     rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/V_VIR/measurement/galaxy_{PGC}_V_VIR" ; rr:class parsec:E8_Measurement ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "V_VIR" ; rr:datatype xsd:float ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "V_VIR" ; rr:datatype xsd:string ] ] ;
     rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnV_VIR> ] ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P05_has_lower_margin_value ; rr:objectMap [ rml:reference "E_V_VIR" ; rr:datatype xsd:float ] ; ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P06_has_upper_margin_value ; rr:objectMap [ rml:reference "E_V_VIR" ; rr:datatype xsd:float ] ; ] .
+    rr:predicateObjectMap [ rr:predicate parsec:P05_has_lower_margin_value ; rr:objectMap [ rml:reference "E_V_VIR" ; rr:datatype xsd:string ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P06_has_upper_margin_value ; rr:objectMap [ rml:reference "E_V_VIR" ; rr:datatype xsd:string ] ; ] .
 
 
 
@@ -920,7 +920,7 @@
         rr:predicate parsec:P02_has_value ;
         rr:objectMap [
             rml:reference "PA" ;
-            rr:datatype xsd:float ;
+            rr:datatype xsd:string ;
         ] ;
     ] ;
 
@@ -967,7 +967,7 @@
         rr:predicate parsec:P02_has_value ;
         rr:objectMap [
             rml:reference "R1" ;
-            rr:datatype xsd:float ;
+            rr:datatype xsd:string ;
         ] ;
     ] ;
 
@@ -1005,7 +1005,7 @@
         rr:predicate parsec:P02_has_value ;
         rr:objectMap [
             rml:reference "R2" ;
-            rr:datatype xsd:float ;
+            rr:datatype xsd:string ;
         ] ;
     ] ;
 
@@ -1039,7 +1039,7 @@
 
     rr:predicateObjectMap [
         rr:predicate parsec:P02_has_value ;
-        rr:objectMap [ rml:reference "S12" ; rr:datatype xsd:float ] ;
+        rr:objectMap [ rml:reference "S12" ; rr:datatype xsd:string ] ;
     ] ;
 
     rr:predicateObjectMap [
@@ -1058,7 +1058,7 @@
 <#MeasurementS25> a rr:TriplesMap ;
     rml:logicalSource <#HecateCSV> ;    
     rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/S25/measurement/galaxy_{PGC}_S25" ; rr:class parsec:E8_Measurement ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "S25" ; rr:datatype xsd:float ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "S25" ; rr:datatype xsd:string ] ] ;
     rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnS25> ] ] ;
     rr:predicateObjectMap [ rr:predicate parsec:P29_has_reliability_status ; rr:objectMap [ rr:template "{Q25_Description}" ; rr:termType rr:Literal ] ] .
 
@@ -1066,14 +1066,14 @@
 <#MeasurementS60> a rr:TriplesMap ;
     rml:logicalSource <#HecateCSV> ;    
     rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/S60/measurement/galaxy_{PGC}_S60" ; rr:class parsec:E8_Measurement ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "S60" ; rr:datatype xsd:float ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "S60" ; rr:datatype xsd:string ] ] ;
     rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnS60> ] ] ;
     rr:predicateObjectMap [ rr:predicate parsec:P29_has_reliability_status ; rr:objectMap [ rr:template "{Q60_Description}" ; rr:termType rr:Literal ] ] .
 
 <#MeasurementS100> a rr:TriplesMap ;
     rml:logicalSource <#HecateCSV> ;
     rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/S100/measurement/galaxy_{PGC}_S100" ; rr:class parsec:E8_Measurement ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "S100" ; rr:datatype xsd:float ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "S100" ; rr:datatype xsd:string ] ] ;
     rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnS100> ] ] ;
     rr:predicateObjectMap [ rr:predicate parsec:P29_has_reliability_status ; rr:objectMap [ rr:template "{Q100_Description}" ; rr:termType rr:Literal ] ] .
 
@@ -1085,34 +1085,34 @@
 <#MeasurementWF1> a rr:TriplesMap ;
     rml:logicalSource <#HecateCSV> ;
     rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/WF1/measurement/galaxy_{PGC}_WF1" ; rr:class parsec:E8_Measurement ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "WF1" ; rr:datatype xsd:float ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "WF1" ; rr:datatype xsd:string ] ] ;
     rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnWF1> ] ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P05_has_lower_margin_value ; rr:objectMap [ rml:reference "E_WF1" ; rr:datatype xsd:float ] ; ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P06_has_upper_margin_value ; rr:objectMap [ rml:reference "E_WF1" ; rr:datatype xsd:float ] ; ] .
+    rr:predicateObjectMap [ rr:predicate parsec:P05_has_lower_margin_value ; rr:objectMap [ rml:reference "E_WF1" ; rr:datatype xsd:string ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P06_has_upper_margin_value ; rr:objectMap [ rml:reference "E_WF1" ; rr:datatype xsd:string ] ; ] .
 
 <#MeasurementWF2> a rr:TriplesMap ;
     rml:logicalSource <#HecateCSV> ;
     rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/WF2/measurement/galaxy_{PGC}_WF2" ; rr:class parsec:E8_Measurement ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "WF2" ; rr:datatype xsd:float ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "WF2" ; rr:datatype xsd:string ] ] ;
     rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnWF2> ] ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P05_has_lower_margin_value ; rr:objectMap [ rml:reference "E_WF2" ; rr:datatype xsd:float ] ; ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P06_has_upper_margin_value ; rr:objectMap [ rml:reference "E_WF2" ; rr:datatype xsd:float ] ; ] .
+    rr:predicateObjectMap [ rr:predicate parsec:P05_has_lower_margin_value ; rr:objectMap [ rml:reference "E_WF2" ; rr:datatype xsd:string ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P06_has_upper_margin_value ; rr:objectMap [ rml:reference "E_WF2" ; rr:datatype xsd:string ] ; ] .
 
 <#MeasurementWF3> a rr:TriplesMap ;
     rml:logicalSource <#HecateCSV> ;
     rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/WF3/measurement/galaxy_{PGC}_WF3" ; rr:class parsec:E8_Measurement ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "WF3" ; rr:datatype xsd:float ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "WF3" ; rr:datatype xsd:string ] ] ;
     rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnWF3> ] ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P05_has_lower_margin_value ; rr:objectMap [ rml:reference "E_WF3" ; rr:datatype xsd:float ] ; ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P06_has_upper_margin_value ; rr:objectMap [ rml:reference "E_WF3" ; rr:datatype xsd:float ] ; ] .
+    rr:predicateObjectMap [ rr:predicate parsec:P05_has_lower_margin_value ; rr:objectMap [ rml:reference "E_WF3" ; rr:datatype xsd:string ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P06_has_upper_margin_value ; rr:objectMap [ rml:reference "E_WF3" ; rr:datatype xsd:string ] ; ] .
 
 <#MeasurementWF4> a rr:TriplesMap ;
     rml:logicalSource <#HecateCSV> ;
     rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/WF4/measurement/galaxy_{PGC}_WF4" ; rr:class parsec:E8_Measurement ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "WF4" ; rr:datatype xsd:float ] ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "WF4" ; rr:datatype xsd:string ] ] ;
     rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnWF4> ] ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P05_has_lower_margin_value ; rr:objectMap [ rml:reference "E_WF4" ; rr:datatype xsd:float ] ; ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P06_has_upper_margin_value ; rr:objectMap [ rml:reference "E_WF4" ; rr:datatype xsd:float ] ; ] .
+    rr:predicateObjectMap [ rr:predicate parsec:P05_has_lower_margin_value ; rr:objectMap [ rml:reference "E_WF4" ; rr:datatype xsd:string ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P06_has_upper_margin_value ; rr:objectMap [ rml:reference "E_WF4" ; rr:datatype xsd:string ] ; ] .
 
 
 ################################################################################
@@ -1122,13 +1122,13 @@
 <#MeasurementWFPOINT> a rr:TriplesMap ;
     rml:logicalSource <#HecateCSV> ;
     rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/WFPOINT/measurement/galaxy_{PGC}_WFPOINT" ; rr:class parsec:E8_Measurement ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "WFPOINT" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "WFPOINT" ; rr:datatype xsd:string ] ; ] ;
     rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnWFPOINT> ] ; ] .
 
 <#MeasurementWFTREAT> a rr:TriplesMap ;
     rml:logicalSource <#HecateCSV> ;
     rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/WFTREAT/measurement/galaxy_{PGC}_WFTREAT" ; rr:class parsec:E8_Measurement ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "WFTREAT" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "WFTREAT" ; rr:datatype xsd:string ] ; ] ;
     rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnWFTREAT> ] ; ] .
 
 
@@ -1139,25 +1139,25 @@
 <#MeasurementlogL_12u> a rr:TriplesMap ;
     rml:logicalSource <#HecateCSV> ;
     rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/logL_12u/measurement/galaxy_{PGC}_logL_12u" ; rr:class parsec:E8_Measurement ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "logL_12u" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "logL_12u" ; rr:datatype xsd:string ] ; ] ;
     rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnlogL_12u> ] ; ] .
 
 <#MeasurementlogL_22u> a rr:TriplesMap ;
     rml:logicalSource <#HecateCSV> ;
     rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/logL_22u/measurement/galaxy_{PGC}_logL_22u" ; rr:class parsec:E8_Measurement ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "logL_22u" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "logL_22u" ; rr:datatype xsd:string ] ; ] ;
     rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnlogL_22u> ] ; ] .
 
 <#MeasurementlogL_60u> a rr:TriplesMap ;
     rml:logicalSource <#HecateCSV> ;
     rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/logL_60u/measurement/galaxy_{PGC}_logL_60u" ; rr:class parsec:E8_Measurement ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "logL_60u" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "logL_60u" ; rr:datatype xsd:string ] ; ] ;
     rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnlogL_60u> ] ; ] .
 
 <#MeasurementlogL_K> a rr:TriplesMap ;
     rml:logicalSource <#HecateCSV> ;
     rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/logL_K/measurement/galaxy_{PGC}_logL_K" ; rr:class parsec:E8_Measurement ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "logL_K" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "logL_K" ; rr:datatype xsd:string ] ; ] ;
     rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnlogL_K> ] ; ] .
 
 ################################################################################
@@ -1166,7 +1166,7 @@
 <#MeasurementML_ratio> a rr:TriplesMap ;
     rml:logicalSource <#HecateCSV> ;
     rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/ML_ratio/measurement/galaxy_{PGC}_ML_ratio" ; rr:class parsec:E8_Measurement ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "ML_ratio" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "ML_ratio" ; rr:datatype xsd:string ] ; ] ;
     rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnML_ratio> ] ; ] .
 
 ################################################################################
@@ -1176,25 +1176,25 @@
 <#MeasurementlogSFR_12u> a rr:TriplesMap ;
     rml:logicalSource <#HecateCSV> ;
     rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/logSFR_12u/measurement/galaxy_{PGC}_logSFR_12u" ; rr:class parsec:E8_Measurement ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "logSFR_12u" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "logSFR_12u" ; rr:datatype xsd:string ] ; ] ;
     rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnlogSFR_12u> ] ; ] .
 
 <#MeasurementlogSFR_22u> a rr:TriplesMap ;
     rml:logicalSource <#HecateCSV> ;
     rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/logSFR_22u/measurement/galaxy_{PGC}_logSFR_22u" ; rr:class parsec:E8_Measurement ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "logSFR_22u" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "logSFR_22u" ; rr:datatype xsd:string ] ; ] ;
     rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnlogSFR_22u> ] ; ] .
 
 <#MeasurementlogSFR_60u> a rr:TriplesMap ;
     rml:logicalSource <#HecateCSV> ;
     rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/logSFR_60u/measurement/galaxy_{PGC}_logSFR_60u" ; rr:class parsec:E8_Measurement ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "logSFR_60u" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "logSFR_60u" ; rr:datatype xsd:string ] ; ] ;
     rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnlogSFR_60u> ] ; ] .
 
 <#MeasurementlogSFR_HEC> a rr:TriplesMap ;
     rml:logicalSource <#HecateCSV> ;
     rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/logSFR_HEC/measurement/galaxy_{PGC}_logSFR_HEC" ; rr:class parsec:E8_Measurement ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "logSFR_HEC" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "logSFR_HEC" ; rr:datatype xsd:string ] ; ] ;
     rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnlogSFR_HEC> ] ; ] .
 
 ################################################################################
@@ -1204,19 +1204,19 @@
 <#MeasurementlogM_HEC> a rr:TriplesMap ;
     rml:logicalSource <#HecateCSV> ;
     rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/logM_HEC/measurement/galaxy_{PGC}_logM_HEC" ; rr:class parsec:E8_Measurement ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "logM_HEC" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "logM_HEC" ; rr:datatype xsd:string ] ; ] ;
     rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnlogM_HEC> ] ; ] .
 
 <#MeasurementlogSFR_GSW> a rr:TriplesMap ;
     rml:logicalSource <#HecateCSV> ;
     rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/logSFR_GSW/measurement/galaxy_{PGC}_logSFR_GSW" ; rr:class parsec:E8_Measurement ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "logSFR_GSW" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "logSFR_GSW" ; rr:datatype xsd:string ] ; ] ;
     rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnlogSFR_GSW> ] ; ] .
 
 <#MeasurementlogM_GSW> a rr:TriplesMap ;
     rml:logicalSource <#HecateCSV> ;
     rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/logM_GSW/measurement/galaxy_{PGC}_logM_GSW" ; rr:class parsec:E8_Measurement ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "logM_GSW" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "logM_GSW" ; rr:datatype xsd:string ] ; ] ;
     rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnlogM_GSW> ] ; ] .
 
 ################################################################################
@@ -1226,13 +1226,13 @@
 <#MeasurementMIN_SNR> a rr:TriplesMap ;
     rml:logicalSource <#HecateCSV> ;
     rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/MIN_SNR/measurement/galaxy_{PGC}_MIN_SNR" ; rr:class parsec:E8_Measurement ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "MIN_SNR" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "MIN_SNR" ; rr:datatype xsd:string ] ; ] ;
     rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnMIN_SNR> ] ; ] .
 
 <#MeasurementMETAL> a rr:TriplesMap ;
     rml:logicalSource <#HecateCSV> ;
     rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/METAL/measurement/galaxy_{PGC}_METAL" ; rr:class parsec:E8_Measurement ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "METAL" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "METAL" ; rr:datatype xsd:string ] ; ] ;
     rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnMETAL> ] ; ] ;
     rr:predicateObjectMap [ rr:predicate parsec:P29_has_reliability_status ; rr:objectMap [ rr:template "{Metallicity_Status}" ; rr:termType rr:Literal ] ] .
 
@@ -1252,7 +1252,7 @@
         rr:predicate parsec:P02_has_value ;
         rr:objectMap [
             rml:reference "NDIST" ;
-            rr:datatype xsd:float ;
+            rr:datatype xsd:string ;
         ] ;
     ] ;
 
@@ -2115,7 +2115,7 @@
     ] ;
     rr:predicateObjectMap [
         rr:predicate parsec:P02_has_value ;
-        rr:objectMap [ rml:reference "logL_TIR" ; rr:datatype xsd:float ] ;
+        rr:objectMap [ rml:reference "logL_TIR" ; rr:datatype xsd:string ] ;
     ] ;
     rr:predicateObjectMap [
         rr:predicate parsec:P21_is_measurement_from_column ;
@@ -2138,7 +2138,7 @@
 <#MeasurementlogL_FIR> a rr:TriplesMap ;
     rml:logicalSource <#HecateCSV> ;
     rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/logL_FIR/measurement/galaxy_{PGC}_logL_FIR" ; rr:class parsec:E8_Measurement ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "logL_FIR" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "logL_FIR" ; rr:datatype xsd:string ] ; ] ;
     rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnlogL_FIR> ] ; ] ;
 .
 
@@ -2157,7 +2157,7 @@
 <#MeasurementlogSFR_TIR> a rr:TriplesMap ;
     rml:logicalSource <#HecateCSV> ;
     rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/logSFR_TIR/measurement/galaxy_{PGC}_logSFR_TIR" ; rr:class parsec:E8_Measurement ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "logSFR_TIR" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "logSFR_TIR" ; rr:datatype xsd:string ] ; ] ;
     rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnlogSFR_TIR> ] ; ] ;
 .
 
@@ -2175,7 +2175,7 @@
 <#MeasurementlogSFR_FIR> a rr:TriplesMap ;
     rml:logicalSource <#HecateCSV> ;
     rr:subjectMap [ rr:template "https://parsec.forth.gr/celestial_body/galaxy_{PGC}/column/logSFR_FIR/measurement/galaxy_{PGC}_logSFR_FIR" ; rr:class parsec:E8_Measurement ] ;
-    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "logSFR_FIR" ; rr:datatype xsd:float ] ; ] ;
+    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference "logSFR_FIR" ; rr:datatype xsd:string ] ; ] ;
     rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#ColumnlogSFR_FIR> ] ; ] ;
 .
 

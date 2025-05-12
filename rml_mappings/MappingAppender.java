@@ -58,14 +58,14 @@ public class MappingAppender {
                 .append("\n<#Measurement").append(column).append("> a rr:TriplesMap ;\n")
                   .append("    rml:logicalSource <#HekateCSV> ;\n")
                   .append("    rr:subjectMap [ rr:template \"https://hecate.ia.forth.gr/measurement/").append(column).append("/{PGC}\" ; rr:class parsec:E8_Measurement ] ;\n")
-                  .append("    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference \"").append(column).append("\" ; rr:datatype xsd:float ] ; ] ;\n")
+                  .append("    rr:predicateObjectMap [ rr:predicate parsec:P02_has_value ; rr:objectMap [ rml:reference \"").append(column).append("\" ; rr:datatype xsd:string ] ; ] ;\n")
                   .append("    rr:predicateObjectMap [ rr:predicate parsec:P21_is_measurement_from_column ; rr:objectMap [ rr:parentTriplesMap <#Column").append(column).append("> ] ; ] ;\n");
 
         if (hasErrorMargins) {
             measurement.append("    rr:predicateObjectMap [ rr:predicate parsec:P05_has_lower_margin_value ; rr:objectMap [ rml:reference \"")
-                      .append(errorColumn).append("\" ; rr:datatype xsd:float ] ; ] ;\n")
+                      .append(errorColumn).append("\" ; rr:datatype xsd:string ] ; ] ;\n")
                       .append("    rr:predicateObjectMap [ rr:predicate parsec:P06_has_upper_margin_value ; rr:objectMap [ rml:reference \"")
-                      .append(errorColumn).append("\" ; rr:datatype xsd:float ] ; ] ;\n");
+                      .append(errorColumn).append("\" ; rr:datatype xsd:string ] ; ] ;\n");
         }
 
         if (hasReliability) {
