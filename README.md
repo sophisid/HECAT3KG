@@ -89,9 +89,7 @@ This version preprocesses the CSV to enrich and clean the data before mapping it
 
 ## Notes
 
-* The mappings are based on the [PARSEC Ontology](https://parsec.gr/).
 * Ensure required Python libraries and Java version are installed.
-* The zipped RDF files (`rml_rdf_output.zip` and `x3ml_output_rdf.zip`) can be loaded directly into a triple store.
 * You can download X3ML engine .jar from [here](https://github.com/isl/x3ml/releases)
 * You can download the RMLMapper .jar from [here](https://github.com/RMLio/rmlmapper-java/releases)
 
