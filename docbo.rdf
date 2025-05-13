@@ -1,0 +1,559 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://hecate.ia.forth.gr#"
+     xml:base="https://hecate.ia.forth.gr"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:parsec="https://hecate.ia.forth.gr#">
+    <owl:Ontology rdf:about="https://https://hecate.ia.forth.gr/DOCBO#">
+        <ns:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:license rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://creativecommons.org/ns#license -->
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://hecate.ia.forth.gr#Approval -->
+
+    <rdfs:Datatype rdf:about="https://hecate.ia.forth.gr#Approval">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>Algorithmic</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>CCC</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Rejected</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>Unchecked</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+    </rdfs:Datatype>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://hecate.ia.forth.gr#P01_has_measurement -->
+
+    <owl:ObjectProperty rdf:about="https://hecate.ia.forth.gr#P01_has_measurement">
+        <rdfs:domain rdf:resource="https://hecate.ia.forth.gr#E02_Celestial_Body"/>
+        <rdfs:range rdf:resource="https://hecate.ia.forth.gr#E08_Measurement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hecate.ia.forth.gr#P03_has_unit -->
+
+    <owl:ObjectProperty rdf:about="https://hecate.ia.forth.gr#P03_has_unit">
+        <rdfs:domain rdf:resource="https://hecate.ia.forth.gr#E16_Data_Column"/>
+        <rdfs:range rdf:resource="https://hecate.ia.forth.gr#E09_Measurement_Unit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hecate.ia.forth.gr#P04_contains_measurements_of -->
+
+    <owl:ObjectProperty rdf:about="https://hecate.ia.forth.gr#P04_contains_measurements_of">
+        <rdfs:domain rdf:resource="https://hecate.ia.forth.gr#E16_Data_Column"/>
+        <rdfs:range rdf:resource="https://hecate.ia.forth.gr#E11_Measurement_Classification"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hecate.ia.forth.gr#P11_is_referred_in_data_source -->
+
+    <owl:ObjectProperty rdf:about="https://hecate.ia.forth.gr#P11_is_referred_in_data_source">
+        <rdfs:domain rdf:resource="https://hecate.ia.forth.gr#E02_Celestial_Body"/>
+        <rdfs:range rdf:resource="https://hecate.ia.forth.gr#E05_Data_Source"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hecate.ia.forth.gr#P12_has_identifier -->
+
+    <owl:ObjectProperty rdf:about="https://hecate.ia.forth.gr#P12_has_identifier">
+        <rdfs:domain rdf:resource="https://hecate.ia.forth.gr#E02_Celestial_Body"/>
+        <rdfs:range rdf:resource="https://hecate.ia.forth.gr#E17_Identifier"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hecate.ia.forth.gr#P13_contains_data_source -->
+
+    <owl:ObjectProperty rdf:about="https://hecate.ia.forth.gr#P13_contains_data_source">
+        <rdfs:domain rdf:resource="https://hecate.ia.forth.gr#E05_Data_Source"/>
+        <rdfs:range rdf:resource="https://hecate.ia.forth.gr#E05_Data_Source"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hecate.ia.forth.gr#P14_contains_celestial_body -->
+
+    <owl:ObjectProperty rdf:about="https://hecate.ia.forth.gr#P14_contains_celestial_body">
+        <rdfs:domain rdf:resource="https://hecate.ia.forth.gr#E02_Celestial_Body"/>
+        <rdfs:range rdf:resource="https://hecate.ia.forth.gr#E02_Celestial_Body"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hecate.ia.forth.gr#P20_has_estimation_method -->
+
+    <owl:ObjectProperty rdf:about="https://hecate.ia.forth.gr#P20_has_estimation_method">
+        <rdfs:domain rdf:resource="https://hecate.ia.forth.gr#E08_Measurement"/>
+        <rdfs:range rdf:resource="https://hecate.ia.forth.gr#E12_Estimation_Method"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hecate.ia.forth.gr#P21_is_measurement_from_column -->
+
+    <owl:ObjectProperty rdf:about="https://hecate.ia.forth.gr#P21_is_measurement_from_column">
+        <rdfs:domain rdf:resource="https://hecate.ia.forth.gr#E08_Measurement"/>
+        <rdfs:range rdf:resource="https://hecate.ia.forth.gr#E16_Data_Column"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hecate.ia.forth.gr#P32_is_connected_to_column -->
+
+    <owl:ObjectProperty rdf:about="https://hecate.ia.forth.gr#P32_is_connected_to_column">
+        <rdfs:domain rdf:resource="https://hecate.ia.forth.gr#E16_Data_Column"/>
+        <rdfs:range rdf:resource="https://hecate.ia.forth.gr#E16_Data_Column"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hecate.ia.forth.gr#P33_provides_identifier -->
+
+    <owl:ObjectProperty rdf:about="https://hecate.ia.forth.gr#P33_provides_identifier">
+        <rdfs:domain rdf:resource="https://hecate.ia.forth.gr#E05_Data_Source"/>
+        <rdfs:range rdf:resource="https://hecate.ia.forth.gr#E17_Identifier"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hecate.ia.forth.gr#P34_has_column -->
+
+    <owl:ObjectProperty rdf:about="https://hecate.ia.forth.gr#P34_has_column">
+        <rdfs:domain rdf:resource="https://hecate.ia.forth.gr#E05_Data_Source"/>
+        <rdfs:range rdf:resource="https://hecate.ia.forth.gr#E16_Data_Column"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hecate.ia.forth.gr#P35_has_added_column -->
+
+    <owl:ObjectProperty rdf:about="https://hecate.ia.forth.gr#P35_has_added_column">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://hecate.ia.forth.gr#E05_Data_Source"/>
+        <rdfs:range rdf:resource="https://hecate.ia.forth.gr#E16_Data_Column"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hecate.ia.forth.gr#P36_has_author -->
+
+    <owl:ObjectProperty rdf:about="https://hecate.ia.forth.gr#P36_has_author">
+        <rdfs:domain rdf:resource="https://hecate.ia.forth.gr#E05_Data_Source"/>
+        <rdfs:range rdf:resource="https://hecate.ia.forth.gr#E19_Author"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hecate.ia.forth.gr#P45_has_confidence_interval_error -->
+
+    <owl:ObjectProperty rdf:about="https://hecate.ia.forth.gr#P45_has_confidence_interval_error">
+        <rdfs:domain rdf:resource="https://hecate.ia.forth.gr#E08_Measurement"/>
+        <rdfs:range rdf:resource="https://hecate.ia.forth.gr#E18_Confidence_Interval_Error"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hecate.ia.forth.gr#P46_originates_from_data_source -->
+
+    <owl:ObjectProperty rdf:about="https://hecate.ia.forth.gr#P46_originates_from_data_source">
+        <rdfs:domain rdf:resource="https://hecate.ia.forth.gr#E08_Measurement"/>
+        <rdfs:range rdf:resource="https://hecate.ia.forth.gr#E05_Data_Source"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hecate.ia.forth.gr#P48_contains_measurement_classification -->
+
+    <owl:ObjectProperty rdf:about="https://hecate.ia.forth.gr#P48_contains_measurement_classification">
+        <rdfs:domain rdf:resource="https://hecate.ia.forth.gr#E11_Measurement_Classification"/>
+        <rdfs:range rdf:resource="https://hecate.ia.forth.gr#E11_Measurement_Classification"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://hecate.ia.forth.gr#P02_has_value -->
+
+    <owl:DatatypeProperty rdf:about="https://hecate.ia.forth.gr#P02_has_value">
+        <rdfs:domain rdf:resource="https://hecate.ia.forth.gr#E08_Measurement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hecate.ia.forth.gr#P05_has_lower_error_margin_value -->
+
+    <owl:DatatypeProperty rdf:about="https://hecate.ia.forth.gr#P05_has_lower_error_margin_value">
+        <rdfs:domain rdf:resource="https://hecate.ia.forth.gr#E08_Measurement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hecate.ia.forth.gr#P06_has_upper_error_margin_value -->
+
+    <owl:DatatypeProperty rdf:about="https://hecate.ia.forth.gr#P06_has_upper_error_margin_value">
+        <rdfs:domain rdf:resource="https://hecate.ia.forth.gr#E08_Measurement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hecate.ia.forth.gr#P12_has_identifier -->
+
+    <owl:DatatypeProperty rdf:about="https://hecate.ia.forth.gr#P12_has_identifier">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hecate.ia.forth.gr#P17_data_source_version -->
+
+    <owl:DatatypeProperty rdf:about="https://hecate.ia.forth.gr#P17_data_source_version">
+        <rdfs:domain rdf:resource="https://hecate.ia.forth.gr#E05_Data_Source"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hecate.ia.forth.gr#P23_has_magic_number_value -->
+
+    <owl:DatatypeProperty rdf:about="https://hecate.ia.forth.gr#P23_has_magic_number_value">
+        <rdfs:domain rdf:resource="https://hecate.ia.forth.gr#E16_Data_Column"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hecate.ia.forth.gr#P24_has_approval -->
+
+    <owl:DatatypeProperty rdf:about="https://hecate.ia.forth.gr#P24_has_approval">
+        <rdfs:domain rdf:resource="https://hecate.ia.forth.gr#E16_Data_Column"/>
+        <rdfs:range rdf:resource="https://hecate.ia.forth.gr#Approval"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hecate.ia.forth.gr#P26_has_confidence_interval_error_percentage -->
+
+    <owl:DatatypeProperty rdf:about="https://hecate.ia.forth.gr#P26_has_confidence_interval_error_percentage">
+        <rdfs:domain rdf:resource="https://hecate.ia.forth.gr#E18_Confidence_Interval_Error"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hecate.ia.forth.gr#P27_has_confidence_interval_error_lower_bound -->
+
+    <owl:DatatypeProperty rdf:about="https://hecate.ia.forth.gr#P27_has_confidence_interval_error_lower_bound">
+        <rdfs:domain rdf:resource="https://hecate.ia.forth.gr#E16_Data_Column"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hecate.ia.forth.gr#P28_has_confidence_interval_error_upper_bound -->
+
+    <owl:DatatypeProperty rdf:about="https://hecate.ia.forth.gr#P28_has_confidence_interval_error_upper_bound">
+        <rdfs:domain rdf:resource="https://hecate.ia.forth.gr#E18_Confidence_Interval_Error"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hecate.ia.forth.gr#P29_has_reliability_status -->
+
+    <owl:DatatypeProperty rdf:about="https://hecate.ia.forth.gr#P29_has_reliability_status">
+        <rdfs:domain rdf:resource="https://hecate.ia.forth.gr#E08_Measurement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hecate.ia.forth.gr#P37_has_abstract -->
+
+    <owl:DatatypeProperty rdf:about="https://hecate.ia.forth.gr#P37_has_abstract">
+        <rdfs:domain rdf:resource="https://hecate.ia.forth.gr#E05_Data_Source"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hecate.ia.forth.gr#P38_has_bibcode -->
+
+    <owl:DatatypeProperty rdf:about="https://hecate.ia.forth.gr#P38_has_bibcode">
+        <rdfs:domain rdf:resource="https://hecate.ia.forth.gr#E05_Data_Source"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hecate.ia.forth.gr#P39_has_webpage -->
+
+    <owl:DatatypeProperty rdf:about="https://hecate.ia.forth.gr#P39_has_webpage">
+        <rdfs:domain rdf:resource="https://hecate.ia.forth.gr#E05_Data_Source"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hecate.ia.forth.gr#P40_has_DOI -->
+
+    <owl:DatatypeProperty rdf:about="https://hecate.ia.forth.gr#P40_has_DOI">
+        <rdfs:domain rdf:resource="https://hecate.ia.forth.gr#E05_Data_Source"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hecate.ia.forth.gr#P41_was_updated_on -->
+
+    <owl:DatatypeProperty rdf:about="https://hecate.ia.forth.gr#P41_was_updated_on">
+        <rdfs:domain rdf:resource="https://hecate.ia.forth.gr#E05_Data_Source"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hecate.ia.forth.gr#P42_has_nuclear_activity_classification -->
+
+    <owl:DatatypeProperty rdf:about="https://hecate.ia.forth.gr#P42_has_nuclear_activity_classification">
+        <rdfs:domain rdf:resource="https://hecate.ia.forth.gr#E03_Galaxy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hecate.ia.forth.gr#P43_identifier_value -->
+
+    <owl:DatatypeProperty rdf:about="https://hecate.ia.forth.gr#P43_identifier_value">
+        <rdfs:domain rdf:resource="https://hecate.ia.forth.gr#E17_Identifier"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hecate.ia.forth.gr#P44_is_identified_by -->
+
+    <owl:DatatypeProperty rdf:about="https://hecate.ia.forth.gr#P44_is_identified_by">
+        <rdfs:domain rdf:resource="https://hecate.ia.forth.gr#E02_Celestial_Body"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment>This is used as a shortcut. This is must have the same value as the target of P43 .</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://hecate.ia.forth.gr#P47_has_description -->
+
+    <owl:DatatypeProperty rdf:about="https://hecate.ia.forth.gr#P47_has_description">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://hecate.ia.forth.gr#E16_Data_Column"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://hecate.ia.forth.gr#E02_Celestial_Body -->
+
+    <owl:Class rdf:about="https://hecate.ia.forth.gr#E02_Celestial_Body"/>
+    
+
+
+    <!-- https://hecate.ia.forth.gr#E03_Galaxy -->
+
+    <owl:Class rdf:about="https://hecate.ia.forth.gr#E03_Galaxy">
+        <rdfs:subClassOf rdf:resource="https://hecate.ia.forth.gr#E02_Celestial_Body"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hecate.ia.forth.gr#E04_Supernova_Remnant -->
+
+    <owl:Class rdf:about="https://hecate.ia.forth.gr#E04_Supernova_Remnant">
+        <rdfs:subClassOf rdf:resource="https://hecate.ia.forth.gr#E02_Celestial_Body"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hecate.ia.forth.gr#E05_Data_Source -->
+
+    <owl:Class rdf:about="https://hecate.ia.forth.gr#E05_Data_Source"/>
+    
+
+
+    <!-- https://hecate.ia.forth.gr#E06_Catalogue -->
+
+    <owl:Class rdf:about="https://hecate.ia.forth.gr#E06_Catalogue">
+        <rdfs:subClassOf rdf:resource="https://hecate.ia.forth.gr#E05_Data_Source"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hecate.ia.forth.gr#E07_Paper -->
+
+    <owl:Class rdf:about="https://hecate.ia.forth.gr#E07_Paper">
+        <rdfs:subClassOf rdf:resource="https://hecate.ia.forth.gr#E05_Data_Source"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hecate.ia.forth.gr#E08_Measurement -->
+
+    <owl:Class rdf:about="https://hecate.ia.forth.gr#E08_Measurement"/>
+    
+
+
+    <!-- https://hecate.ia.forth.gr#E09_Measurement_Unit -->
+
+    <owl:Class rdf:about="https://hecate.ia.forth.gr#E09_Measurement_Unit"/>
+    
+
+
+    <!-- https://hecate.ia.forth.gr#E11_Measurement_Classification -->
+
+    <owl:Class rdf:about="https://hecate.ia.forth.gr#E11_Measurement_Classification"/>
+    
+
+
+    <!-- https://hecate.ia.forth.gr#E12_Estimation_Method -->
+
+    <owl:Class rdf:about="https://hecate.ia.forth.gr#E12_Estimation_Method"/>
+    
+
+
+    <!-- https://hecate.ia.forth.gr#E15_Data_Table -->
+
+    <owl:Class rdf:about="https://hecate.ia.forth.gr#E15_Data_Table">
+        <rdfs:subClassOf rdf:resource="https://hecate.ia.forth.gr#E05_Data_Source"/>
+    </owl:Class>
+    
+
+
+    <!-- https://hecate.ia.forth.gr#E16_Data_Column -->
+
+    <owl:Class rdf:about="https://hecate.ia.forth.gr#E16_Data_Column"/>
+    
+
+
+    <!-- https://hecate.ia.forth.gr#E17_Identifier -->
+
+    <owl:Class rdf:about="https://hecate.ia.forth.gr#E17_Identifier"/>
+    
+
+
+    <!-- https://hecate.ia.forth.gr#E18_Confidence_Interval_Error -->
+
+    <owl:Class rdf:about="https://hecate.ia.forth.gr#E18_Confidence_Interval_Error"/>
+    
+
+
+    <!-- https://hecate.ia.forth.gr#E19_Author -->
+
+    <owl:Class rdf:about="https://hecate.ia.forth.gr#E19_Author"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
