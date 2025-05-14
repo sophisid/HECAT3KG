@@ -2,7 +2,15 @@
 
 This repository contains tools and mapping configurations to convert data from the [HECATE galaxy catalogue](https://hecate.ia.forth.gr/) into RDF format using both RML and X3ML approaches.
 
----
+The HECAT3KGs and DOCBO ontology are publicly available under CC BY 4.0 license at Zenodo. 
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15379419.svg)](https://doi.org/10.5281/zenodo.15379419)
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15388573.svg)](https://doi.org/10.5281/zenodo.15388573)
+
+
+
+--- 
 
 ## Directory Structure
 
