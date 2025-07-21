@@ -6,9 +6,7 @@ The HECAT3KGs and DOCBO ontology are publicly available under CC BY 4.0 license 
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15379419.svg)](https://doi.org/10.5281/zenodo.15379419)
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15388573.svg)](https://doi.org/10.5281/zenodo.15388573)
-
-
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16281112.svg)](https://doi.org/10.5281/zenodo.16281112)
 
 --- 
 
